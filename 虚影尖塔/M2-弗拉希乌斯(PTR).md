@@ -5,12 +5,12 @@
 
 ---
 
-#### 前言
+## 前言
 >
 三测于2026年1月24日，装等光环259(普通团本毕业装等)
 测试攻略仅供参考，一切以正式服为准
 
-### 史诗难度不同点
+## 史诗难度不同点
 
 本篇仅介绍史诗不同点，BOSS完整技能介绍请移步[**>>>虚影尖塔 H2弗拉希乌斯(PTR)<<<**](https://bbs.nga.cn/read.php?pid=847963313&opt=128)
 
@@ -36,7 +36,7 @@
 在英雄难度中，每轮刷5只爆爬虫，盯1T+4DPS；每堵墙需要2只虫子炸掉
 而在史诗难度中，每轮刷7只爆爬虫，盯1T+6DPS；每堵墙需要3只虫子才能炸掉
 
-### 视频
+## 视频
 >
 弗拉西乌斯史诗难度一共测了三次，三次测试在技能上没有任何变化，只是调高数值
 这个BOSS就是个硬件检测机，技能少、史诗变化小，纯纯的高数值暴力美学BOSS
@@ -45,17 +45,17 @@
 [**二测原声战斗视频(25.12.20)**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=10)
 [**一测原声战斗视频(25.12.5)**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=9)
 
-### 时间轴
+## 时间轴
 >
 需要在线表格请自取：
 
 <https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=w8yrdu>
 
-### 时间轴图
+## 时间轴图
 
 ![img](../assets/15_50891eh.webp)
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/C4N79khaRZPMdtJy?fight=28>
 ----

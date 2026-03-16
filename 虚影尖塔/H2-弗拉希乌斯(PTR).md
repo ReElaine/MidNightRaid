@@ -5,12 +5,12 @@
 
 ---
 
-#### 前言
+## 前言
 >
 测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~~)
 测试攻略**仅供参考**，一切以正式服为准
 
-### 技能介绍
+## 技能介绍
 
 本篇中的地城手册来自纱纱的 [**12.0 团队副本 [史诗]虚影尖塔地下城手册**](https://bbs.nga.cn/read.php?tid=45568538)，感谢纱纱
 
@@ -93,22 +93,22 @@ BOSS会吸吸5秒，然后击退全团。吸力不大，只要不站悬崖边，
 
 ![img](../assets/10_100638k.webp)
 
-### 视频
+## 视频
 >
 [**技能介绍**](https://www.bilibili.com/video/BV1MSfmBhENd/?vd_source=fec380466fc1a23de53e47d19ce701b0)
 [**原声战斗视频**](https://www.bilibili.com/video/BV172CfBMEw3?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=3)
 
-### 时间轴
+## 时间轴
 >
 需要在线表格请自取：
 
 <https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=9cd8fn>
 
-### 时间轴图
+## 时间轴图
 
 ![img](../assets/10_d6b172i.webp)
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/GLVcfar2p9wRZqkP?fight=39&type=summary>
 ----

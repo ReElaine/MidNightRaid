@@ -5,21 +5,19 @@
 
 ---
 
-#### 前言
+## 前言
 >
 测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~~)
 测试攻略**仅供参考**，一切以正式服为准
 
-### 战斗场地
+## 战斗场地
 > 场上共有9片区域，BOSS每次在其中三块区域里召唤蓝胖子，蓝胖身上有99%减伤盾
 我们每次只能炸掉其中两只蓝胖的盾，剩下那只蓝胖会污染一块场地
 当横/竖/斜任意三块污染区域连成一条线，团灭
 
 ![img](../assets/9_ea3ae66.webp)
 
-### 技能介绍
-
-本篇中的地城手册来自纱纱的 [**12.0 团队副本 [史诗]虚影尖塔地下城手册**](https://bbs.nga.cn/read.php?tid=45568538)，感谢纱纱
+## 技能介绍
 
 > **暗影进军(重要)**
 阿福扎恩在战场上召唤深渊虚空塑形者。他的仆从出现时，会对10码范围内的玩家造成220770点暗影伤害并将其击退。
@@ -134,22 +132,22 @@ BOSS在场上召唤完3只蓝胖，立马就会点当前坦克2轮[幽影坍缩]
 - **元首的荣耀**
 在英雄难度下:阿福扎恩及其士兵在彼此相距10码范围内时会获得[元首的荣耀]。BOSS要拉离被污染的区域，BOSS和小怪也要彼此拉开10码
 
-### 视频
+## 视频
 >
 [**技能介绍视频**](https://www.bilibili.com/video/BV1cBfcBpELi/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)团测和现在的手册技能差的挺多，建议看技能介绍这个视频。
 [**原声战斗视频**](https://www.bilibili.com/video/BV172CfBMEw3?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=2)
 
-### 时间轴
+## 时间轴
 >
 需要在线表格请自取：
 
 <https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=lyquxy>
 
-### 时间轴图
+## 时间轴图
 
 ![img](../assets/9_42943a4.webp)
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/GLVcfar2p9wRZqkP?fight=24>
 ----

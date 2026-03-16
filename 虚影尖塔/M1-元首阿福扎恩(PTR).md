@@ -5,12 +5,12 @@
 
 ---
 
-#### 前言
+## 前言
 >
 二测于2025年12月20日，装等光环259(普通团本毕业装等)
 测试攻略仅供参考，一切以正式服为准
 
-### 史诗难度不同点
+## 史诗难度不同点
 
 本篇仅介绍史诗不同点，BOSS完整技能介绍请移步>>>[**>>>虚影尖塔H1元首阿福扎恩(PTR)<<<**](https://bbs.nga.cn/read.php?pid=847963236&opt=128)
 
@@ -80,23 +80,23 @@ BOSS会点6个任意玩家[虚空标记]。
 
 ![img](../assets/14_b146e37z.gif)
 
-### 视频
+## 视频
 >
 [**技能介绍视频**](https://www.bilibili.com/video/BV1kdfwBfEXZ/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)
 [**二测原声战斗视频**](https://www.bilibili.com/video/BV1o42GBLEVf/?spm_id_from=333.1387.0.0&vd_source=fec380466fc1a23de53e47d19ce701b0)
 [**一测原声战斗视频**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=8)
 
-### 时间轴
+## 时间轴
 >
 需要在线表格请自取：
 
 <https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=lvaoh9>
 
-### 时间轴图
+## 时间轴图
 
 ![img](../assets/14_839792r.webp)
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/XNzQDn98hW2M13tg?fight=8>
 ----

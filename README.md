@@ -1,56 +1,11 @@
 # 12.0 新团本攻略（按副本 / Boss 拆分）
 
-这个压缩包由原始总攻略 Markdown 拆分而成，按“副本 → Boss”组织。
-
-说明：原文里的图片路径已改为相对路径 `../assets/...`，但当前压缩包未包含原始图片文件，仅保留引用路径。
-
 ## 仓库维护
 
 - 日常整理、提交与推送流程请见 [CONTRIBUTING.md](CONTRIBUTING.md)
 
-
-## 原始文件前言与目录
-
-
-### [攻略心得]12.0新团本：尖塔+奎岛+裂隙测试分享(3/7H，3/7M)
-
-Made by ngapost2md (c) ludoux [GitHub Repo](https://github.com/ludoux/ngapost2md)
-
 ----
-
-#### 前言
-> 和纱纱一起测试的第5个资料片![心](https://img4.nga.178.com/ngabbs/post/smile/ac23.png)
-
-#### 目录
-> #### 英雄难度
-- **梦境裂隙**
-[**奇美鲁斯,未梦之神**](https://bbs.nga.cn/read.php?pid=847961524&opt=128)25年11月20日测试
-- **虚影尖塔**
-[**元首阿福扎恩**](https://bbs.nga.cn/read.php?pid=847963236&opt=128)25年11月20日测试
-[**弗拉希乌斯**](https://bbs.nga.cn/read.php?pid=847963313&opt=128)11月20日测试
-[**陨落之王萨哈达尔**](https://bbs.nga.cn/read.php?pid=847963375&opt=128)11月20日测试
-[**威厄高尔和艾佐拉克**](https://bbs.nga.cn/read.php?pid=847963415&opt=128)11月21日测试
-[**光盲先锋军**](https://bbs.nga.cn/read.php?pid=847963487&opt=128)11月21日测试
-尾王：宇宙之冕，惯例全难度不开放测试
-- **进军奎尔丹纳斯**
-[**贝洛朗,奥的子嗣**](https://bbs.nga.cn/read.php?pid=847962542&opt=128)11月21日已测试待编辑
-尾王：至暗之夜降临，惯例全难度不开放测试
-
-> #### 史诗难度
-- **梦境裂隙**
-[**奇美鲁斯,未梦之神**](https://bbs.nga.cn/read.php?pid=847961931&opt=128)26年1月24日二测
-- **虚影尖塔**
-[**元首阿福扎恩**](https://bbs.nga.cn/read.php?pid=847963551&opt=128)25年12月20日二测
-[**弗拉希乌斯**](https://bbs.nga.cn/read.php?pid=847963649&opt=128)26年1月24日三测
-陨落之王萨哈达尔
-威厄高尔和艾佐拉克
-光盲先锋军
-尾王：宇宙之冕，惯例全难度不开放测试
-- **进军奎尔丹纳斯**
-贝洛朗,奥的子嗣
-尾王：至暗之夜降临，惯例全难度不开放测试
-
-#### 实用分享
+## 实用分享
 >
 - 一键生成BOSS时间轴不求人
 
@@ -61,10 +16,6 @@ Made by ngapost2md (c) ludoux [GitHub Repo](https://github.com/ludoux/ngapost2md
 ![img](assets/0_1001dcnc.png)
 
 ----
-
-## 梦境裂隙
-
-
 ## 梦境裂隙
 
 - [H奇美鲁斯,未梦之神(PTR)](梦境裂隙/H-奇美鲁斯,未梦之神(PTR).md)

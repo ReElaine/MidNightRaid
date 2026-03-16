@@ -5,17 +5,17 @@
 
 ---
 
-#### 前言
+## 前言
 >
 测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~~)
 测试攻略**仅供参考**，一切以正式服为准
 
-### 战斗场地
+## 战斗场地
 >
 
 ![img](../assets/11_d545558.webp)
 
-### 技能介绍
+## 技能介绍
 
 本篇中的地城手册来自纱纱的 [**12.0 团队副本 [史诗]虚影尖塔地下城手册**](https://bbs.nga.cn/read.php?tid=45568538)，感谢纱纱
 
@@ -66,17 +66,17 @@
 > **影蚀打击(坦克预警)**
 萨哈达尔的近战攻击使其当前目标变得不稳定，每1秒造成8831点暗影伤害，持续15秒。该效果可以叠加。
 
-### 视频
+## 视频
 >
 [**三测原声战斗视频**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=3)
 [**二测原声战斗视频**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=12)
 [**一测原声战斗视频**](https://www.bilibili.com/video/BV1o42GBLEVf?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=11)
 
-### 时间轴
+## 时间轴
 >
 123
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/C4N79khaRZPMdtJy?fight=40>
 ----

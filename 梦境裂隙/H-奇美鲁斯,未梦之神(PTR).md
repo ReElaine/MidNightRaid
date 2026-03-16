@@ -1,23 +1,21 @@
 # H奇美鲁斯,未梦之神(PTR)
 
 - 副本：梦境裂隙
-- 来源：`raid_guide_cleaned_reviewed.md`
 
 ---
 
-#### 前言
+## 前言
 >
 测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~~)
 测试攻略**仅供参考**，一切以正式服为准
 
-### 战斗场地
+## 战斗场地
 >
 
 ![img](../assets/3_641855d.webp)
 
-### 技能介绍
+## 技能介绍
 
-本篇中的地城手册来自纱纱的 [**12.0 团队副本 [史诗]梦境裂隙地下城手册**](https://bbs.nga.cn/read.php?tid=45580922)，感谢纱纱
 **阶段一:饥肠辘辘**
 BOSS 0能量到满能量的过程，固定持续2:13秒，P1BOSS一直在地上和我们战斗
 
@@ -60,7 +58,7 @@ ADD一共有三种，森林总结了每轮P1刷怪的数量和组合，供友友
 - **巨身憎恶(坦克预警)**
 大怪，会两个技能：(1)每16秒施放一次AOE，越A越疼 (2)每20秒对当前坦三连击
 
-### 大怪证件照
+## 大怪证件照
 
 ![img](../assets/3_3f6c00da.gif)
 
@@ -72,7 +70,7 @@ ADD一共有三种，森林总结了每轮P1刷怪的数量和组合，供友友
 - **萦绕的精华**
 中怪，每20秒会施放群恐[可怖战吼]，需要提前安排打断链
 
-### 中怪证件照
+## 中怪证件照
 
 ![img](../assets/3_5de06abu.gif)
 
@@ -84,7 +82,7 @@ ADD一共有三种，森林总结了每轮P1刷怪的数量和组合，供友友
 从裂隙中召唤的群聚恐惧
 小爬爬，没有任何技能
 
-### 小爬爬证件照
+## 小爬爬证件照
 
 ![img](../assets/3_6e38fbbs.gif)
 
@@ -192,22 +190,22 @@ P2每隔23秒，BOSS会施放深呼吸[腐化毁灭]
 奇美鲁斯在空中时受到巢穴帷幕的庇护，受到的伤害降低99%。
 整个P2 BOSS都有99%减伤
 
-### 视频
+## 视频
 >
 [**技能介绍**](https://www.bilibili.com/video/BV1mMZ8BrEv4/?spm_id_from=333.1387.upload.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)
 [**战斗视频**](https://www.bilibili.com/video/BV172CfBMEw3/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)
 
-### 时间轴
+## 时间轴
 >
 需要在线表格请自取：
 
 <https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=cwgary>
 
-### 时间轴图
+## 时间轴图
 
 ![img](../assets/3_179d06h.webp)
 
-### LOG
+## LOG
 >
 <https://cn.warcraftlogs.com/reports/GLVcfar2p9wRZqkP?fight=10&type=summary>
 ----
