@@ -41,7 +41,7 @@
       "id": "void_spire",
       "slug": "void_spire",
       "title": "虚影尖塔",
-      "description": "当前已为 H1 元首阿福扎恩制作完整 JSON 示例，其余 Boss 保留 Markdown 内容层。",
+      "description": "当前已为 H1 元首阿福扎恩与 H2 弗拉希乌斯接入新模板 JSON，包含 summary、quickStart、roles、abilities、timeline 与 sources 六个核心区块。",
       "bosses": [
         {
           "id": "spire_h1_afuzan_ptr",
@@ -60,10 +60,10 @@
           "title": "H2 弗拉希乌斯 (PTR)",
           "difficulty": "英雄",
           "ptr": true,
-          "summary": "已迁移 Markdown，等待补充结构化 JSON。",
+          "summary": "包含两分钟循环、接圈换坦、虫子炸墙和吐息安全区处理的完整 JSON 攻略。",
           "raidId": "void_spire",
           "contentPath": "content/虚影尖塔/H2-弗拉希乌斯(PTR).md",
-          "jsonPath": null,
+          "jsonPath": "./data/bosses/void_spire/spire_h2_fulasius_ptr.json",
           "sourceMarkdownUrl": "https://github.com/ReElaine/MidNightRaid/blob/main/content/%E8%99%9A%E5%BD%B1%E5%B0%96%E5%A1%94/H2-%E5%BC%97%E6%8B%89%E5%B8%8C%E4%B9%8C%E6%96%AF(PTR).md",
           "tags": ["虚影尖塔", "英雄", "PTR", "H2"]
         },

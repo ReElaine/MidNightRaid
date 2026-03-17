@@ -82,24 +82,51 @@ export function renderBossDetail(boss, details) {
     `;
   }
 
-  const roleTips = Object.entries(details.roleTips)
+  const summaryItems = [
+    { label: "一句话", value: details.summary.oneLine },
+    { label: "战斗类型", value: details.summary.fightStyle },
+    { label: "击杀条件", value: details.summary.killCondition }
+  ]
     .map(
-      ([role, tips]) => `
+      (item) => `
         <article class="info-block">
-          <h3>${escapeHtml(role.toUpperCase())}</h3>
-          <ul>${tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
+          <h3>${escapeHtml(item.label)}</h3>
+          <p>${escapeHtml(item.value)}</p>
         </article>
       `
     )
     .join("");
 
-  const phases = details.phases
+  const quickStart = [
+    { label: "Boss 站位", value: details.quickStart.bossPositioning, ordered: false },
+    { label: "优先目标", value: details.quickStart.priorityTargets, ordered: false },
+    { label: "核心循环", value: details.quickStart.coreLoop, ordered: true },
+    { label: "治疗压力点", value: details.quickStart.healingChecks, ordered: false },
+    { label: "常见灭团点", value: details.quickStart.wipeTriggers, ordered: false }
+  ]
     .map(
-      (phase) => `
+      (item) => `
         <article class="phase-card">
-          <h3>${escapeHtml(phase.name)}</h3>
-          <p class="muted">${escapeHtml(phase.summary)}</p>
-          <ul>${phase.keyPoints.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>
+          <h3>${escapeHtml(item.label)}</h3>
+          ${
+            Array.isArray(item.value)
+              ? item.ordered
+                ? `<ol>${item.value.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ol>`
+                : `<ul>${item.value.map((point) => `<li>${escapeHtml(point)}</li>`).join("")}</ul>`
+              : `<p>${escapeHtml(item.value)}</p>`
+          }
+        </article>
+      `
+    )
+    .join("");
+
+  const roles = Object.entries(details.roles)
+    .map(
+      ([role, config]) => `
+        <article class="info-block">
+          <h3>${escapeHtml(role.toUpperCase())}</h3>
+          <p class="muted">${escapeHtml(config.summary)}</p>
+          <ul>${config.tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
         </article>
       `
     )
@@ -119,12 +146,23 @@ export function renderBossDetail(boss, details) {
       return `
         <article class="ability-card" id="ability-${escapeHtml(ability.id)}">
           <div class="badge-row">
-            <span class="badge">${escapeHtml(ability.type)}</span>
-            ${ability.importance ? `<span class="badge badge--ghost">${escapeHtml(ability.importance)}</span>` : ""}
+            <span class="badge">${escapeHtml(ability.category)}</span>
+            <span class="badge badge--ghost">${escapeHtml(ability.severity)}</span>
           </div>
           <h3>${escapeHtml(ability.name)}</h3>
           <p>${escapeHtml(ability.description)}</p>
-          <ul>${ability.tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
+          <div class="ability-response-grid">
+            ${Object.entries(ability.response)
+              .map(
+                ([role, tips]) => `
+                  <section class="ability-response-block">
+                    <h4>${escapeHtml(role.toUpperCase())}</h4>
+                    <ul>${tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
+                  </section>
+                `
+              )
+              .join("")}
+          </div>
           ${media}
         </article>
       `;
@@ -135,8 +173,8 @@ export function renderBossDetail(boss, details) {
     .map(
       (entry) => {
         const abilityCell = entry.abilityId
-          ? `<a class="timeline-link" href="#ability-${escapeHtml(entry.abilityId)}">${escapeHtml(entry.ability)}</a>`
-          : escapeHtml(entry.ability);
+          ? `<a class="timeline-link" href="#ability-${escapeHtml(entry.abilityId)}">${escapeHtml(entry.label)}</a>`
+          : escapeHtml(entry.label);
 
         return `
         <tr>
@@ -158,17 +196,22 @@ export function renderBossDetail(boss, details) {
           <span class="badge badge--ghost">${escapeHtml(details.ptr ? "PTR" : "正式服")}</span>
         </div>
         <h2>${escapeHtml(details.title)}</h2>
-        <p>${escapeHtml(details.overview)}</p>
+        <p>${escapeHtml(details.summary.oneLine)}</p>
+      </section>
+
+      <section class="detail-section">
+        <h2>战斗摘要</h2>
+        <div class="role-grid">${summaryItems}</div>
+      </section>
+
+      <section class="detail-section">
+        <h2>开荒速览</h2>
+        <div class="phase-grid">${quickStart}</div>
       </section>
 
       <section class="detail-section">
         <h2>职责提示</h2>
-        <div class="role-grid">${roleTips}</div>
-      </section>
-
-      <section class="detail-section">
-        <h2>阶段拆解</h2>
-        <div class="phase-grid">${phases}</div>
+        <div class="role-grid">${roles}</div>
       </section>
 
       <section class="detail-section">
@@ -193,10 +236,10 @@ export function renderBossDetail(boss, details) {
       </section>
 
       <section class="detail-section">
-        <h2>原始 Markdown</h2>
+        <h2>来源</h2>
         <p class="source-link">
-          <a class="link-button link-button--subtle" href="${escapeHtml(details.sourceMarkdown.url)}" target="_blank" rel="noreferrer">
-            ${escapeHtml(details.sourceMarkdown.label)}
+          <a class="link-button link-button--subtle" href="${escapeHtml(details.sources.markdown.url)}" target="_blank" rel="noreferrer">
+            ${escapeHtml(details.sources.markdown.label)}
           </a>
         </p>
       </section>

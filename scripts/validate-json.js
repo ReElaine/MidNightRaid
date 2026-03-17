@@ -55,34 +55,43 @@ function validateBossJson(data, bossMeta) {
     "title",
     "difficulty",
     "ptr",
-    "overview",
-    "roleTips",
-    "phases",
+    "summary",
+    "quickStart",
+    "roles",
     "abilities",
     "timeline",
-    "sourceMarkdown"
+    "sources"
   ];
 
   requiredFields.forEach((field) => {
     assert(data[field] !== undefined && data[field] !== null, `${bossMeta.id} 的 JSON 缺少字段 ${field}`);
   });
 
-  ["tank", "healer", "dps"].forEach((role) => {
-    assert(Array.isArray(data.roleTips[role]) && data.roleTips[role].length > 0, `${bossMeta.id} 的 roleTips.${role} 应为非空数组`);
+  ["oneLine", "fightStyle", "killCondition"].forEach((field) => {
+    assert(data.summary[field], `${bossMeta.id} 的 summary.${field} 缺失`);
   });
 
-  assert(Array.isArray(data.phases) && data.phases.length > 0, `${bossMeta.id} 的 phases 应为非空数组`);
-  data.phases.forEach((phase, index) => {
-    assert(phase.name && phase.summary, `${bossMeta.id} 的 phase[${index}] 缺少 name 或 summary`);
-    assert(Array.isArray(phase.keyPoints) && phase.keyPoints.length > 0, `${bossMeta.id} 的 phase[${index}].keyPoints 应为非空数组`);
+  ["bossPositioning", "priorityTargets", "coreLoop", "healingChecks", "wipeTriggers"].forEach((field) => {
+    assert(data.quickStart[field] !== undefined && data.quickStart[field] !== null, `${bossMeta.id} 的 quickStart.${field} 缺失`);
+  });
+  ["priorityTargets", "coreLoop", "healingChecks", "wipeTriggers"].forEach((field) => {
+    assert(Array.isArray(data.quickStart[field]) && data.quickStart[field].length > 0, `${bossMeta.id} 的 quickStart.${field} 应为非空数组`);
+  });
+
+  ["tank", "healer", "dps"].forEach((role) => {
+    assert(data.roles[role], `${bossMeta.id} 缺少 roles.${role}`);
+    assert(data.roles[role].summary, `${bossMeta.id} 的 roles.${role}.summary 缺失`);
+    assert(Array.isArray(data.roles[role].tips) && data.roles[role].tips.length > 0, `${bossMeta.id} 的 roles.${role}.tips 应为非空数组`);
   });
 
   assert(Array.isArray(data.abilities) && data.abilities.length > 0, `${bossMeta.id} 的 abilities 应为非空数组`);
   data.abilities.forEach((ability, index) => {
-    ["id", "name", "type", "description", "tips"].forEach((field) => {
+    ["id", "name", "category", "severity", "description", "response"].forEach((field) => {
       assert(ability[field] !== undefined && ability[field] !== null && ability[field] !== "", `${bossMeta.id} 的 ability[${index}] 缺少 ${field}`);
     });
-    assert(Array.isArray(ability.tips) && ability.tips.length > 0, `${bossMeta.id} 的 ability[${index}].tips 应为非空数组`);
+    ["tank", "healer", "dps"].forEach((role) => {
+      assert(Array.isArray(ability.response[role]) && ability.response[role].length > 0, `${bossMeta.id} 的 ability[${index}].response.${role} 应为非空数组`);
+    });
     if (ability.media) {
       assert(ability.media.path, `${bossMeta.id} 的 ability[${index}].media.path 缺失`);
       const mediaPath = path.join(docsRoot, ability.media.path.replace("./", ""));
@@ -94,12 +103,17 @@ function validateBossJson(data, bossMeta) {
 
   assert(Array.isArray(data.timeline) && data.timeline.length > 0, `${bossMeta.id} 的 timeline 应为非空数组`);
   data.timeline.forEach((entry, index) => {
-    ["time", "ability", "note"].forEach((field) => {
+    ["time", "label", "note"].forEach((field) => {
       assert(entry[field], `${bossMeta.id} 的 timeline[${index}] 缺少 ${field}`);
     });
     if (entry.abilityId) {
       assert(abilityIds.has(entry.abilityId), `${bossMeta.id} 的 timeline[${index}].abilityId 未匹配到 abilities`);
     }
+  });
+
+  assert(data.sources.markdown, `${bossMeta.id} 缺少 sources.markdown`);
+  ["label", "url"].forEach((field) => {
+    assert(data.sources.markdown[field], `${bossMeta.id} 的 sources.markdown.${field} 缺失`);
   });
 
   assert(data.id === bossMeta.id, `${bossMeta.id} 的详情 JSON id 不匹配`);
