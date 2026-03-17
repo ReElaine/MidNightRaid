@@ -48,7 +48,7 @@ BOSS会吸吸5秒，然后击退全团。吸力不大，只要不站悬崖边，
 ![img](../assets/10_64f3f84.webp)
 
 > 每堵墙的形成都会给接圈的坦克叠一层易伤(+150%物理伤害，持续2分钟)
-结合一个循环正好是2分钟，因此我们的换坦节奏就是：1坦吃第1、2次拍地板==》2坦换嘲吃这个循环剩下的拍地板==》2坦继续吃第二个循环的第1、2次拍地板==》1坦换嘲吃第二个循环剩下的拍地板，以此类推
+结合一个循环正好是2分钟，因此我们的换坦节奏就是：1坦吃第1、2次拍地板》2坦换嘲吃这个循环剩下的拍地板》2坦继续吃第二个循环的第1、2次拍地板》1坦换嘲吃第二个循环剩下的拍地板，以此类推
 > 还是这张图：拍地板的扩散圈，第四次刚好扩散到图中右下角的红叉光柱。
 因此打小虫子的时候，治疗站在红叉光柱后面，可以不用跑最后两轮扩散圈
 
@@ -100,18 +100,18 @@ BOSS会吸吸5秒，然后击退全团。吸力不大，只要不站悬崖边，
 [**原声战斗视频**](https://www.bilibili.com/video/BV172CfBMEw3?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=3)
 
 ## 时间轴
->
-需要在线表格请自取：
 
-<https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=9cd8fn>
-
-## 时间轴图
-
-![img](../assets/10_d6b172i.webp)
-
-## LOG
->
-<https://cn.warcraftlogs.com/reports/GLVcfar2p9wRZqkP?fight=39&type=summary>
->>>>
-
-虚影尖塔
+<table border="1" cellspacing="0" cellpadding="6">
+<tr><th colspan="3">注：粉碎狂乱=影爪重击，这个技能改过名字</th></tr>
+<tr><th width="80">时间</th><th width="220">技能</th><th width="500">备注</th></tr>
+<tr><td>0:12</td><td>始源咆哮</td><td>5秒吸吸+击退</td></tr>
+<tr><td>0:21</td><td>粉碎狂乱1（有易伤）</td><td>坦克接拍地板，大团躲接下去的4道扩散圈</td></tr>
+<tr><td>0:31</td><td>粉碎狂乱2（有易伤）</td><td></td></tr>
+<tr><td>0:41</td><td>粉碎狂乱3</td><td>坦克换嘲</td></tr>
+<tr><td>0:51</td><td>粉碎狂乱4</td><td></td></tr>
+<tr><td>0:59</td><td>散逸寄生虫</td><td>召唤5只虫子，被点名的分散至左右两边墙壁，逐个击杀</td></tr>
+<tr><td>1:13</td><td>粉碎狂乱5</td><td></td></tr>
+<tr><td>1:22</td><td>粉碎狂乱6</td><td></td></tr>
+<tr><td>1:42</td><td>虚空吐息</td><td>扇形吐息，全团在吐息扫射路径的末端集合</td></tr>
+<tr><td>2:12</td><td>始源咆哮</td><td>新的循环开始</td></tr>
+</table> 

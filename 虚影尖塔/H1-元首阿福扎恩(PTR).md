@@ -3,12 +3,13 @@
 > 副本：虚影尖塔
 > 来源：`raid_guide_cleaned_reviewed.md`
 
->>>
 
 ## 前言
->
-测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~~)
+
+测于2025年11月20日，BUILD12.0.0.64507，装等光环246(5M毕业装等~)
 测试攻略**仅供参考**，一切以正式服为准
+
+省流版请直接跳转[[#时间轴]]，参考boss技能循环流程及备注
 
 ## 战斗场地
 > 场上共有9片区域，BOSS每次在其中三块区域里召唤蓝胖子，蓝胖身上有99%减伤盾
@@ -134,19 +135,29 @@ BOSS在场上召唤完3只蓝胖，立马就会点当前坦克2轮[幽影坍缩]
 
 ## 视频
 >
-[**技能介绍视频**](https://www.bilibili.com/video/BV1cBfcBpELi/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)团测和现在的手册技能差的挺多，建议看技能介绍这个视频。
+[**技能介绍视频**](https://www.bilibili.com/video/BV1cBfcBpELi/?spm_id_from=333.1387.homepage.video_card.click&vd_source=fec380466fc1a23de53e47d19ce701b0)
+团测和现在的手册技能差的挺多，建议看技能介绍这个视频。
 [**原声战斗视频**](https://www.bilibili.com/video/BV172CfBMEw3?spm_id_from=333.788.videopod.episodes&vd_source=fec380466fc1a23de53e47d19ce701b0&p=2)
 
 ## 时间轴
->
-需要在线表格请自取：
 
-<https://docs.qq.com/sheet/DZmZnVmNha09TSWFr?tab=lyquxy>
+周三更新最新版本时间轴
 
-## 时间轴图
-
-![img](../assets/9_42943a4.webp)
-
-## LOG
->
-<https://cn.warcraftlogs.com/reports/GLVcfar2p9wRZqkP?fight=24>
+<table border="1" cellspacing="0" cellpadding="6">
+<tr><th width="80">时间</th><th width="200">技能</th><th width="400">备注</th></tr>
+<tr><td>0:04</td><td>黑暗颠覆</td><td>全团AOE</td></tr>
+<tr><td>0:15</td><td>暗影进军1</td><td>在三块区域召唤蓝胖子</td></tr>
+<tr><td>0:18</td><td>幽影坍缩1-1</td><td>主t带位蓝胖，其他人进圈分摊</td></tr>
+<tr><td>0:23</td><td>幽影坍缩1-2</td><td>副t提前跑位，换嘲，其他人进圈分摊</td></tr>
+<tr><td>0:35</td><td>虚空割裂1</td><td>第三只蓝胖污染一块场地并招小怪</td></tr>
+<tr><td>0:42</td><td>黑暗颠覆</td><td>全团AOE</td></tr>
+<tr><td>0:51</td><td>湮灭之怒</td><td>boss长枪，躲开</td></tr>
+<tr><td>1:09</td><td>湮灭之怒</td><td></td></tr>
+<tr><td>1:18</td><td>黑暗颠覆</td><td></td></tr>
+<tr><td>1:27</td><td>暗影进军2</td><td></td></tr>
+<tr><td>1:30</td><td>幽影坍缩2-1</td><td></td></tr>
+<tr><td>1:35</td><td>幽影坍缩2-2</td><td></td></tr>
+<tr><td>1:47</td><td>虚空割裂2</td><td></td></tr>
+<tr><td>2:11</td><td>4轮虚空坠落</td><td>躲紫圈</td></tr>
+<tr><td>6:47</td><td>虚空割裂6</td><td>理论上一定会有三片污染区域连成一条直线，场上会无限刷虚缚歼灭者狂暴</td></tr>
+</table>
