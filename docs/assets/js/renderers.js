@@ -27,6 +27,24 @@ export function renderRaidNav(raids, activeRaidId) {
   return allChip + raidChips;
 }
 
+export function renderDifficultyNav(activeDifficulty) {
+  const options = [
+    { id: "all", label: "全部" },
+    { id: "英雄", label: "英雄" },
+    { id: "史诗", label: "史诗" }
+  ];
+
+  return options
+    .map(
+      (option) => `
+        <button class="chip ${activeDifficulty === option.id ? "is-active" : ""}" data-difficulty="${escapeHtml(option.id)}" type="button">
+          ${escapeHtml(option.label)}
+        </button>
+      `
+    )
+    .join("");
+}
+
 export function renderBossCards(bosses) {
   return bosses
     .map((boss) => {
@@ -87,15 +105,47 @@ export function renderBossDetail(boss, details) {
     )
     .join("");
 
+  const abilities = details.abilities
+    .map((ability) => {
+      const media = ability.media
+        ? `
+          <figure class="ability-media">
+            <img src="${escapeHtml(ability.media.path)}" alt="${escapeHtml(ability.media.alt || ability.name)}" loading="lazy">
+            ${ability.media.caption ? `<figcaption>${escapeHtml(ability.media.caption)}</figcaption>` : ""}
+          </figure>
+        `
+        : "";
+
+      return `
+        <article class="ability-card" id="ability-${escapeHtml(ability.id)}">
+          <div class="badge-row">
+            <span class="badge">${escapeHtml(ability.type)}</span>
+            ${ability.importance ? `<span class="badge badge--ghost">${escapeHtml(ability.importance)}</span>` : ""}
+          </div>
+          <h3>${escapeHtml(ability.name)}</h3>
+          <p>${escapeHtml(ability.description)}</p>
+          <ul>${ability.tips.map((tip) => `<li>${escapeHtml(tip)}</li>`).join("")}</ul>
+          ${media}
+        </article>
+      `;
+    })
+    .join("");
+
   const timelineRows = details.timeline
     .map(
-      (entry) => `
+      (entry) => {
+        const abilityCell = entry.abilityId
+          ? `<a class="timeline-link" href="#ability-${escapeHtml(entry.abilityId)}">${escapeHtml(entry.ability)}</a>`
+          : escapeHtml(entry.ability);
+
+        return `
         <tr>
           <td>${escapeHtml(entry.time)}</td>
-          <td>${escapeHtml(entry.ability)}</td>
+          <td>${abilityCell}</td>
           <td>${escapeHtml(entry.note)}</td>
         </tr>
-      `
+      `;
+      }
     )
     .join("");
 
@@ -119,6 +169,11 @@ export function renderBossDetail(boss, details) {
       <section class="detail-section">
         <h2>阶段拆解</h2>
         <div class="phase-grid">${phases}</div>
+      </section>
+
+      <section class="detail-section">
+        <h2>Boss 技能介绍</h2>
+        <div class="phase-grid">${abilities}</div>
       </section>
 
       <section class="detail-section">

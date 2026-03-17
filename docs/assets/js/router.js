@@ -14,13 +14,23 @@ export function getSearchKeyword() {
   return getQueryParam("q") || "";
 }
 
-export function updateIndexUrl({ raidId, keyword }) {
+export function getActiveDifficulty() {
+  return getQueryParam("difficulty") || "all";
+}
+
+export function updateIndexUrl({ raidId, difficulty, keyword }) {
   const url = new URL(window.location.href);
 
   if (raidId && raidId !== "all") {
     url.searchParams.set("raid", raidId);
   } else {
     url.searchParams.delete("raid");
+  }
+
+  if (difficulty && difficulty !== "all") {
+    url.searchParams.set("difficulty", difficulty);
+  } else {
+    url.searchParams.delete("difficulty");
   }
 
   if (keyword) {

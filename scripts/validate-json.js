@@ -58,6 +58,7 @@ function validateBossJson(data, bossMeta) {
     "overview",
     "roleTips",
     "phases",
+    "abilities",
     "timeline",
     "sourceMarkdown"
   ];
@@ -76,11 +77,29 @@ function validateBossJson(data, bossMeta) {
     assert(Array.isArray(phase.keyPoints) && phase.keyPoints.length > 0, `${bossMeta.id} 的 phase[${index}].keyPoints 应为非空数组`);
   });
 
+  assert(Array.isArray(data.abilities) && data.abilities.length > 0, `${bossMeta.id} 的 abilities 应为非空数组`);
+  data.abilities.forEach((ability, index) => {
+    ["id", "name", "type", "description", "tips"].forEach((field) => {
+      assert(ability[field] !== undefined && ability[field] !== null && ability[field] !== "", `${bossMeta.id} 的 ability[${index}] 缺少 ${field}`);
+    });
+    assert(Array.isArray(ability.tips) && ability.tips.length > 0, `${bossMeta.id} 的 ability[${index}].tips 应为非空数组`);
+    if (ability.media) {
+      assert(ability.media.path, `${bossMeta.id} 的 ability[${index}].media.path 缺失`);
+      const mediaPath = path.join(docsRoot, ability.media.path.replace("./", ""));
+      assert(fs.existsSync(mediaPath), `${bossMeta.id} 的 ability[${index}] 媒体资源不存在: ${ability.media.path}`);
+    }
+  });
+
+  const abilityIds = new Set(data.abilities.map((ability) => ability.id));
+
   assert(Array.isArray(data.timeline) && data.timeline.length > 0, `${bossMeta.id} 的 timeline 应为非空数组`);
   data.timeline.forEach((entry, index) => {
     ["time", "ability", "note"].forEach((field) => {
       assert(entry[field], `${bossMeta.id} 的 timeline[${index}] 缺少 ${field}`);
     });
+    if (entry.abilityId) {
+      assert(abilityIds.has(entry.abilityId), `${bossMeta.id} 的 timeline[${index}].abilityId 未匹配到 abilities`);
+    }
   });
 
   assert(data.id === bossMeta.id, `${bossMeta.id} 的详情 JSON id 不匹配`);

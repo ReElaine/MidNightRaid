@@ -52,50 +52,142 @@
       ]
     }
   ],
+  "abilities": [
+    {
+      "id": "shadow_march",
+      "name": "暗影进军",
+      "type": "场地机制",
+      "importance": "核心机制",
+      "description": "Boss 在九宫格场地中召唤三只深渊虚空塑形者。团队每轮只能靠两次幽影坍缩破掉其中两只护盾，剩余目标会污染场地并推动后续灭团进程。",
+      "tips": [
+        "第一时间标记两次要炸盾的目标。",
+        "观察污染区位置，为下一轮刷新做预判。",
+        "第三只目标要尽快处理，避免演变成长期污染压力。"
+      ],
+      "media": {
+        "path": "./assets/media/void_spire/afuzan_battlefield.webp",
+        "alt": "元首阿福扎恩战场九宫格示意",
+        "caption": "九宫格场地决定了蓝胖刷新、污染扩张与连线灭团的整体节奏。"
+      }
+    },
+    {
+      "id": "umbral_collapse",
+      "name": "幽影坍缩",
+      "type": "分摊技能",
+      "importance": "核心机制",
+      "description": "Boss 在目标周围压缩虚空能量，对全团造成伤害，并根据圈内人数分摊。这个技能同时也是炸掉蓝胖 99% 减伤护盾的关键手段。",
+      "tips": [
+        "主坦和副坦分好两轮带位，不要让两个圈都落在错误目标上。",
+        "全团必须及时进圈，防止减员或炸盾失败。",
+        "分摊结束后立刻转火破盾目标。"
+      ],
+      "media": {
+        "path": "./assets/media/void_spire/afuzan_umbral_collapse.gif",
+        "alt": "幽影坍缩炸盾示意",
+        "caption": "坦克带圈到蓝胖脚下，全团进圈分摊，借爆炸命中蓝胖完成破盾。"
+      }
+    },
+    {
+      "id": "void_rend",
+      "name": "虚空割裂",
+      "type": "污染扩张",
+      "importance": "高危技能",
+      "description": "未被及时处理的蓝胖读条完成后会污染一块场地，并在后续刷新更危险的单位。污染连成横、竖或斜线时，战斗会迅速失控。",
+      "tips": [
+        "把第三只蓝胖当成限时目标处理。",
+        "污染区附近是下一轮高风险刷新区域，要提前规划走位。",
+        "接近狂暴线时，任何额外污染都可能直接导致灭团。"
+      ],
+      "media": {
+        "path": "./assets/media/void_spire/afuzan_void_rend.gif",
+        "alt": "虚空割裂污染场地示意",
+        "caption": "第三只蓝胖读完后污染场地，场地压力会随着循环持续累积。"
+      }
+    },
+    {
+      "id": "annihilation_fury",
+      "name": "湮灭之怒",
+      "type": "走位技能",
+      "importance": "位移规避",
+      "description": "Boss 施放虚空长枪，对路径上的玩家造成伤害并击退。该技能常在高压循环中插入，容易打乱分摊和输出节奏。",
+      "tips": [
+        "提前观察枪线方向，避免边输出边临时横穿。",
+        "坦克移动 Boss 时注意不要把近战送进枪线路径。",
+        "高压期优先保命，确保后续分摊与转火不断档。"
+      ],
+      "media": {
+        "path": "./assets/media/void_spire/afuzan_annihilation_fury.gif",
+        "alt": "湮灭之怒长枪路径示意",
+        "caption": "长枪击退会直接打乱队形，必须在读条时提前让出安全位。"
+      }
+    },
+    {
+      "id": "dark_subversion",
+      "name": "黑暗颠覆",
+      "type": "治疗压力",
+      "importance": "团队伤害",
+      "description": "约每 40 秒一次的全团暗影伤害，并叠加整场都在持续的 DOT，是治疗节奏的核心压力来源。",
+      "tips": [
+        "治疗提前预铺 HoT、群抬和减伤。",
+        "后半段叠加场地压力后要更注重资源分配。",
+        "DPS 和坦克在该技能前后尽量减少额外吃伤害。"
+      ],
+      "media": null
+    }
+  ],
   "timeline": [
     {
       "time": "0:04",
       "ability": "黑暗颠覆",
+      "abilityId": "dark_subversion",
       "note": "开场全团 AOE，建立整场持续伤害压力。"
     },
     {
       "time": "0:15",
       "ability": "暗影进军 1",
+      "abilityId": "shadow_march",
       "note": "在三块区域召唤蓝胖，团队立即判断两次破盾目标。"
     },
     {
       "time": "0:18",
       "ability": "幽影坍缩 1-1",
+      "abilityId": "umbral_collapse",
       "note": "主坦把分摊圈带到第一只蓝胖脚下，全团进圈炸盾。"
     },
     {
       "time": "0:23",
       "ability": "幽影坍缩 1-2",
+      "abilityId": "umbral_collapse",
       "note": "副坦提前跑位并接嘲，在第二只蓝胖脚下完成第二次炸盾。"
     },
     {
       "time": "0:35",
       "ability": "虚空割裂 1",
+      "abilityId": "void_rend",
       "note": "第三只蓝胖污染场地并开始引出后续小怪处理。"
     },
     {
       "time": "0:42",
       "ability": "黑暗颠覆",
+      "abilityId": "dark_subversion",
       "note": "第二次全团 AOE，治疗需继续覆盖持续掉血。"
     },
     {
       "time": "0:51",
       "ability": "湮灭之怒",
+      "abilityId": "annihilation_fury",
       "note": "躲开虚空长枪路径，避免被击退扰乱站位。"
     },
     {
       "time": "1:27",
       "ability": "暗影进军 2",
+      "abilityId": "shadow_march",
       "note": "第二轮蓝胖刷新，污染区开始影响新刷怪位置。"
     },
     {
       "time": "1:47",
       "ability": "虚空割裂 2",
+      "abilityId": "void_rend",
       "note": "若第三只目标处理不够快，场地压力会明显上升。"
     },
     {
@@ -106,6 +198,7 @@
     {
       "time": "6:47",
       "ability": "虚空割裂 6",
+      "abilityId": "void_rend",
       "note": "理论狂暴线，污染三连线后会进入无尽行军灭团。"
     }
   ],

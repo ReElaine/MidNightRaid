@@ -1,7 +1,8 @@
 import { loadBossById, loadRaidsIndex, flattenBosses } from "./data-loader.js";
-import { renderBossCards, renderBossDetail, renderRaidNav } from "./renderers.js";
+import { renderBossCards, renderBossDetail, renderRaidNav, renderDifficultyNav } from "./renderers.js";
 import {
   getActiveRaidId,
+  getActiveDifficulty,
   getBossId,
   getPageName,
   getSearchKeyword,
@@ -33,6 +34,7 @@ function matchesKeyword(boss, keyword) {
 async function initIndexPage() {
   const indexData = await loadRaidsIndex();
   const navElement = document.querySelector("#raid-nav");
+  const difficultyElement = document.querySelector("#difficulty-nav");
   const searchInput = document.querySelector("#boss-search");
   const bossList = document.querySelector("#boss-list");
   const emptyState = document.querySelector("#empty-state");
@@ -40,17 +42,20 @@ async function initIndexPage() {
   const listSummary = document.querySelector("#list-summary");
 
   let activeRaidId = getActiveRaidId();
+  let activeDifficulty = getActiveDifficulty();
   let keyword = normalize(getSearchKeyword());
 
   searchInput.value = keyword;
 
   function render() {
     navElement.innerHTML = renderRaidNav(indexData.raids, activeRaidId);
+    difficultyElement.innerHTML = renderDifficultyNav(activeDifficulty);
 
     const allBosses = flattenBosses(indexData);
     const filteredBosses = allBosses.filter((boss) => {
       const raidMatch = activeRaidId === "all" || boss.raidId === activeRaidId;
-      return raidMatch && matchesKeyword(boss, keyword);
+      const difficultyMatch = activeDifficulty === "all" || boss.difficulty === activeDifficulty;
+      return raidMatch && difficultyMatch && matchesKeyword(boss, keyword);
     });
 
     const activeRaid = indexData.raids.find((raid) => raid.id === activeRaidId);
@@ -60,7 +65,7 @@ async function initIndexPage() {
     bossList.innerHTML = renderBossCards(filteredBosses);
     emptyState.classList.toggle("hidden", filteredBosses.length > 0);
 
-    updateIndexUrl({ raidId: activeRaidId, keyword });
+    updateIndexUrl({ raidId: activeRaidId, difficulty: activeDifficulty, keyword });
   }
 
   navElement.addEventListener("click", (event) => {
@@ -70,6 +75,16 @@ async function initIndexPage() {
     }
 
     activeRaidId = button.dataset.raidId;
+    render();
+  });
+
+  difficultyElement.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-difficulty]");
+    if (!button) {
+      return;
+    }
+
+    activeDifficulty = button.dataset.difficulty;
     render();
   });
 

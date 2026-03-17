@@ -372,6 +372,42 @@ h3 {
   background: linear-gradient(180deg, var(--gold), var(--accent));
 }
 
+.ability-card {
+  padding: 18px;
+  border-radius: var(--radius-sm);
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+}
+
+.ability-card h3 {
+  margin: 10px 0;
+}
+
+.ability-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.ability-media {
+  margin: 16px 0 0;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.28);
+}
+
+.ability-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ability-media figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .timeline-table-wrap {
   overflow-x: auto;
 }
@@ -409,6 +445,16 @@ h3 {
 
 .timeline-table tr:last-child td {
   border-bottom: none;
+}
+
+.timeline-link {
+  color: var(--accent-strong);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.timeline-link:hover {
+  text-decoration: underline;
 }
 
 .source-link {
