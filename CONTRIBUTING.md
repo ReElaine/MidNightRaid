@@ -1,4 +1,4 @@
-﻿# Contributing Guide
+# Contributing Guide
 
 本文档用于说明 `MidNightRaid` 仓库的日常整理流程，方便后续持续维护这些攻略文档。
 

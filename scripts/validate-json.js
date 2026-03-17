@@ -1,4 +1,4 @@
-﻿const fs = require("fs");
+const fs = require("fs");
 const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
@@ -26,7 +26,6 @@ function validateBossMetadata(raid, boss) {
     "id",
     "title",
     "difficulty",
-    "ptr",
     "summary",
     "raidId",
     "contentPath",
@@ -54,7 +53,6 @@ function validateBossJson(data, bossMeta) {
     "raidTitle",
     "title",
     "difficulty",
-    "ptr",
     "summary",
     "quickStart",
     "roles",

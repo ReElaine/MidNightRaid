@@ -1,10 +1,9 @@
 {
-  "id": "spire_h1_afuzan_ptr",
+  "id": "spire_h1_afuzan",
   "raidId": "void_spire",
   "raidTitle": "虚影尖塔",
   "title": "H1 元首阿福扎恩",
   "difficulty": "英雄",
-  "ptr": false,
   "summary": {
     "oneLine": "一场围绕九宫格污染控制、双圈炸盾和污染衍生小怪处理展开的长轴战斗。",
     "fightStyle": "九宫格场地管理 + 双圈分摊破盾 + 污染衍生物处理",

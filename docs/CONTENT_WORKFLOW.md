@@ -1,4 +1,4 @@
-﻿# Content Workflow
+# Content Workflow
 
 本文档说明当前仓库推荐的攻略维护流程：先维护 Markdown，再由脚本转换成站点使用的 JSON。
 
@@ -72,7 +72,7 @@ DPS：
 转换单个 Boss：
 
 ```powershell
-node scripts/md-to-boss-json.js spire_h1_afuzan_ptr
+node scripts/md-to-boss-json.js spire_h1_afuzan
 ```
 
 也可以用 `contentPath` 作为目标：
@@ -99,8 +99,8 @@ node scripts/validate-json.js
 
 ```powershell
 git status
-node scripts/md-to-boss-json.js spire_h1_afuzan_ptr
-node scripts/md-to-boss-json.js spire_h2_fulasius_ptr
+node scripts/md-to-boss-json.js spire_h1_afuzan
+node scripts/md-to-boss-json.js spire_h2_fulasius
 node scripts/validate-json.js
 git diff
 git add .

@@ -1,4 +1,4 @@
-﻿const fs = require("fs");
+const fs = require("fs");
 const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
@@ -310,7 +310,6 @@ function parseBossMarkdown(markdown, bossMeta, raidTitle, existingJson) {
     raidTitle,
     title: bossMeta.title,
     difficulty: bossMeta.difficulty,
-    ptr: bossMeta.ptr,
     summary,
     quickStart,
     roles,

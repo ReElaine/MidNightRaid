@@ -1,10 +1,9 @@
 {
-  "id": "spire_h2_fulasius_ptr",
+  "id": "spire_h2_fulasius",
   "raidId": "void_spire",
   "raidTitle": "虚影尖塔",
   "title": "H2 弗拉希乌斯",
   "difficulty": "英雄",
-  "ptr": false,
   "summary": {
     "oneLine": "一场围绕固定两分钟循环、坦克接圈、虫子炸墙和吐息找安全区展开的阵地战。",
     "fightStyle": "循环轴机制 + 场地分割管理 + 点名虫处理",
