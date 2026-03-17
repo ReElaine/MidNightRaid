@@ -33,6 +33,7 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 
 本仓库当前采用双许可证结构：
 
+- GitHub 主许可证显示：`GPL-3.0-or-later`
 - 内容层：`CC BY-SA 4.0`
 - 代码层：`GPL-3.0-or-later`
 
@@ -95,6 +96,7 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 
 本仓库采用双许可证结构发布：
 
+- 根目录 `LICENSE` 使用标准 GPL 文本，以便 GitHub 识别主许可证。
 - 内容层：`CC BY-SA 4.0`
 - 代码层：`GPL-3.0-or-later`
 
