@@ -377,6 +377,7 @@ h3 {
   border-radius: var(--radius-sm);
   background: var(--panel-strong);
   border: 1px solid var(--line);
+  width: 100%;
 }
 
 .ability-card h3 {
@@ -406,6 +407,12 @@ h3 {
   padding: 10px 12px;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.ability-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
 .timeline-table-wrap {

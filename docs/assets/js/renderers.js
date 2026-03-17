@@ -173,7 +173,7 @@ export function renderBossDetail(boss, details) {
 
       <section class="detail-section">
         <h2>Boss 技能介绍</h2>
-        <div class="phase-grid">${abilities}</div>
+        <div class="ability-list">${abilities}</div>
       </section>
 
       <section class="detail-section">
