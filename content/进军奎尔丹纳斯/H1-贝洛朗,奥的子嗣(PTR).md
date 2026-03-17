@@ -1,11 +1,11 @@
-# H1贝洛朗,奥的子嗣(PTR)
+﻿# H1贝洛朗,奥的子嗣(PTR)
 
 - 副本：进军奎尔丹纳斯
 - 来源：`raid_guide_cleaned_reviewed.md`
 
 ---
 
-![img](../assets/6_ebe52eel.jpg)
+![img](../../assets/6_ebe52eel.jpg)
 
 #### 前言
 >
@@ -15,7 +15,7 @@
 ### 战斗场地
 >
 
-![img](../assets/6_b0a4e59.webp)
+![img](../../assets/6_b0a4e59.webp)
 
 ### 战斗流程简介
 >
@@ -146,3 +146,4 @@
 ----
 
 ## 虚影尖塔
+

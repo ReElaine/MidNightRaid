@@ -1,11 +1,11 @@
-# H4威厄高尔和艾佐拉克(PTR)
+﻿# H4威厄高尔和艾佐拉克(PTR)
 
 - 副本：虚影尖塔
 - 来源：`raid_guide_cleaned_reviewed.md`
 
 ---
 
-![img](../assets/12_5688b1el.jpg)![img](../assets/12_707b16el.jpg)
+![img](../../assets/12_5688b1el.jpg)![img](../../assets/12_707b16el.jpg)
 
 ## 前言
 >
@@ -138,3 +138,4 @@
 ----
 
 虚影尖塔
+

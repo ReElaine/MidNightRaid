@@ -1,33 +1,44 @@
 # Notice / 说明
 
-This repository is a structured and repackaged collection of raid guide materials.
+This repository is a mixed project containing guide content, structured JSON data,
+and front-end code.
 
-本仓库是对团队副本攻略资料进行结构化整理与重新打包后的集合。
+本仓库是一个混合项目，包含攻略内容、结构化 JSON 数据以及前端代码。
 
-## Attribution / 署名与来源
+## Source And Attribution / 来源与署名
 
-- The content in this repository appears to be reorganized from existing guide posts and related reference material.
-- The Markdown files keep source links where available.
-- Original authors, publishers, and copyright holders retain their respective rights.
+- A portion of the repository reorganizes existing raid guide materials and related references.
+- Source links are kept where available.
+- Original authors, publishers, and rightsholders retain their respective rights.
 
-- 本仓库中的内容看起来主要整理自现有攻略帖子及相关参考资料。
-- Markdown 文档中在可保留的情况下保留了原始来源链接。
-- 原作者、发布者及相关版权方仍然保留各自对应的权利。
+- 本仓库中的一部分内容整理自现有团本攻略资料及相关参考内容。
+- 在可保留的情况下，仓库尽量保留来源链接。
+- 原作者、发布平台及相关权利人仍保留各自对应的权利。
 
-## Redistribution Notes / 再分发说明
+## License Split / 双许可证说明
 
-- Before publishing this repository under an open-source license, confirm that you have the right to relicense the included text, screenshots, and media references.
-- If some materials are third-party content, consider using an attribution-focused or non-commercial license, or exclude those parts from relicensing.
-- A repository license only applies to the parts you are legally allowed to license.
+- Licensable content is generally released under `CC BY-SA 4.0`.
+- Licensable code is generally released under `GPL-3.0-or-later`.
+- See `LICENSE`, `LICENSE-CONTENT`, and `LICENSE-CODE` for scope details.
 
-- 在以开源协议发布本仓库之前，请先确认你对其中包含的文本、截图以及媒体引用具有再次授权的权利。
-- 如果部分内容属于第三方材料，建议使用强调署名或限制商业用途的协议，或者将这些部分排除在再次授权范围之外。
-- 仓库中的开源协议，只能适用于你依法有权授权的那部分内容。
+- 可授权的内容层通常采用 `CC BY-SA 4.0`。
+- 可授权的代码层通常采用 `GPL-3.0-or-later`。
+- 具体适用范围请参阅 `LICENSE`、`LICENSE-CONTENT` 与 `LICENSE-CODE`。
+
+## Rights Boundary / 权利边界
+
+- A repository license only applies to material the maintainer is legally allowed to license.
+- Third-party quoted text, screenshots, linked media, and externally sourced assets may remain outside the repository license scope.
+- When in doubt, treat third-party materials as excluded unless explicitly stated otherwise.
+
+- 仓库中的开源协议，只适用于维护者依法有权授权的部分。
+- 第三方引用文字、截图、外部媒体链接及外来素材，可能并不属于仓库协议覆盖范围。
+- 如果边界不清晰，默认应将第三方材料视为不自动纳入仓库授权。
 
 ## Maintainer Note / 维护者说明
 
-- This notice is intended to clarify provenance and licensing boundaries for reorganized documentation content.
-- If you are a rightsholder and want specific material corrected or removed, please contact the repository maintainer.
+- This notice exists to clarify provenance, attribution expectations, and relicensing boundaries.
+- If you are a rightsholder and want attribution corrected or specific content removed, please contact the repository maintainer.
 
-- 本说明旨在澄清整理类文档仓库的来源信息与授权边界。
-- 如果你是相关权利人，并希望更正或移除特定内容，请联系仓库维护者处理。
+- 本说明用于澄清来源、署名要求以及再次授权边界。
+- 如果你是相关权利人，并希望修正署名或移除特定内容，请联系仓库维护者处理。

@@ -1,11 +1,11 @@
-# H5光盲先锋军(PTR)
+﻿# H5光盲先锋军(PTR)
 
 - 副本：虚影尖塔
 - 来源：`raid_guide_cleaned_reviewed.md`
 
 ---
 
-![img](../assets/13_3e1f73el.jpg)![img](../assets/13_a1aeb4el.jpg)![img](../assets/13_9a6365el.jpg)
+![img](../../assets/13_3e1f73el.jpg)![img](../../assets/13_a1aeb4el.jpg)![img](../../assets/13_9a6365el.jpg)
 
 ## 前言
 >
@@ -145,3 +145,4 @@
 ----
 
 虚影尖塔
+

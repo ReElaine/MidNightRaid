@@ -1,4 +1,4 @@
-# M2弗拉希乌斯(PTR)
+﻿# M2弗拉希乌斯(PTR)
 
 - 副本：虚影尖塔
 - 来源：`raid_guide_cleaned_reviewed.md`
@@ -24,11 +24,11 @@
 
 如果我们被虫子盯无脑贴墙，就会出现下图的情况：第一轮的水充满了整个墙壁，第二轮的虫子根本贴不上去，团灭
 
-![img](../assets/15_ed1fb92.webp)
+![img](../../assets/15_ed1fb92.webp)
 因此在史诗难度中，我们需要提前规划每一轮虫子贴墙的位置
 如下图，在M三测中，我们第一轮虫子在后半场贴墙，第二轮虫子在中场贴墙。第三轮吐息前基本都能打掉
 
-![img](../assets/15_eb6af9v.webp)
+![img](../../assets/15_eb6af9v.webp)
 
 > **虚空水晶**
 黑暗晶体会将战场分割开来。它们极其坚固，唯有依靠[气泡爆裂]的爆炸才能将其破坏。
@@ -53,7 +53,7 @@
 
 ## 时间轴图
 
-![img](../assets/15_50891eh.webp)
+![img](../../assets/15_50891eh.webp)
 
 ## LOG
 >
@@ -65,3 +65,4 @@
 ----
 
 ![牙疼](https://img4.nga.178.com/ngabbs/post/smile/pt45.png)![牙疼](https://img4.nga.178.com/ngabbs/post/smile/pt45.png)![牙疼](https://img4.nga.178.com/ngabbs/post/smile/pt45.png)
+

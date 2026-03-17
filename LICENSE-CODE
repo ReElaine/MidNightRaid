@@ -1,0 +1,36 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+This repository uses `GPL-3.0-or-later` for its licensable code layer.
+
+Applicable scope unless otherwise noted:
+
+- docs/*.html
+- docs/assets/css/
+- docs/assets/js/
+- scripts/
+
+Summary:
+
+- You may run, study, copy, modify, and redistribute the code.
+- You must preserve copyright and license notices.
+- If you distribute modified versions or derivative code, that distributed work
+  must remain under GPL-3.0-or-later.
+- Recipients must receive the same freedoms to inspect, modify, and redistribute
+  the code.
+
+Practical interpretation for this repository:
+
+- The front-end site code and utility scripts are open for reuse.
+- If you redistribute modified versions of that code, you must keep them under
+  GPL-3.0-or-later rather than converting them into a proprietary release.
+
+Official license text:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+Official overview:
+https://www.gnu.org/licenses/gpl-3.0.html
+
+SPDX identifier:
+GPL-3.0-or-later
+

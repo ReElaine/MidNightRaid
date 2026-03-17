@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MidNightRaid 攻略站</title>
+    <meta
+      name="description"
+      content="MidNightRaid 团本攻略静态站，提供副本导航、Boss 索引与结构化 JSON 数据示例。"
+    >
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body data-page="index">
+    <header class="site-header">
+      <div class="shell">
+        <p class="eyebrow">MidNightRaid</p>
+        <h1>12.0 团本攻略站</h1>
+        <p class="lede">
+          基于原始 Markdown 攻略整理而成的静态站点原型，当前已接入副本索引和 Boss 数据层。
+        </p>
+      </div>
+    </header>
+
+    <main class="shell page-grid">
+      <aside class="sidebar card">
+        <section>
+          <h2>副本导航</h2>
+          <div id="raid-nav" class="raid-nav"></div>
+        </section>
+        <section>
+          <label class="search-label" for="boss-search">搜索 Boss</label>
+          <input
+            id="boss-search"
+            class="search-input"
+            type="search"
+            placeholder="输入 Boss 名称、难度或关键词"
+          >
+        </section>
+      </aside>
+
+      <section class="content-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Boss 列表</p>
+            <h2 id="list-title">全部 Boss</h2>
+          </div>
+          <p id="list-summary" class="muted"></p>
+        </div>
+
+        <div id="boss-list" class="boss-grid"></div>
+        <div id="empty-state" class="card empty-state hidden">
+          没有找到匹配的 Boss，请尝试其他关键词或切换副本筛选。
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
