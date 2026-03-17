@@ -2,9 +2,9 @@
   "id": "spire_h2_fulasius_ptr",
   "raidId": "void_spire",
   "raidTitle": "虚影尖塔",
-  "title": "H2 弗拉希乌斯 (PTR)",
+  "title": "H2 弗拉希乌斯",
   "difficulty": "英雄",
-  "ptr": true,
+  "ptr": false,
   "summary": {
     "oneLine": "一场围绕固定两分钟循环、坦克接圈、虫子炸墙和吐息找安全区展开的阵地战。",
     "fightStyle": "循环轴机制 + 场地分割管理 + 点名虫处理",
@@ -81,8 +81,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_suppression_pulse.webp",
-        "alt": "压制脉冲近战位无人会触发狂暴示意",
-        "caption": "弗拉希乌斯是标准马桶 Boss，近战位一旦空掉就会触发致命脉冲。"
+        "alt": "压制脉冲近战位无人会触发狂暴示意"
       }
     },
     {
@@ -104,8 +103,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_primordial_roar.gif",
-        "alt": "始源咆哮吸人后击退示意",
-        "caption": "每个两分钟循环都由始源咆哮开启，吸人后击退并叠加持续暗影辐射。"
+        "alt": "始源咆哮吸人后击退示意"
       }
     },
     {
@@ -127,8 +125,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_shadowclaw_slam.gif",
-        "alt": "影爪重击接圈与四轮扩散示意",
-        "caption": "拍地板中心必须有人接圈，随后扩散四轮余震；第 1、2 下还会在左右两边立墙。"
+        "alt": "影爪重击接圈与四轮扩散示意"
       }
     },
     {
@@ -150,8 +147,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_void_crystal_walls.webp",
-        "alt": "虚空水晶墙分割场地示意",
-        "caption": "每轮前两次拍地板会在左右各立一堵墙，后续虫子要靠爆炸去精准拆墙。"
+        "alt": "虚空水晶墙分割场地示意"
       }
     },
     {
@@ -172,9 +168,8 @@
         ]
       },
       "media": {
-        "path": "./assets/media/void_spire/fulasius_parasite_detonation.gif",
-        "alt": "爆爬虫贴墙后分批击杀炸墙示意",
-        "caption": "两次爆炸可炸掉一堵墙，虫子一定要贴墙且错峰击杀，不能把 AOE 连成一片。"
+        "path": "./assets/media/void_spire/fulasius_parasite_spawn.gif",
+        "alt": "散逸寄生虫落地示意"
       }
     },
     {
@@ -196,8 +191,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_void_breath.gif",
-        "alt": "虚空吐息横扫战场示意",
-        "caption": "只有扫射终点侧仍保留的墙后才是安全区，整轮炸墙节奏都在为这一刻服务。"
+        "alt": "虚空吐息横扫战场示意"
       }
     },
     {
@@ -219,8 +213,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/fulasius_void_breath_origin.gif",
-        "alt": "通过 Boss 手上光球判断吐息起点示意",
-        "caption": "看懂起点方向后，全团只需要去终点墙后集合，不必在最后一秒猜路径。"
+        "alt": "通过 Boss 手上光球判断吐息起点示意"
       }
     }
   ],
@@ -288,8 +281,8 @@
   ],
   "sources": {
     "markdown": {
-      "label": "查看原始 Markdown：content/虚影尖塔/H2-弗拉希乌斯(PTR).md",
-      "url": "https://github.com/ReElaine/MidNightRaid/blob/main/content/%E8%99%9A%E5%BD%B1%E5%B0%96%E5%A1%94/H2-%E5%BC%97%E6%8B%89%E5%B8%8C%E4%B9%8C%E6%96%AF(PTR).md"
+      "label": "查看原始 Markdown：content/虚影尖塔/H2-弗拉希乌斯.md",
+      "url": "https://github.com/ReElaine/MidNightRaid/blob/main/content/%E8%99%9A%E5%BD%B1%E5%B0%96%E5%A1%94/H2-%E5%BC%97%E6%8B%89%E5%B8%8C%E4%B9%8C%E6%96%AF.md"
     }
   }
 }

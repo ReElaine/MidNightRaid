@@ -1,4 +1,4 @@
-# MidNightRaid
+﻿# MidNightRaid
 
 ## 项目简介
 
@@ -71,24 +71,24 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 ----
 ## 梦境裂隙
 
-- [H奇美鲁斯,未梦之神(PTR)](content/梦境裂隙/H-奇美鲁斯,未梦之神(PTR).md)
-- [M奇美鲁斯,未梦之神(PTR)](content/梦境裂隙/M-奇美鲁斯,未梦之神(PTR).md)
+- [H奇美鲁斯,未梦之神](content/梦境裂隙/H-奇美鲁斯,未梦之神.md)
+- [M奇美鲁斯,未梦之神](content/梦境裂隙/M-奇美鲁斯,未梦之神.md)
 
 
 ## 进军奎尔丹纳斯
 
-- [H1贝洛朗,奥的子嗣(PTR)](content/进军奎尔丹纳斯/H1-贝洛朗,奥的子嗣(PTR).md)
+- [H1贝洛朗,奥的子嗣](content/进军奎尔丹纳斯/H1-贝洛朗,奥的子嗣.md)
 
 
 ## 虚影尖塔
 
-- [H1元首阿福扎恩(PTR)](content/虚影尖塔/H1-元首阿福扎恩(PTR).md)
-- [H2弗拉希乌斯(PTR)](content/虚影尖塔/H2-弗拉希乌斯(PTR).md)
-- [H3陨落之王萨哈达尔(PTR)](content/虚影尖塔/H3-陨落之王萨哈达尔(PTR).md)
-- [H4威厄高尔和艾佐拉克(PTR)](content/虚影尖塔/H4-威厄高尔和艾佐拉克(PTR).md)
-- [H5光盲先锋军(PTR)](content/虚影尖塔/H5-光盲先锋军(PTR).md)
-- [M1元首阿福扎恩(PTR)](content/虚影尖塔/M1-元首阿福扎恩(PTR).md)
-- [M2弗拉希乌斯(PTR)](content/虚影尖塔/M2-弗拉希乌斯(PTR).md)
+- [H1元首阿福扎恩](content/虚影尖塔/H1-元首阿福扎恩.md)
+- [H2弗拉希乌斯](content/虚影尖塔/H2-弗拉希乌斯.md)
+- [H3陨落之王萨哈达尔](content/虚影尖塔/H3-陨落之王萨哈达尔.md)
+- [H4威厄高尔和艾佐拉克](content/虚影尖塔/H4-威厄高尔和艾佐拉克.md)
+- [H5光盲先锋军](content/虚影尖塔/H5-光盲先锋军.md)
+- [M1元首阿福扎恩](content/虚影尖塔/M1-元首阿福扎恩.md)
+- [M2弗拉希乌斯](content/虚影尖塔/M2-弗拉希乌斯.md)
 
 ----
 
@@ -124,3 +124,5 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 - [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
 
 如果你是相关权利人，并认为仓库中的某部分内容需要修正署名、补充来源或移除，请联系仓库维护者处理。
+
+

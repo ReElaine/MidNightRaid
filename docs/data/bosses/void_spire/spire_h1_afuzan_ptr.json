@@ -2,9 +2,9 @@
   "id": "spire_h1_afuzan_ptr",
   "raidId": "void_spire",
   "raidTitle": "虚影尖塔",
-  "title": "H1 元首阿福扎恩 (PTR)",
+  "title": "H1 元首阿福扎恩",
   "difficulty": "英雄",
-  "ptr": true,
+  "ptr": false,
   "summary": {
     "oneLine": "一场围绕九宫格污染控制、双圈炸盾和污染衍生小怪处理展开的长轴战斗。",
     "fightStyle": "九宫格场地管理 + 双圈分摊破盾 + 污染衍生物处理",
@@ -83,8 +83,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_shadow_march.gif",
-        "alt": "暗影进军召唤三只蓝胖示意",
-        "caption": "每轮会在三块区域召唤蓝胖，后续刷新会优先贴着污染区展开。"
+        "alt": "暗影进军召唤三只蓝胖示意"
       }
     },
     {
@@ -106,8 +105,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_pollution_priority.webp",
-        "alt": "污染区域会影响下一轮蓝胖刷新位置示意",
-        "caption": "污染区相邻格会成为下一轮高概率刷新点，因此每次污染都会改变后续路线。"
+        "alt": "污染区域会影响下一轮蓝胖刷新位置示意"
       }
     },
     {
@@ -129,8 +127,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_umbral_collapse.gif",
-        "alt": "幽影坍缩炸盾示意",
-        "caption": "坦克带圈到蓝胖脚下，全团进圈分摊，借爆炸命中蓝胖完成破盾。"
+        "alt": "幽影坍缩炸盾示意"
       }
     },
     {
@@ -150,11 +147,7 @@
           "破盾后的蓝胖要立即集火，第三只目标更要在 1 分钟内处理完。"
         ]
       },
-      "media": {
-        "path": "./assets/media/void_spire/afuzan_spawn_patterns.webp",
-        "alt": "蓝胖刷新组合整理图",
-        "caption": "整场战斗的难点在于看懂蓝胖刷新组合，并提前规划哪两只炸盾、哪一只限时清。"
-      }
+      "media": null
     },
     {
       "id": "void_rend",
@@ -175,8 +168,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_void_rend.gif",
-        "alt": "虚空割裂污染场地示意",
-        "caption": "第三只蓝胖读完后污染场地，场地压力会随着循环持续累积。"
+        "alt": "虚空割裂污染场地示意"
       }
     },
     {
@@ -198,8 +190,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_void_maw.gif",
-        "alt": "虚空之喉低血试图爬回污染区示意",
-        "caption": "虚空之喉残血后会慢速爬向污染区，必须在回满前控制或击杀。"
+        "alt": "虚空之喉低血试图爬回污染区示意"
       }
     },
     {
@@ -240,8 +231,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_annihilation_fury.gif",
-        "alt": "湮灭之怒长枪路径示意",
-        "caption": "长枪击退会直接打乱队形，必须在读条时提前让出安全位。"
+        "alt": "湮灭之怒长枪路径示意"
       }
     },
     {
@@ -263,8 +253,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_shadow_phalanx.gif",
-        "alt": "暗影方阵与虚空坠落连段示意",
-        "caption": "高压阶段会出现连续的场地切割与砸圈，站位一乱就会连带影响后续分摊。"
+        "alt": "暗影方阵与虚空坠落连段示意"
       }
     },
     {
@@ -286,8 +275,7 @@
       },
       "media": {
         "path": "./assets/media/void_spire/afuzan_dark_subversion.gif",
-        "alt": "黑暗颠覆全团暗影伤害示意",
-        "caption": "约每 40 秒一次的全团 AOE 会和整场持续 DOT 叠加，是治疗资源分配的主轴。"
+        "alt": "黑暗颠覆全团暗影伤害示意"
       }
     },
     {
@@ -423,8 +411,8 @@
   ],
   "sources": {
     "markdown": {
-      "label": "查看原始 Markdown：content/虚影尖塔/H1-元首阿福扎恩(PTR).md",
-      "url": "https://github.com/ReElaine/MidNightRaid/blob/main/content/%E8%99%9A%E5%BD%B1%E5%B0%96%E5%A1%94/H1-%E5%85%83%E9%A6%96%E9%98%BF%E7%A6%8F%E6%89%8E%E6%81%A9(PTR).md"
+      "label": "查看原始 Markdown：content/虚影尖塔/H1-元首阿福扎恩.md",
+      "url": "https://github.com/ReElaine/MidNightRaid/blob/main/content/%E8%99%9A%E5%BD%B1%E5%B0%96%E5%A1%94/H1-%E5%85%83%E9%A6%96%E9%98%BF%E7%A6%8F%E6%89%8E%E6%81%A9.md"
     }
   }
 }

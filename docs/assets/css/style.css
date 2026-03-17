@@ -337,6 +337,16 @@ h3 {
   gap: 16px;
 }
 
+.quickstart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.quickstart-grid > .phase-card:first-child {
+  grid-column: 1 / -1;
+}
+
 .info-block {
   padding: 18px;
   border-radius: var(--radius-sm);
@@ -536,8 +546,13 @@ h3 {
 
   .boss-grid,
   .role-grid,
-  .phase-grid {
+  .phase-grid,
+  .quickstart-grid {
     grid-template-columns: 1fr;
+  }
+
+  .quickstart-grid > .phase-card:first-child {
+    grid-column: auto;
   }
 
   .boss-card__actions {

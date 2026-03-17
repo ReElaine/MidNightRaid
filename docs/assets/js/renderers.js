@@ -1,4 +1,4 @@
-function escapeHtml(value) {
+﻿function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
@@ -57,7 +57,6 @@ export function renderBossCards(bosses) {
           <div class="badge-row">
             <span class="badge">${escapeHtml(boss.raidTitle)}</span>
             <span class="badge badge--ghost">${escapeHtml(boss.difficulty)}</span>
-            <span class="badge badge--ghost">${escapeHtml(boss.ptr ? "PTR" : "正式服")}</span>
           </div>
           <h3>${escapeHtml(boss.title)}</h3>
           <p>${escapeHtml(boss.summary || "暂未补充摘要。")}</p>
@@ -193,7 +192,6 @@ export function renderBossDetail(boss, details) {
         <div class="badge-row">
           <span class="badge">${escapeHtml(details.raidTitle)}</span>
           <span class="badge badge--ghost">${escapeHtml(details.difficulty)}</span>
-          <span class="badge badge--ghost">${escapeHtml(details.ptr ? "PTR" : "正式服")}</span>
         </div>
         <h2>${escapeHtml(details.title)}</h2>
         <p>${escapeHtml(details.summary.oneLine)}</p>
@@ -206,7 +204,7 @@ export function renderBossDetail(boss, details) {
 
       <section class="detail-section">
         <h2>开荒速览</h2>
-        <div class="phase-grid">${quickStart}</div>
+        <div class="quickstart-grid">${quickStart}</div>
       </section>
 
       <section class="detail-section">
@@ -246,3 +244,6 @@ export function renderBossDetail(boss, details) {
     </div>
   `;
 }
+
+
+

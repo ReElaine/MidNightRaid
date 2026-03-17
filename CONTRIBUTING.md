@@ -1,4 +1,4 @@
-# Contributing Guide
+﻿# Contributing Guide
 
 本文档用于说明 `MidNightRaid` 仓库的日常整理流程，方便后续持续维护这些攻略文档。
 
@@ -71,7 +71,7 @@ git log --oneline -5
 ```powershell
 git add README.md
 git add NOTICE.md
-git add "虚影尖塔/H3-陨落之王萨哈达尔(PTR).md"
+git add "content/虚影尖塔/H3-陨落之王萨哈达尔.md"
 git commit -m "更新虚影尖塔 H3 文档"
 git push
 ```
@@ -138,3 +138,6 @@ git push
 ```
 
 这就是后续维护本仓库时最常见的一套流程。
+
+
+
