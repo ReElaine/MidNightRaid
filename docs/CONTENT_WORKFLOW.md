@@ -2,6 +2,10 @@
 
 本文档说明当前仓库推荐的攻略维护流程：先维护 Markdown，再由脚本转换成站点使用的 JSON。
 
+配套阅读：
+
+- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
+
 ## 目标
 
 - `content/` 作为唯一人工维护入口
@@ -107,3 +111,11 @@ git add .
 git commit -m "docs: update boss guide content"
 git push
 ```
+
+## 维护建议
+
+每次发生较大结构变化、批量内容迁移、JSON schema 调整或页面渲染逻辑更新后，建议同步更新：
+
+- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
+
+这样后续在其他设备拉取最新状态时，只需要先阅读这份日志就能快速恢复开发上下文。
