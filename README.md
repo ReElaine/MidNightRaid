@@ -22,6 +22,11 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 - `scripts/validate-json.js`：JSON 结构校验脚本
 - `assets/`：仓库现有图片与素材资源
 
+## 开发接续入口
+
+- 同步最新状态后优先阅读：[docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md)
+- 内容维护流程说明：[docs/CONTENT_WORKFLOW.md](docs/CONTENT_WORKFLOW.md)
+
 ## 使用说明
 
 1. 平时整理原始攻略时，优先修改 `content/` 下的 Markdown。
@@ -124,5 +129,4 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 - [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
 
 如果你是相关权利人，并认为仓库中的某部分内容需要修正署名、补充来源或移除，请联系仓库维护者处理。
-
 
