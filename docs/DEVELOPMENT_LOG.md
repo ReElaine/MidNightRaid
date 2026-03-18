@@ -40,7 +40,7 @@
 
 核心文档：
 
-- [CONTENT_WORKFLOW.md](/C:/Working/MidNightRaid/docs/CONTENT_WORKFLOW.md)
+- [CONTENT_WORKFLOW.md](CONTENT_WORKFLOW.md)
 
 ### 2. 文件命名已去掉 PTR 后缀
 
@@ -189,7 +189,7 @@
 推荐命令：
 
 ```powershell
-cd C:\Working\MidNightRaid
+cd MidNightRaid
 node scripts/md-to-boss-json.js "content/虚影尖塔/H1-元首阿福扎恩.md"
 node scripts/md-to-boss-json.js "content/虚影尖塔/H2-弗拉希乌斯.md"
 node scripts/validate-json.js
@@ -209,8 +209,8 @@ git log --oneline -10
 
 优先阅读：
 
-- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
-- [CONTENT_WORKFLOW.md](/C:/Working/MidNightRaid/docs/CONTENT_WORKFLOW.md)
+- [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
+- [CONTENT_WORKFLOW.md](CONTENT_WORKFLOW.md)
 
 ---
 
@@ -218,28 +218,28 @@ git log --oneline -10
 
 ### 核心流程文档
 
-- [README.md](/C:/Working/MidNightRaid/README.md)
-- [CONTRIBUTING.md](/C:/Working/MidNightRaid/CONTRIBUTING.md)
-- [CONTENT_WORKFLOW.md](/C:/Working/MidNightRaid/docs/CONTENT_WORKFLOW.md)
-- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
+- [README.md](../README.md)
+- [CONTRIBUTING.md](../CONTRIBUTING.md)
+- [CONTENT_WORKFLOW.md](CONTENT_WORKFLOW.md)
+- [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
 
 ### 数据入口
 
-- [raids.json](/C:/Working/MidNightRaid/docs/data/raids.json)
-- [spire_h1_afuzan.json](/C:/Working/MidNightRaid/docs/data/bosses/void_spire/spire_h1_afuzan.json)
-- [spire_h2_fulasius.json](/C:/Working/MidNightRaid/docs/data/bosses/void_spire/spire_h2_fulasius.json)
+- [raids.json](data/raids.json)
+- [spire_h1_afuzan.json](data/bosses/void_spire/spire_h1_afuzan.json)
+- [spire_h2_fulasius.json](data/bosses/void_spire/spire_h2_fulasius.json)
 
 ### 关键脚本
 
-- [md-to-boss-json.js](/C:/Working/MidNightRaid/scripts/md-to-boss-json.js)
-- [validate-json.js](/C:/Working/MidNightRaid/scripts/validate-json.js)
+- [md-to-boss-json.js](../scripts/md-to-boss-json.js)
+- [validate-json.js](../scripts/validate-json.js)
 
 ### 关键前端文件
 
-- [index.html](/C:/Working/MidNightRaid/docs/index.html)
-- [style.css](/C:/Working/MidNightRaid/docs/assets/css/style.css)
-- [data-loader.js](/C:/Working/MidNightRaid/docs/assets/js/data-loader.js)
-- [renderers.js](/C:/Working/MidNightRaid/docs/assets/js/renderers.js)
+- [index.html](index.html)
+- [style.css](assets/css/style.css)
+- [data-loader.js](assets/js/data-loader.js)
+- [renderers.js](assets/js/renderers.js)
 
 ---
 

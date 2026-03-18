@@ -4,7 +4,7 @@
 
 配套阅读：
 
-- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
+- [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
 
 ## 目标
 
@@ -116,6 +116,6 @@ git push
 
 每次发生较大结构变化、批量内容迁移、JSON schema 调整或页面渲染逻辑更新后，建议同步更新：
 
-- [DEVELOPMENT_LOG.md](/C:/Working/MidNightRaid/docs/DEVELOPMENT_LOG.md)
+- [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
 
 这样后续在其他设备拉取最新状态时，只需要先阅读这份日志就能快速恢复开发上下文。

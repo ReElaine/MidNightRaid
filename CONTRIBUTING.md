@@ -7,7 +7,7 @@
 请先进入仓库目录：
 
 ```powershell
-cd C:\Working\MidNightRaid
+cd MidNightRaid
 ```
 
 后续所有 Git 命令都建议在这个目录下执行。
@@ -129,7 +129,7 @@ git push
 ## 一套最常用的完整示例
 
 ```powershell
-cd C:\Working\MidNightRaid
+cd MidNightRaid
 git status
 git diff
 git add .
@@ -138,6 +138,5 @@ git push
 ```
 
 这就是后续维护本仓库时最常见的一套流程。
-
 
 
