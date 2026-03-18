@@ -21,6 +21,10 @@ function writeJson(filePath, value) {
   fs.writeFileSync(filePath, JSON.stringify(value, null, 2) + "\n", "utf8");
 }
 
+function ensureDir(filePath) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+}
+
 function normalizePath(filePath) {
   return filePath.replaceAll("\\", "/");
 }
@@ -112,7 +116,8 @@ function parseMetaValue(lines, prefix) {
 }
 
 function parseRoleBlock(lines, label) {
-  const index = lines.findIndex((line) => line.trim() === `${label}：`);
+  const prefix = `${label}：`;
+  const index = lines.findIndex((line) => line.trim().startsWith(prefix));
   if (index === -1) {
     return [];
   }
@@ -136,6 +141,11 @@ function parseRoleBlock(lines, label) {
     if (/^[A-Za-z]+：$/.test(line)) {
       break;
     }
+  }
+
+  const inline = lines[index].trim().slice(prefix.length).trim();
+  if (inline) {
+    result.unshift(inline);
   }
 
   return result;
@@ -169,6 +179,34 @@ function deriveAbilityId(abilityName, existingByName, index) {
   }
 
   return `ability_${String(index + 1).padStart(2, "0")}`;
+}
+
+function mapMediaPath(rawPath, raidId) {
+  if (!rawPath) {
+    return rawPath;
+  }
+
+  if (rawPath.startsWith("./assets/")) {
+    return rawPath;
+  }
+
+  if (rawPath.startsWith("../../assets/")) {
+    const fileName = path.basename(rawPath);
+    const sourcePath = path.join(repoRoot, "assets", fileName);
+    const relativeTarget = `./assets/media/${raidId}/${fileName}`;
+    const targetPath = path.join(docsRoot, relativeTarget.replace("./", ""));
+
+    if (fs.existsSync(sourcePath)) {
+      ensureDir(targetPath);
+      if (!fs.existsSync(targetPath)) {
+        fs.copyFileSync(sourcePath, targetPath);
+      }
+    }
+
+    return relativeTarget;
+  }
+
+  return rawPath.replace("../../docs/", "./");
 }
 
 function parseSummary(section) {
@@ -210,7 +248,7 @@ function parseRoles(section) {
   );
 }
 
-function parseAbilities(section, existingJson) {
+function parseAbilities(section, existingJson, bossMeta) {
   const subsections = splitSubsections(section.lines);
   const existingByName = new Map((existingJson?.abilities || []).map((ability) => [ability.name, ability.id]));
 
@@ -218,7 +256,7 @@ function parseAbilities(section, existingJson) {
     const images = parseImages(item.lines);
     const media = images[0]
       ? {
-          path: images[0].path.replace("../../docs/", "./"),
+          path: mapMediaPath(images[0].path, bossMeta.raidId),
           alt: images[0].alt || item.title,
           caption: images[0].caption || undefined
         }
@@ -242,7 +280,7 @@ function parseAbilities(section, existingJson) {
       if (!afterMeta) {
         continue;
       }
-      if (["Tank：", "Healer：", "DPS："].includes(trimmed)) {
+      if (["Tank：", "Healer：", "DPS："].some((prefix) => trimmed.startsWith(prefix))) {
         break;
       }
       if (/^!\[.*\]\(.*\)$/.test(trimmed)) {
@@ -301,7 +339,7 @@ function parseBossMarkdown(markdown, bossMeta, raidTitle, existingJson) {
   const summary = parseSummary(sectionMap.get("战斗摘要") || { lines: [] });
   const quickStart = parseQuickStart(sectionMap.get("开荒速览") || { lines: [] });
   const roles = parseRoles(sectionMap.get("职责提示") || { lines: [] });
-  const abilities = parseAbilities(sectionMap.get("技能详解") || { lines: [] }, existingJson);
+  const abilities = parseAbilities(sectionMap.get("技能详解") || { lines: [] }, existingJson, bossMeta);
   const timeline = parseTimeline(sectionMap.get("时间轴") || { lines: [] }, abilities, existingJson);
 
   return {
@@ -363,7 +401,6 @@ function main() {
 }
 
 main();
-
 
 
 
