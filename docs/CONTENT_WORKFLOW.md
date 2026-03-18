@@ -95,9 +95,23 @@ node scripts/validate-json.js
 
 - `技能详解` 中每个 `###` 小节都会转换成一个 ability
 - `Tank：`、`Healer：`、`DPS：` 三段会转换成 `response`
+- `Tank：先...` 这种与内容写在同一行的写法现在也能正确解析
 - 第一张图片会作为该技能的 `media`
+- 如果图片仍写成 `../../assets/...`，转换脚本会自动复制到 `docs/assets/media/<raidId>/`，并把 JSON 中的路径改成站点可直接访问的 `./assets/media/...`
 - `时间轴` 中的“技能”列会尽量自动匹配到同名或前缀匹配的 ability
 - 现有 Boss JSON 的 ability id 和 timeline abilityId 会尽量保留，不会每次重生随机 id
+
+## 当前已接入的示例
+
+- `docs/data/bosses/void_spire/spire_h1_afuzan.json`
+- `docs/data/bosses/void_spire/spire_h2_fulasius.json`
+- `docs/data/bosses/dream_rift/dream_rift_h_chimerus.json`
+- `docs/data/bosses/dream_rift/dream_rift_m_chimerus.json`
+
+其中：
+
+- `dream_rift_h_chimerus` 是较完整的双阶段攻略 JSON
+- `dream_rift_m_chimerus` 当前是“史诗差异点版” JSON，适合后续继续补全
 
 ## 推荐操作
 

@@ -10,6 +10,43 @@
 
 ---
 
+## 2026-03-18 / d00bcad
+
+- 同步方式：本地直接开发后提交
+- 关键提交：`d00bcad docs: add dream rift boss json data`
+- 主要结构变化：
+  - 梦境裂隙的 `H 奇美鲁斯，未梦之神` 与 `M 奇美鲁斯，未梦之神` 已正式接入 JSON 数据层
+  - `docs/data/raids.json` 中，`dream_rift_h_chimerus` 与 `dream_rift_m_chimerus` 已从 `jsonPath: null` 改为前端可直接加载的详情 JSON
+  - 英雄难度版本已整理为相对完整的结构化攻略，史诗难度版本当前以“相对英雄的差异点”形式接入
+- 新增脚本或资源：
+  - 新增 `docs/data/bosses/dream_rift/dream_rift_h_chimerus.json`
+  - 新增 `docs/data/bosses/dream_rift/dream_rift_m_chimerus.json`
+  - 新增 `docs/assets/media/dream_rift/` 下的一组图片和 GIF，供 GitHub Pages 直接访问
+  - `scripts/md-to-boss-json.js` 已增强：
+    - 支持解析正文里的 `Tank：` / `Healer：` / `DPS：` 行内写法
+    - 遇到 `../../assets/...` 素材时，会自动复制到 `docs/assets/media/<raidId>/`
+- 当前下一步：
+  - 优先继续把 `虚影尖塔` 其余 Boss 按同样方式转成 JSON
+  - 补全梦境裂隙的精确时间轴后，可再次运行转换脚本刷新 `timeline`
+  - 若后续新增攻略仍沿用旧素材路径，直接走 Markdown -> JSON 转换即可，不必手工搬图
+
+### 本轮额外环境修复
+
+- 已修复当前机器上的 Git HTTPS 连接问题
+- 原因：
+  - Windows `schannel` TLS 后端在本机环境下会报 `SEC_E_NO_CREDENTIALS`
+  - `git credential-manager diagnose` 中也能复现 HTTPS 握手失败
+- 处理：
+  - 已把全局 Git 配置从 `http.sslbackend=schannel` 切换为 `http.sslbackend=openssl`
+- 验证结果：
+  - `git ls-remote origin refs/heads/main` 成功
+  - `git fetch origin` 成功
+- 影响：
+  - 后续 `git fetch` / `git pull` / `git push` 默认走 OpenSSL，不再依赖当前有问题的 Windows TLS 凭据栈
+  - 如果未来换新环境，优先检查 `git config --global http.sslbackend`
+
+---
+
 ## 当前同步状态
 
 - 记录日期：2026-03-18
