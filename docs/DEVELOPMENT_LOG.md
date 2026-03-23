@@ -10,6 +10,48 @@
 
 ---
 
+## 2026-03-23 / working tree
+
+- 同步方式：在本地工作树中继续前端改造
+- 当前主题：把站点从“静态攻略展示”改造成“WCL 抄作业工具”
+- 当前已落地的结构变化：
+  - 新增 WCL 站点配置文件 `docs/data/site-config.json`
+  - 新增职业关键技能预设 `docs/data/class-cooldowns.json`
+  - 新增前端模块：
+    - `docs/assets/js/wcl-auth.js`
+    - `docs/assets/js/wcl-api.js`
+    - `docs/assets/js/wcl-analysis.js`
+  - `data-loader.js` 已扩展，可读取站点配置和职业技能预设
+  - `router.js` 已扩展，支持 `report` / `fight` 查询参数
+  - `app.js`、`index.html`、`boss.html`、`renderers.js`、`style.css` 已转向 WCL 分析工作流
+- 当前目标数据流：
+  1. 前端通过 OAuth PKCE 连接 WCL
+  2. 读取报告元数据与 fights
+  3. 拉取指定 fight 的 Cast 事件
+  4. 用 Boss 结构化 JSON 与职业预设过滤关键技能
+  5. 渲染 Boss 技能轴、团队关键技能总表、按职业拆分时间轴
+- 当前测试覆盖：
+  - 已新增 `tests/` 目录
+  - 已为以下模块补充原生单元测试：
+    - `app.js`
+    - `router.js`
+    - `renderers.js`
+    - `data-loader.js`
+    - `wcl-auth.js`
+    - `wcl-api.js`
+    - `wcl-analysis.js`
+    - `site-config.json`
+    - `class-cooldowns.json`
+  - 当前推荐测试命令：
+    - `node --test --test-concurrency=1 --test-isolation=none .\tests\*.test.mjs`
+    - `node scripts/validate-json.js`
+- 当前注意事项：
+  - 这一轮仍是“前端主链路改造中”，需要在真实 WCL 授权环境下补一次联调
+  - Boss 关键技能预设当前优先从结构化 Boss JSON 的 `abilities` 衍生，后续可按需要增加更细的别名或覆盖规则
+  - 职业关键技能表现在是第一版可维护配置，后续可继续扩展
+
+---
+
 ## 2026-03-18 / d00bcad
 
 - 同步方式：本地直接开发后提交

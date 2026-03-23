@@ -2,6 +2,8 @@
 
 本文档说明当前仓库推荐的攻略维护流程：先维护 Markdown，再由脚本转换成站点使用的 JSON。
 
+注意：当前站点已经开始转向 “WCL 报告分析 + Boss 预设” 模式，但 Boss 结构化 JSON 仍然是关键预设来源，因此本流程仍然保留。
+
 配套阅读：
 
 - [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
@@ -133,3 +135,13 @@ git push
 - [DEVELOPMENT_LOG.md](DEVELOPMENT_LOG.md)
 
 这样后续在其他设备拉取最新状态时，只需要先阅读这份日志就能快速恢复开发上下文。
+
+如果这次修改还涉及：
+
+- `docs/assets/js/` 中的前端分析逻辑
+- `docs/data/site-config.json`
+- `docs/data/class-cooldowns.json`
+
+则还应同时阅读：
+
+- [TESTING.md](../TESTING.md)

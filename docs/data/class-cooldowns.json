@@ -1,0 +1,282 @@
+{
+  "classes": [
+    {
+      "id": "DeathKnight",
+      "label": "死亡骑士",
+      "abilities": [
+        {
+          "id": "anti_magic_zone",
+          "label": "反魔法领域",
+          "aliases": ["Anti-Magic Zone", "反魔法领域"]
+        },
+        {
+          "id": "abomination_limb",
+          "label": "憎恶附肢",
+          "aliases": ["Abomination Limb", "憎恶附肢"]
+        },
+        {
+          "id": "summon_gargoyle",
+          "label": "召唤石像鬼",
+          "aliases": ["Summon Gargoyle", "召唤石像鬼"]
+        }
+      ]
+    },
+    {
+      "id": "DemonHunter",
+      "label": "恶魔猎手",
+      "abilities": [
+        {
+          "id": "darkness",
+          "label": "黑暗",
+          "aliases": ["Darkness", "黑暗"]
+        },
+        {
+          "id": "metamorphosis",
+          "label": "恶魔变形",
+          "aliases": ["Metamorphosis", "恶魔变形"]
+        },
+        {
+          "id": "the_hunt",
+          "label": "追击",
+          "aliases": ["The Hunt", "追击"]
+        }
+      ]
+    },
+    {
+      "id": "Druid",
+      "label": "德鲁伊",
+      "abilities": [
+        {
+          "id": "tranquility",
+          "label": "宁静",
+          "aliases": ["Tranquility", "宁静"]
+        },
+        {
+          "id": "incarnation_tree",
+          "label": "化身：生命之树",
+          "aliases": ["Incarnation: Tree of Life", "化身：生命之树"]
+        },
+        {
+          "id": "berserk",
+          "label": "狂暴",
+          "aliases": ["Berserk", "狂暴"]
+        }
+      ]
+    },
+    {
+      "id": "Evoker",
+      "label": "唤魔师",
+      "abilities": [
+        {
+          "id": "rewind",
+          "label": "回溯",
+          "aliases": ["Rewind", "回溯"]
+        },
+        {
+          "id": "time_spiral",
+          "label": "时间螺旋",
+          "aliases": ["Time Spiral", "时间螺旋"]
+        },
+        {
+          "id": "breath_of_eons",
+          "label": "纪元吐息",
+          "aliases": ["Breath of Eons", "纪元吐息"]
+        }
+      ]
+    },
+    {
+      "id": "Hunter",
+      "label": "猎人",
+      "abilities": [
+        {
+          "id": "aspect_of_the_wild",
+          "label": "野性守护",
+          "aliases": ["Aspect of the Wild", "野性守护"]
+        },
+        {
+          "id": "trueshot",
+          "label": "百发百中",
+          "aliases": ["Trueshot", "百发百中"]
+        },
+        {
+          "id": "coordinated_assault",
+          "label": "协同进攻",
+          "aliases": ["Coordinated Assault", "协同进攻"]
+        }
+      ]
+    },
+    {
+      "id": "Mage",
+      "label": "法师",
+      "abilities": [
+        {
+          "id": "time_warp",
+          "label": "时间扭曲",
+          "aliases": ["Time Warp", "时间扭曲"]
+        },
+        {
+          "id": "combustion",
+          "label": "燃烧",
+          "aliases": ["Combustion", "燃烧"]
+        },
+        {
+          "id": "icy_veins",
+          "label": "冰冷血脉",
+          "aliases": ["Icy Veins", "冰冷血脉"]
+        },
+        {
+          "id": "arcane_surge",
+          "label": "奥术涌动",
+          "aliases": ["Arcane Surge", "奥术涌动"]
+        }
+      ]
+    },
+    {
+      "id": "Monk",
+      "label": "武僧",
+      "abilities": [
+        {
+          "id": "revival",
+          "label": "还魂术",
+          "aliases": ["Revival", "还魂术"]
+        },
+        {
+          "id": "invoke_yulon",
+          "label": "召唤玉珑，青龙之灵",
+          "aliases": ["Invoke Yu'lon, the Jade Serpent", "召唤玉珑，青龙之灵"]
+        },
+        {
+          "id": "storm_earth_and_fire",
+          "label": "风火雷电",
+          "aliases": ["Storm, Earth, and Fire", "风火雷电"]
+        }
+      ]
+    },
+    {
+      "id": "Paladin",
+      "label": "圣骑士",
+      "abilities": [
+        {
+          "id": "aura_mastery",
+          "label": "光环掌控",
+          "aliases": ["Aura Mastery", "光环掌控"]
+        },
+        {
+          "id": "avenging_wrath",
+          "label": "复仇之怒",
+          "aliases": ["Avenging Wrath", "复仇之怒"]
+        },
+        {
+          "id": "divine_toll",
+          "label": "神圣鸣钟",
+          "aliases": ["Divine Toll", "神圣鸣钟"]
+        }
+      ]
+    },
+    {
+      "id": "Priest",
+      "label": "牧师",
+      "abilities": [
+        {
+          "id": "power_word_barrier",
+          "label": "真言术：障",
+          "aliases": ["Power Word: Barrier", "真言术：障"]
+        },
+        {
+          "id": "divine_hymn",
+          "label": "神圣赞美诗",
+          "aliases": ["Divine Hymn", "神圣赞美诗"]
+        },
+        {
+          "id": "evangelism",
+          "label": "福音",
+          "aliases": ["Evangelism", "福音"]
+        }
+      ]
+    },
+    {
+      "id": "Rogue",
+      "label": "潜行者",
+      "abilities": [
+        {
+          "id": "shadow_blades",
+          "label": "暗影之刃",
+          "aliases": ["Shadow Blades", "暗影之刃"]
+        },
+        {
+          "id": "deathmark",
+          "label": "死亡印记",
+          "aliases": ["Deathmark", "死亡印记"]
+        },
+        {
+          "id": "adrenaline_rush",
+          "label": "冲动",
+          "aliases": ["Adrenaline Rush", "冲动"]
+        }
+      ]
+    },
+    {
+      "id": "Shaman",
+      "label": "萨满祭司",
+      "abilities": [
+        {
+          "id": "bloodlust",
+          "label": "嗜血",
+          "aliases": ["Bloodlust", "嗜血", "Heroism", "英勇"]
+        },
+        {
+          "id": "spirit_link_totem",
+          "label": "灵魂链接图腾",
+          "aliases": ["Spirit Link Totem", "灵魂链接图腾"]
+        },
+        {
+          "id": "ascendance",
+          "label": "升腾",
+          "aliases": ["Ascendance", "升腾"]
+        }
+      ]
+    },
+    {
+      "id": "Warlock",
+      "label": "术士",
+      "abilities": [
+        {
+          "id": "summon_darkglare",
+          "label": "召唤黑眼",
+          "aliases": ["Summon Darkglare", "召唤黑眼"]
+        },
+        {
+          "id": "summon_infernal",
+          "label": "召唤地狱火",
+          "aliases": ["Summon Infernal", "召唤地狱火"]
+        },
+        {
+          "id": "dark_soul_misery",
+          "label": "黑暗灵魂：痛苦",
+          "aliases": ["Dark Soul: Misery", "黑暗灵魂：痛苦"]
+        }
+      ]
+    },
+    {
+      "id": "Warrior",
+      "label": "战士",
+      "abilities": [
+        {
+          "id": "rallying_cry",
+          "label": "集结呐喊",
+          "aliases": ["Rallying Cry", "集结呐喊"]
+        },
+        {
+          "id": "avatar",
+          "label": "天神下凡",
+          "aliases": ["Avatar", "天神下凡"]
+        },
+        {
+          "id": "recklessness",
+          "label": "鲁莽",
+          "aliases": ["Recklessness", "鲁莽"]
+        }
+      ]
+    }
+  ]
+}

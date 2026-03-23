@@ -2,23 +2,27 @@
 
 ## 项目简介
 
-MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdown 内容层 + JSON 数据层 + GitHub Pages 静态站点”的双层结构项目。
+MidNightRaid 现在正在从“静态攻略展示站”进一步转成“WCL 抄作业站”：
 
-- `content/` 保留原始攻略 Markdown，便于持续整理原文。
-- `docs/data/` 提供可被前端直接读取的 JSON 数据层。
-- `docs/` 提供可部署到 GitHub Pages 的原生静态站点。
+- `content/` 继续保留原始攻略 Markdown，作为内容源和人工整理层
+- `docs/data/` 继续提供 Boss 结构化 JSON，与 WCL 关键技能预设共用
+- `docs/` 当前前端会通过 WCL API 拉取报告数据，生成：
+  - Boss 关键技能时间轴
+  - 每个职业的关键技能释放时间轴
 
-## 在线攻略站
+## 在线站点
 
-- GitHub Pages 占位链接：[https://reelaine.github.io/MidNightRaid/](https://reelaine.github.io/MidNightRaid/)
-- 站点入口文件：[`docs/index.html`](docs/index.html)
+- GitHub Pages 站点入口：[https://reelaine.github.io/MidNightRaid/](https://reelaine.github.io/MidNightRaid/)
+- 站点主页：[`docs/index.html`](docs/index.html)
+- Boss 分析页：[`docs/boss.html`](docs/boss.html)
 
 ## 项目结构说明
 
 - `content/`：副本与 Boss 的原始 Markdown 内容层
 - `docs/`：GitHub Pages 静态站点目录
-- `docs/data/`：副本索引与 Boss JSON 数据
-- `docs/assets/`：站点 CSS 与 JavaScript
+- `docs/data/`：副本索引、Boss JSON、WCL 站点配置与职业技能预设
+- `docs/assets/`：站点 CSS、前端逻辑与 WCL API 集成代码
+- `tests/`：前端模块与配置文件的原生 Node 单元测试
 - `scripts/validate-json.js`：JSON 结构校验脚本
 - `assets/`：仓库现有图片与素材资源
 
@@ -26,13 +30,35 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 
 - 同步最新状态后优先阅读：[docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md)
 - 内容维护流程说明：[docs/CONTENT_WORKFLOW.md](docs/CONTENT_WORKFLOW.md)
+- 测试方式说明：[TESTING.md](TESTING.md)
 
 ## 使用说明
 
-1. 平时整理原始攻略时，优先修改 `content/` 下的 Markdown。
-2. 需要接入站点时，在 `docs/data/raids.json` 中登记 Boss 元数据，并为已结构化的 Boss 新增对应 JSON 文件。
-3. 本地校验 JSON 时，可运行 `node scripts/validate-json.js`。
-4. 启用 GitHub Pages 时，选择 `main` 分支下的 `/docs` 目录即可。
+1. 在 WCL 中创建可用于静态站的 OAuth Client，并把 `Client ID` 填到页面中，或写入 [`docs/data/site-config.json`](docs/data/site-config.json)。
+2. 打开站点首页，连接 WCL。
+3. 粘贴报告链接或报告 code，选择 fight。
+4. 进入某个 Boss 的分析页，生成 Boss 技能轴和职业关键技能轴。
+5. 若要补充 Boss 预设，仍然优先维护 `content/` 和 `docs/data/bosses/` 中的结构化 JSON。
+
+## WCL 集成说明
+
+- 当前前端采用静态站可用的 `OAuth PKCE` 思路，不在前端保存 `client secret`
+- WCL 相关入口配置位于：
+  - [`docs/data/site-config.json`](docs/data/site-config.json)
+  - [`docs/data/class-cooldowns.json`](docs/data/class-cooldowns.json)
+- 当前职业关键技能表是“可维护预设”，后续可以按团本环境继续扩充别名和技能集合
+
+## 测试说明
+
+- 当前仓库已为前端核心模块补充原生 Node 单元测试
+- 推荐测试命令：
+
+```powershell
+node --test --test-concurrency=1 --test-isolation=none .\tests\*.test.mjs
+node scripts/validate-json.js
+```
+
+- 详细说明见：[TESTING.md](TESTING.md)
 
 ## 开源许可
 
@@ -129,4 +155,3 @@ MidNightRaid 正在从纯 Markdown 团本攻略仓库，逐步改造成“Markdo
 - [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
 
 如果你是相关权利人，并认为仓库中的某部分内容需要修正署名、补充来源或移除，请联系仓库维护者处理。
-

@@ -1,0 +1,6 @@
+{
+  "wclClientId": "",
+  "oauthAuthorizeUrl": "https://www.warcraftlogs.com/oauth/authorize",
+  "oauthTokenUrl": "https://www.warcraftlogs.com/oauth/token",
+  "graphqlUrl": "https://www.warcraftlogs.com/api/v2/user"
+}

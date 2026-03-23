@@ -64,6 +64,13 @@ git log --oneline -5
 - `git diff`：查看具体改了哪些内容。
 - `git log --oneline -5`：查看最近 5 次提交记录。
 
+如果这次修改涉及前端、WCL 逻辑、JSON 配置或数据转换，也建议顺手跑测试：
+
+```powershell
+node --test --test-concurrency=1 --test-isolation=none .\tests\*.test.mjs
+node scripts/validate-json.js
+```
+
 ## 如果只想提交部分文件
 
 如果你这次只想提交一部分改动，可以指定文件：
@@ -108,6 +115,10 @@ git push
 - 修改标题、目录或链接时，顺手检查 `README.md` 中是否需要同步更新。
 - 如果新增来源说明、授权说明或版权说明，请同时更新 `README.md`、`NOTICE.md` 或 `LICENSE_GUIDE.md`。
 - 如果引用了新的图片、截图或外部资料，尽量补充来源信息。
+- 如果修改了前端模块、WCL 数据流或配置结构，请同步更新：
+  - `README.md`
+  - `docs/DEVELOPMENT_LOG.md`
+  - `TESTING.md`
 
 ## 版权与授权提醒
 
@@ -122,6 +133,7 @@ git push
 建议同时阅读：
 
 - [README.md](README.md)
+- [TESTING.md](TESTING.md)
 - [NOTICE.md](NOTICE.md)
 - [LICENSE](LICENSE)
 - [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
@@ -138,5 +150,4 @@ git push
 ```
 
 这就是后续维护本仓库时最常见的一套流程。
-
 

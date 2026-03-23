@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MidNightRaid 攻略站</title>
+    <title>MidNightRaid WCL 抄作业站</title>
     <meta
       name="description"
-      content="MidNightRaid 团本攻略静态站，提供副本导航、Boss 索引与结构化 JSON 数据示例。"
+      content="通过 WCL API 抓取 Boss 关键技能时间轴与职业关键技能释放时间轴的静态前端工具。"
     >
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body data-page="index">
     <header class="site-header">
       <div class="shell">
-        <p class="eyebrow">MidNightRaid</p>
-        <h1>12.0 团本攻略站</h1>
+        <p class="eyebrow">MidNightRaid x WCL</p>
+        <h1>从 WCL 抄作业的时间轴站</h1>
         <p class="lede">
-          基于原始 Markdown 攻略整理而成的静态站点原型，当前已接入副本索引和 Boss 数据层。
+          选择 Boss 预设、读取 WCL 报告、锁定具体 fight，然后直接抽出 Boss 关键技能轴和团队职业关键技能轴。
         </p>
       </div>
     </header>
 
     <main class="shell page-grid">
       <aside class="sidebar card">
+        <div id="wcl-setup" class="sidebar-stack"></div>
         <section>
-          <h2>副本导航</h2>
+          <h2>副本筛选</h2>
           <div id="raid-nav" class="raid-nav"></div>
         </section>
         <section>
@@ -32,7 +33,7 @@
           <div id="difficulty-nav" class="raid-nav"></div>
         </section>
         <section>
-          <label class="search-label" for="boss-search">搜索 Boss</label>
+          <label class="search-label" for="boss-search">搜索 Boss 预设</label>
           <input
             id="boss-search"
             class="search-input"
@@ -45,15 +46,15 @@
       <section class="content-panel">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Boss 列表</p>
-            <h2 id="list-title">全部 Boss</h2>
+            <p class="eyebrow">Boss Presets</p>
+            <h2 id="list-title">全部 Boss 预设</h2>
           </div>
           <p id="list-summary" class="muted"></p>
         </div>
 
         <div id="boss-list" class="boss-grid"></div>
         <div id="empty-state" class="card empty-state hidden">
-          没有找到匹配的 Boss，请尝试其他关键词或切换副本筛选。
+          没有找到匹配的 Boss 预设，请尝试其他关键词或切换副本筛选。
         </div>
       </section>
     </main>

@@ -1,4 +1,6 @@
 const INDEX_PATH = "./data/raids.json";
+const SITE_CONFIG_PATH = "./data/site-config.json";
+const CLASS_COOLDOWNS_PATH = "./data/class-cooldowns.json";
 
 function ensureArray(value) {
   return Array.isArray(value) ? value : [];
@@ -125,6 +127,22 @@ export async function loadRaidsIndex() {
   const response = await fetch(INDEX_PATH);
   if (!response.ok) {
     throw new Error("无法读取 raids.json");
+  }
+  return response.json();
+}
+
+export async function loadSiteConfig() {
+  const response = await fetch(SITE_CONFIG_PATH);
+  if (!response.ok) {
+    throw new Error("无法读取 site-config.json");
+  }
+  return response.json();
+}
+
+export async function loadClassCooldowns() {
+  const response = await fetch(CLASS_COOLDOWNS_PATH);
+  if (!response.ok) {
+    throw new Error("无法读取 class-cooldowns.json");
   }
   return response.json();
 }

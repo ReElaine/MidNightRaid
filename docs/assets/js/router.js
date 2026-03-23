@@ -45,3 +45,36 @@ export function updateIndexUrl({ raidId, difficulty, keyword }) {
 export function getBossId() {
   return getQueryParam("id");
 }
+
+export function getReportCode() {
+  return getQueryParam("report") || "";
+}
+
+export function getFightId() {
+  const value = getQueryParam("fight");
+  return value ? Number(value) : null;
+}
+
+export function updateBossUrl({ bossId, reportCode, fightId }) {
+  const url = new URL(window.location.href);
+
+  if (bossId) {
+    url.searchParams.set("id", bossId);
+  } else {
+    url.searchParams.delete("id");
+  }
+
+  if (reportCode) {
+    url.searchParams.set("report", reportCode);
+  } else {
+    url.searchParams.delete("report");
+  }
+
+  if (fightId) {
+    url.searchParams.set("fight", String(fightId));
+  } else {
+    url.searchParams.delete("fight");
+  }
+
+  window.history.replaceState({}, "", url);
+}
