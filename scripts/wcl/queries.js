@@ -28,22 +28,6 @@ const ENCOUNTER_BY_ID_QUERY = `
   }
 `;
 
-const FIGHT_RANKINGS_QUERY = `
-  query FightRankings($encounterId: Int!, $difficulty: Int!, $page: Int!, $serverRegion: String) {
-    worldData {
-      encounter(id: $encounterId) {
-        id
-        name
-        zone {
-          id
-          name
-        }
-        fightRankings(difficulty: $difficulty, page: $page, serverRegion: $serverRegion)
-      }
-    }
-  }
-`;
-
 const CHARACTER_RANKINGS_QUERY = `
   query CharacterRankings(
     $encounterId: Int!
@@ -155,7 +139,6 @@ const REPORT_EVENTS_QUERY = `
 module.exports = {
   CHARACTER_RANKINGS_QUERY,
   ENCOUNTER_BY_ID_QUERY,
-  FIGHT_RANKINGS_QUERY,
   REPORT_EVENTS_QUERY,
   REPORT_FIGHTS_QUERY,
   REPORT_PLAYER_DETAILS_QUERY,

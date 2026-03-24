@@ -31,18 +31,17 @@ async function main() {
     const { positional, options } = parseCliArgs(process.argv.slice(2));
     const [selector, topNArg, difficultyArg] = positional;
     if (selector === "--help" || selector === "-h") {
-      console.log("Usage: npm run wcl:boss -- <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
+      console.log("Usage: npm run wcl:boss -- <bossName|encounterId> [topN] [difficulty] --class Mage [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
       return;
     }
     if (!selector) {
-      throw new Error("Usage: npm run wcl:boss -- <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
+      throw new Error("Usage: npm run wcl:boss -- <bossName|encounterId> [topN] [difficulty] --class Mage [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
     }
 
     const topN = Number(topNArg) || 3;
     const rankings = await fetchRankings(selector, {
       size: topN,
       difficulty: difficultyArg,
-      mode: options.mode,
       className: options.class,
       specName: options.spec,
       heroTalent: options.heroTalent,

@@ -7,10 +7,6 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
-function encodeBossLink(boss, entry) {
-  return `./boss.html?boss=${encodeURIComponent(boss.slug)}&difficulty=${encodeURIComponent(boss.difficulty || 4)}&report=${encodeURIComponent(entry.reportCode)}&fight=${encodeURIComponent(entry.fightId)}`;
-}
-
 function renderChip(label, attributes = "", isActive = false) {
   return `<button class="chip ${isActive ? "is-active" : ""}" ${attributes} type="button">${escapeHtml(label)}</button>`;
 }
@@ -116,27 +112,23 @@ export function renderDifficultyNav(activeDifficulty) {
     .join("");
 }
 
-export function renderRankingsCards(entries, boss) {
+export function renderBossCatalogCards(entries, activeBossSlug, difficulty) {
   return entries
     .map(
-      (entry) => `
+      (boss) => `
         <article class="card boss-card">
           <div class="badge-row">
             <span class="badge">${escapeHtml(boss.title)}</span>
-            <span class="badge badge--ghost">排名 ${entry.rank}</span>
-            ${entry.className ? `<span class="badge badge--ghost">${escapeHtml(entry.className)}${entry.specName ? ` / ${escapeHtml(entry.specName)}` : ""}</span>` : ""}
+            <span class="badge badge--ghost">难度 ${escapeHtml(difficulty)}</span>
+            ${boss.slug === activeBossSlug ? `<span class="badge badge--ghost">当前选择</span>` : ""}
           </div>
-          <h3>${escapeHtml(entry.playerName || entry.guild?.name || "Unknown Entry")}</h3>
-          <p>${escapeHtml(entry.server?.region || "")} ${escapeHtml(entry.server?.name || "")}</p>
+          <h3>${escapeHtml(boss.shortName || boss.title)}</h3>
+          <p>${escapeHtml((boss.aliases || []).join(" / ") || "暂无别名")}</p>
           <ul class="compact-list">
-            <li>时长：${Math.round((entry.duration || 0) / 1000)} 秒</li>
-            <li>${entry.metricValue ? `表现值：${Number(entry.metricValue).toFixed(2)}` : `治疗：${entry.healers ?? "?"} / 坦克：${entry.tanks ?? "?"}`}</li>
-            <li>团队人数：${entry.size ?? "?"}${entry.deaths !== undefined && entry.deaths !== null ? ` / 死亡：${entry.deaths}` : ""}</li>
+            <li>Encounter ID: ${escapeHtml(boss.encounterId)}</li>
+            <li>Slug: ${escapeHtml(boss.slug)}</li>
+            <li>推荐命令：<code>npm run wcl:rankings -- "${escapeHtml(boss.title)}" 10 ${escapeHtml(difficulty)} --class Mage --spec Fire</code></li>
           </ul>
-          <div class="boss-card__actions">
-            <a class="link-button" href="${encodeBossLink(boss, entry)}">查看时间轴</a>
-            <a class="link-button link-button--subtle" href="https://www.warcraftlogs.com/reports/${encodeURIComponent(entry.reportCode)}#fight=${encodeURIComponent(entry.fightId)}" target="_blank" rel="noreferrer">打开 WCL</a>
-          </div>
         </article>
       `
     )
@@ -216,10 +208,7 @@ export function renderTimelineDetail({ boss, rankings, timeline, filters, filter
     )
   ].join("");
 
-  const activeClassFilters = [
-    filters.className !== "all" ? filters.className : null,
-    filters.specName !== "all" ? filters.specName : null
-  ].filter(Boolean);
+  const activeClassFilters = [filters.className !== "all" ? filters.className : null, filters.specName !== "all" ? filters.specName : null].filter(Boolean);
 
   return `
     <div class="detail-stack">
@@ -237,12 +226,12 @@ export function renderTimelineDetail({ boss, rankings, timeline, filters, filter
         </div>
         <div class="preset-grid">
           <div class="info-block">
-            <h3>Boss 侧预设</h3>
-            <p class="muted">左侧保留 Boss 关键技能，适合抄机制主轴。</p>
+            <h3>Boss 侧</h3>
+            <p class="muted">左侧只保留 Boss 关键技能，方便对照机制主轴。</p>
           </div>
           <div class="info-block">
-            <h3>职业侧预设</h3>
-            <p class="muted">右侧按职业、专精和技能逐层收窄，更适合找自己的作业轴。</p>
+            <h3>职业侧</h3>
+            <p class="muted">右侧聚焦职业样本，可按职业、专精和技能逐层收窄。</p>
           </div>
         </div>
       </section>
@@ -250,7 +239,7 @@ export function renderTimelineDetail({ boss, rankings, timeline, filters, filter
         <div class="section-heading">
           <div>
             <h2>筛选</h2>
-            <p class="muted">Boss 技能和职业技能都支持多选，职业和专精仍保持单选收窄。</p>
+            <p class="muted">Boss 技能和职业技能都支持多选，职业和专精保持单选收窄。</p>
           </div>
           ${activeClassFilters.length ? `<div class="badge-row">${activeClassFilters.map((item) => `<span class="badge badge--ghost">${escapeHtml(item)}</span>`).join("")}</div>` : ""}
         </div>

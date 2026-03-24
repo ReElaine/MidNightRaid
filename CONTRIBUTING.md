@@ -21,8 +21,7 @@ git push
 ```powershell
 npm test
 node scripts/validate-json.js
-npm run wcl:rankings -- "Imperator Averzian" 1 4
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Mage --spec Fire --metric dps
 ```
 
 如果你改了时间轴生成逻辑，再补一条：
@@ -31,20 +30,12 @@ npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage 
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
 
-如果你改了职业筛选、专精筛选或职业技能过滤，再补一条：
-
-```powershell
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
-```
-
 ## 重点配置
 如果你在做职业抄作业链路，重点确认这两个配置文件：
-
-- [`C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json`](C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json)
-- [`C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json`](C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json)
+- `scripts/wcl/fetch-policy.json`
+- `scripts/wcl/timeline-presets.json`
 
 尤其要看：
-
 - `rankings.defaultMode`
 - `rankings.character.className`
 - `rankings.character.specName`
@@ -64,27 +55,27 @@ git add docs/assets/js/app.js
 git add docs/assets/js/renderers.js
 git add scripts/wcl/build-timeline.js
 git add scripts/wcl/fetch-rankings.js
-git commit -m "Refine class/spec/hero-talent filters"
+git commit -m "Refine character timeline workflow"
 git push
 ```
 
 ## 推送失败
+仓库现在优先走 SSH。
+
 ```powershell
 git status
 git remote -v
-git pull --rebase
+ssh -T git@github.com
 git push
 ```
 
 ## 文档同步
 如果你修改了下面任意内容，请顺手更新文档：
-
 - `scripts/wcl/` 里的抓取逻辑
 - `docs/data/wcl/` 的 JSON 结构
 - `docs/assets/js/` 的前端筛选或渲染逻辑
 
 优先同步：
-
-- [`C:\Working\MidNightRaid\README.md`](C:\Working\MidNightRaid\README.md)
-- [`C:\Working\MidNightRaid\TESTING.md`](C:\Working\MidNightRaid\TESTING.md)
-- [`C:\Working\MidNightRaid\docs\DEVELOPMENT_LOG.md`](C:\Working\MidNightRaid\docs\DEVELOPMENT_LOG.md)
+- `README.md`
+- `TESTING.md`
+- `docs/DEVELOPMENT_LOG.md`

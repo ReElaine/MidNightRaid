@@ -10,10 +10,10 @@ const {
   parseRankingsOptions
 } = require("../scripts/wcl/fetch-rankings.js");
 
-test("parseRankingsOptions keeps fight mode defaults", () => {
+test("parseRankingsOptions keeps character mode defaults", () => {
   const options = parseRankingsOptions({});
 
-  assert.equal(options.mode, "fight");
+  assert.equal(options.mode, "character");
   assert.equal(options.size, 50);
   assert.equal(options.difficulty, 4);
   assert.equal(options.serverRegion, "CN");
@@ -21,7 +21,6 @@ test("parseRankingsOptions keeps fight mode defaults", () => {
 
 test("parseRankingsOptions supports character mode overrides", () => {
   const options = parseRankingsOptions({
-    mode: "character",
     className: "Mage",
     specName: "Fire",
     metric: "dps",
@@ -43,7 +42,7 @@ test("parseRankingsOptions supports character mode overrides", () => {
 test("normalizeCharacterRankingEntry extracts player ranking metadata", () => {
   const entry = normalizeCharacterRankingEntry(
     {
-      name: "梅雪夜",
+      name: "Test Mage",
       class: "Mage",
       spec: "Fire",
       amount: 87916.57,
@@ -54,7 +53,7 @@ test("normalizeCharacterRankingEntry extracts player ranking metadata", () => {
         startTime: 1774096526856
       },
       server: {
-        name: "末日行者",
+        name: "Test Server",
         region: "CN"
       }
     },
@@ -62,7 +61,7 @@ test("normalizeCharacterRankingEntry extracts player ranking metadata", () => {
   );
 
   assert.equal(entry.rank, 1);
-  assert.equal(entry.playerName, "梅雪夜");
+  assert.equal(entry.playerName, "Test Mage");
   assert.equal(entry.className, "Mage");
   assert.equal(entry.specName, "Fire");
   assert.equal(entry.metricValue, 87916.57);
@@ -89,8 +88,6 @@ test("parseCliArgs supports long option flags", () => {
     "Imperator Averzian",
     "10",
     "4",
-    "--mode",
-    "character",
     "--class",
     "Mage",
     "--spec",
@@ -104,7 +101,6 @@ test("parseCliArgs supports long option flags", () => {
   ]);
 
   assert.deepEqual(positional, ["Imperator Averzian", "10", "4"]);
-  assert.equal(options.mode, "character");
   assert.equal(options.class, "Mage");
   assert.equal(options.spec, "Fire");
   assert.equal(options.heroTalent, "Sunfury");

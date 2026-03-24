@@ -6,7 +6,7 @@
     <title>MidNightRaid WCL Toolkit</title>
     <meta
       name="description"
-      content="MidNightRaid 的 Warcraft Logs 工具前端，聚焦高排名公开日志与 Boss 技能时间轴。"
+      content="MidNightRaid 的 Warcraft Logs 工具前端，聚焦职业排名样本与双轨时间轴。"
     >
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
@@ -16,7 +16,7 @@
         <p class="eyebrow">MidNightRaid</p>
         <h1>WCL 时间轴工具箱</h1>
         <p class="lede">
-          先用本地脚本抓取 WCL 排名和时间轴 JSON，再在这个静态前端里查看 Boss 的高排名公开日志与关键技能轴。
+          先用本地脚本抓取职业排名和时间轴 JSON，再在这个静态前端里对照 Boss 机制轴与职业技能轴。
         </p>
       </div>
     </header>
@@ -45,15 +45,15 @@
       <section class="content-panel">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Local Rankings</p>
-            <h2 id="list-title">已抓取的 WCL 排名日志</h2>
+            <p class="eyebrow">Boss Catalog</p>
+            <h2 id="list-title">Boss 数据入口</h2>
           </div>
           <p id="list-summary" class="muted"></p>
         </div>
 
-        <div id="rankings-list" class="boss-grid"></div>
+        <div id="boss-list" class="boss-grid"></div>
         <div id="empty-state" class="card empty-state hidden">
-          当前还没有匹配的本地 rankings JSON。先运行 `npm run wcl:rankings -- "<boss>"` 或 `npm run wcl:boss -- "<boss>" 1`。
+          当前还没有匹配的 Boss。先确认搜索词，或在命令行里执行职业排名抓取。
         </div>
       </section>
     </main>

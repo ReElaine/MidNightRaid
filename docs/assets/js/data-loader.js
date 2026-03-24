@@ -12,14 +12,6 @@ export async function loadBossCatalog() {
   return readJson(BOSS_CATALOG_PATH);
 }
 
-export function buildWclRankingsPath(bossSlug, difficulty = 4) {
-  return `./data/wcl/rankings/${bossSlug}-d${difficulty}.json`;
-}
-
-export async function loadWclRankings(bossSlug, difficulty = 4) {
-  return readJson(buildWclRankingsPath(bossSlug, difficulty));
-}
-
 export function buildWclTimelinePath(reportCode, fightId) {
   return `./data/wcl/timelines/${reportCode}-${fightId}.json`;
 }

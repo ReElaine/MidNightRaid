@@ -1,6 +1,6 @@
 {
   "rankings": {
-    "defaultMode": "fight",
+    "defaultMode": "character",
     "defaultTopN": 50,
     "defaultDifficulty": 4,
     "preferredRegion": "CN",

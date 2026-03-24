@@ -1,5 +1,5 @@
-import { loadBossCatalog, loadWclRankings, loadWclTimeline } from "./data-loader.js";
-import { renderBossNav, renderDifficultyNav, renderErrorState, renderRankingsCards, renderTimelineDetail } from "./renderers.js";
+import { loadBossCatalog, loadWclTimeline } from "./data-loader.js";
+import { renderBossCatalogCards, renderBossNav, renderDifficultyNav, renderErrorState, renderTimelineDetail } from "./renderers.js";
 import { getBossSlug, getDifficulty, getFightId, getPageName, getReportCode, getSearchKeyword, updateIndexUrl } from "./router.js";
 
 function normalize(value) {
@@ -11,7 +11,7 @@ function matchesKeyword(boss, keyword) {
     return true;
   }
 
-  const haystack = [boss.title, boss.slug, ...(boss.aliases || []), boss.encounterName]
+  const haystack = [boss.title, boss.shortName, boss.slug, ...(boss.aliases || [])]
     .filter(Boolean)
     .join(" ")
     .toLowerCase();
@@ -24,7 +24,7 @@ async function initIndexPage() {
   const bossNav = document.querySelector("#boss-nav");
   const difficultyNav = document.querySelector("#difficulty-nav");
   const searchInput = document.querySelector("#boss-search");
-  const rankingsList = document.querySelector("#rankings-list");
+  const bossList = document.querySelector("#boss-list");
   const emptyState = document.querySelector("#empty-state");
   const listTitle = document.querySelector("#list-title");
   const listSummary = document.querySelector("#list-summary");
@@ -35,37 +35,29 @@ async function initIndexPage() {
 
   searchInput.value = keyword;
 
-  async function render() {
+  function render() {
     const visibleBosses = catalog.bosses.filter((boss) => matchesKeyword(boss, keyword));
-    const boss = visibleBosses.find((item) => item.slug === activeBossSlug) || visibleBosses[0] || null;
+    const activeBoss = visibleBosses.find((item) => item.slug === activeBossSlug) || visibleBosses[0] || null;
 
-    bossNav.innerHTML = renderBossNav(visibleBosses, boss?.slug || "");
+    bossNav.innerHTML = renderBossNav(visibleBosses, activeBoss?.slug || "");
     difficultyNav.innerHTML = renderDifficultyNav(activeDifficulty);
 
-    if (!boss) {
-      rankingsList.innerHTML = "";
-      emptyState.classList.remove("hidden");
+    if (!activeBoss) {
+      bossList.innerHTML = "";
       listTitle.textContent = "没有匹配的 Boss";
       listSummary.textContent = "";
+      emptyState.classList.remove("hidden");
       updateIndexUrl({ bossSlug: "", difficulty: activeDifficulty, keyword });
       return;
     }
 
-    activeBossSlug = boss.slug;
-    listTitle.textContent = boss.title;
+    activeBossSlug = activeBoss.slug;
+    listTitle.textContent = "Boss 数据入口";
+    listSummary.textContent = `当前聚焦 ${activeBoss.title}。首页只保留职业排名抓取入口和时间轴说明，不再展示整团排名结果。`;
+    bossList.innerHTML = renderBossCatalogCards(visibleBosses, activeBoss.slug, activeDifficulty);
+    emptyState.classList.add("hidden");
 
-    try {
-      const rankings = await loadWclRankings(boss.slug, activeDifficulty);
-      rankingsList.innerHTML = renderRankingsCards(rankings.rankings || [], boss);
-      listSummary.textContent = `当前展示 ${rankings.rankings?.length || 0} 条已抓取的高排名公开日志`;
-      emptyState.classList.toggle("hidden", (rankings.rankings?.length || 0) > 0);
-    } catch (error) {
-      rankingsList.innerHTML = "";
-      listSummary.textContent = "当前尚未生成本地 rankings JSON";
-      emptyState.classList.remove("hidden");
-    }
-
-    updateIndexUrl({ bossSlug: boss.slug, difficulty: activeDifficulty, keyword });
+    updateIndexUrl({ bossSlug: activeBoss.slug, difficulty: activeDifficulty, keyword });
   }
 
   bossNav.addEventListener("click", (event) => {
@@ -91,14 +83,13 @@ async function initIndexPage() {
     render();
   });
 
-  await render();
+  render();
 }
 
 async function initBossPage() {
   const bossSlug = getBossSlug();
   const reportCode = getReportCode();
   const fightId = getFightId();
-  const difficulty = getDifficulty();
   const titleElement = document.querySelector("#boss-page-title");
   const detailElement = document.querySelector("#boss-detail");
 
@@ -115,12 +106,7 @@ async function initBossPage() {
       throw new Error(`未找到 Boss: ${bossSlug}`);
     }
 
-    const [rankings, timeline] = await Promise.all([
-      loadWclRankings(bossSlug, difficulty).catch(() => null),
-      loadWclTimeline(reportCode, fightId)
-    ]);
-
-    const rankingEntry = rankings?.rankings?.find((item) => item.reportCode === reportCode && Number(item.fightId) === Number(fightId)) || null;
+    const timeline = await loadWclTimeline(reportCode, fightId);
     titleElement.textContent = `${boss.title} / ${reportCode}`;
 
     const filterState = {
@@ -153,7 +139,7 @@ async function initBossPage() {
 
       detailElement.innerHTML = renderTimelineDetail({
         boss,
-        rankings: rankingEntry,
+        rankings: null,
         timeline,
         filters: filterState,
         filteredBossEntries,
