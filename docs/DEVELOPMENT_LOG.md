@@ -1,5 +1,11 @@
 # Development Log
 
+## 2026-03-24 / difficulty note
+
+- Added a small documentation note that current WCL difficulty parameters map as:
+  - `4` = Heroic
+  - `5` = Mythic
+
 ## 2026-03-24 / segmented friendly cast fetching
 
 - Fixed late-fight Holy Priest cooldowns being truncated from timeline data.
