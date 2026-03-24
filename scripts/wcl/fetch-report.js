@@ -1,6 +1,6 @@
 const { graphqlRequest } = require("./graphql");
 const { REPORT_FIGHTS_QUERY } = require("./queries");
-const { extractReportCode, getBossMappingEntry, normalizeText, parseInteger } = require("./utils");
+const { extractReportCode, getBossMappingEntry, loadFetchPolicy, normalizeText, parseInteger } = require("./utils");
 
 function normalizeFight(reportCode, fight) {
   const mapping = getBossMappingEntry(fight.name);
@@ -54,9 +54,14 @@ function buildActorMap(masterData) {
 }
 
 async function fetchReportFights(input, options = {}) {
+  const policy = loadFetchPolicy();
   const reportCode = extractReportCode(input);
   const fightIds = options.fightId ? [Number(options.fightId)] : null;
-  const data = await graphqlRequest(REPORT_FIGHTS_QUERY, { code: reportCode, fightIds });
+  const data = await graphqlRequest(REPORT_FIGHTS_QUERY, {
+    code: reportCode,
+    fightIds,
+    translate: options.translate ?? policy.report?.translate ?? true
+  });
   const report = data.reportData?.report;
   if (!report) {
     throw new Error(`Report ${reportCode} was not found or is private.`);

@@ -1,0 +1,22 @@
+{
+  "rankings": {
+    "defaultMode": "fight",
+    "defaultTopN": 50,
+    "defaultDifficulty": 4,
+    "preferredRegion": "CN",
+    "fallbackToGlobal": true,
+    "character": {
+      "className": null,
+      "specName": null,
+      "metric": "dps"
+    }
+  },
+  "report": {
+    "translate": false
+  },
+  "events": {
+    "translate": false,
+    "hostilityType": "Enemies",
+    "limit": 1000
+  }
+}

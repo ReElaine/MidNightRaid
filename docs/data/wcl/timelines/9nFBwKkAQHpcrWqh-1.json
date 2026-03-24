@@ -9,38 +9,146 @@
   "endTime": 163742,
   "timeline": [
     {
-      "t": "0:19",
-      "timestamp": 19920,
-      "abilityGameId": 1249265,
-      "abilityName": "Umbral Collapse",
-      "type": "applydebuff",
+      "t": "0:14",
+      "timestamp": 14965,
+      "abilityGameId": 1262776,
+      "abilityName": "Shadow's Advance",
+      "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
-      "t": "0:27",
-      "timestamp": 27471,
-      "abilityGameId": 1260203,
+      "t": "0:19",
+      "timestamp": 19920,
+      "abilityGameId": 1249265,
       "abilityName": "Umbral Collapse",
-      "type": "applydebuff",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "0:25",
+      "timestamp": 25460,
+      "abilityGameId": 1249266,
+      "abilityName": "Umbral Collapse",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "0:32",
+      "timestamp": 32958,
+      "abilityGameId": 1260206,
+      "abilityName": "Umbral Collapse",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "0:35",
+      "timestamp": 35492,
+      "abilityGameId": 1262036,
+      "abilityName": "Void Rupture",
+      "type": "cast",
+      "sourceId": 91,
+      "sourceName": "Abyssal Voidshaper"
+    },
+    {
+      "t": "0:40",
+      "timestamp": 40489,
+      "abilityGameId": 1261249,
+      "abilityName": "Void Rupture",
+      "type": "cast",
+      "sourceId": 101,
+      "sourceName": "Dark Tear"
+    },
+    {
+      "t": "0:50",
+      "timestamp": 50943,
+      "abilityGameId": 1260712,
+      "abilityName": "Oblivion's Wrath",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:08",
+      "timestamp": 68969,
+      "abilityGameId": 1260712,
+      "abilityName": "Oblivion's Wrath",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:26",
+      "timestamp": 86964,
+      "abilityGameId": 1251361,
+      "abilityName": "Shadow's Advance",
+      "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
       "t": "1:31",
-      "timestamp": 91966,
+      "timestamp": 91946,
       "abilityGameId": 1249265,
       "abilityName": "Umbral Collapse",
-      "type": "applydebuff",
+      "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
-      "t": "1:39",
-      "timestamp": 99468,
-      "abilityGameId": 1260203,
+      "t": "1:37",
+      "timestamp": 97491,
+      "abilityGameId": 1249266,
       "abilityName": "Umbral Collapse",
-      "type": "applydebuff",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:44",
+      "timestamp": 104990,
+      "abilityGameId": 1260206,
+      "abilityName": "Umbral Collapse",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:47",
+      "timestamp": 107482,
+      "abilityGameId": 1262036,
+      "abilityName": "Void Rupture",
+      "type": "cast",
+      "sourceId": 91,
+      "sourceName": "Abyssal Voidshaper"
+    },
+    {
+      "t": "1:52",
+      "timestamp": 112493,
+      "abilityGameId": 1261249,
+      "abilityName": "Void Rupture",
+      "type": "cast",
+      "sourceId": 101,
+      "sourceName": "Dark Tear"
+    },
+    {
+      "t": "1:52",
+      "timestamp": 112731,
+      "abilityGameId": 1261249,
+      "abilityName": "Void Rupture",
+      "type": "cast",
+      "sourceId": 101,
+      "sourceName": "Dark Tear"
+    },
+    {
+      "t": "2:10",
+      "timestamp": 130938,
+      "abilityGameId": 1258880,
+      "abilityName": "Void Fall",
+      "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     }

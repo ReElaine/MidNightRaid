@@ -28,3 +28,17 @@ node scripts/validate-json.js
 - `docs/data/wcl/bosses.json`
 - `docs/data/wcl/rankings/*.json`
 - `docs/data/wcl/timelines/*.json`
+
+## 抓取策略
+
+当前默认抓取策略放在：
+
+- `scripts/wcl/fetch-policy.json`
+
+建议改完后至少手动验证一次：
+
+```powershell
+npm run wcl:rankings -- "Imperator Averzian"
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
+npm run wcl:boss -- "Imperator Averzian" 1 4 --mode character --class Mage --spec Fire --metric dps
+```

@@ -48,7 +48,13 @@ WCL_V2_CLIENT_SECRET=YOUR_WCL_V2_CLIENT_SECRET
 查询某个 Boss 的高排名公开日志：
 
 ```powershell
-npm run wcl:rankings -- "Imperator Averzian" 3 4
+npm run wcl:rankings -- "Imperator Averzian"
+```
+
+按职业 / 专精表现查询高排名日志：
+
+```powershell
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
 抓某个 report 的 fight 列表：
@@ -69,6 +75,28 @@ npm run wcl:fetch -- 9nFBwKkAQHpcrWqh 1
 npm run wcl:boss -- "Imperator Averzian" 1 4
 ```
 
+按职业 / 专精自动抓前几条高排名日志并生成时间轴：
+
+```powershell
+npm run wcl:boss -- "Imperator Averzian" 3 4 --mode character --class Mage --spec Fire --metric dps
+```
+
+## 抓取策略配置
+
+默认抓取行为由 [`scripts/wcl/fetch-policy.json`](scripts/wcl/fetch-policy.json) 控制。
+
+当前默认值：
+
+- 排名模式：`fight`
+- 排名范围：前 `50`
+- 难度：`4`（英雄）
+- 地区优先：`CN`
+- 当 `CN` 没结果时允许回退到全球公开日志
+- 职业排名默认指标：`dps`
+- report / events 默认 `translate: false`
+
+如果你想调整排名模式、地区、抓取数量、职业筛选或中文显示策略，优先改这个配置文件，不需要直接改脚本。
+
 运行测试与校验：
 
 ```powershell
@@ -82,6 +110,12 @@ node scripts/validate-json.js
 
 ```text
 docs/data/wcl/rankings/<bossSlug>-d<difficulty>.json
+```
+
+职业排名 JSON：
+
+```text
+docs/data/wcl/rankings/<bossSlug>-d<difficulty>-<class>-<spec>-<metric>.json
 ```
 
 时间轴 JSON：

@@ -1,0 +1,41 @@
+{
+  "mode": "character",
+  "encounterId": 3176,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 1,
+  "region": "CN",
+  "hasMorePages": false,
+  "total": 57,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "梅雪夜",
+      "className": "Mage",
+      "specName": "Fire",
+      "metricValue": 87916.578286767,
+      "duration": 336615,
+      "startTime": 1774099037428,
+      "reportCode": "tDFXG2BvzQ17j9gr",
+      "fightId": 8,
+      "reportStartTime": 1774096526856,
+      "hardModeLevel": 0,
+      "bracketData": 252,
+      "size": 21,
+      "faction": 0,
+      "server": {
+        "id": 710,
+        "name": "末日行者",
+        "region": "CN"
+      },
+      "guild": null
+    }
+  ],
+  "className": "Mage",
+  "specName": "Fire",
+  "metric": "dps"
+}

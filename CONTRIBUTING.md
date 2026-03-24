@@ -27,6 +27,7 @@ git push
 npm test
 node scripts/validate-json.js
 npm run wcl:rankings -- "Imperator Averzian" 1 4
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
 如果你改了 timeline 生成逻辑，再补一条：
@@ -34,6 +35,19 @@ npm run wcl:rankings -- "Imperator Averzian" 1 4
 ```powershell
 npm run wcl:fetch -- 9nFBwKkAQHpcrWqh 1
 ```
+
+如果你改了默认抓取地区、抓取数量、翻译策略或职业排名模式，请同时检查：
+
+```powershell
+Get-Content scripts/wcl/fetch-policy.json
+```
+
+如果你在做职业抄作业链路，重点确认：
+
+- `rankings.defaultMode`
+- `rankings.character.className`
+- `rankings.character.specName`
+- `rankings.character.metric`
 
 ## 常用命令
 

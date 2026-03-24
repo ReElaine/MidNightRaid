@@ -1,7 +1,9 @@
 const { graphqlRequest } = require("./graphql");
 const { REPORT_EVENTS_QUERY } = require("./queries");
+const { loadFetchPolicy } = require("./utils");
 
 async function fetchEventPages(reportCode, fightId, dataType, options = {}) {
+  const policy = loadFetchPolicy();
   const events = [];
   let nextPageTimestamp = options.startTime ?? null;
   let pageCount = 0;
@@ -13,8 +15,9 @@ async function fetchEventPages(reportCode, fightId, dataType, options = {}) {
       dataType,
       startTime: nextPageTimestamp,
       endTime: options.endTime ?? null,
-      hostilityType: options.hostilityType || null,
-      limit: options.limit || 1000
+      hostilityType: options.hostilityType || policy.events?.hostilityType || null,
+      limit: options.limit || policy.events?.limit || 1000,
+      translate: options.translate ?? policy.events?.translate ?? true
     });
 
     const payload = data.reportData?.report?.events;

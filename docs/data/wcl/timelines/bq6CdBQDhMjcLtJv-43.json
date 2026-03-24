@@ -1,0 +1,624 @@
+{
+  "reportCode": "bq6CdBQDhMjcLtJv",
+  "fightId": 43,
+  "bossName": "元首阿福扎恩",
+  "bossSlug": "spire_h1_afuzan",
+  "encounterId": 3176,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 227572,
+  "timeline": [
+    {
+      "t": "0:06",
+      "timestamp": 6522,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:15",
+      "timestamp": 15042,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:15",
+      "timestamp": 15044,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "0:15",
+      "timestamp": 15044,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "0:15",
+      "timestamp": 15044,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "0:19",
+      "timestamp": 19993,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:25",
+      "timestamp": 25513,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:33",
+      "timestamp": 33016,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:35",
+      "timestamp": 35560,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "0:40",
+      "timestamp": 40570,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "0:42",
+      "timestamp": 42509,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "0:51",
+      "timestamp": 51011,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:09",
+      "timestamp": 69003,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:18",
+      "timestamp": 78518,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:27",
+      "timestamp": 87012,
+      "abilityGameId": 1251361,
+      "abilityName": "暗影进军",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:27",
+      "timestamp": 87013,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "1:27",
+      "timestamp": 87014,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "1:27",
+      "timestamp": 87014,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "1:31",
+      "timestamp": 91999,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:37",
+      "timestamp": 97515,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:45",
+      "timestamp": 105033,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "1:47",
+      "timestamp": 107510,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "1:52",
+      "timestamp": 112512,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "1:52",
+      "timestamp": 112757,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "2:10",
+      "timestamp": 130994,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 349,
+      "sourceName": "胧影终末行者"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:14",
+      "timestamp": 134729,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:16",
+      "timestamp": 136728,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:16",
+      "timestamp": 136728,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:16",
+      "timestamp": 136728,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:18",
+      "timestamp": 138749,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:18",
+      "timestamp": 138749,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:18",
+      "timestamp": 138749,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 513,
+      "sourceName": "胧影终末行者"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:30",
+      "timestamp": 150956,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:32",
+      "timestamp": 152968,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:32",
+      "timestamp": 152969,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:32",
+      "timestamp": 152969,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:34",
+      "timestamp": 154983,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:34",
+      "timestamp": 154983,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:34",
+      "timestamp": 154983,
+      "abilityGameId": 1249321,
+      "abilityName": "行进造型",
+      "type": "cast",
+      "sourceId": 348,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "t": "2:37",
+      "timestamp": 157530,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "2:46",
+      "timestamp": 166031,
+      "abilityGameId": 1251361,
+      "abilityName": "暗影进军",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "2:46",
+      "timestamp": 166032,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "2:46",
+      "timestamp": 166032,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "2:46",
+      "timestamp": 166033,
+      "abilityGameId": 1249714,
+      "abilityName": "暗影屏障",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "2:51",
+      "timestamp": 171034,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "2:56",
+      "timestamp": 176547,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "3:04",
+      "timestamp": 184055,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "3:06",
+      "timestamp": 186573,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "t": "3:11",
+      "timestamp": 191557,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "3:11",
+      "timestamp": 191819,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "3:12",
+      "timestamp": 192082,
+      "abilityGameId": 1261249,
+      "abilityName": "虚空割裂",
+      "type": "cast",
+      "sourceId": 345,
+      "sourceName": "黑暗通道"
+    },
+    {
+      "t": "3:13",
+      "timestamp": 193535,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "3:22",
+      "timestamp": 202022,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "t": "3:23",
+      "timestamp": 203466,
+      "abilityGameId": 1274846,
+      "abilityName": "黑暗弹幕",
+      "type": "cast",
+      "sourceId": 514,
+      "sourceName": "虚缚歼灭者"
+    },
+    {
+      "t": "3:23",
+      "timestamp": 203886,
+      "abilityGameId": 1274846,
+      "abilityName": "黑暗弹幕",
+      "type": "cast",
+      "sourceId": 514,
+      "sourceName": "虚缚歼灭者"
+    },
+    {
+      "t": "3:27",
+      "timestamp": 207122,
+      "abilityGameId": 1274846,
+      "abilityName": "黑暗弹幕",
+      "type": "cast",
+      "sourceId": 514,
+      "sourceName": "虚缚歼灭者"
+    },
+    {
+      "t": "3:27",
+      "timestamp": 207616,
+      "abilityGameId": 1255702,
+      "abilityName": "浓暗壁垒",
+      "type": "cast",
+      "sourceId": 514,
+      "sourceName": "虚缚歼灭者"
+    },
+    {
+      "t": "3:40",
+      "timestamp": 220034,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    }
+  ]
+}

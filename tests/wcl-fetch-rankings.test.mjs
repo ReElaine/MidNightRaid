@@ -3,10 +3,10 @@ import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
-const { getRankingsOutputPath, normalizeRankingEntry } = require("../scripts/wcl/fetch-rankings.js");
+const { getRankingsOutputPath, normalizeFightRankingEntry } = require("../scripts/wcl/fetch-rankings.js");
 
-test("normalizeRankingEntry extracts report metadata", () => {
-  const entry = normalizeRankingEntry(
+test("normalizeFightRankingEntry extracts report metadata", () => {
+  const entry = normalizeFightRankingEntry(
     {
       duration: 163742,
       startTime: 1774071393219,
@@ -29,7 +29,7 @@ test("normalizeRankingEntry extracts report metadata", () => {
 });
 
 test("getRankingsOutputPath uses rankings subdirectory and difficulty suffix", () => {
-  const outputPath = getRankingsOutputPath("spire_h1_afuzan", 4);
+  const outputPath = getRankingsOutputPath("spire_h1_afuzan", { difficulty: 4 });
   assert.match(outputPath, /rankings/);
   assert.match(outputPath, /spire_h1_afuzan-d4\.json$/);
 });

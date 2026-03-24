@@ -29,7 +29,7 @@ const ENCOUNTER_BY_ID_QUERY = `
 `;
 
 const FIGHT_RANKINGS_QUERY = `
-  query FightRankings($encounterId: Int!, $difficulty: Int!, $page: Int!) {
+  query FightRankings($encounterId: Int!, $difficulty: Int!, $page: Int!, $serverRegion: String) {
     worldData {
       encounter(id: $encounterId) {
         id
@@ -38,21 +38,52 @@ const FIGHT_RANKINGS_QUERY = `
           id
           name
         }
-        fightRankings(difficulty: $difficulty, page: $page)
+        fightRankings(difficulty: $difficulty, page: $page, serverRegion: $serverRegion)
+      }
+    }
+  }
+`;
+
+const CHARACTER_RANKINGS_QUERY = `
+  query CharacterRankings(
+    $encounterId: Int!
+    $difficulty: Int!
+    $page: Int!
+    $serverRegion: String
+    $className: String
+    $specName: String
+    $metric: CharacterRankingMetricType
+  ) {
+    worldData {
+      encounter(id: $encounterId) {
+        id
+        name
+        zone {
+          id
+          name
+        }
+        characterRankings(
+          difficulty: $difficulty
+          page: $page
+          serverRegion: $serverRegion
+          className: $className
+          specName: $specName
+          metric: $metric
+        )
       }
     }
   }
 `;
 
 const REPORT_FIGHTS_QUERY = `
-  query ReportFights($code: String!, $fightIds: [Int!]) {
+  query ReportFights($code: String!, $fightIds: [Int!], $translate: Boolean) {
     reportData {
       report(code: $code) {
         code
         title
         startTime
         endTime
-        fights(fightIDs: $fightIds) {
+        fights(fightIDs: $fightIds, translate: $translate) {
           id
           name
           encounterID
@@ -70,7 +101,7 @@ const REPORT_FIGHTS_QUERY = `
             gameID
           }
         }
-        masterData {
+        masterData(translate: $translate) {
           abilities {
             gameID
             name
@@ -91,7 +122,7 @@ const REPORT_FIGHTS_QUERY = `
 `;
 
 const REPORT_EVENTS_QUERY = `
-  query ReportEvents($code: String!, $fightIds: [Int!], $dataType: EventDataType!, $startTime: Float, $endTime: Float, $hostilityType: HostilityType, $limit: Int) {
+  query ReportEvents($code: String!, $fightIds: [Int!], $dataType: EventDataType!, $startTime: Float, $endTime: Float, $hostilityType: HostilityType, $limit: Int, $translate: Boolean) {
     reportData {
       report(code: $code) {
         events(
@@ -101,6 +132,7 @@ const REPORT_EVENTS_QUERY = `
           endTime: $endTime
           hostilityType: $hostilityType
           limit: $limit
+          translate: $translate
         ) {
           data
           nextPageTimestamp
@@ -111,6 +143,7 @@ const REPORT_EVENTS_QUERY = `
 `;
 
 module.exports = {
+  CHARACTER_RANKINGS_QUERY,
   ENCOUNTER_BY_ID_QUERY,
   FIGHT_RANKINGS_QUERY,
   REPORT_EVENTS_QUERY,

@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-const { BOSS_MAPPING_PATH, ENV_PATH, TIMELINE_FILTERS_PATH } = require("./config");
+const { BOSS_MAPPING_PATH, ENV_PATH, FETCH_POLICY_PATH, TIMELINE_FILTERS_PATH } = require("./config");
 
 let envLoaded = false;
 let cachedBossMapping = null;
 let cachedTimelineFilters = null;
+let cachedFetchPolicy = null;
 
 function loadEnvFile(filePath = ENV_PATH) {
   if (envLoaded || !fs.existsSync(filePath)) {
@@ -112,6 +113,13 @@ function loadTimelineFilters() {
   return cachedTimelineFilters;
 }
 
+function loadFetchPolicy() {
+  if (!cachedFetchPolicy) {
+    cachedFetchPolicy = readJson(FETCH_POLICY_PATH);
+  }
+  return cachedFetchPolicy;
+}
+
 function getBossMappingEntry(selector) {
   const mapping = loadBossMapping();
   const normalizedSelector = normalizeText(selector);
@@ -174,6 +182,7 @@ module.exports = {
   getTimelineFilterSet,
   loadBossMapping,
   loadEnvFile,
+  loadFetchPolicy,
   loadTimelineFilters,
   normalizeText,
   parseInteger,

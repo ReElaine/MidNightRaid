@@ -1,10 +1,10 @@
 const path = require("path");
 const { DEFAULT_RANKINGS_DIFFICULTY, DEFAULT_RANKINGS_PAGE_SIZE, WCL_RANKINGS_ROOT } = require("./config");
 const { graphqlRequest } = require("./graphql");
-const { ENCOUNTER_BY_ID_QUERY, FIGHT_RANKINGS_QUERY, SEARCH_ZONES_QUERY } = require("./queries");
-const { getBossMappingEntry, normalizeText, parseInteger, writeJson } = require("./utils");
+const { CHARACTER_RANKINGS_QUERY, ENCOUNTER_BY_ID_QUERY, FIGHT_RANKINGS_QUERY, SEARCH_ZONES_QUERY } = require("./queries");
+const { getBossMappingEntry, loadFetchPolicy, normalizeText, parseInteger, writeJson } = require("./utils");
 
-function normalizeRankingEntry(entry, index) {
+function normalizeFightRankingEntry(entry, index) {
   return {
     rank: index + 1,
     duration: entry.duration ?? null,
@@ -22,6 +22,27 @@ function normalizeRankingEntry(entry, index) {
     server: entry.server || null,
     guild: entry.guild || null,
     damageTaken: entry.damageTaken ?? null
+  };
+}
+
+function normalizeCharacterRankingEntry(entry, index) {
+  return {
+    rank: index + 1,
+    playerName: entry.name || null,
+    className: entry.class || null,
+    specName: entry.spec || null,
+    metricValue: entry.amount ?? null,
+    duration: entry.duration ?? null,
+    startTime: entry.startTime ?? null,
+    reportCode: entry.report?.code || null,
+    fightId: entry.report?.fightID || null,
+    reportStartTime: entry.report?.startTime || null,
+    hardModeLevel: entry.hardModeLevel ?? null,
+    bracketData: entry.bracketData ?? null,
+    size: entry.size ?? null,
+    faction: entry.faction ?? null,
+    server: entry.server || null,
+    guild: entry.guild || null
   };
 }
 
@@ -78,63 +99,197 @@ async function resolveEncounter(selector) {
   throw new Error(`Cannot resolve encounter from selector: ${selector}`);
 }
 
-function getRankingsOutputPath(slugOrEncounterId, difficulty) {
-  return path.join(WCL_RANKINGS_ROOT, `${slugOrEncounterId}-d${difficulty}.json`);
+function sanitizeFilePart(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
-async function fetchRankings(selector, options = {}) {
-  const encounter = await resolveEncounter(selector);
-  const difficulty = parseInteger(options.difficulty, encounter.preferredDifficulty || DEFAULT_RANKINGS_DIFFICULTY);
-  const page = parseInteger(options.page, 1);
-  const size = parseInteger(options.size, DEFAULT_RANKINGS_PAGE_SIZE);
-  const data = await graphqlRequest(FIGHT_RANKINGS_QUERY, {
-    encounterId: encounter.encounterId,
-    difficulty,
-    page
-  });
-
-  const payload = data.worldData?.encounter?.fightRankings;
-  if (!payload || payload.error) {
-    throw new Error(payload?.error || "Fight rankings were not returned.");
+function getRankingsOutputStem(selector, options = {}) {
+  const base = String(selector);
+  if (options.mode !== "character") {
+    return `${base}-d${options.difficulty}`;
   }
 
-  const rankings = (payload.rankings || []).map((entry, index) => normalizeRankingEntry(entry, index)).slice(0, size);
+  const classPart = sanitizeFilePart(options.className || "all-classes") || "all-classes";
+  const specPart = sanitizeFilePart(options.specName || "all-specs") || "all-specs";
+  const metricPart = sanitizeFilePart(options.metric || "dps") || "dps";
+  return `${base}-d${options.difficulty}-${classPart}-${specPart}-${metricPart}`;
+}
+
+function getRankingsOutputPath(selector, options = {}) {
+  return path.join(WCL_RANKINGS_ROOT, `${getRankingsOutputStem(selector, options)}.json`);
+}
+
+function parseRankingsOptions(rawOptions = {}) {
+  const policy = loadFetchPolicy();
+  const rankingPolicy = policy.rankings || {};
+  const characterPolicy = rankingPolicy.character || {};
+  const mode = normalizeText(rawOptions.mode || rankingPolicy.defaultMode || "fight") === "character" ? "character" : "fight";
+
+  return {
+    mode,
+    difficulty: parseInteger(rawOptions.difficulty, rankingPolicy.defaultDifficulty || DEFAULT_RANKINGS_DIFFICULTY),
+    page: parseInteger(rawOptions.page, 1),
+    size: parseInteger(rawOptions.size, rankingPolicy.defaultTopN || DEFAULT_RANKINGS_PAGE_SIZE),
+    serverRegion: rawOptions.serverRegion ?? rankingPolicy.preferredRegion ?? null,
+    className: rawOptions.className ?? characterPolicy.className ?? null,
+    specName: rawOptions.specName ?? characterPolicy.specName ?? null,
+    metric: rawOptions.metric ?? characterPolicy.metric ?? "dps",
+    write: rawOptions.write
+  };
+}
+
+async function requestRankings(encounterId, options, fallbackToGlobal) {
+  const variables = {
+    encounterId,
+    difficulty: options.difficulty,
+    page: options.page,
+    serverRegion: options.serverRegion
+  };
+
+  let query = FIGHT_RANKINGS_QUERY;
+  let payloadKey = "fightRankings";
+
+  if (options.mode === "character") {
+    query = CHARACTER_RANKINGS_QUERY;
+    payloadKey = "characterRankings";
+    variables.className = options.className;
+    variables.specName = options.specName;
+    variables.metric = options.metric;
+  }
+
+  let data = await graphqlRequest(query, variables);
+  let payload = data.worldData?.encounter?.[payloadKey];
+
+  if (fallbackToGlobal && options.serverRegion && (!payload || payload.error || !(payload.rankings || []).length)) {
+    data = await graphqlRequest(query, { ...variables, serverRegion: null });
+    payload = data.worldData?.encounter?.[payloadKey];
+  }
+
+  if (!payload || payload.error) {
+    throw new Error(payload?.error || "Rankings were not returned.");
+  }
+
+  return { data, payload };
+}
+
+async function fetchRankings(selector, rawOptions = {}) {
+  const policy = loadFetchPolicy();
+  const encounter = await resolveEncounter(selector);
+  const options = parseRankingsOptions({
+    ...rawOptions,
+    difficulty: rawOptions.difficulty ?? encounter.preferredDifficulty
+  });
+
+  if (options.mode === "character" && !options.className) {
+    throw new Error("Character rankings mode requires --class <ClassName> or rankings.character.className in fetch-policy.json.");
+  }
+
+  const { data, payload } = await requestRankings(encounter.encounterId, options, policy.rankings?.fallbackToGlobal);
+  const encounterData = data.worldData?.encounter;
+  const normalizeEntry = options.mode === "character" ? normalizeCharacterRankingEntry : normalizeFightRankingEntry;
+  const rankings = (payload.rankings || []).map((entry, index) => normalizeEntry(entry, index)).slice(0, options.size);
+
   const result = {
+    mode: options.mode,
     encounterId: encounter.encounterId,
-    bossName: data.worldData.encounter.name,
+    bossName: encounterData?.name || encounter.bossName,
     bossSlug: encounter.slug || null,
-    zoneId: data.worldData.encounter.zone?.id || encounter.zoneId || null,
-    zoneName: data.worldData.encounter.zone?.name || encounter.zoneName || null,
-    difficulty,
-    page,
-    pageSize: size,
+    zoneId: encounterData?.zone?.id || encounter.zoneId || null,
+    zoneName: encounterData?.zone?.name || encounter.zoneName || null,
+    difficulty: options.difficulty,
+    page: options.page,
+    pageSize: options.size,
+    region: options.serverRegion || "GLOBAL",
     hasMorePages: Boolean(payload.hasMorePages),
     total: payload.count ?? rankings.length,
     rankings
   };
 
+  if (options.mode === "character") {
+    result.className = options.className;
+    result.specName = options.specName || null;
+    result.metric = options.metric;
+  }
+
   if (options.write !== false) {
-    writeJson(getRankingsOutputPath(result.bossSlug || result.encounterId, result.difficulty), result);
+    writeJson(
+      getRankingsOutputPath(result.bossSlug || result.encounterId, {
+        mode: result.mode,
+        difficulty: result.difficulty,
+        className: result.className,
+        specName: result.specName,
+        metric: result.metric
+      }),
+      result
+    );
   }
 
   return result;
 }
 
+function parseCliArgs(argv) {
+  const positional = [];
+  const options = {};
+
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index];
+    if (!token.startsWith("--")) {
+      positional.push(token);
+      continue;
+    }
+
+    const key = token.slice(2);
+    const nextValue = argv[index + 1];
+    if (!nextValue || nextValue.startsWith("--")) {
+      options[key] = true;
+      continue;
+    }
+
+    options[key] = nextValue;
+    index += 1;
+  }
+
+  return { positional, options };
+}
+
 async function main() {
   try {
-    const [selector, sizeArg, difficultyArg] = process.argv.slice(2);
-    if (selector === "--help" || selector === "-h") {
-      console.log("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty]");
+    const { positional, options } = parseCliArgs(process.argv.slice(2));
+    const [selector, sizeArg, difficultyArg] = positional;
+    if (selector === "--help" || selector === "-h" || options.help) {
+      console.log("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--metric dps] [--region CN]");
       return;
     }
     if (!selector) {
-      throw new Error("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty]");
+      throw new Error("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--metric dps] [--region CN]");
     }
 
-    const result = await fetchRankings(selector, { size: sizeArg, difficulty: difficultyArg });
+    const result = await fetchRankings(selector, {
+      size: sizeArg,
+      difficulty: difficultyArg,
+      mode: options.mode,
+      className: options.class,
+      specName: options.spec,
+      metric: options.metric,
+      serverRegion: options.region
+    });
+
     console.log(JSON.stringify(result, null, 2));
-    console.log(`\nSummary: ${result.rankings.length} ranking entries for ${result.bossName} (difficulty ${result.difficulty}).`);
-    console.log(`Output: ${getRankingsOutputPath(result.bossSlug || result.encounterId, result.difficulty)}`);
+    console.log("");
+    console.log(`Summary: ${result.rankings.length} ranking entries for ${result.bossName} (${result.mode} mode, difficulty ${result.difficulty}).`);
+    console.log(
+      `Output: ${getRankingsOutputPath(result.bossSlug || result.encounterId, {
+        mode: result.mode,
+        difficulty: result.difficulty,
+        className: result.className,
+        specName: result.specName,
+        metric: result.metric
+      })}`
+    );
   } catch (error) {
     console.error(`ERROR: ${error.message}`);
     process.exitCode = 1;
@@ -148,6 +303,11 @@ if (require.main === module) {
 module.exports = {
   fetchRankings,
   getRankingsOutputPath,
-  normalizeRankingEntry,
-  resolveEncounter
+  getRankingsOutputStem,
+  normalizeCharacterRankingEntry,
+  normalizeFightRankingEntry,
+  parseCliArgs,
+  parseRankingsOptions,
+  resolveEncounter,
+  sanitizeFilePart
 };

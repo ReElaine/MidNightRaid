@@ -7,11 +7,12 @@ const WCL_RANKINGS_ROOT = path.join(WCL_OUTPUT_ROOT, "rankings");
 const WCL_TIMELINES_ROOT = path.join(WCL_OUTPUT_ROOT, "timelines");
 const TIMELINE_FILTERS_PATH = path.join(__dirname, "timeline-filters.json");
 const BOSS_MAPPING_PATH = path.join(__dirname, "boss-mapping.json");
+const FETCH_POLICY_PATH = path.join(__dirname, "fetch-policy.json");
 const ENV_PATH = path.join(REPO_ROOT, ".env");
 
 const DEFAULT_TIMEOUT_MS = 20000;
 const DEFAULT_RETRIES = 2;
-const DEFAULT_RANKINGS_PAGE_SIZE = 10;
+const DEFAULT_RANKINGS_PAGE_SIZE = 50;
 const DEFAULT_RANKINGS_DIFFICULTY = 4;
 
 module.exports = {
@@ -22,6 +23,7 @@ module.exports = {
   WCL_TIMELINES_ROOT,
   TIMELINE_FILTERS_PATH,
   BOSS_MAPPING_PATH,
+  FETCH_POLICY_PATH,
   ENV_PATH,
   DEFAULT_TIMEOUT_MS,
   DEFAULT_RETRIES,
