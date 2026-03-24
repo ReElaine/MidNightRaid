@@ -9,7 +9,8 @@
         "阿福扎恩"
       ],
       "encounterId": 3176,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": true
     },
     {
       "slug": "spire_h2_fulasius",
@@ -19,7 +20,8 @@
         "弗拉希乌斯"
       ],
       "encounterId": 3177,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": true
     },
     {
       "slug": "spire_h3_sahadar",
@@ -29,7 +31,8 @@
         "陨落之王萨哈达尔"
       ],
       "encounterId": 3179,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": true
     },
     {
       "slug": "spire_h4_weigaoer_aizuolake",
@@ -39,7 +42,8 @@
         "威厄高尔和艾佐拉克"
       ],
       "encounterId": 3178,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": false
     },
     {
       "slug": "spire_h5_lightblind_vanguard",
@@ -49,7 +53,8 @@
         "光盲先锋军"
       ],
       "encounterId": 3180,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": false
     },
     {
       "slug": "dream_rift_h_chimerus",
@@ -60,7 +65,8 @@
         "未梦之神"
       ],
       "encounterId": 3306,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": false
     },
     {
       "slug": "quel_danas_h1_beloren",
@@ -71,7 +77,8 @@
         "奥的子嗣"
       ],
       "encounterId": 3182,
-      "difficulty": 4
+      "difficulty": 4,
+      "enabled": false
     }
   ]
 }

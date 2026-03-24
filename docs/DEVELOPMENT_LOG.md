@@ -1,5 +1,15 @@
 # Development Log
 
+## 2026-03-24 / H3 data and frontend registration
+
+- Pulled fresh H3 Holy Priest top 10 HPS samples for `陨落之王萨哈达尔`.
+- Added local `rankings`, `timelines`, and `study` JSON for H2 and H3.
+- Marked frontend boss catalog so the index now only exposes bosses that already have study data wired in.
+- Current enabled frontend bosses:
+  - `H1 元首阿福扎恩`
+  - `H2 弗拉希乌斯`
+  - `H3 陨落之王萨哈达尔`
+
 ## 2026-03-24 / difficulty note
 
 - Added a small documentation note that current WCL difficulty parameters map as:

@@ -1,0 +1,262 @@
+{
+  "mode": "character",
+  "encounterId": 3179,
+  "bossName": "Fallen-King Salhadaar",
+  "bossSlug": "spire_h3_sahadar",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 10,
+  "region": "CN",
+  "hasMorePages": true,
+  "total": 100,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "放弃治疗",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 131017.364334,
+      "duration": 350143,
+      "startTime": 1774272920942,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 10,
+      "reportStartTime": 1774268457213,
+      "hardModeLevel": 0,
+      "bracketData": 256,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 573,
+        "name": "伊萨里奥斯",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 223684,
+        "name": "柒院",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 2,
+      "playerName": "咸鱼垭",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 124567.8749723,
+      "duration": 383595,
+      "startTime": 1774266911374,
+      "reportCode": "BwjY6gn3GvfcCVKH",
+      "fightId": 18,
+      "reportStartTime": 1774264149988,
+      "hardModeLevel": 0,
+      "bracketData": 253,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 584,
+        "name": "凤凰之神",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 3,
+      "playerName": "Konakona",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 121773.05103502,
+      "duration": 362359,
+      "startTime": 1774272700203,
+      "reportCode": "QLr84dcRDwWXhpJx",
+      "fightId": 20,
+      "reportStartTime": 1774269000763,
+      "hardModeLevel": 0,
+      "bracketData": 251,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 611,
+        "name": "国王之谷",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 779537,
+        "name": "北宇治吹奏部",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 4,
+      "playerName": "粉嘟嘟",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 121331.33607976,
+      "duration": 410230,
+      "startTime": 1774230710524,
+      "reportCode": "txcCBRKvjPM7FVmh",
+      "fightId": 2,
+      "reportStartTime": 1774230135287,
+      "hardModeLevel": 0,
+      "bracketData": 263,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 814713,
+        "name": "巅峰极毅",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 5,
+      "playerName": "洛杉叽狐人",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 120504.4600643,
+      "duration": 380712,
+      "startTime": 1774278214580,
+      "reportCode": "TFdbDmr3ht6fWBjn",
+      "fightId": 7,
+      "reportStartTime": 1774276874888,
+      "hardModeLevel": 0,
+      "bracketData": 251,
+      "size": 27,
+      "faction": 1,
+      "server": {
+        "id": 564,
+        "name": "主宰之剑",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 6,
+      "playerName": "安奇翋",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 119486.60771829,
+      "duration": 465492,
+      "startTime": 1774184791231,
+      "reportCode": "VkHMTfj2hLNtyb8v",
+      "fightId": 16,
+      "reportStartTime": 1774180506930,
+      "hardModeLevel": 0,
+      "bracketData": 248,
+      "size": 25,
+      "faction": 0,
+      "server": {
+        "id": 612,
+        "name": "图拉扬",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 7,
+      "playerName": "小雪童子",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 117240.27708656,
+      "duration": 371725,
+      "startTime": 1774079398742,
+      "reportCode": "QVx3BZmYjpD9XLky",
+      "fightId": 97,
+      "reportStartTime": 1774055423090,
+      "hardModeLevel": 0,
+      "bracketData": 246,
+      "size": 25,
+      "faction": 0,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
+      "playerName": "大白灬",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 117019.63063483,
+      "duration": 362189,
+      "startTime": 1774329411323,
+      "reportCode": "rA8HFcBnNzMP3f1C",
+      "fightId": 3,
+      "reportStartTime": 1774328106641,
+      "hardModeLevel": 0,
+      "bracketData": 254,
+      "size": 23,
+      "faction": 0,
+      "server": {
+        "id": 594,
+        "name": "加里索斯",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 9,
+      "playerName": "和栗熏子",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 115516.34328733,
+      "duration": 338457,
+      "startTime": 1774072962468,
+      "reportCode": "LtdFkjgqrypXKWTa",
+      "fightId": 65,
+      "reportStartTime": 1774056565366,
+      "hardModeLevel": 0,
+      "bracketData": 246,
+      "size": 25,
+      "faction": 0,
+      "server": {
+        "id": 778,
+        "name": "神圣之歌",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 10,
+      "playerName": "巧克力叉烧饭",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 115431.71784379,
+      "duration": 384156,
+      "startTime": 1774058787921,
+      "reportCode": "nrA1JP4WdTkC2HRN",
+      "fightId": 24,
+      "reportStartTime": 1774053850738,
+      "hardModeLevel": 0,
+      "bracketData": 252,
+      "size": 25,
+      "faction": 1,
+      "server": {
+        "id": 697,
+        "name": "无尽之海",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    }
+  ],
+  "className": "Priest",
+  "specName": "Holy",
+  "heroTalent": null,
+  "metric": "hps"
+}

@@ -1,0 +1,270 @@
+{
+  "mode": "character",
+  "encounterId": 3177,
+  "bossName": "Vorasius",
+  "bossSlug": "spire_h2_fulasius",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 10,
+  "region": "CN",
+  "hasMorePages": true,
+  "total": 100,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "米什德文",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 130086.17244422,
+      "duration": 342302,
+      "startTime": 1774105188718,
+      "reportCode": "PCYD4VAWn3wB6ZNc",
+      "fightId": 164,
+      "reportStartTime": 1774079170574,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 644,
+        "name": "奥特兰克",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 2,
+      "playerName": "放弃治疗",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 124290.43974463,
+      "duration": 346633,
+      "startTime": 1774271863920,
+      "reportCode": "hxnzMvpmKACTWrN9",
+      "fightId": 11,
+      "reportStartTime": 1774270438806,
+      "hardModeLevel": 0,
+      "bracketData": 256,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 573,
+        "name": "伊萨里奥斯",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 223684,
+        "name": "柒院",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 3,
+      "playerName": "淋光",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 120314.92604213,
+      "duration": 356960,
+      "startTime": 1774271186131,
+      "reportCode": "H4dLMBQmDv6JaYnK",
+      "fightId": 18,
+      "reportStartTime": 1774267355994,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 25,
+      "faction": 0,
+      "server": {
+        "id": 844,
+        "name": "迦拉克隆",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 4,
+      "playerName": "黯然五月",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 116491.83483802,
+      "duration": 361536,
+      "startTime": 1774187588946,
+      "reportCode": "HNKfdRnQhWtLP7q1",
+      "fightId": 25,
+      "reportStartTime": 1774180053043,
+      "hardModeLevel": 0,
+      "bracketData": 251,
+      "size": 20,
+      "faction": 0,
+      "server": {
+        "id": 775,
+        "name": "破碎岭",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 5,
+      "playerName": "丶歌颂者",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 116372.46888458,
+      "duration": 350389,
+      "startTime": 1774336987929,
+      "reportCode": "YR71h6V4N3cLHmXZ",
+      "fightId": 81,
+      "reportStartTime": 1774312122071,
+      "hardModeLevel": 0,
+      "bracketData": 250,
+      "size": 25,
+      "faction": 1,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 6,
+      "playerName": "芽芽",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 116245.76640492,
+      "duration": 360273,
+      "startTime": 1774015013402,
+      "reportCode": "BzmYvkc8wTqyRhFV",
+      "fightId": 22,
+      "reportStartTime": 1774008353053,
+      "hardModeLevel": 0,
+      "bracketData": 253,
+      "size": 28,
+      "faction": 1,
+      "server": {
+        "id": 697,
+        "name": "无尽之海",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 801913,
+        "name": "夜城戍丶",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 7,
+      "playerName": "Silverstar",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 116005.22593955,
+      "duration": 321856,
+      "startTime": 1774271117494,
+      "reportCode": "PQpn2zrDTKqdBGJt",
+      "fightId": 21,
+      "reportStartTime": 1774267217109,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 22,
+      "faction": 1,
+      "server": {
+        "id": 713,
+        "name": "格瑞姆巴托",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 636021,
+        "name": "重·逢",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
+      "playerName": "哎呀奶不到",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 113741.98448212,
+      "duration": 365385,
+      "startTime": 1774018599364,
+      "reportCode": "NckLa8ZQxqVvR3pw",
+      "fightId": 48,
+      "reportStartTime": 1774003900382,
+      "hardModeLevel": 0,
+      "bracketData": 248,
+      "size": 28,
+      "faction": 1,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 816202,
+        "name": "龙虎山",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 9,
+      "playerName": "Leviackerman",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 113710.94177391,
+      "duration": 361934,
+      "startTime": 1774277858487,
+      "reportCode": "LvVP9Bj4XDJA2Tfh",
+      "fightId": 28,
+      "reportStartTime": 1774263165712,
+      "hardModeLevel": 0,
+      "bracketData": 253,
+      "size": 19,
+      "faction": 1,
+      "server": {
+        "id": 903,
+        "name": "黑龙军团",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 10,
+      "playerName": "汇流",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 113428.17539041,
+      "duration": 353862,
+      "startTime": 1773932649739,
+      "reportCode": "kmKYFM2Z8tWn3Nd4",
+      "fightId": 50,
+      "reportStartTime": 1773921214654,
+      "hardModeLevel": 0,
+      "bracketData": 250,
+      "size": 23,
+      "faction": 1,
+      "server": {
+        "id": 584,
+        "name": "凤凰之神",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 412234,
+        "name": "LetMoneyDotheTalking",
+        "faction": 1
+      },
+      "heroTalent": null
+    }
+  ],
+  "className": "Priest",
+  "specName": "Holy",
+  "heroTalent": null,
+  "metric": "hps"
+}

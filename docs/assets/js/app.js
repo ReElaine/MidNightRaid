@@ -35,8 +35,13 @@ function buildEnabledProfiles(uiConfig) {
     .filter((profile) => profile.specs.length > 0);
 }
 
+function buildEnabledBosses(catalog) {
+  return (catalog.bosses || []).filter((boss) => boss.enabled !== false);
+}
+
 async function initIndexPage() {
   const [catalog, uiConfig] = await Promise.all([loadBossCatalog(), loadUiConfig()]);
+  const enabledBosses = buildEnabledBosses(catalog);
   const profiles = buildEnabledProfiles(uiConfig);
   const bossNav = document.querySelector("#boss-nav");
   const difficultyNav = document.querySelector("#difficulty-nav");
@@ -49,7 +54,7 @@ async function initIndexPage() {
   const specSelect = document.querySelector("#spec-select");
   const metricSelect = document.querySelector("#metric-select");
 
-  let activeBossSlug = getBossSlug() || catalog.bosses[0]?.slug || "";
+  let activeBossSlug = getBossSlug() || enabledBosses[0]?.slug || "";
   let activeDifficulty = getDifficulty();
   let keyword = normalize(getSearchKeyword());
   let className = getClassName() || profiles[0]?.className || "Priest";
@@ -83,7 +88,7 @@ async function initIndexPage() {
   }
 
   function render() {
-    const visibleBosses = catalog.bosses.filter((boss) => matchesKeyword(boss, keyword));
+    const visibleBosses = enabledBosses.filter((boss) => matchesKeyword(boss, keyword));
     const activeBoss = visibleBosses.find((item) => item.slug === activeBossSlug) || visibleBosses[0] || null;
 
     syncProfileOptions();
@@ -172,7 +177,7 @@ async function initBossPage() {
 
   try {
     const catalog = await loadBossCatalog();
-    const boss = catalog.bosses.find((item) => item.slug === bossSlug);
+    const boss = buildEnabledBosses(catalog).find((item) => item.slug === bossSlug);
     if (!boss) {
       throw new Error(`未找到 Boss: ${bossSlug}`);
     }
