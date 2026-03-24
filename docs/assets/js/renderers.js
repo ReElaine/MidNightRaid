@@ -38,7 +38,7 @@ function renderClassTrackEntry(entry) {
         ${escapeHtml(entry.abilityLabel)}
         ${entry.rank ? `<span class="timeline-entry__rank">#${escapeHtml(entry.rank)}</span>` : ""}
       </div>
-      <div class="timeline-entry__meta">${escapeHtml(playerLabel)} / ${escapeHtml(entry.reportCode)} / Fight ${escapeHtml(entry.fightId)}</div>
+      <div class="timeline-entry__meta">${escapeHtml(playerLabel)}</div>
     </article>
   `;
 }
