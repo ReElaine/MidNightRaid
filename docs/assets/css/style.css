@@ -366,6 +366,24 @@ h3 {
   margin: 10px 0 6px;
 }
 
+.sample-response {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.sample-response__skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-entry__rank {
+  margin-left: 8px;
+  color: var(--gold);
+  font-size: 0.9rem;
+}
+
 .filter-group + .filter-group {
   margin-top: 18px;
 }
