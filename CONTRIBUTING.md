@@ -31,10 +31,10 @@ npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage 
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
 
-如果你改了职业筛选、专精筛选或英雄天赋识别，再补一条：
+如果你改了职业筛选、专精筛选或职业技能过滤，再补一条：
 
 ```powershell
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
 ## 重点配置
@@ -48,11 +48,7 @@ npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage 
 - `rankings.defaultMode`
 - `rankings.character.className`
 - `rankings.character.specName`
-- `rankings.character.heroTalent`
 - `rankings.character.metric`
-- `heroTalent.overridesByPlayer`
-- `heroTalent.overridesByClassSpec`
-- `heroTalent.detectByClassSpec`
 
 ## 常用命令
 ```powershell

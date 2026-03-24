@@ -51,12 +51,6 @@ npm run wcl:rankings -- "Imperator Averzian"
 npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
-按职业 / 专精 / 英雄天赋进一步筛选：
-
-```powershell
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
-```
-
 查看某个 report 的 fight 列表：
 
 ```powershell
@@ -73,12 +67,6 @@ npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 
 ```powershell
 npm run wcl:boss -- "Imperator Averzian" 1 4
-```
-
-按职业 / 专精 / 英雄天赋自动抓前几条高排名日志并生成时间轴：
-
-```powershell
-npm run wcl:boss -- "Imperator Averzian" 3 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
 ```
 
 ## 抓取策略配置
@@ -103,35 +91,6 @@ npm run wcl:boss -- "Imperator Averzian" 3 4 --mode character --class Mage --spe
 
 - Boss 关键技能白名单
 - 各职业关键技能白名单
-- 英雄天赋识别与覆盖
-
-当前支持的英雄天赋配置方式：
-
-- `overridesByPlayer`：直接给某个角色名指定英雄天赋
-- `overridesByClassSpec`：给某个 `职业:专精` 直接指定英雄天赋
-- `detectByClassSpec`：按 `talentTree` 的 `id / nodeID` 规则识别英雄天赋
-
-示例结构：
-
-```json
-{
-  "heroTalent": {
-    "overridesByPlayer": {
-      "测试法师": "日怒"
-    },
-    "overridesByClassSpec": {
-      "Mage:Frost": "霜火"
-    },
-    "detectByClassSpec": {
-      "Mage:Arcane": [
-        { "label": "日怒", "talentIdsAny": [777001] },
-        { "label": "咒咏", "nodeIdsAny": [888002] }
-      ]
-    }
-  }
-}
-```
-
 ## 输出位置
 整团排名 JSON：
 
@@ -142,7 +101,7 @@ docs/data/wcl/rankings/<bossSlug>-d<difficulty>.json
 职业排名 JSON：
 
 ```text
-docs/data/wcl/rankings/<bossSlug>-d<difficulty>-<class>-<spec>-<metric>[-<heroTalent>].json
+docs/data/wcl/rankings/<bossSlug>-d<difficulty>-<class>-<spec>-<metric>.json
 ```
 
 时间轴 JSON：
@@ -159,11 +118,10 @@ docs/data/wcl/timelines/<reportCode>-<fightId>.json
   - 左侧显示 Boss 关键技能
   - 右侧显示职业关键技能
 - 详情页支持按以下维度逐层筛选：
-  - Boss 技能
+  - Boss 技能，多选
   - 职业
   - 专精
-  - 英雄天赋
-  - 职业技能
+  - 职业技能，多选
 
 ## 测试与校验
 ```powershell

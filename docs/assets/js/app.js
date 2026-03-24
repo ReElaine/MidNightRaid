@@ -124,16 +124,15 @@ async function initBossPage() {
     titleElement.textContent = `${boss.title} / ${reportCode}`;
 
     const filterState = {
-      bossAbility: "all",
+      bossAbilities: [],
       className: "all",
       specName: "all",
-      heroTalent: "all",
-      classAbility: "all"
+      classAbilities: []
     };
 
     function render() {
       const filteredBossEntries = (timeline.bossTimeline || []).filter((entry) => {
-        if (filterState.bossAbility !== "all" && String(entry.abilityGameId) !== filterState.bossAbility) {
+        if (filterState.bossAbilities.length > 0 && !filterState.bossAbilities.includes(String(entry.abilityGameId))) {
           return false;
         }
         return true;
@@ -146,10 +145,7 @@ async function initBossPage() {
         if (filterState.specName !== "all" && entry.specName !== filterState.specName) {
           return false;
         }
-        if (filterState.heroTalent !== "all" && entry.heroTalent !== filterState.heroTalent) {
-          return false;
-        }
-        if (filterState.classAbility !== "all" && String(entry.abilityGameId) !== filterState.classAbility) {
+        if (filterState.classAbilities.length > 0 && !filterState.classAbilities.includes(String(entry.abilityGameId))) {
           return false;
         }
         return true;
@@ -173,21 +169,32 @@ async function initBossPage() {
 
       const group = button.dataset.filterGroup;
       const value = button.dataset.filterValue || "all";
+
+      if (group === "bossAbilities" || group === "classAbilities") {
+        if (value === "all") {
+          filterState[group] = [];
+        } else {
+          const nextSet = new Set(filterState[group]);
+          if (nextSet.has(value)) {
+            nextSet.delete(value);
+          } else {
+            nextSet.add(value);
+          }
+          filterState[group] = [...nextSet];
+        }
+        render();
+        return;
+      }
+
       filterState[group] = value;
 
       if (group === "className") {
         filterState.specName = "all";
-        filterState.heroTalent = "all";
-        filterState.classAbility = "all";
+        filterState.classAbilities = [];
       }
 
       if (group === "specName") {
-        filterState.heroTalent = "all";
-        filterState.classAbility = "all";
-      }
-
-      if (group === "heroTalent") {
-        filterState.classAbility = "all";
+        filterState.classAbilities = [];
       }
 
       render();

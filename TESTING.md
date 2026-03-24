@@ -37,11 +37,10 @@ npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage 
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
 
-如果你改了职业筛选、专精筛选或英雄天赋识别，再补：
+如果你改了职业筛选、专精筛选或职业技能筛选，再补：
 
 ```powershell
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
-npm run wcl:boss -- "Imperator Averzian" 1 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
+npm run wcl:boss -- "Imperator Averzian" 1 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
 ## 预设与识别规则
@@ -50,7 +49,7 @@ npm run wcl:boss -- "Imperator Averzian" 1 4 --mode character --class Mage --spe
 - [`C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json`](C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json)
 - [`C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json`](C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json)
 
-如果你加了新的英雄天赋识别规则，记得同时补：
+如果你加了新的职业预设或技能筛选规则，记得同时补：
 
 - 单元测试
 - 至少一条真实日志联调

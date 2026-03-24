@@ -23,7 +23,6 @@
   - `fetch-events.js`：按 fight 拉事件
   - `build-timeline.js`：生成双轨时间轴 JSON
   - `fetch-batch.js`：按 Boss 批量抓前几条日志并生成时间轴
-  - `hero-talents.js`：英雄天赋识别逻辑
 - `docs/data/wcl/`
   - `bosses.json`：前端支持的 Boss 列表
   - `rankings/`：排名结果
@@ -66,19 +65,10 @@
 - 当前支持参数：
   - `--class`
   - `--spec`
-  - `--heroTalent`
   - `--metric`
 - 输出文件会按职业模式单独命名，例如：
   - `docs/data/wcl/rankings/spire_h1_afuzan-d4-mage-fire-dps.json`
   - `docs/data/wcl/rankings/spire_h1_afuzan-d4-mage-fire-dps-sunfury.json`
-
-注意：
-
-- WCL 排名接口本身没有直接按英雄天赋筛选
-- 当前做法是先拿职业 / 专精排名，再本地读取 `playerDetails` 补 `heroTalent`
-- 如果没有配置识别规则，`heroTalent` 会是 `null`
-
----
 
 ## 2026-03-24 / dual-lane timeline UI
 
@@ -95,39 +85,15 @@
   - 右侧职业关键技能
   - 中间共用时间刻度
 - 前端筛选支持：
-  - Boss 技能
+  - Boss 技能，多选
   - 职业
   - 专精
-  - 英雄天赋
-  - 职业技能
-
----
-
-## 2026-03-24 / hero talent detection
-
-- 新增 [`C:\Working\MidNightRaid\scripts\wcl\hero-talents.js`](C:\Working\MidNightRaid\scripts\wcl\hero-talents.js)
-- 当前识别顺序：
-  1. `overridesByPlayer`
-  2. `overridesByClassSpec`
-  3. `detectByClassSpec`
-- `detectByClassSpec` 依赖 `playerDetails.combatantInfo.talentTree`
-- 规则支持：
-  - `talentIdsAny`
-  - `talentIdsAll`
-  - `nodeIdsAny`
-  - `nodeIdsAll`
-
-当前状态：
-
-- 代码链路已经支持英雄天赋识别和筛选
-- 但默认预设里还没有完整的识别规则库
-- 所以真实日志里很多职业目前仍会显示 `heroTalent: null`
+  - 职业技能，多选
 
 ---
 
 ## 当前最值得继续做的事
 
-- 给 [`C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json`](C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json) 补完整的 `detectByClassSpec`
-- 针对常用职业把 `class abilities` 进一步细化到专精 / 英雄天赋层
+- 针对常用职业把 `class abilities` 进一步细化到专精层
 - 扩展 `bosses.json` 和 `boss-mapping.json`，覆盖更多 encounter
 - 如果准备自动更新，可以把 `npm run wcl:boss -- "<boss>" 1 4` 放进 CI
