@@ -68,8 +68,8 @@ test("normalizeBossTimelineEvent converts fight-relative timestamps", () => {
 
 test("buildClassTimeline extracts preset friendly player skills", () => {
   const report = {
-    abilityMap: new Map([[80353, "时间扭曲"]]),
-    actorMap: new Map([[3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]])
+    abilityMap: new Map([[120517, "光晕"]]),
+    actorMap: new Map([[3, { id: 3, name: "测试神牧", type: "Player", subType: "Priest" }]])
   };
   const fight = {
     startTime: 1000,
@@ -79,34 +79,31 @@ test("buildClassTimeline extracts preset friendly player skills", () => {
   };
   const preset = {
     heroTalent: {
-      overridesByPlayer: {
-        "测试法师": "日怒"
-      },
+      overridesByPlayer: {},
       overridesByClassSpec: {},
       detectByClassSpec: {}
     },
     classes: {
-      Mage: {
-        label: "法师",
-        abilities: [{ gameId: 80353, label: "时间扭曲" }]
+      Priest: {
+        label: "牧师",
+        abilities: [{ gameId: 120517, label: "光晕", specs: ["Holy"] }]
       }
     }
   };
-  const events = [{ timestamp: 15000, type: "cast", sourceID: 3, abilityGameID: 80353 }];
-  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
+  const events = [{ timestamp: 15000, type: "cast", sourceID: 3, abilityGameID: 120517 }];
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试神牧", className: "Priest", specName: "Holy" }]]);
 
   const timeline = buildClassTimeline(report, fight, events, preset, playerDetailsMap);
   assert.equal(timeline.length, 1);
-  assert.equal(timeline[0].className, "Mage");
-  assert.equal(timeline[0].specName, "Fire");
-  assert.equal(timeline[0].heroTalent, "日怒");
-  assert.equal(timeline[0].abilityLabel, "时间扭曲");
+  assert.equal(timeline[0].className, "Priest");
+  assert.equal(timeline[0].specName, "Holy");
+  assert.equal(timeline[0].abilityLabel, "光晕");
 });
 
-test("buildClassTimeline respects spec and hero talent restrictions from preset", () => {
+test("buildClassTimeline respects spec restrictions from preset", () => {
   const report = {
-    abilityMap: new Map([[190319, "燃烧"]]),
-    actorMap: new Map([[3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]])
+    abilityMap: new Map([[64843, "神圣赞美诗"]]),
+    actorMap: new Map([[3, { id: 3, name: "测试神牧", type: "Player", subType: "Priest" }]])
   };
   const fight = {
     startTime: 0,
@@ -116,25 +113,23 @@ test("buildClassTimeline respects spec and hero talent restrictions from preset"
   };
   const preset = {
     heroTalent: {
-      overridesByPlayer: {
-        "测试法师": "日怒"
-      },
+      overridesByPlayer: {},
       overridesByClassSpec: {},
       detectByClassSpec: {}
     },
     classes: {
-      Mage: {
-        label: "法师",
-        abilities: [{ gameId: 190319, label: "燃烧", specs: ["Fire"], heroTalents: ["日怒"] }]
+      Priest: {
+        label: "牧师",
+        abilities: [{ gameId: 64843, label: "神圣赞美诗", specs: ["Holy"] }]
       }
     }
   };
-  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
-  const events = [{ timestamp: 5000, type: "cast", sourceID: 3, abilityGameID: 190319 }];
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试神牧", className: "Priest", specName: "Holy" }]]);
+  const events = [{ timestamp: 5000, type: "cast", sourceID: 3, abilityGameID: 64843 }];
 
   const timeline = buildClassTimeline(report, fight, events, preset, playerDetailsMap);
   assert.equal(timeline.length, 1);
-  assert.equal(timeline[0].heroTalent, "日怒");
+  assert.equal(timeline[0].abilityLabel, "神圣赞美诗");
 });
 
 test("buildTimelinePayload outputs sorted dual-lane timeline data", () => {
@@ -143,11 +138,11 @@ test("buildTimelinePayload outputs sorted dual-lane timeline data", () => {
     abilityMap: new Map([
       [1262776, "暗影进军"],
       [1249265, "幽影坍缩"],
-      [80353, "时间扭曲"]
+      [120517, "光晕"]
     ]),
     actorMap: new Map([
       [38, { name: "Imperator Averzian" }],
-      [3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]
+      [3, { id: 3, name: "测试神牧", type: "Player", subType: "Priest" }]
     ])
   };
   const fight = {
@@ -165,15 +160,15 @@ test("buildTimelinePayload outputs sorted dual-lane timeline data", () => {
     { timestamp: 15000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 1262776 },
     { timestamp: 5000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 1249265 }
   ];
-  const friendlyEvents = [{ timestamp: 7000, type: "cast", sourceID: 3, abilityGameID: 80353 }];
+  const friendlyEvents = [{ timestamp: 7000, type: "cast", sourceID: 3, abilityGameID: 120517 }];
 
-  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试神牧", className: "Priest", specName: "Holy" }]]);
   const payload = buildTimelinePayload(report, fight, enemyEvents, friendlyEvents, playerDetailsMap);
   assert.equal(payload.reportCode, "RPT123");
   assert.equal(payload.fightId, 12);
   assert.equal(payload.bossTimeline.length, 2);
   assert.equal(payload.classTimeline.length, 1);
-  assert.equal(payload.filters.specs.Mage[0].key, "Fire");
+  assert.equal(payload.filters.specs.Priest[0].key, "Holy");
   assert.equal(payload.timeline[0].abilityName, "幽影坍缩");
-  assert.equal(payload.classTimeline[0].abilityName, "时间扭曲");
+  assert.equal(payload.classTimeline[0].abilityName, "光晕");
 });

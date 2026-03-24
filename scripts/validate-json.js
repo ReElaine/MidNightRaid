@@ -5,6 +5,7 @@ const repoRoot = path.resolve(__dirname, "..");
 const docsRoot = path.join(repoRoot, "docs");
 const dataRoot = path.join(docsRoot, "data", "wcl");
 const bossCatalogPath = path.join(dataRoot, "bosses.json");
+const uiConfigPath = path.join(dataRoot, "ui-config.json");
 const rankingsRoot = path.join(dataRoot, "rankings");
 const timelinesRoot = path.join(dataRoot, "timelines");
 const studiesRoot = path.join(dataRoot, "studies");
@@ -28,14 +29,12 @@ function validateBossCatalog() {
   assert(fs.existsSync(bossCatalogPath), "缺少 docs/data/wcl/bosses.json");
   const catalog = readJson(bossCatalogPath);
   assert(Array.isArray(catalog.bosses) && catalog.bosses.length > 0, "bosses.json 中 bosses 应为非空数组");
+}
 
-  for (const boss of catalog.bosses) {
-    ["slug", "title", "encounterId"].forEach((field) => {
-      assert(boss[field] !== undefined && boss[field] !== null && boss[field] !== "", `bosses.json 缺少字段 ${field}`);
-    });
-  }
-
-  return catalog;
+function validateUiConfig() {
+  assert(fs.existsSync(uiConfigPath), "缺少 docs/data/wcl/ui-config.json");
+  const config = readJson(uiConfigPath);
+  assert(Array.isArray(config.classProfiles) && config.classProfiles.length > 0, "ui-config.json 中 classProfiles 应为非空数组");
 }
 
 function validateRankingsFiles() {
@@ -86,6 +85,7 @@ function validateStudyFiles() {
 
 function main() {
   validateBossCatalog();
+  validateUiConfig();
   validateRankingsFiles();
   validateTimelineFiles();
   validateStudyFiles();

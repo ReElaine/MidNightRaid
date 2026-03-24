@@ -86,7 +86,11 @@ function summarizeResponses(occurrences) {
     .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label));
 }
 
-function buildFilterOptions(groupedAbilities, samples) {
+function buildFilterOptions(groupedAbilities, samples, timelinePayloads) {
+  const presetAbilities =
+    timelinePayloads[0]?.preset?.classes?.[samples[0]?.className || ""]?.abilities ||
+    [];
+
   const bossAbilities = groupedAbilities.map((group) => ({
     key: String(group.abilityGameId),
     label: group.label
@@ -109,11 +113,14 @@ function buildFilterOptions(groupedAbilities, samples) {
       .map((sample) => [sample.specName, { key: sample.specName, label: sample.specName }])
   ).values()];
 
-  const classAbilities = [...new Map(
-    groupedAbilities
-      .flatMap((group) => group.responseSummary)
-      .map((entry) => [entry.key, { key: entry.key, label: entry.label }])
-  ).values()];
+  const classAbilities = [
+    ...new Map(
+      [
+        ...presetAbilities.map((entry) => [String(entry.gameId), { key: String(entry.gameId), label: entry.label }]),
+        ...groupedAbilities.flatMap((group) => group.responseSummary).map((entry) => [entry.key, { key: entry.key, label: entry.label }])
+      ]
+    ).values()
+  ];
 
   return { bossAbilities, players, classes, specs, classAbilities };
 }
@@ -202,7 +209,7 @@ function buildStudyPayload(rankings, timelinePayloads, options = {}) {
       afterLabel: formatTimestamp(windowAfterMs)
     },
     samples,
-    filters: buildFilterOptions(groupedAbilities, samples),
+    filters: buildFilterOptions(groupedAbilities, samples, timelinePayloads),
     groupedAbilities
   };
 }

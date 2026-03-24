@@ -1,0 +1,17 @@
+{
+  "classProfiles": [
+    {
+      "className": "Priest",
+      "label": "牧师",
+      "enabled": true,
+      "specs": [
+        {
+          "specName": "Holy",
+          "label": "神圣",
+          "enabled": true,
+          "metrics": ["hps"]
+        }
+      ]
+    }
+  ]
+}

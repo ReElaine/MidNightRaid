@@ -19,15 +19,15 @@ export function getSearchKeyword() {
 }
 
 export function getClassName() {
-  return getQueryParam("class") || "Mage";
+  return getQueryParam("class") || "Priest";
 }
 
 export function getSpecName() {
-  return getQueryParam("spec") || "Fire";
+  return getQueryParam("spec") || "Holy";
 }
 
 export function getMetric() {
-  return getQueryParam("metric") || "dps";
+  return getQueryParam("metric") || "hps";
 }
 
 export function updateIndexUrl({ bossSlug, difficulty, keyword, className, specName, metric }) {

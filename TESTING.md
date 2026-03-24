@@ -11,9 +11,7 @@ npm test
 - `scripts/wcl/fetch-rankings.js`
 - `scripts/wcl/fetch-report.js`
 - `scripts/wcl/build-timeline.js`
-
-说明：
-- `npm test` 目前固定为单进程模式，避免 Windows 环境下的 `spawn EPERM`
+- `scripts/wcl/build-study.js`
 
 ## JSON 校验
 ```powershell
@@ -22,25 +20,14 @@ node scripts/validate-json.js
 
 当前会校验：
 - `docs/data/wcl/bosses.json`
+- `docs/data/wcl/ui-config.json`
 - `docs/data/wcl/rankings/*.json`
 - `docs/data/wcl/timelines/*.json`
 - `docs/data/wcl/studies/*.json`
 
 ## 手动联调建议
-改完抓取策略或 WCL GraphQL 查询后，建议至少跑：
-
 ```powershell
-npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Mage --spec Fire --metric dps
-npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
-npm run wcl:boss -- "Imperator Averzian" 2 4 --class Mage --spec Fire --metric dps
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Priest --spec Holy --metric hps
+npm run wcl:fetch -- 4C2f7rDHJwpBmRvK 4
+npm run wcl:boss -- "Imperator Averzian" 2 4 --class Priest --spec Holy --metric hps
 ```
-
-## 预设与识别规则
-这两份配置会直接影响测试结果：
-
-- `scripts/wcl/fetch-policy.json`
-- `scripts/wcl/timeline-presets.json`
-
-如果你加了新的职业预设或技能筛选规则，记得同时补：
-- 单元测试
-- 至少一条真实日志联调

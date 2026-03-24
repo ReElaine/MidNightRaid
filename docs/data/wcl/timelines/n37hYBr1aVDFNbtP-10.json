@@ -1,0 +1,853 @@
+{
+  "reportCode": "n37hYBr1aVDFNbtP",
+  "fightId": 10,
+  "bossName": "元首阿福扎恩",
+  "bossSlug": "spire_h1_afuzan",
+  "encounterId": 3176,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 328409,
+  "presetId": "spire_h1_afuzan_holy_priest",
+  "presetName": "元首阿福扎恩 / 神牧对照预设",
+  "preset": {
+    "presetId": "spire_h1_afuzan_holy_priest",
+    "presetName": "元首阿福扎恩 / 神牧对照预设",
+    "bossAbilities": [
+      {
+        "gameId": 1249251,
+        "label": "黑暗颠覆"
+      },
+      {
+        "gameId": 1262776,
+        "label": "暗影进军"
+      },
+      {
+        "gameId": 1249265,
+        "label": "幽影坍缩 I"
+      },
+      {
+        "gameId": 1249266,
+        "label": "幽影坍缩 II"
+      },
+      {
+        "gameId": 1260206,
+        "label": "幽影坍缩 III"
+      },
+      {
+        "gameId": 1262036,
+        "label": "虚空割裂"
+      },
+      {
+        "gameId": 1260712,
+        "label": "湮灭之怒"
+      },
+      {
+        "gameId": 1258880,
+        "label": "虚空坠落"
+      },
+      {
+        "gameId": 1255702,
+        "label": "浓暗壁垒"
+      }
+    ],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 120517,
+            "label": "光晕",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 200183,
+            "label": "神圣化身",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 64843,
+            "label": "神圣赞美诗",
+            "specs": [
+              "Holy"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1249251",
+        "label": "黑暗颠覆"
+      },
+      {
+        "key": "1262776",
+        "label": "暗影进军"
+      },
+      {
+        "key": "1249265",
+        "label": "幽影坍缩 I"
+      },
+      {
+        "key": "1249266",
+        "label": "幽影坍缩 II"
+      },
+      {
+        "key": "1260206",
+        "label": "幽影坍缩 III"
+      },
+      {
+        "key": "1262036",
+        "label": "虚空割裂"
+      },
+      {
+        "key": "1260712",
+        "label": "湮灭之怒"
+      },
+      {
+        "key": "1258880",
+        "label": "虚空坠落"
+      }
+    ],
+    "classes": [
+      {
+        "key": "Priest",
+        "label": "牧师"
+      }
+    ],
+    "specs": {
+      "Priest": [
+        {
+          "key": "Holy",
+          "label": "Holy"
+        }
+      ]
+    },
+    "heroTalents": {
+      "Priest": {
+        "Holy": []
+      }
+    },
+    "classAbilities": {
+      "Priest": [
+        {
+          "key": "120517",
+          "label": "光晕"
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "lane": "boss",
+      "t": "0:06",
+      "timestamp": 6461,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:14",
+      "timestamp": 14946,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19959,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25475,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:33",
+      "timestamp": 33018,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35478,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "0:42",
+      "timestamp": 42463,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:50",
+      "timestamp": 50985,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:08",
+      "timestamp": 68959,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:18",
+      "timestamp": 78455,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91962,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97480,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:44",
+      "timestamp": 104985,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107481,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130943,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:37",
+      "timestamp": 157494,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:50",
+      "timestamp": 170990,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:56",
+      "timestamp": 176512,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:04",
+      "timestamp": 184041,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186514,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193506,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:21",
+      "timestamp": 201997,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:39",
+      "timestamp": 219964,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:49",
+      "timestamp": 229483,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:02",
+      "timestamp": 242986,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:08",
+      "timestamp": 248501,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:16",
+      "timestamp": 256010,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:18",
+      "timestamp": 258500,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "5:06",
+      "timestamp": 306484,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "5:19",
+      "timestamp": 319972,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "5:25",
+      "timestamp": 325519,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:06",
+      "timestamp": 6461,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:14",
+      "timestamp": 14946,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19959,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25475,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:33",
+      "timestamp": 33018,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35478,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "0:42",
+      "timestamp": 42463,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:50",
+      "timestamp": 50985,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:08",
+      "timestamp": 68959,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:18",
+      "timestamp": 78455,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91962,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97480,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:44",
+      "timestamp": 104985,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107481,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130943,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:37",
+      "timestamp": 157494,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:50",
+      "timestamp": 170990,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:56",
+      "timestamp": 176512,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:04",
+      "timestamp": 184041,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186514,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193506,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:21",
+      "timestamp": 201997,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:39",
+      "timestamp": 219964,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:49",
+      "timestamp": 229483,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:02",
+      "timestamp": 242986,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:08",
+      "timestamp": 248501,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:16",
+      "timestamp": 256010,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "4:18",
+      "timestamp": 258500,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 93,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "5:06",
+      "timestamp": 306484,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "5:19",
+      "timestamp": 319972,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "5:25",
+      "timestamp": 325519,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 36,
+      "sourceName": "元首阿福扎恩"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9024,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 9,
+      "sourceName": "米什德文",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "mode": "character",
+  "encounterId": 3176,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 2,
+  "region": "CN",
+  "hasMorePages": true,
+  "total": 100,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "放弃治疗",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 129318.35903222,
+      "duration": 319080,
+      "startTime": 1774270946308,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "reportStartTime": 1774268457213,
+      "hardModeLevel": 0,
+      "bracketData": 256,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 573,
+        "name": "伊萨里奥斯",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 223684,
+        "name": "柒院",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 2,
+      "playerName": "米什德文",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 124525.99959197,
+      "duration": 328409,
+      "startTime": 1774102483177,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "reportStartTime": 1774082430451,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 644,
+        "name": "奥特兰克",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    }
+  ],
+  "className": "Priest",
+  "specName": "Holy",
+  "heroTalent": null,
+  "metric": "hps"
+}

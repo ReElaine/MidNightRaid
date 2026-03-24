@@ -6,10 +6,10 @@
     "preferredRegion": "CN",
     "fallbackToGlobal": true,
     "character": {
-      "className": null,
-      "specName": null,
+      "className": "Priest",
+      "specName": "Holy",
       "heroTalent": null,
-      "metric": "dps"
+      "metric": "hps"
     }
   },
   "report": {
