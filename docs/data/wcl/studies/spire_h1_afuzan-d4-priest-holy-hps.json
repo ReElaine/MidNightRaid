@@ -6,8 +6,8 @@
   "className": "Priest",
   "specName": "Holy",
   "metric": "hps",
-  "sampleCount": 2,
-  "generatedAt": "2026-03-24T07:49:58.443Z",
+  "sampleCount": 10,
+  "generatedAt": "2026-03-24T07:53:44.008Z",
   "responseWindow": {
     "beforeMs": 12000,
     "afterMs": 15000,
@@ -56,6 +56,166 @@
       "metricValue": 124525.99959197,
       "duration": 328409,
       "timelineCount": 31
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "rank": 3,
+      "playerName": "Qimoo",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "server": {
+        "id": 666,
+        "name": "布兰卡德",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 124420.90191315,
+      "duration": 329300,
+      "timelineCount": 32
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "rank": 4,
+      "playerName": "尼古丶丁",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "server": {
+        "id": 770,
+        "name": "白银之手",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 121709.23444876,
+      "duration": 334909,
+      "timelineCount": 34
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "rank": 5,
+      "playerName": "夏尔",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "server": {
+        "id": 600,
+        "name": "卡拉赞",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 119220.71168608,
+      "duration": 314605,
+      "timelineCount": 29
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "rank": 6,
+      "playerName": "阿伦儿",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "server": {
+        "id": 564,
+        "name": "主宰之剑",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 117929.5735119,
+      "duration": 277921,
+      "timelineCount": 29
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "rank": 7,
+      "playerName": "栀子花香",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "server": {
+        "id": 713,
+        "name": "格瑞姆巴托",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 115340.96841976,
+      "duration": 325995,
+      "timelineCount": 31
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "rank": 8,
+      "playerName": "流光飞舞丶",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "server": {
+        "id": 806,
+        "name": "苏塔恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "metricValue": 113728.37305777,
+      "duration": 322052,
+      "timelineCount": 30
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "rank": 9,
+      "playerName": "朵拉爱蹦迪",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 569969,
+        "name": "彼岸花开",
+        "faction": 1
+      },
+      "metricValue": 110079.10410891,
+      "duration": 327897,
+      "timelineCount": 33
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "rank": 10,
+      "playerName": "Rollessecond",
+      "className": "Priest",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 545202,
+        "name": "san barcelona",
+        "faction": 1
+      },
+      "metricValue": 109207.20834719,
+      "duration": 276596,
+      "timelineCount": 30
     }
   ],
   "filters": {
@@ -105,6 +265,38 @@
       {
         "key": "n37hYBr1aVDFNbtP-10",
         "label": "米什德文"
+      },
+      {
+        "key": "GHkQx4cPd13ha76v-6",
+        "label": "Qimoo"
+      },
+      {
+        "key": "2yL3qhRMAvm4pJkc-8",
+        "label": "尼古丶丁"
+      },
+      {
+        "key": "VAHMNnzK4Z7WFLPc-31",
+        "label": "夏尔"
+      },
+      {
+        "key": "9VQHJgFMnRbqw3cZ-17",
+        "label": "阿伦儿"
+      },
+      {
+        "key": "Mjv14nXg8LPZpGaR-24",
+        "label": "栀子花香"
+      },
+      {
+        "key": "vYpMx1TBtd2FrPcX-4",
+        "label": "流光飞舞丶"
+      },
+      {
+        "key": "Gz9WmVrfb841aFC3-9",
+        "label": "朵拉爱蹦迪"
+      },
+      {
+        "key": "RHwCWMmVxgZKpFrQ-2",
+        "label": "Rollessecond"
       }
     ],
     "classes": [
@@ -324,18 +516,708 @@
           "t": "5:06",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 6547,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8643,
+              "t": "0:08",
+              "offsetMs": 2096,
+              "offsetLabel": "+2.1s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "Qimoo",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 42518,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 78507,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 157561,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 193509,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 229525,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 306552,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 6519,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 7406,
+              "t": "0:07",
+              "offsetMs": 887,
+              "offsetLabel": "+0.9s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "尼古丶丁",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 42516,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 78536,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 157536,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 193522,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 229564,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 306519,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 6537,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 42528,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 78526,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 157526,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 193563,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 229572,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 306613,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 6544,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 7798,
+              "t": "0:07",
+              "offsetMs": 1254,
+              "offsetLabel": "+1.3s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 42532,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 78511,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 157556,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 193560,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 229581,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 6516,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 42517,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 78507,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 157578,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 193596,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 229561,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 306582,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 6546,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 6961,
+              "t": "0:06",
+              "offsetMs": 415,
+              "offsetLabel": "+0.4s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "流光飞舞丶",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 42507,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 78506,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 157577,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 193578,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 229561,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 306588,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 6498,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8647,
+              "t": "0:08",
+              "offsetMs": 2149,
+              "offsetLabel": "+2.1s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "朵拉爱蹦迪",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 42562,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 78535,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 157511,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 193536,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 229539,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 306581,
+          "t": "5:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 6552,
+          "t": "0:06",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 6313,
+              "t": "0:06",
+              "offsetMs": -239,
+              "offsetLabel": "-0.2s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "Rollessecond",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 42574,
+          "t": "0:42",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 78534,
+          "t": "1:18",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 157604,
+          "t": "2:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 193560,
+          "t": "3:13",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 229591,
+          "t": "3:49",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
+      "sampleCount": 10,
       "responseSummary": [
         {
           "key": "120517",
           "abilityGameId": 120517,
           "label": "光晕",
-          "count": 2,
+          "count": 8,
           "players": [
+            "Qimoo",
+            "Rollessecond",
+            "尼古丶丁",
             "放弃治疗",
-            "米什德文"
+            "朵拉爱蹦迪",
+            "流光飞舞丶",
+            "米什德文",
+            "阿伦儿"
           ]
         }
       ]
@@ -397,18 +1279,241 @@
               "heroTalent": null
             }
           ]
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 15016,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8643,
+              "t": "0:08",
+              "offsetMs": -6373,
+              "offsetLabel": "-6.4s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "Qimoo",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 15012,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 7406,
+              "t": "0:07",
+              "offsetMs": -7606,
+              "offsetLabel": "-7.6s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "尼古丶丁",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 15023,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 15012,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 7798,
+              "t": "0:07",
+              "offsetMs": -7214,
+              "offsetLabel": "-7.2s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            },
+            {
+              "timestamp": 22990,
+              "t": "0:22",
+              "offsetMs": 7978,
+              "offsetLabel": "+8.0s",
+              "abilityGameId": 200183,
+              "abilityName": "神圣化身",
+              "abilityLabel": "神圣化身",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 15034,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 23929,
+              "t": "0:23",
+              "offsetMs": 8895,
+              "offsetLabel": "+8.9s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "栀子花香",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 15057,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 6961,
+              "t": "0:06",
+              "offsetMs": -8096,
+              "offsetLabel": "-8.1s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "流光飞舞丶",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 15001,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8647,
+              "t": "0:08",
+              "offsetMs": -6354,
+              "offsetLabel": "-6.4s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "朵拉爱蹦迪",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 15059,
+          "t": "0:15",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 6313,
+              "t": "0:06",
+              "offsetMs": -8746,
+              "offsetLabel": "-8.7s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "Rollessecond",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
         }
       ],
-      "sampleCount": 2,
+      "sampleCount": 10,
       "responseSummary": [
         {
           "key": "120517",
           "abilityGameId": 120517,
           "label": "光晕",
-          "count": 2,
+          "count": 9,
           "players": [
+            "Qimoo",
+            "Rollessecond",
+            "尼古丶丁",
             "放弃治疗",
-            "米什德文"
+            "朵拉爱蹦迪",
+            "栀子花香",
+            "流光飞舞丶",
+            "米什德文",
+            "阿伦儿"
+          ]
+        },
+        {
+          "key": "200183",
+          "abilityGameId": 200183,
+          "label": "神圣化身",
+          "count": 1,
+          "players": [
+            "阿伦儿"
           ]
         }
       ]
@@ -532,17 +1637,496 @@
           "t": "5:19",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 20038,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8643,
+              "t": "0:08",
+              "offsetMs": -11395,
+              "offsetLabel": "-11.4s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "Qimoo",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 92004,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 171028,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 243012,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 320048,
+          "t": "5:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 20009,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 91997,
+          "t": "1:31",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 170994,
+          "t": "2:50",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 243001,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 320038,
+          "t": "5:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 20007,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 92007,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 171041,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 243021,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 20024,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 22990,
+              "t": "0:22",
+              "offsetMs": 2966,
+              "offsetLabel": "+3.0s",
+              "abilityGameId": 200183,
+              "abilityName": "神圣化身",
+              "abilityLabel": "神圣化身",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 92043,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 171047,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 243056,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 20023,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 23929,
+              "t": "0:23",
+              "offsetMs": 3906,
+              "offsetLabel": "+3.9s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "栀子花香",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 92015,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 171050,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 243047,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 320079,
+          "t": "5:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 20068,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 92027,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 171047,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 243050,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 320043,
+          "t": "5:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 20021,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 8647,
+              "t": "0:08",
+              "offsetMs": -11374,
+              "offsetLabel": "-11.4s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "朵拉爱蹦迪",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 91999,
+          "t": "1:31",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 170991,
+          "t": "2:50",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 243050,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 320073,
+          "t": "5:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 20037,
+          "t": "0:20",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 92043,
+          "t": "1:32",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 171079,
+          "t": "2:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 243077,
+          "t": "4:03",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
+      "sampleCount": 10,
       "responseSummary": [
         {
           "key": "120517",
           "abilityGameId": 120517,
           "label": "光晕",
+          "count": 4,
+          "players": [
+            "Qimoo",
+            "朵拉爱蹦迪",
+            "栀子花香",
+            "米什德文"
+          ]
+        },
+        {
+          "key": "200183",
+          "abilityGameId": 200183,
+          "label": "神圣化身",
           "count": 1,
           "players": [
-            "米什德文"
+            "阿伦儿"
           ]
         }
       ]
@@ -651,10 +2235,455 @@
           "t": "5:25",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 25571,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 97545,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 176551,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 248518,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 325551,
+          "t": "5:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 25514,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 97516,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 176518,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 248525,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 325583,
+          "t": "5:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 25520,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 97517,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 176568,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 248535,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 25528,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 22990,
+              "t": "0:22",
+              "offsetMs": -2538,
+              "offsetLabel": "-2.5s",
+              "abilityGameId": 200183,
+              "abilityName": "神圣化身",
+              "abilityLabel": "神圣化身",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 97539,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 176566,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 248569,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 25527,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 23929,
+              "t": "0:23",
+              "offsetMs": -1598,
+              "offsetLabel": "-1.6s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "栀子花香",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 97521,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 176570,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 248595,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 325586,
+          "t": "5:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 25562,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 97534,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 176593,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 248577,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 25554,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 97548,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 176545,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 248571,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 325577,
+          "t": "5:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 25539,
+          "t": "0:25",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 97586,
+          "t": "1:37",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 176621,
+          "t": "2:56",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 248601,
+          "t": "4:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
-      "responseSummary": []
+      "sampleCount": 10,
+      "responseSummary": [
+        {
+          "key": "120517",
+          "abilityGameId": 120517,
+          "label": "光晕",
+          "count": 1,
+          "players": [
+            "栀子花香"
+          ]
+        },
+        {
+          "key": "200183",
+          "abilityGameId": 200183,
+          "label": "神圣化身",
+          "count": 1,
+          "players": [
+            "阿伦儿"
+          ]
+        }
+      ]
     },
     {
       "key": "1260206",
@@ -749,10 +2778,422 @@
           "t": "4:16",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 33052,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 105073,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 184060,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 256029,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 33040,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 105031,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 184034,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 256025,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 333057,
+          "t": "5:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 33047,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 105045,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 184074,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 256070,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 33051,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 22990,
+              "t": "0:22",
+              "offsetMs": -10061,
+              "offsetLabel": "-10.1s",
+              "abilityGameId": 200183,
+              "abilityName": "神圣化身",
+              "abilityLabel": "神圣化身",
+              "sourceName": "阿伦儿",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 105061,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 184090,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 256099,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 33024,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": [
+            {
+              "timestamp": 23929,
+              "t": "0:23",
+              "offsetMs": -9095,
+              "offsetLabel": "-9.1s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "栀子花香",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 105022,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 184071,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 256062,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 33080,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 105036,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 184117,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 256071,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 33060,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 105028,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 184059,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 256065,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 33042,
+          "t": "0:33",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 105087,
+          "t": "1:45",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 184106,
+          "t": "3:04",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 256119,
+          "t": "4:16",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
-      "responseSummary": []
+      "sampleCount": 10,
+      "responseSummary": [
+        {
+          "key": "120517",
+          "abilityGameId": 120517,
+          "label": "光晕",
+          "count": 1,
+          "players": [
+            "栀子花香"
+          ]
+        },
+        {
+          "key": "200183",
+          "abilityGameId": 200183,
+          "label": "神圣化身",
+          "count": 1,
+          "players": [
+            "阿伦儿"
+          ]
+        }
+      ]
     },
     {
       "key": "1262036",
@@ -847,10 +3288,387 @@
           "t": "4:18",
           "sourceName": "深渊虚空塑形者",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 35532,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 107534,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 186563,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 258540,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 35529,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 107505,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 186554,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 258549,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 35552,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 107526,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 186587,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 258586,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 35524,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 107542,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 186592,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 258570,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 35552,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": [
+            {
+              "timestamp": 23929,
+              "t": "0:23",
+              "offsetMs": -11623,
+              "offsetLabel": "-11.6s",
+              "abilityGameId": 120517,
+              "abilityName": "光晕",
+              "abilityLabel": "光晕",
+              "sourceName": "栀子花香",
+              "className": "Priest",
+              "classLabel": "牧师",
+              "specName": "Holy",
+              "heroTalent": null
+            }
+          ]
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 107548,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 186608,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 258554,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 35605,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 107525,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 186551,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 258554,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 35532,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 107531,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 186550,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 258586,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 35562,
+          "t": "0:35",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 107590,
+          "t": "1:47",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 186572,
+          "t": "3:06",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 258576,
+          "t": "4:18",
+          "sourceName": "深渊虚空塑形者",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
-      "responseSummary": []
+      "sampleCount": 10,
+      "responseSummary": [
+        {
+          "key": "120517",
+          "abilityGameId": 120517,
+          "label": "光晕",
+          "count": 1,
+          "players": [
+            "栀子花香"
+          ]
+        }
+      ]
     },
     {
       "key": "1260712",
@@ -945,9 +3763,361 @@
           "t": "3:39",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 51022,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 69021,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 202038,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 220041,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 51009,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 69022,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 202015,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 219986,
+          "t": "3:39",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 51032,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 68998,
+          "t": "1:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 202046,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 220039,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 51059,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 69040,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 202064,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 220071,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 51030,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 69009,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 202076,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 220085,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 51011,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 69023,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 202045,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 220043,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 51041,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 68982,
+          "t": "1:08",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 202007,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 220012,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 51024,
+          "t": "0:51",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 69025,
+          "t": "1:09",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 202098,
+          "t": "3:22",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 220071,
+          "t": "3:40",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
+      "sampleCount": 10,
       "responseSummary": []
     },
     {
@@ -977,9 +4147,97 @@
           "t": "2:10",
           "sourceName": "元首阿福扎恩",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 131016,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 131016,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 131022,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 131065,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 131033,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 131020,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 131013,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 131027,
+          "t": "2:11",
+          "sourceName": "元首阿福扎恩",
+          "responses": []
         }
       ],
-      "sampleCount": 2,
+      "sampleCount": 10,
       "responseSummary": []
     },
     {
@@ -1009,9 +4267,97 @@
           "t": "4:48",
           "sourceName": "虚缚歼灭者",
           "responses": []
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 207264,
+          "t": "3:27",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 207891,
+          "t": "3:27",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 279591,
+          "t": "4:39",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 271978,
+          "t": "4:31",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 200303,
+          "t": "3:20",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 271784,
+          "t": "4:31",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 272031,
+          "t": "4:32",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 272418,
+          "t": "4:32",
+          "sourceName": "虚缚歼灭者",
+          "responses": []
         }
       ],
-      "sampleCount": 1,
+      "sampleCount": 6,
       "responseSummary": []
     }
   ]

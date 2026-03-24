@@ -7,7 +7,7 @@
   "zoneName": "VS / DR / MQD",
   "difficulty": 4,
   "page": 1,
-  "pageSize": 2,
+  "pageSize": 10,
   "region": "CN",
   "hasMorePages": true,
   "total": 100,
@@ -60,6 +60,198 @@
         "region": "CN"
       },
       "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 3,
+      "playerName": "Qimoo",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 124420.90191315,
+      "duration": 329300,
+      "startTime": 1774164057027,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "reportStartTime": 1774162735570,
+      "hardModeLevel": 0,
+      "bracketData": 248,
+      "size": 30,
+      "faction": 1,
+      "server": {
+        "id": 666,
+        "name": "布兰卡德",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 4,
+      "playerName": "尼古丶丁",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 121709.23444876,
+      "duration": 334909,
+      "startTime": 1774102191902,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "reportStartTime": 1774096158897,
+      "hardModeLevel": 0,
+      "bracketData": 253,
+      "size": 29,
+      "faction": 0,
+      "server": {
+        "id": 770,
+        "name": "白银之手",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 5,
+      "playerName": "夏尔",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 119220.71168608,
+      "duration": 314605,
+      "startTime": 1774096268102,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "reportStartTime": 1774090778415,
+      "hardModeLevel": 0,
+      "bracketData": 252,
+      "size": 29,
+      "faction": 0,
+      "server": {
+        "id": 600,
+        "name": "卡拉赞",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 6,
+      "playerName": "阿伦儿",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 117929.5735119,
+      "duration": 277921,
+      "startTime": 1774074168203,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "reportStartTime": 1774069303330,
+      "hardModeLevel": 0,
+      "bracketData": 248,
+      "size": 21,
+      "faction": 0,
+      "server": {
+        "id": 564,
+        "name": "主宰之剑",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 7,
+      "playerName": "栀子花香",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 115340.96841976,
+      "duration": 325995,
+      "startTime": 1774279840525,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "reportStartTime": 1774266615754,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 20,
+      "faction": 0,
+      "server": {
+        "id": 713,
+        "name": "格瑞姆巴托",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
+      "playerName": "流光飞舞丶",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 113728.37305777,
+      "duration": 322052,
+      "startTime": 1773936166854,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "reportStartTime": 1773935652138,
+      "hardModeLevel": 0,
+      "bracketData": 246,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 806,
+        "name": "苏塔恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 9,
+      "playerName": "朵拉爱蹦迪",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 110079.10410891,
+      "duration": 327897,
+      "startTime": 1774019897527,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "reportStartTime": 1774018060332,
+      "hardModeLevel": 0,
+      "bracketData": 254,
+      "size": 30,
+      "faction": -1,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 569969,
+        "name": "彼岸花开",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 10,
+      "playerName": "Rollessecond",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 109207.20834719,
+      "duration": 276596,
+      "startTime": 1774273243476,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "reportStartTime": 1774260819524,
+      "hardModeLevel": 0,
+      "bracketData": 246,
+      "size": 18,
+      "faction": 1,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 545202,
+        "name": "san barcelona",
+        "faction": 1
+      },
       "heroTalent": null
     }
   ],
