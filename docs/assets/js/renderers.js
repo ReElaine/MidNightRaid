@@ -36,11 +36,11 @@ function renderClassTrackEntry(entry) {
   const playerLabel = entry.playerName || entry.sampleId;
   return `
     <article class="timeline-entry timeline-entry--class">
-      <div class="timeline-entry__title">
-        ${escapeHtml(entry.abilityLabel)}
+      <div class="timeline-entry__inline">
+        <span class="timeline-entry__title">${escapeHtml(entry.abilityLabel)}</span>
         ${entry.rank ? `<span class="timeline-entry__rank">#${escapeHtml(entry.rank)}</span>` : ""}
+        <span class="timeline-entry__meta">${escapeHtml(playerLabel)}</span>
       </div>
-      <div class="timeline-entry__meta">${escapeHtml(playerLabel)}</div>
     </article>
   `;
 }
