@@ -26,15 +26,15 @@ function readJson(filePath) {
 }
 
 function validateBossCatalog() {
-  assert(fs.existsSync(bossCatalogPath), "缺少 docs/data/wcl/bosses.json");
+  assert(fs.existsSync(bossCatalogPath), "Missing docs/data/wcl/bosses.json");
   const catalog = readJson(bossCatalogPath);
-  assert(Array.isArray(catalog.bosses) && catalog.bosses.length > 0, "bosses.json 中 bosses 应为非空数组");
+  assert(Array.isArray(catalog.bosses) && catalog.bosses.length > 0, "bosses.json must contain a non-empty bosses array");
 }
 
 function validateUiConfig() {
-  assert(fs.existsSync(uiConfigPath), "缺少 docs/data/wcl/ui-config.json");
+  assert(fs.existsSync(uiConfigPath), "Missing docs/data/wcl/ui-config.json");
   const config = readJson(uiConfigPath);
-  assert(Array.isArray(config.classProfiles) && config.classProfiles.length > 0, "ui-config.json 中 classProfiles 应为非空数组");
+  assert(Array.isArray(config.classProfiles) && config.classProfiles.length > 0, "ui-config.json must contain a non-empty classProfiles array");
 }
 
 function validateRankingsFiles() {
@@ -46,9 +46,9 @@ function validateRankingsFiles() {
   for (const file of files) {
     const data = readJson(path.join(rankingsRoot, file));
     ["encounterId", "bossName", "difficulty", "rankings"].forEach((field) => {
-      assert(data[field] !== undefined && data[field] !== null, `${file} 缺少字段 ${field}`);
+      assert(data[field] !== undefined && data[field] !== null, `${file} is missing ${field}`);
     });
-    assert(Array.isArray(data.rankings), `${file} 的 rankings 应为数组`);
+    assert(Array.isArray(data.rankings), `${file} rankings must be an array`);
   }
 }
 
@@ -61,9 +61,9 @@ function validateTimelineFiles() {
   for (const file of files) {
     const data = readJson(path.join(timelinesRoot, file));
     ["reportCode", "fightId", "bossName", "timeline"].forEach((field) => {
-      assert(data[field] !== undefined && data[field] !== null, `${file} 缺少字段 ${field}`);
+      assert(data[field] !== undefined && data[field] !== null, `${file} is missing ${field}`);
     });
-    assert(Array.isArray(data.timeline), `${file} 的 timeline 应为数组`);
+    assert(Array.isArray(data.timeline), `${file} timeline must be an array`);
   }
 }
 
@@ -75,11 +75,13 @@ function validateStudyFiles() {
   const files = fs.readdirSync(studiesRoot).filter((name) => name.endsWith(".json"));
   for (const file of files) {
     const data = readJson(path.join(studiesRoot, file));
-    ["bossSlug", "bossName", "difficulty", "className", "metric", "samples", "groupedAbilities"].forEach((field) => {
-      assert(data[field] !== undefined && data[field] !== null, `${file} 缺少字段 ${field}`);
+    ["bossSlug", "bossName", "difficulty", "className", "metric", "samples", "bossTrack", "classTrack", "timelineRows"].forEach((field) => {
+      assert(data[field] !== undefined && data[field] !== null, `${file} is missing ${field}`);
     });
-    assert(Array.isArray(data.samples), `${file} 的 samples 应为数组`);
-    assert(Array.isArray(data.groupedAbilities), `${file} 的 groupedAbilities 应为数组`);
+    assert(Array.isArray(data.samples), `${file} samples must be an array`);
+    assert(Array.isArray(data.bossTrack), `${file} bossTrack must be an array`);
+    assert(Array.isArray(data.classTrack), `${file} classTrack must be an array`);
+    assert(Array.isArray(data.timelineRows), `${file} timelineRows must be an array`);
   }
 }
 

@@ -21,75 +21,31 @@ function renderStudyLink(boss, options) {
   return `${url.pathname}${url.search}`;
 }
 
-function groupStudyRows(groups) {
-  const rowMap = new Map();
-
-  for (const group of groups || []) {
-    for (const occurrence of group.occurrences || []) {
-      const key = `${group.abilityGameId}:${occurrence.t}`;
-      const current = rowMap.get(key) || {
-        key,
-        abilityGameId: group.abilityGameId,
-        abilityLabel: group.label,
-        t: occurrence.t,
-        timestamp: occurrence.timestamp,
-        occurrences: []
-      };
-
-      current.occurrences.push(occurrence);
-      rowMap.set(key, current);
-    }
-  }
-
-  return [...rowMap.values()]
-    .map((row) => ({
-      ...row,
-      occurrences: row.occurrences.sort((left, right) => (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER))
-    }))
-    .sort((left, right) => left.timestamp - right.timestamp || left.abilityLabel.localeCompare(right.abilityLabel));
-}
-
-function renderBossRowEntry(row) {
+function renderBossTrackEntry(entry) {
   return `
     <article class="timeline-entry timeline-entry--boss">
-      <div class="timeline-entry__title">${escapeHtml(row.abilityLabel)}</div>
-      <div class="timeline-entry__meta">覆盖 ${row.occurrences.length} 份样本</div>
+      <div class="timeline-entry__title">${escapeHtml(entry.abilityLabel)}</div>
+      <div class="timeline-entry__meta">覆盖 ${entry.sampleCount} 份样本</div>
     </article>
   `;
 }
 
-function renderSampleResponse(occurrence) {
-  const responses = occurrence.responses || [];
-  const responseContent = responses.length
-    ? responses
-        .map(
-          (response) => `
-            <div class="sample-response__skill">
-              <span class="badge">${escapeHtml(response.offsetLabel)}</span>
-              <span class="badge badge--ghost">${escapeHtml(response.abilityLabel || response.abilityName)}</span>
-            </div>
-          `
-        )
-        .join("")
-    : `<span class="muted">未匹配到神牧技能</span>`;
-
+function renderClassTrackEntry(entry) {
+  const playerLabel = entry.playerName || entry.sampleId;
   return `
     <article class="timeline-entry timeline-entry--class">
       <div class="timeline-entry__title">
-        ${escapeHtml(occurrence.playerName || occurrence.sampleId)}
-        ${occurrence.rank ? `<span class="timeline-entry__rank">#${escapeHtml(occurrence.rank)}</span>` : ""}
+        ${escapeHtml(entry.abilityLabel)}
+        ${entry.rank ? `<span class="timeline-entry__rank">#${escapeHtml(entry.rank)}</span>` : ""}
       </div>
-      <div class="timeline-entry__meta">${escapeHtml(occurrence.reportCode)} / Fight ${escapeHtml(occurrence.fightId)}</div>
-      <div class="sample-response">${responseContent}</div>
+      <div class="timeline-entry__meta">${escapeHtml(playerLabel)} / ${escapeHtml(entry.reportCode)} / Fight ${escapeHtml(entry.fightId)}</div>
     </article>
   `;
 }
 
-function renderTimelineRows(groups) {
-  const rows = groupStudyRows(groups);
-
+function renderTimelineRows(rows) {
   if (!rows.length) {
-    return `<section class="card empty-state">当前筛选条件下没有可展示的时间轴结果。</section>`;
+    return `<section class="card empty-state">当前筛选条件下没有可展示的时间轴数据。</section>`;
   }
 
   return `
@@ -97,16 +53,20 @@ function renderTimelineRows(groups) {
       <div class="timeline-board__head">
         <div class="timeline-board__lane timeline-board__lane--boss">Boss 技能</div>
         <div class="timeline-board__time">时间</div>
-        <div class="timeline-board__lane timeline-board__lane--class">神牧技能响应</div>
+        <div class="timeline-board__lane timeline-board__lane--class">职业技能</div>
       </div>
       <div class="timeline-board__body">
         ${rows
           .map(
             (row) => `
               <div class="timeline-row">
-                <div class="timeline-lane timeline-lane--boss">${renderBossRowEntry(row)}</div>
+                <div class="timeline-lane timeline-lane--boss">
+                  ${row.bossEntries.length ? row.bossEntries.map(renderBossTrackEntry).join("") : `<div class="timeline-empty">-</div>`}
+                </div>
                 <div class="timeline-time">${escapeHtml(row.t)}</div>
-                <div class="timeline-lane timeline-lane--class">${row.occurrences.map(renderSampleResponse).join("")}</div>
+                <div class="timeline-lane timeline-lane--class">
+                  ${row.classEntries.length ? row.classEntries.map(renderClassTrackEntry).join("") : `<div class="timeline-empty">-</div>`}
+                </div>
               </div>
             `
           )
@@ -156,7 +116,7 @@ export function renderBossCatalogCards(entries, options) {
     .join("");
 }
 
-export function renderStudyDetail({ boss, study, filters, filteredGroups }) {
+export function renderStudyDetail({ boss, study, filters, filteredRows }) {
   const bossFilterChips = [
     renderChip("全部 Boss 技能", 'data-filter-group="bossAbilities" data-filter-value="all"', filters.bossAbilities.length === 0),
     ...(study.filters?.bossAbilities || []).map((item) =>
@@ -172,7 +132,7 @@ export function renderStudyDetail({ boss, study, filters, filteredGroups }) {
   ].join("");
 
   const classAbilityChips = [
-    renderChip("全部神牧技能", 'data-filter-group="classAbilities" data-filter-value="all"', filters.classAbilities.length === 0),
+    renderChip("全部职业技能", 'data-filter-group="classAbilities" data-filter-value="all"', filters.classAbilities.length === 0),
     ...(study.filters?.classAbilities || []).map((item) =>
       renderChip(item.label, `data-filter-group="classAbilities" data-filter-value="${escapeHtml(item.key)}"`, filters.classAbilities.includes(item.key))
     )
@@ -186,16 +146,16 @@ export function renderStudyDetail({ boss, study, filters, filteredGroups }) {
           <span class="badge badge--ghost">${escapeHtml(study.className)}${study.specName ? ` / ${escapeHtml(study.specName)}` : ""}</span>
           <span class="badge badge--ghost">${escapeHtml(study.metric)}</span>
         </div>
-        <h2>Boss 时间轴汇总</h2>
-        <p class="muted">左侧是 Boss 技能，右侧是不同神牧样本在这一波机制里的技能响应。这样可以直接横向对比不同人的处理方式。</p>
-        <p class="muted">当前样本数：${escapeHtml(study.sampleCount)}，响应窗口：前 ${escapeHtml(study.responseWindow?.beforeLabel || "0:12")} / 后 ${escapeHtml(study.responseWindow?.afterLabel || "0:15")}</p>
+        <h2>Boss 双轨时间轴</h2>
+        <p class="muted">左侧完整展示 Boss 技能，右侧完整展示职业技能。多份日志会汇总到同一条时间轴上，你可以自己判断每波机制下不同玩家的技能选择。</p>
+        <p class="muted">当前样本数：${escapeHtml(study.sampleCount)}</p>
       </section>
 
       <section class="detail-section filter-panel">
         <div class="section-heading">
           <div>
             <h2>筛选</h2>
-            <p class="muted">保留时间轴结构，只按 Boss 技能、样本玩家和神牧技能做收窄。</p>
+            <p class="muted">只收窄展示内容，不再做 Boss 技能和职业技能的自动匹配分析。</p>
           </div>
         </div>
         <div class="filter-group">
@@ -207,12 +167,12 @@ export function renderStudyDetail({ boss, study, filters, filteredGroups }) {
           <div class="raid-nav">${playerFilterChips}</div>
         </div>
         <div class="filter-group">
-          <div class="filter-group__label">神牧技能</div>
+          <div class="filter-group__label">职业技能</div>
           <div class="raid-nav">${classAbilityChips}</div>
         </div>
       </section>
 
-      ${renderTimelineRows(filteredGroups)}
+      ${renderTimelineRows(filteredRows)}
     </div>
   `;
 }

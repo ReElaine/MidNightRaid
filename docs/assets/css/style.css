@@ -384,6 +384,14 @@ h3 {
   font-size: 0.9rem;
 }
 
+.timeline-empty {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  color: var(--muted);
+  font-style: italic;
+}
+
 .filter-group + .filter-group {
   margin-top: 18px;
 }

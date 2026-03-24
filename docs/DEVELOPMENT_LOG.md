@@ -1,5 +1,19 @@
 # Development Log
 
+## 2026-03-24 / dual-track timeline refresh
+
+- Boss study view no longer tries to match boss mechanics with priest cooldowns inside a response window.
+- `scripts/wcl/build-study.js` now writes three direct study tracks:
+  - `bossTrack`
+  - `classTrack`
+  - `timelineRows`
+- `docs/assets/js/app.js` now filters rows directly instead of filtering matched response groups.
+- `docs/assets/js/renderers.js` now renders a pure three-column timeline:
+  - left: full boss timeline
+  - middle: time
+  - right: full class timeline
+- Current study data was regenerated from top 10 Holy Priest HPS logs for Imperator Averzian.
+
 ## 2026-03-24 / current state
 
 - 仓库已经清理为纯 WCL 工具项目

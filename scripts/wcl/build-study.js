@@ -1,6 +1,6 @@
 const path = require("path");
 const { WCL_STUDIES_ROOT } = require("./config");
-const { formatTimestamp, loadFetchPolicy, parseInteger, writeJson } = require("./utils");
+const { parseInteger, writeJson } = require("./utils");
 
 function sanitizeFilePart(value, fallback = "all") {
   const normalized = String(value || "")
@@ -24,112 +24,8 @@ function getStudyOutputPath(selector, options = {}) {
   return path.join(WCL_STUDIES_ROOT, `${getStudyOutputStem(selector, options)}.json`);
 }
 
-function formatOffsetLabel(offsetMs) {
-  const seconds = Math.abs(offsetMs) / 1000;
-  const signed = `${offsetMs >= 0 ? "+" : "-"}${seconds.toFixed(1)}s`;
-  return signed;
-}
-
-function buildResponsesForOccurrence(classTimeline, bossEntry, windowBeforeMs, windowAfterMs) {
-  return classTimeline
-    .filter((entry) => {
-      const offset = entry.timestamp - bossEntry.timestamp;
-      return offset >= -windowBeforeMs && offset <= windowAfterMs;
-    })
-    .map((entry) => ({
-      timestamp: entry.timestamp,
-      t: entry.t,
-      offsetMs: entry.timestamp - bossEntry.timestamp,
-      offsetLabel: formatOffsetLabel(entry.timestamp - bossEntry.timestamp),
-      abilityGameId: entry.abilityGameId,
-      abilityName: entry.abilityName,
-      abilityLabel: entry.abilityLabel,
-      sourceName: entry.sourceName,
-      className: entry.className,
-      classLabel: entry.classLabel,
-      specName: entry.specName,
-      heroTalent: entry.heroTalent || null
-    }))
-    .sort((left, right) => left.timestamp - right.timestamp);
-}
-
-function summarizeResponses(occurrences) {
-  const map = new Map();
-
-  for (const occurrence of occurrences) {
-    for (const response of occurrence.responses || []) {
-      const key = String(response.abilityGameId);
-      const current = map.get(key) || {
-        key,
-        abilityGameId: response.abilityGameId,
-        label: response.abilityLabel || response.abilityName,
-        count: 0,
-        players: new Set()
-      };
-
-      current.count += 1;
-      if (occurrence.playerName) {
-        current.players.add(occurrence.playerName);
-      }
-      map.set(key, current);
-    }
-  }
-
-  return [...map.values()]
-    .map((entry) => ({
-      key: entry.key,
-      abilityGameId: entry.abilityGameId,
-      label: entry.label,
-      count: entry.count,
-      players: [...entry.players].sort()
-    }))
-    .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label));
-}
-
-function buildFilterOptions(groupedAbilities, samples, timelinePayloads) {
-  const presetAbilities =
-    timelinePayloads[0]?.preset?.classes?.[samples[0]?.className || ""]?.abilities ||
-    [];
-
-  const bossAbilities = groupedAbilities.map((group) => ({
-    key: String(group.abilityGameId),
-    label: group.label
-  }));
-
-  const players = samples.map((sample) => ({
-    key: sample.sampleId,
-    label: sample.playerName || sample.sampleId
-  }));
-
-  const classes = [...new Map(
-    samples
-      .filter((sample) => sample.className)
-      .map((sample) => [sample.className, { key: sample.className, label: sample.className }])
-  ).values()];
-
-  const specs = [...new Map(
-    samples
-      .filter((sample) => sample.specName)
-      .map((sample) => [sample.specName, { key: sample.specName, label: sample.specName }])
-  ).values()];
-
-  const classAbilities = [
-    ...new Map(
-      [
-        ...presetAbilities.map((entry) => [String(entry.gameId), { key: String(entry.gameId), label: entry.label }]),
-        ...groupedAbilities.flatMap((group) => group.responseSummary).map((entry) => [entry.key, { key: entry.key, label: entry.label }])
-      ]
-    ).values()
-  ];
-
-  return { bossAbilities, players, classes, specs, classAbilities };
-}
-
-function buildStudyPayload(rankings, timelinePayloads, options = {}) {
-  const studyPolicy = loadFetchPolicy().study || {};
-  const windowBeforeMs = parseInteger(options.windowBeforeMs, parseInteger(studyPolicy.windowBeforeMs, 12000));
-  const windowAfterMs = parseInteger(options.windowAfterMs, parseInteger(studyPolicy.windowAfterMs, 15000));
-  const samples = timelinePayloads.map((timeline, index) => {
+function buildSampleSummary(rankings, timelinePayloads) {
+  return timelinePayloads.map((timeline, index) => {
     const ranking = rankings.rankings[index] || {};
     return {
       sampleId: `${timeline.reportCode}-${timeline.fightId}`,
@@ -147,50 +43,171 @@ function buildStudyPayload(rankings, timelinePayloads, options = {}) {
       timelineCount: timeline.timeline?.length || 0
     };
   });
+}
 
-  const groupedAbilityMap = new Map();
+function buildBossTrack(timelinePayloads, sampleMap) {
+  const grouped = new Map();
 
   for (const timeline of timelinePayloads) {
-    const sample = samples.find((item) => item.reportCode === timeline.reportCode && item.fightId === timeline.fightId);
-    for (const bossEntry of timeline.bossTimeline || []) {
-      const key = String(bossEntry.abilityGameId);
-      const current = groupedAbilityMap.get(key) || {
+    const sampleId = `${timeline.reportCode}-${timeline.fightId}`;
+    const sample = sampleMap.get(sampleId);
+
+    for (const entry of timeline.bossTimeline || []) {
+      const key = `${entry.abilityGameId}:${entry.t}`;
+      const current = grouped.get(key) || {
         key,
-        abilityGameId: bossEntry.abilityGameId,
-        label: bossEntry.abilityLabel || bossEntry.abilityName,
-        abilityName: bossEntry.abilityName,
-        occurrences: []
+        abilityGameId: entry.abilityGameId,
+        abilityName: entry.abilityName,
+        abilityLabel: entry.abilityLabel || entry.abilityName,
+        timestamp: entry.timestamp,
+        t: entry.t,
+        entries: []
       };
 
-      current.occurrences.push({
-        sampleId: sample?.sampleId || `${timeline.reportCode}-${timeline.fightId}`,
+      current.entries.push({
+        sampleId,
         playerName: sample?.playerName || null,
         rank: sample?.rank ?? null,
         reportCode: timeline.reportCode,
         fightId: timeline.fightId,
-        timestamp: bossEntry.timestamp,
-        t: bossEntry.t,
-        sourceName: bossEntry.sourceName,
-        responses: buildResponsesForOccurrence(timeline.classTimeline || [], bossEntry, windowBeforeMs, windowAfterMs)
+        timestamp: entry.timestamp,
+        t: entry.t,
+        sourceName: entry.sourceName || null
       });
-
-      groupedAbilityMap.set(key, current);
+      current.timestamp = Math.min(current.timestamp, entry.timestamp);
+      grouped.set(key, current);
     }
   }
 
-  const groupedAbilities = [...groupedAbilityMap.values()]
+  return [...grouped.values()]
     .map((group) => ({
       ...group,
-      sampleCount: new Set(group.occurrences.map((item) => item.sampleId)).size,
-      responseSummary: summarizeResponses(group.occurrences),
-      occurrences: group.occurrences.sort((left, right) => {
+      sampleCount: new Set(group.entries.map((entry) => entry.sampleId)).size,
+      entries: group.entries.sort((left, right) => {
         if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
           return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
         }
         return left.timestamp - right.timestamp;
       })
     }))
-    .sort((left, right) => left.occurrences[0]?.timestamp - right.occurrences[0]?.timestamp);
+    .sort((left, right) => left.timestamp - right.timestamp || left.abilityLabel.localeCompare(right.abilityLabel));
+}
+
+function buildClassTrack(timelinePayloads, sampleMap) {
+  const entries = [];
+
+  for (const timeline of timelinePayloads) {
+    const sampleId = `${timeline.reportCode}-${timeline.fightId}`;
+    const sample = sampleMap.get(sampleId);
+
+    for (const entry of timeline.classTimeline || []) {
+      entries.push({
+        sampleId,
+        playerName: sample?.playerName || null,
+        rank: sample?.rank ?? null,
+        className: entry.className || sample?.className || null,
+        classLabel: entry.classLabel || entry.className || sample?.className || null,
+        specName: entry.specName || sample?.specName || null,
+        heroTalent: entry.heroTalent || sample?.heroTalent || null,
+        reportCode: timeline.reportCode,
+        fightId: timeline.fightId,
+        timestamp: entry.timestamp,
+        t: entry.t,
+        abilityGameId: entry.abilityGameId,
+        abilityName: entry.abilityName,
+        abilityLabel: entry.abilityLabel || entry.abilityName,
+        sourceName: entry.sourceName || sample?.playerName || null
+      });
+    }
+  }
+
+  return entries.sort((left, right) => {
+    if (left.timestamp !== right.timestamp) {
+      return left.timestamp - right.timestamp;
+    }
+    if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
+      return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
+    }
+    return (left.abilityLabel || "").localeCompare(right.abilityLabel || "");
+  });
+}
+
+function buildTimelineRows(bossTrack, classTrack) {
+  const rowMap = new Map();
+
+  for (const entry of bossTrack) {
+    const current = rowMap.get(entry.t) || {
+      key: entry.t,
+      t: entry.t,
+      timestamp: entry.timestamp,
+      bossEntries: [],
+      classEntries: []
+    };
+
+    current.timestamp = Math.min(current.timestamp, entry.timestamp);
+    current.bossEntries.push(entry);
+    rowMap.set(entry.t, current);
+  }
+
+  for (const entry of classTrack) {
+    const current = rowMap.get(entry.t) || {
+      key: entry.t,
+      t: entry.t,
+      timestamp: entry.timestamp,
+      bossEntries: [],
+      classEntries: []
+    };
+
+    current.timestamp = Math.min(current.timestamp, entry.timestamp);
+    current.classEntries.push(entry);
+    rowMap.set(entry.t, current);
+  }
+
+  return [...rowMap.values()]
+    .map((row) => ({
+      ...row,
+      bossEntries: row.bossEntries.sort((left, right) => left.timestamp - right.timestamp || left.abilityLabel.localeCompare(right.abilityLabel)),
+      classEntries: row.classEntries.sort((left, right) => {
+        if (left.timestamp !== right.timestamp) {
+          return left.timestamp - right.timestamp;
+        }
+        if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
+          return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
+        }
+        return left.abilityLabel.localeCompare(right.abilityLabel);
+      })
+    }))
+    .sort((left, right) => left.timestamp - right.timestamp);
+}
+
+function buildFilterOptions(bossTrack, classTrack, samples) {
+  const bossAbilities = bossTrack.map((entry) => ({
+    key: String(entry.abilityGameId),
+    label: entry.abilityLabel
+  }));
+
+  const players = samples.map((sample) => ({
+    key: sample.sampleId,
+    label: sample.playerName || sample.sampleId
+  }));
+
+  const classAbilities = [...new Map(
+    classTrack.map((entry) => [String(entry.abilityGameId), { key: String(entry.abilityGameId), label: entry.abilityLabel }])
+  ).values()].sort((left, right) => left.label.localeCompare(right.label));
+
+  return {
+    bossAbilities: [...new Map(bossAbilities.map((entry) => [entry.key, entry])).values()],
+    players,
+    classAbilities
+  };
+}
+
+function buildStudyPayload(rankings, timelinePayloads) {
+  const samples = buildSampleSummary(rankings, timelinePayloads);
+  const sampleMap = new Map(samples.map((sample) => [sample.sampleId, sample]));
+  const bossTrack = buildBossTrack(timelinePayloads, sampleMap);
+  const classTrack = buildClassTrack(timelinePayloads, sampleMap);
+  const timelineRows = buildTimelineRows(bossTrack, classTrack);
 
   return {
     bossSlug: rankings.bossSlug,
@@ -202,15 +219,11 @@ function buildStudyPayload(rankings, timelinePayloads, options = {}) {
     metric: rankings.metric,
     sampleCount: samples.length,
     generatedAt: new Date().toISOString(),
-    responseWindow: {
-      beforeMs: windowBeforeMs,
-      afterMs: windowAfterMs,
-      beforeLabel: formatTimestamp(windowBeforeMs),
-      afterLabel: formatTimestamp(windowAfterMs)
-    },
     samples,
-    filters: buildFilterOptions(groupedAbilities, samples, timelinePayloads),
-    groupedAbilities
+    filters: buildFilterOptions(bossTrack, classTrack, samples),
+    bossTrack,
+    classTrack,
+    timelineRows
   };
 }
 
@@ -228,9 +241,7 @@ function writeStudyPayload(payload) {
 
 module.exports = {
   buildStudyPayload,
-  formatOffsetLabel,
   getStudyOutputPath,
   getStudyOutputStem,
-  summarizeResponses,
   writeStudyPayload
 };

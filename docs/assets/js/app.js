@@ -187,42 +187,34 @@ async function initBossPage() {
     };
 
     function render() {
-      const filteredGroups = (study.groupedAbilities || [])
-        .filter((group) => {
-          if (filterState.bossAbilities.length > 0 && !filterState.bossAbilities.includes(String(group.abilityGameId))) {
-            return false;
-          }
-          return true;
-        })
-        .map((group) => ({
-          ...group,
-          occurrences: (group.occurrences || [])
-            .filter((occurrence) => {
-              if (filterState.players.length > 0 && !filterState.players.includes(occurrence.sampleId)) {
-                return false;
-              }
+      const filteredRows = (study.timelineRows || [])
+        .map((row) => ({
+          ...row,
+          bossEntries: (row.bossEntries || []).filter((entry) => {
+            if (filterState.bossAbilities.length > 0 && !filterState.bossAbilities.includes(String(entry.abilityGameId))) {
+              return false;
+            }
+            return true;
+          }),
+          classEntries: (row.classEntries || []).filter((entry) => {
+            if (filterState.players.length > 0 && !filterState.players.includes(entry.sampleId)) {
+              return false;
+            }
 
-              if (filterState.classAbilities.length > 0) {
-                return (occurrence.responses || []).some((response) => filterState.classAbilities.includes(String(response.abilityGameId)));
-              }
+            if (filterState.classAbilities.length > 0 && !filterState.classAbilities.includes(String(entry.abilityGameId))) {
+              return false;
+            }
 
-              return true;
-            })
-            .map((occurrence) => ({
-              ...occurrence,
-              responses:
-                filterState.classAbilities.length > 0
-                  ? (occurrence.responses || []).filter((response) => filterState.classAbilities.includes(String(response.abilityGameId)))
-                  : occurrence.responses || []
-            }))
+            return true;
+          })
         }))
-        .filter((group) => group.occurrences.length > 0);
+        .filter((row) => row.bossEntries.length > 0 || row.classEntries.length > 0);
 
       detailElement.innerHTML = renderStudyDetail({
         boss,
         study,
         filters: filterState,
-        filteredGroups
+        filteredRows
       });
     }
 
