@@ -1,0 +1,48 @@
+{
+  "reportCode": "9nFBwKkAQHpcrWqh",
+  "fightId": 1,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "encounterId": 3176,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 163742,
+  "timeline": [
+    {
+      "t": "0:19",
+      "timestamp": 19920,
+      "abilityGameId": 1249265,
+      "abilityName": "Umbral Collapse",
+      "type": "applydebuff",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "0:27",
+      "timestamp": 27471,
+      "abilityGameId": 1260203,
+      "abilityName": "Umbral Collapse",
+      "type": "applydebuff",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:31",
+      "timestamp": 91966,
+      "abilityGameId": 1249265,
+      "abilityName": "Umbral Collapse",
+      "type": "applydebuff",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "t": "1:39",
+      "timestamp": 99468,
+      "abilityGameId": 1260203,
+      "abilityName": "Umbral Collapse",
+      "type": "applydebuff",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    }
+  ]
+}

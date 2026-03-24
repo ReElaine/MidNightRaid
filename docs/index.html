@@ -3,42 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MidNightRaid WCL 抄作业站</title>
+    <title>MidNightRaid WCL Toolkit</title>
     <meta
       name="description"
-      content="通过 WCL API 抓取 Boss 关键技能时间轴与职业关键技能释放时间轴的静态前端工具。"
+      content="MidNightRaid 的 Warcraft Logs 工具前端，聚焦高排名公开日志与 Boss 技能时间轴。"
     >
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body data-page="index">
     <header class="site-header">
       <div class="shell">
-        <p class="eyebrow">MidNightRaid x WCL</p>
-        <h1>从 WCL 抄作业的时间轴站</h1>
+        <p class="eyebrow">MidNightRaid</p>
+        <h1>WCL 时间轴工具箱</h1>
         <p class="lede">
-          选择 Boss 预设、读取 WCL 报告、锁定具体 fight，然后直接抽出 Boss 关键技能轴和团队职业关键技能轴。
+          先用本地脚本抓取 WCL 排名和时间轴 JSON，再在这个静态前端里查看 Boss 的高排名公开日志与关键技能轴。
         </p>
       </div>
     </header>
 
     <main class="shell page-grid">
       <aside class="sidebar card">
-        <div id="wcl-setup" class="sidebar-stack"></div>
         <section>
-          <h2>副本筛选</h2>
-          <div id="raid-nav" class="raid-nav"></div>
+          <h2>Boss 选择</h2>
+          <div id="boss-nav" class="raid-nav"></div>
         </section>
         <section>
-          <h2>难度筛选</h2>
+          <h2>难度</h2>
           <div id="difficulty-nav" class="raid-nav"></div>
         </section>
         <section>
-          <label class="search-label" for="boss-search">搜索 Boss 预设</label>
+          <label class="search-label" for="boss-search">搜索 Boss</label>
           <input
             id="boss-search"
             class="search-input"
             type="search"
-            placeholder="输入 Boss 名称、难度或关键词"
+            placeholder="输入 Boss 英文名、中文别名或 slug"
           >
         </section>
       </aside>
@@ -46,15 +45,15 @@
       <section class="content-panel">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Boss Presets</p>
-            <h2 id="list-title">全部 Boss 预设</h2>
+            <p class="eyebrow">Local Rankings</p>
+            <h2 id="list-title">已抓取的 WCL 排名日志</h2>
           </div>
           <p id="list-summary" class="muted"></p>
         </div>
 
-        <div id="boss-list" class="boss-grid"></div>
+        <div id="rankings-list" class="boss-grid"></div>
         <div id="empty-state" class="card empty-state hidden">
-          没有找到匹配的 Boss 预设，请尝试其他关键词或切换副本筛选。
+          当前还没有匹配的本地 rankings JSON。先运行 `npm run wcl:rankings -- "<boss>"` 或 `npm run wcl:boss -- "<boss>" 1`。
         </div>
       </section>
     </main>

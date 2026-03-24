@@ -1,0 +1,77 @@
+{
+  "bosses": [
+    {
+      "slug": "spire_h1_afuzan",
+      "title": "Imperator Averzian",
+      "shortName": "阿福扎恩",
+      "aliases": [
+        "元首阿福扎恩",
+        "阿福扎恩"
+      ],
+      "encounterId": 3176,
+      "difficulty": 4
+    },
+    {
+      "slug": "spire_h2_fulasius",
+      "title": "Vorasius",
+      "shortName": "弗拉希乌斯",
+      "aliases": [
+        "弗拉希乌斯"
+      ],
+      "encounterId": 3177,
+      "difficulty": 4
+    },
+    {
+      "slug": "spire_h3_sahadar",
+      "title": "Fallen-King Salhadaar",
+      "shortName": "萨哈达尔",
+      "aliases": [
+        "陨落之王萨哈达尔"
+      ],
+      "encounterId": 3179,
+      "difficulty": 4
+    },
+    {
+      "slug": "spire_h4_weigaoer_aizuolake",
+      "title": "Vaelgor & Ezzorak",
+      "shortName": "威厄高尔与艾佐拉克",
+      "aliases": [
+        "威厄高尔和艾佐拉克"
+      ],
+      "encounterId": 3178,
+      "difficulty": 4
+    },
+    {
+      "slug": "spire_h5_lightblind_vanguard",
+      "title": "Lightblinded Vanguard",
+      "shortName": "光盲先锋军",
+      "aliases": [
+        "光盲先锋军"
+      ],
+      "encounterId": 3180,
+      "difficulty": 4
+    },
+    {
+      "slug": "dream_rift_h_chimerus",
+      "title": "Chimaerus, the Undreamt God",
+      "shortName": "奇美鲁斯",
+      "aliases": [
+        "奇美鲁斯",
+        "未梦之神"
+      ],
+      "encounterId": 3306,
+      "difficulty": 4
+    },
+    {
+      "slug": "quel_danas_h1_beloren",
+      "title": "Belo'ren, Child of Al'ar",
+      "shortName": "贝洛朗",
+      "aliases": [
+        "贝洛朗",
+        "奥的子嗣"
+      ],
+      "encounterId": 3182,
+      "difficulty": 4
+    }
+  ]
+}

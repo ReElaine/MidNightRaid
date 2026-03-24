@@ -1,0 +1,13 @@
+{
+  "name": "midnightraid",
+  "private": true,
+  "scripts": {
+    "test": "node --test --test-concurrency=1 --test-isolation=none ./tests/*.test.mjs",
+    "wcl:rankings": "node scripts/wcl/fetch-rankings.js",
+    "wcl:fights": "node scripts/wcl/fetch-report.js",
+    "wcl:fetch": "node scripts/wcl/cli.js",
+    "wcl:boss": "node scripts/wcl/fetch-batch.js",
+    "wcl:batch": "node scripts/wcl/fetch-batch.js",
+    "wcl:events": "node scripts/wcl/fetch-events.js"
+  }
+}

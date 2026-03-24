@@ -1,0 +1,36 @@
+{
+  "default": {
+    "graphQlDataTypes": [
+      "Casts",
+      "Buffs",
+      "Debuffs"
+    ],
+    "allowedEventTypes": [
+      "cast",
+      "applybuff",
+      "applydebuff"
+    ],
+    "includeBeginCast": false,
+    "blacklistAbilityNames": [
+      "Auto Attack",
+      "Attack",
+      "Melee",
+      "Swing"
+    ],
+    "blacklistAbilityGameIds": [],
+    "whitelistAbilityNames": [],
+    "whitelistAbilityGameIds": []
+  },
+  "bosses": {
+    "Imperator Averzian": {
+      "whitelistAbilityNames": [
+        "Shadow's Advance",
+        "Umbral Collapse",
+        "Oblivion's Wrath",
+        "Void Fall",
+        "Void Rupture",
+        "Pitch Bulwark"
+      ]
+    }
+  }
+}

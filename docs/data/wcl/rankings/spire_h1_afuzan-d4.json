@@ -1,0 +1,40 @@
+{
+  "encounterId": 3176,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 1,
+  "hasMorePages": true,
+  "total": 50,
+  "rankings": [
+    {
+      "rank": 1,
+      "duration": 163742,
+      "startTime": 1774071393219,
+      "reportCode": "9nFBwKkAQHpcrWqh",
+      "fightId": 1,
+      "reportStartTime": 1774071141233,
+      "bracketData": 258.926,
+      "size": 27,
+      "deaths": 1,
+      "tanks": 2,
+      "healers": 2,
+      "melee": 8,
+      "ranged": 15,
+      "server": {
+        "id": 123,
+        "name": "Illidan",
+        "region": "US"
+      },
+      "guild": {
+        "id": 794668,
+        "name": "MassivePennyIsLifestyle",
+        "faction": 1
+      },
+      "damageTaken": 64775457
+    }
+  ]
+}

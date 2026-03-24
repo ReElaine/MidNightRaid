@@ -1,157 +1,120 @@
-﻿# MidNightRaid
+# MidNightRaid
 
 ## 项目简介
 
-MidNightRaid 现在正在从“静态攻略展示站”进一步转成“WCL 抄作业站”：
+MidNightRaid 现在是一个专注于 Warcraft Logs 的前端工具项目：
 
-- `content/` 继续保留原始攻略 Markdown，作为内容源和人工整理层
-- `docs/data/` 继续提供 Boss 结构化 JSON，与 WCL 关键技能预设共用
-- `docs/` 当前前端会通过 WCL API 拉取报告数据，生成：
-  - Boss 关键技能时间轴
-  - 每个职业的关键技能释放时间轴
+- `scripts/wcl/` 负责拉取 WCL V2 排名与 report 数据
+- `docs/data/wcl/` 保存本地生成的 rankings / timelines JSON
+- `docs/` 提供 GitHub Pages 可直接访问的静态前端
 
-## 在线站点
+目标很直接：
 
-- GitHub Pages 站点入口：[https://reelaine.github.io/MidNightRaid/](https://reelaine.github.io/MidNightRaid/)
-- 站点主页：[`docs/index.html`](docs/index.html)
-- Boss 分析页：[`docs/boss.html`](docs/boss.html)
+- 查询指定 Boss 的高排名公开日志
+- 生成本地时间轴 JSON
+- 用静态页面快速浏览这些日志和关键技能轴
 
-## 项目结构说明
+## 在线页面
 
-- `content/`：副本与 Boss 的原始 Markdown 内容层
-- `docs/`：GitHub Pages 静态站点目录
-- `docs/data/`：副本索引、Boss JSON、WCL 站点配置与职业技能预设
-- `docs/assets/`：站点 CSS、前端逻辑与 WCL API 集成代码
-- `tests/`：前端模块与配置文件的原生 Node 单元测试
-- `scripts/validate-json.js`：JSON 结构校验脚本
-- `assets/`：仓库现有图片与素材资源
+- GitHub Pages 占位链接：[https://reelaine.github.io/MidNightRaid/](https://reelaine.github.io/MidNightRaid/)
+- 首页入口：[`docs/index.html`](docs/index.html)
 
-## 开发接续入口
+## 项目结构
 
-- 同步最新状态后优先阅读：[docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md)
-- 内容维护流程说明：[docs/CONTENT_WORKFLOW.md](docs/CONTENT_WORKFLOW.md)
-- 测试方式说明：[TESTING.md](TESTING.md)
+- `docs/`：静态前端页面
+- `docs/data/wcl/`：Boss 列表、rankings 和 timeline 数据
+- `scripts/wcl/`：WCL V2 OAuth、GraphQL、排名抓取与时间轴生成脚本
+- `tests/`：WCL 脚本单元测试
+- `scripts/validate-json.js`：校验前端消费的 WCL JSON 结构
 
-## 使用说明
+## 开发入口
 
-1. 在 WCL 中创建可用于静态站的 OAuth Client，并把 `Client ID` 填到页面中，或写入 [`docs/data/site-config.json`](docs/data/site-config.json)。
-2. 打开站点首页，连接 WCL。
-3. 粘贴报告链接或报告 code，选择 fight。
-4. 进入某个 Boss 的分析页，生成 Boss 技能轴和职业关键技能轴。
-5. 若要补充 Boss 预设，仍然优先维护 `content/` 和 `docs/data/bosses/` 中的结构化 JSON。
+- 接续开发前先看：[docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md)
+- 日常维护说明：[CONTRIBUTING.md](CONTRIBUTING.md)
+- 测试说明：[TESTING.md](TESTING.md)
 
-## WCL 集成说明
+## 环境准备
 
-- 当前前端采用静态站可用的 `OAuth PKCE` 思路，不在前端保存 `client secret`
-- WCL 相关入口配置位于：
-  - [`docs/data/site-config.json`](docs/data/site-config.json)
-  - [`docs/data/class-cooldowns.json`](docs/data/class-cooldowns.json)
-- 当前职业关键技能表是“可维护预设”，后续可以按团本环境继续扩充别名和技能集合
+1. 复制 `.env.example` 为 `.env`
+2. 填写：
 
-## 测试说明
+```env
+WCL_V2_CLIENT_ID=YOUR_WCL_V2_CLIENT_ID
+WCL_V2_CLIENT_SECRET=YOUR_WCL_V2_CLIENT_SECRET
+```
 
-- 当前仓库已为前端核心模块补充原生 Node 单元测试
-- 推荐测试命令：
+## 常用命令
+
+查询某个 Boss 的高排名公开日志：
 
 ```powershell
-node --test --test-concurrency=1 --test-isolation=none .\tests\*.test.mjs
+npm run wcl:rankings -- "Imperator Averzian" 3 4
+```
+
+抓某个 report 的 fight 列表：
+
+```powershell
+npm run wcl:fights -- 9nFBwKkAQHpcrWqh
+```
+
+抓单条 fight 的时间轴：
+
+```powershell
+npm run wcl:fetch -- 9nFBwKkAQHpcrWqh 1
+```
+
+按 Boss 自动抓前几条高排名日志并生成时间轴：
+
+```powershell
+npm run wcl:boss -- "Imperator Averzian" 1 4
+```
+
+运行测试与校验：
+
+```powershell
+npm test
 node scripts/validate-json.js
 ```
 
-- 详细说明见：[TESTING.md](TESTING.md)
+## 输出位置
+
+排名 JSON：
+
+```text
+docs/data/wcl/rankings/<bossSlug>-d<difficulty>.json
+```
+
+时间轴 JSON：
+
+```text
+docs/data/wcl/timelines/<reportCode>-<fightId>.json
+```
+
+## 当前前端能力
+
+- 首页读取本地 `bosses.json`
+- 加载对应 Boss 的本地 rankings JSON
+- 点击具体日志后进入时间轴详情页
+- 详情页读取本地 timeline JSON 并展示技能时间轴
+
+## 安全提醒
+
+- `.env` 不会提交到 Git
+- `client secret` 不应该出现在前端代码或公开页面中
+- 如果 secret 泄露，建议去 WCL 后台立即轮换
 
 ## 开源许可
 
-本仓库当前采用双许可证结构：
+本仓库保留现有双许可证结构：
 
-- GitHub 主许可证显示：`GPL-3.0-or-later`
-- 内容层：`CC BY-SA 4.0`
-- 代码层：`GPL-3.0-or-later`
+- 主许可证：`GPL-3.0-or-later`
+- 内容与说明文本：`CC BY-SA 4.0`
+- 代码：`GPL-3.0-or-later`
 
-这套结构的目标是：
-
-- 允许他人使用
-- 必须保留来源
-- 派生版本继续开源
-
-请先阅读以下文件再进行转载、改编或再发布：
+请同时阅读：
 
 - [LICENSE](LICENSE)
 - [LICENSE-CONTENT](LICENSE-CONTENT)
 - [LICENSE-CODE](LICENSE-CODE)
 - [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
 - [NOTICE.md](NOTICE.md)
-
-# 12.0 新团本攻略（按副本 / Boss 拆分）
-
-## 仓库维护
-
-- 日常整理、提交与推送流程请见 [CONTRIBUTING.md](CONTRIBUTING.md)
-
-----
-## 实用分享
->
-- 一键生成BOSS时间轴不求人
-
-<https://bbs.nga.cn/read.php?tid=31289686&_ff=218>
-- 12.0新团本：尖塔+奎岛+裂隙测试场地图+ ...
-
-<https://raidplan.io/plan/create?exp=mn>
-![img](assets/0_1001dcnc.png)
-
-----
-## 梦境裂隙
-
-- [H奇美鲁斯,未梦之神](content/梦境裂隙/H-奇美鲁斯,未梦之神.md)
-- [M奇美鲁斯,未梦之神](content/梦境裂隙/M-奇美鲁斯,未梦之神.md)
-
-
-## 进军奎尔丹纳斯
-
-- [H1贝洛朗,奥的子嗣](content/进军奎尔丹纳斯/H1-贝洛朗,奥的子嗣.md)
-
-
-## 虚影尖塔
-
-- [H1元首阿福扎恩](content/虚影尖塔/H1-元首阿福扎恩.md)
-- [H2弗拉希乌斯](content/虚影尖塔/H2-弗拉希乌斯.md)
-- [H3陨落之王萨哈达尔](content/虚影尖塔/H3-陨落之王萨哈达尔.md)
-- [H4威厄高尔和艾佐拉克](content/虚影尖塔/H4-威厄高尔和艾佐拉克.md)
-- [H5光盲先锋军](content/虚影尖塔/H5-光盲先锋军.md)
-- [M1元首阿福扎恩](content/虚影尖塔/M1-元首阿福扎恩.md)
-- [M2弗拉希乌斯](content/虚影尖塔/M2-弗拉希乌斯.md)
-
-----
-
-## 版权与授权说明
-
-本仓库采用双许可证结构发布：
-
-- 根目录 `LICENSE` 使用标准 GPL 文本，以便 GitHub 识别主许可证。
-- 内容层：`CC BY-SA 4.0`
-- 代码层：`GPL-3.0-or-later`
-
-但这些协议仅适用于仓库中由维护者依法有权授权的内容。
-
-这意味着：
-
-- 你可以转载、分享、整理、修改本仓库中可授权的内容。
-- 你必须保留署名，并给出原仓库链接或协议链接。
-- 你在使用内容层时必须保留署名与来源，并在改编再发布时继续采用 ShareAlike 方式开放。
-- 你在使用代码层时必须保留版权与许可证声明，并在分发修改版时继续采用 GPL 开源。
-
-请特别注意：
-
-- 本仓库包含整理自现有攻略帖子与参考资料的内容。
-- 原始帖子作者、发布平台、截图作者及其他相关权利人，仍然保留各自对应的权利。
-- 若某些文本、图片、媒体链接或引用内容不属于仓库维护者可再次授权的范围，则这些部分不因仓库整体协议而自动获得再次授权。
-
-发布、转载或二次改编前，建议先阅读以下文件：
-
-- [LICENSE](LICENSE)
-- [LICENSE-CONTENT](LICENSE-CONTENT)
-- [LICENSE-CODE](LICENSE-CODE)
-- [NOTICE.md](NOTICE.md)
-- [LICENSE_GUIDE.md](LICENSE_GUIDE.md)
-
-如果你是相关权利人，并认为仓库中的某部分内容需要修正署名、补充来源或移除，请联系仓库维护者处理。

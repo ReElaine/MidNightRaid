@@ -1,0 +1,77 @@
+{
+  "default": {
+    "slug": null,
+    "aliases": [],
+    "encounterId": null,
+    "zoneId": null,
+    "preferredDifficulty": 4
+  },
+  "bosses": {
+    "Imperator Averzian": {
+      "slug": "spire_h1_afuzan",
+      "aliases": [
+        "元首阿福扎恩",
+        "阿福扎恩"
+      ],
+      "encounterId": 3176,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Vorasius": {
+      "slug": "spire_h2_fulasius",
+      "aliases": [
+        "弗拉希乌斯"
+      ],
+      "encounterId": 3177,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Fallen-King Salhadaar": {
+      "slug": "spire_h3_sahadar",
+      "aliases": [
+        "陨落之王萨哈达尔"
+      ],
+      "encounterId": 3179,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Vaelgor & Ezzorak": {
+      "slug": "spire_h4_weigaoer_aizuolake",
+      "aliases": [
+        "威厄高尔和艾佐拉克"
+      ],
+      "encounterId": 3178,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Lightblinded Vanguard": {
+      "slug": "spire_h5_lightblind_vanguard",
+      "aliases": [
+        "光盲先锋军"
+      ],
+      "encounterId": 3180,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Chimaerus, the Undreamt God": {
+      "slug": "dream_rift_h_chimerus",
+      "aliases": [
+        "奇美鲁斯",
+        "未梦之神"
+      ],
+      "encounterId": 3306,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    },
+    "Belo'ren, Child of Al'ar": {
+      "slug": "quel_danas_h1_beloren",
+      "aliases": [
+        "贝洛朗",
+        "奥的子嗣"
+      ],
+      "encounterId": 3182,
+      "zoneId": 46,
+      "preferredDifficulty": 4
+    }
+  }
+}
