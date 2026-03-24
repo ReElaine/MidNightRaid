@@ -385,6 +385,13 @@ h3 {
   font-size: 0.9rem;
 }
 
+.timeline-entry__count {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
 .timeline-empty {
   display: flex;
   align-items: center;

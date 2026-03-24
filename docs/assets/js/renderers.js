@@ -24,8 +24,10 @@ function renderStudyLink(boss, options) {
 function renderBossTrackEntry(entry) {
   return `
     <article class="timeline-entry timeline-entry--boss">
-      <div class="timeline-entry__title">${escapeHtml(entry.abilityLabel)}</div>
-      <div class="timeline-entry__meta">覆盖 ${entry.sampleCount} 份样本</div>
+      <div class="timeline-entry__title">
+        ${escapeHtml(entry.abilityLabel)}
+        <span class="timeline-entry__count">${escapeHtml(entry.sampleCount)} 份</span>
+      </div>
     </article>
   `;
 }
