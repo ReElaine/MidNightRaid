@@ -8,6 +8,7 @@
     "wcl:fetch": "node scripts/wcl/cli.js",
     "wcl:boss": "node scripts/wcl/fetch-batch.js",
     "wcl:batch": "node scripts/wcl/fetch-batch.js",
-    "wcl:events": "node scripts/wcl/fetch-events.js"
+    "wcl:events": "node scripts/wcl/fetch-events.js",
+    "wcl:study": "node scripts/wcl/fetch-batch.js"
   }
 }

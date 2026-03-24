@@ -11,90 +11,86 @@ function renderChip(label, attributes = "", isActive = false) {
   return `<button class="chip ${isActive ? "is-active" : ""}" ${attributes} type="button">${escapeHtml(label)}</button>`;
 }
 
-function dedupeOptions(items) {
-  return [...new Map((items || []).map((item) => [item.key, item])).values()];
+function renderStudyLink(boss, options) {
+  const url = new URL("./boss.html", window.location.href);
+  url.searchParams.set("boss", boss.slug);
+  url.searchParams.set("difficulty", String(options.difficulty || boss.difficulty || 4));
+  url.searchParams.set("class", options.className || "Mage");
+  url.searchParams.set("spec", options.specName || "Fire");
+  url.searchParams.set("metric", options.metric || "dps");
+  return `${url.pathname}${url.search}`;
 }
 
-function groupTimelineRows(bossEntries, classEntries) {
-  const map = new Map();
-
-  for (const entry of bossEntries) {
-    const row = map.get(entry.timestamp) || { timestamp: entry.timestamp, t: entry.t, bossEntries: [], classEntries: [] };
-    row.bossEntries.push(entry);
-    map.set(entry.timestamp, row);
+function renderResponseSummary(summary) {
+  if (!summary.length) {
+    return `<p class="muted">这组样本里还没有匹配到职业技能响应。</p>`;
   }
 
-  for (const entry of classEntries) {
-    const row = map.get(entry.timestamp) || { timestamp: entry.timestamp, t: entry.t, bossEntries: [], classEntries: [] };
-    row.classEntries.push(entry);
-    map.set(entry.timestamp, row);
-  }
-
-  return [...map.values()].sort((left, right) => left.timestamp - right.timestamp);
-}
-
-function renderBossEntry(entry) {
   return `
-    <article class="timeline-entry timeline-entry--boss">
-      <div class="timeline-entry__title">${escapeHtml(entry.abilityLabel || entry.abilityName)}</div>
-      <div class="timeline-entry__meta">${escapeHtml(entry.sourceName || "Boss")}</div>
-    </article>
+    <div class="badge-row">
+      ${summary
+        .map((entry) => `<span class="badge badge--ghost">${escapeHtml(entry.label)} × ${entry.count}</span>`)
+        .join("")}
+    </div>
   `;
 }
 
-function renderClassEntry(entry) {
-  return `
-    <article class="timeline-entry timeline-entry--class">
-      <div class="timeline-entry__title">${escapeHtml(entry.classLabel || entry.className || "职业")} / ${escapeHtml(entry.abilityLabel || entry.abilityName)}</div>
-      <div class="timeline-entry__meta">
-        ${escapeHtml(entry.sourceName || "Unknown Player")}
-        ${entry.specName ? ` / ${escapeHtml(entry.specName)}` : ""}
-      </div>
-    </article>
-  `;
-}
-
-function renderTimelineRows(bossEntries, classEntries) {
-  const rows = groupTimelineRows(bossEntries, classEntries);
-
-  if (!rows.length) {
-    return `<section class="card empty-state">当前筛选条件下没有可展示的时间轴条目。</section>`;
+function renderResponses(responses) {
+  if (!responses.length) {
+    return `<p class="muted">这个样本在当前窗口内没有匹配到职业技能。</p>`;
   }
 
   return `
-    <section class="timeline-board">
-      <div class="timeline-board__head">
-        <div class="timeline-board__lane timeline-board__lane--boss">Boss 关键技能</div>
-        <div class="timeline-board__time">时间</div>
-        <div class="timeline-board__lane timeline-board__lane--class">职业关键技能</div>
-      </div>
-      <div class="timeline-board__body">
-        ${rows
-          .map(
-            (row) => `
-              <div class="timeline-row">
-                <div class="timeline-lane timeline-lane--boss">${row.bossEntries.map(renderBossEntry).join("")}</div>
-                <div class="timeline-time">${escapeHtml(row.t)}</div>
-                <div class="timeline-lane timeline-lane--class">${row.classEntries.map(renderClassEntry).join("")}</div>
+    <div class="response-list">
+      ${responses
+        .map(
+          (response) => `
+            <article class="response-card">
+              <div class="badge-row">
+                <span class="badge">${escapeHtml(response.offsetLabel)}</span>
+                <span class="badge badge--ghost">${escapeHtml(response.t)}</span>
+                ${response.specName ? `<span class="badge badge--ghost">${escapeHtml(response.specName)}</span>` : ""}
               </div>
-            `
-          )
-          .join("")}
+              <h4>${escapeHtml(response.abilityLabel || response.abilityName)}</h4>
+              <p class="muted">${escapeHtml(response.sourceName || "Unknown Player")}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderOccurrenceCard(occurrence) {
+  return `
+    <article class="study-sample-card">
+      <div class="badge-row">
+        ${occurrence.rank ? `<span class="badge">排名 ${escapeHtml(occurrence.rank)}</span>` : ""}
+        <span class="badge badge--ghost">${escapeHtml(occurrence.t)}</span>
+        <span class="badge badge--ghost">${escapeHtml(occurrence.reportCode)} / Fight ${escapeHtml(occurrence.fightId)}</span>
+      </div>
+      <h4>${escapeHtml(occurrence.playerName || occurrence.sampleId)}</h4>
+      <p class="muted">Boss 技能发生在 ${escapeHtml(occurrence.t)}，下面列出窗口内抓到的职业技能。</p>
+      ${renderResponses(occurrence.responses || [])}
+    </article>
+  `;
+}
+
+function renderStudyGroup(group) {
+  return `
+    <section class="detail-section study-group">
+      <div class="section-heading">
+        <div>
+          <h2>${escapeHtml(group.label)}</h2>
+          <p class="muted">共覆盖 ${group.sampleCount} 份样本，方便对照同一波机制下不同人的技能选择。</p>
+        </div>
+      </div>
+      ${renderResponseSummary(group.responseSummary || [])}
+      <div class="study-sample-grid">
+        ${(group.occurrences || []).map(renderOccurrenceCard).join("")}
       </div>
     </section>
   `;
-}
-
-function getClassEntriesForFilterOptions(classEntries, filters) {
-  return (classEntries || []).filter((entry) => {
-    if (filters.className !== "all" && entry.className !== filters.className) {
-      return false;
-    }
-    if (filters.specName !== "all" && entry.specName !== filters.specName) {
-      return false;
-    }
-    return true;
-  });
 }
 
 export function renderBossNav(bosses, activeBossSlug) {
@@ -112,155 +108,88 @@ export function renderDifficultyNav(activeDifficulty) {
     .join("");
 }
 
-export function renderBossCatalogCards(entries, activeBossSlug, difficulty) {
+export function renderBossCatalogCards(entries, options) {
   return entries
     .map(
       (boss) => `
         <article class="card boss-card">
           <div class="badge-row">
             <span class="badge">${escapeHtml(boss.title)}</span>
-            <span class="badge badge--ghost">难度 ${escapeHtml(difficulty)}</span>
-            ${boss.slug === activeBossSlug ? `<span class="badge badge--ghost">当前选择</span>` : ""}
+            <span class="badge badge--ghost">难度 ${escapeHtml(options.difficulty)}</span>
+            ${boss.slug === options.activeBossSlug ? `<span class="badge badge--ghost">当前选择</span>` : ""}
           </div>
           <h3>${escapeHtml(boss.shortName || boss.title)}</h3>
           <p>${escapeHtml((boss.aliases || []).join(" / ") || "暂无别名")}</p>
           <ul class="compact-list">
             <li>Encounter ID: ${escapeHtml(boss.encounterId)}</li>
-            <li>Slug: ${escapeHtml(boss.slug)}</li>
-            <li>推荐命令：<code>npm run wcl:rankings -- "${escapeHtml(boss.title)}" 10 ${escapeHtml(difficulty)} --class Mage --spec Fire</code></li>
+            <li>聚合视角：${escapeHtml(options.className)}${options.specName ? ` / ${escapeHtml(options.specName)}` : ""} / ${escapeHtml(options.metric)}</li>
           </ul>
+          <div class="boss-card__actions">
+            <a class="link-button" href="${renderStudyLink(boss, options)}">查看 Boss 汇总页</a>
+          </div>
         </article>
       `
     )
     .join("");
 }
 
-export function renderTimelineDetail({ boss, rankings, timeline, filters, filteredBossEntries, filteredClassEntries }) {
-  const rankingMeta = rankings
-    ? `
-      <section class="card hero-card">
-        <div class="badge-row">
-          <span class="badge">${escapeHtml(boss.title)}</span>
-          <span class="badge badge--ghost">排名 ${rankings.rank}</span>
-          ${rankings.className ? `<span class="badge badge--ghost">${escapeHtml(rankings.className)}${rankings.specName ? ` / ${escapeHtml(rankings.specName)}` : ""}</span>` : ""}
-        </div>
-        <h2>${escapeHtml(timeline.bossName)}</h2>
-        <p>${rankings.playerName ? `角色：${escapeHtml(rankings.playerName)} / ` : ""}${escapeHtml(rankings.guild?.name || "Unknown Guild")} / ${escapeHtml(rankings.server?.region || "")} ${escapeHtml(rankings.server?.name || "")}</p>
-        <p class="muted">Report: ${escapeHtml(timeline.reportCode)} / Fight: ${escapeHtml(timeline.fightId)}</p>
-      </section>
-    `
-    : `
-      <section class="card hero-card">
-        <div class="badge-row">
-          <span class="badge">${escapeHtml(boss.title)}</span>
-          <span class="badge badge--ghost">Fight ${escapeHtml(timeline.fightId)}</span>
-        </div>
-        <h2>${escapeHtml(timeline.bossName)}</h2>
-        <p class="muted">Report: ${escapeHtml(timeline.reportCode)}</p>
-      </section>
-    `;
-
+export function renderStudyDetail({ boss, study, filters, filteredGroups }) {
   const bossFilterChips = [
     renderChip("全部 Boss 技能", 'data-filter-group="bossAbilities" data-filter-value="all"', filters.bossAbilities.length === 0),
-    ...(timeline.filters?.bossAbilities || []).map((item) =>
+    ...(study.filters?.bossAbilities || []).map((item) =>
       renderChip(item.label, `data-filter-group="bossAbilities" data-filter-value="${escapeHtml(item.key)}"`, filters.bossAbilities.includes(item.key))
     )
   ].join("");
 
-  const classFilterChips = [
-    renderChip("全部职业", 'data-filter-group="className" data-filter-value="all"', filters.className === "all"),
-    ...(timeline.filters?.classes || []).map((item) =>
-      renderChip(item.label, `data-filter-group="className" data-filter-value="${escapeHtml(item.key)}"`, filters.className === item.key)
-    )
-  ].join("");
-
-  const classEntriesForOptions = getClassEntriesForFilterOptions(timeline.classTimeline || [], {
-    className: filters.className,
-    specName: filters.specName
-  });
-  const specSourceEntries =
-    filters.className === "all"
-      ? timeline.classTimeline || []
-      : (timeline.classTimeline || []).filter((entry) => entry.className === filters.className);
-  const specOptions = dedupeOptions(
-    specSourceEntries
-      .filter((entry) => entry.specName)
-      .map((entry) => ({ key: entry.specName, label: entry.specName }))
-  );
-  const classAbilityOptions = dedupeOptions(
-    classEntriesForOptions.map((entry) => ({
-      key: String(entry.abilityGameId),
-      label: entry.abilityLabel
-    }))
-  );
-
-  const specChips = [
-    renderChip("全部专精", 'data-filter-group="specName" data-filter-value="all"', filters.specName === "all"),
-    ...specOptions.map((item) =>
-      renderChip(item.label, `data-filter-group="specName" data-filter-value="${escapeHtml(item.key)}"`, filters.specName === item.key)
+  const playerFilterChips = [
+    renderChip("全部样本", 'data-filter-group="players" data-filter-value="all"', filters.players.length === 0),
+    ...(study.filters?.players || []).map((item) =>
+      renderChip(item.label, `data-filter-group="players" data-filter-value="${escapeHtml(item.key)}"`, filters.players.includes(item.key))
     )
   ].join("");
 
   const classAbilityChips = [
     renderChip("全部职业技能", 'data-filter-group="classAbilities" data-filter-value="all"', filters.classAbilities.length === 0),
-    ...classAbilityOptions.map((item) =>
+    ...(study.filters?.classAbilities || []).map((item) =>
       renderChip(item.label, `data-filter-group="classAbilities" data-filter-value="${escapeHtml(item.key)}"`, filters.classAbilities.includes(item.key))
     )
   ].join("");
 
-  const activeClassFilters = [filters.className !== "all" ? filters.className : null, filters.specName !== "all" ? filters.specName : null].filter(Boolean);
-
   return `
     <div class="detail-stack">
-      ${rankingMeta}
-      <section class="detail-section preset-panel">
-        <div class="section-heading">
-          <div>
-            <h2>展示预设</h2>
-            <p class="muted">${escapeHtml(timeline.presetName || "默认预设")}</p>
-          </div>
-          <div class="badge-row">
-            <span class="badge badge--ghost">Boss 技能 ${filteredBossEntries.length}</span>
-            <span class="badge badge--ghost">职业技能 ${filteredClassEntries.length}</span>
-          </div>
+      <section class="card hero-card">
+        <div class="badge-row">
+          <span class="badge">${escapeHtml(boss.title)}</span>
+          <span class="badge badge--ghost">${escapeHtml(study.className)}${study.specName ? ` / ${escapeHtml(study.specName)}` : ""}</span>
+          <span class="badge badge--ghost">${escapeHtml(study.metric)}</span>
         </div>
-        <div class="preset-grid">
-          <div class="info-block">
-            <h3>Boss 侧</h3>
-            <p class="muted">左侧只保留 Boss 关键技能，方便对照机制主轴。</p>
-          </div>
-          <div class="info-block">
-            <h3>职业侧</h3>
-            <p class="muted">右侧聚焦职业样本，可按职业、专精和技能逐层收窄。</p>
-          </div>
-        </div>
+        <h2>Boss 汇总视角</h2>
+        <p class="muted">当前汇总了 ${study.sampleCount} 份样本。每个 Boss 技能下都能看到不同玩家在响应窗口内交了什么技能。</p>
+        <p class="muted">窗口范围：前 ${escapeHtml(study.responseWindow?.beforeLabel || "0:12")} / 后 ${escapeHtml(study.responseWindow?.afterLabel || "0:15")}</p>
       </section>
+
       <section class="detail-section filter-panel">
         <div class="section-heading">
           <div>
             <h2>筛选</h2>
-            <p class="muted">Boss 技能和职业技能都支持多选，职业和专精保持单选收窄。</p>
+            <p class="muted">按 Boss 技能、样本玩家和职业技能多选筛选，专门用来看同一波机制下大家怎么交技能。</p>
           </div>
-          ${activeClassFilters.length ? `<div class="badge-row">${activeClassFilters.map((item) => `<span class="badge badge--ghost">${escapeHtml(item)}</span>`).join("")}</div>` : ""}
         </div>
         <div class="filter-group">
           <div class="filter-group__label">Boss 技能</div>
           <div class="raid-nav">${bossFilterChips}</div>
         </div>
         <div class="filter-group">
-          <div class="filter-group__label">职业</div>
-          <div class="raid-nav">${classFilterChips}</div>
-        </div>
-        <div class="filter-group">
-          <div class="filter-group__label">专精</div>
-          <div class="raid-nav">${specChips}</div>
+          <div class="filter-group__label">样本玩家</div>
+          <div class="raid-nav">${playerFilterChips}</div>
         </div>
         <div class="filter-group">
           <div class="filter-group__label">职业技能</div>
           <div class="raid-nav">${classAbilityChips}</div>
         </div>
       </section>
-      ${renderTimelineRows(filteredBossEntries, filteredClassEntries)}
+
+      ${filteredGroups.length ? filteredGroups.map(renderStudyGroup).join("") : `<section class="card empty-state">当前筛选条件下没有可展示的汇总结果。</section>`}
     </div>
   `;
 }

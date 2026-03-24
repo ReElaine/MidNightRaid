@@ -1,0 +1,70 @@
+{
+  "mode": "character",
+  "encounterId": 3176,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 2,
+  "region": "CN",
+  "hasMorePages": false,
+  "total": 60,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "梅雪夜",
+      "className": "Mage",
+      "specName": "Fire",
+      "metricValue": 87916.578286767,
+      "duration": 336615,
+      "startTime": 1774099037428,
+      "reportCode": "tDFXG2BvzQ17j9gr",
+      "fightId": 8,
+      "reportStartTime": 1774096526856,
+      "hardModeLevel": 0,
+      "bracketData": 252,
+      "size": 21,
+      "faction": 0,
+      "server": {
+        "id": 710,
+        "name": "末日行者",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 2,
+      "playerName": "宴长空",
+      "className": "Mage",
+      "specName": "Fire",
+      "metricValue": 78227.256847065,
+      "duration": 311995,
+      "startTime": 1774268184702,
+      "reportCode": "GPnF23tc7CmRdTDb",
+      "fightId": 30,
+      "reportStartTime": 1774258954374,
+      "hardModeLevel": 0,
+      "bracketData": 245,
+      "size": 25,
+      "faction": 1,
+      "server": {
+        "id": 655,
+        "name": "安苏",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 774126,
+        "name": "偶尔躲躲乌云",
+        "faction": 0
+      },
+      "heroTalent": null
+    }
+  ],
+  "className": "Mage",
+  "specName": "Fire",
+  "heroTalent": null,
+  "metric": "dps"
+}

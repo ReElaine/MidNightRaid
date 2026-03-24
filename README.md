@@ -10,7 +10,7 @@ MidNightRaid 现在是一个专注于 Warcraft Logs 的前端分析工具：
 当前主线只保留两件事：
 
 - 按职业 / 专精查询指定 Boss 的高排名公开日志
-- 生成 Boss 关键技能轴和职业关键技能轴，在前端双轨展示
+- 把多份日志汇总成 Boss 视角的对照页，观察同一波技能下不同玩家如何交技能
 
 ## 在线页面
 - GitHub Pages 占位链接：[https://reelaine.github.io/MidNightRaid/](https://reelaine.github.io/MidNightRaid/)
@@ -56,10 +56,16 @@ npm run wcl:fights -- 9nFBwKkAQHpcrWqh
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
 
-按 Boss 自动抓前几条职业样本并生成时间轴：
+按 Boss 自动抓前几条职业样本，并同时生成单 log 时间轴和 Boss 汇总页：
 
 ```powershell
 npm run wcl:boss -- "Imperator Averzian" 3 4 --class Mage --spec Fire --metric dps
+```
+
+`wcl:study` 是同一个入口的别名：
+
+```powershell
+npm run wcl:study -- "Imperator Averzian" 3 4 --class Mage --spec Fire --metric dps
 ```
 
 ## 抓取策略配置
@@ -93,16 +99,20 @@ docs/data/wcl/rankings/<bossSlug>-d<difficulty>-<class>-<spec>-<metric>.json
 docs/data/wcl/timelines/<reportCode>-<fightId>.json
 ```
 
+Boss 汇总 JSON：
+
+```text
+docs/data/wcl/studies/<bossSlug>-d<difficulty>-<class>-<spec>-<metric>.json
+```
+
 ## 当前前端能力
-- 首页只展示 Boss 目录和抓取入口提示
-- 详情页读取本地 `timeline` JSON
-- 时间轴使用同一条纵向时间刻度：
-  - 左侧显示 Boss 关键技能
-  - 右侧显示职业关键技能
-- 详情页支持以下筛选：
+- 首页按 Boss 展示汇总入口
+- Boss 页读取本地 `study` JSON
+- 同一个 Boss 技能会汇总多份日志的样本
+- 页面可以直接对比同一波 Boss 技能下，不同玩家交了哪些职业技能
+- Boss 页支持以下筛选：
   - Boss 技能，多选
-  - 职业，单选
-  - 专精，单选
+  - 样本玩家，多选
   - 职业技能，多选
 
 ## 测试与校验

@@ -19,5 +19,9 @@
     "translate": false,
     "hostilityType": "Enemies",
     "limit": 1000
+  },
+  "study": {
+    "windowBeforeMs": 12000,
+    "windowAfterMs": 15000
   }
 }

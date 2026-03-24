@@ -24,6 +24,7 @@ node scripts/validate-json.js
 - `docs/data/wcl/bosses.json`
 - `docs/data/wcl/rankings/*.json`
 - `docs/data/wcl/timelines/*.json`
+- `docs/data/wcl/studies/*.json`
 
 ## 手动联调建议
 改完抓取策略或 WCL GraphQL 查询后，建议至少跑：
@@ -31,12 +32,7 @@ node scripts/validate-json.js
 ```powershell
 npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Mage --spec Fire --metric dps
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
-```
-
-如果你改了职业筛选、专精选项或职业技能筛选，再补：
-
-```powershell
-npm run wcl:boss -- "Imperator Averzian" 3 4 --class Mage --spec Fire --metric dps
+npm run wcl:boss -- "Imperator Averzian" 2 4 --class Mage --spec Fire --metric dps
 ```
 
 ## 预设与识别规则

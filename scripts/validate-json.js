@@ -7,6 +7,7 @@ const dataRoot = path.join(docsRoot, "data", "wcl");
 const bossCatalogPath = path.join(dataRoot, "bosses.json");
 const rankingsRoot = path.join(dataRoot, "rankings");
 const timelinesRoot = path.join(dataRoot, "timelines");
+const studiesRoot = path.join(dataRoot, "studies");
 
 function fail(message) {
   console.error(`ERROR: ${message}`);
@@ -67,10 +68,27 @@ function validateTimelineFiles() {
   }
 }
 
+function validateStudyFiles() {
+  if (!fs.existsSync(studiesRoot)) {
+    return;
+  }
+
+  const files = fs.readdirSync(studiesRoot).filter((name) => name.endsWith(".json"));
+  for (const file of files) {
+    const data = readJson(path.join(studiesRoot, file));
+    ["bossSlug", "bossName", "difficulty", "className", "metric", "samples", "groupedAbilities"].forEach((field) => {
+      assert(data[field] !== undefined && data[field] !== null, `${file} 缺少字段 ${field}`);
+    });
+    assert(Array.isArray(data.samples), `${file} 的 samples 应为数组`);
+    assert(Array.isArray(data.groupedAbilities), `${file} 的 groupedAbilities 应为数组`);
+  }
+}
+
 function main() {
   validateBossCatalog();
   validateRankingsFiles();
   validateTimelineFiles();
+  validateStudyFiles();
 
   if (!process.exitCode) {
     console.log("JSON validation passed.");

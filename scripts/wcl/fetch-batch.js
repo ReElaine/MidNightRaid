@@ -1,4 +1,5 @@
 const { buildTimeline } = require("./build-timeline");
+const { buildStudyPayload, writeStudyPayload } = require("./build-study");
 const { fetchRankings } = require("./fetch-rankings");
 
 function parseCliArgs(argv) {
@@ -49,6 +50,7 @@ async function main() {
       serverRegion: options.region
     });
     const outputs = [];
+    const timelines = [];
 
     for (const entry of rankings.rankings.slice(0, topN)) {
       if (!entry.reportCode || !entry.fightId) {
@@ -56,6 +58,7 @@ async function main() {
       }
 
       const timeline = await buildTimeline(entry.reportCode, entry.fightId);
+      timelines.push(timeline);
       outputs.push({
         rank: entry.rank,
         playerName: entry.playerName || null,
@@ -69,8 +72,24 @@ async function main() {
       });
     }
 
-    console.log(JSON.stringify({ rankingsFile: rankings.bossSlug || rankings.encounterId, outputs }, null, 2));
-    console.log(`\nSummary: wrote ${outputs.length} timeline file(s) for ${rankings.bossName}.`);
+    const studyPayload = buildStudyPayload(rankings, timelines, {
+      windowBeforeMs: options.windowBeforeMs,
+      windowAfterMs: options.windowAfterMs
+    });
+    writeStudyPayload(studyPayload);
+
+    console.log(
+      JSON.stringify(
+        {
+          rankingsFile: rankings.bossSlug || rankings.encounterId,
+          studyFile: studyPayload.bossSlug || studyPayload.encounterId,
+          outputs
+        },
+        null,
+        2
+      )
+    );
+    console.log(`\nSummary: wrote ${outputs.length} timeline file(s) and 1 study file for ${rankings.bossName}.`);
   } catch (error) {
     console.error(`ERROR: ${error.message}`);
     process.exitCode = 1;

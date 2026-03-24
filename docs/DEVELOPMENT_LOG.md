@@ -80,6 +80,22 @@
 
 ---
 
+## 2026-03-24 / boss study aggregation
+
+- 页面主视角已经从单条 log 切到 Boss 汇总
+- `fetch-batch.js` 现在会在批量抓样本后额外生成 `study` JSON
+- `build-study.js` 负责把多份 timeline 围绕同一 Boss 技能聚合起来
+- 汇总页重点看的是：
+  - 同一个 Boss 技能
+  - 不同样本玩家
+  - 在响应窗口里交了哪些职业技能
+- 当前新增输出目录：
+  - `docs/data/wcl/studies/`
+- 当前样例命令：
+  - `npm run wcl:boss -- "Imperator Averzian" 2 4 --class Mage --spec Fire --metric dps`
+
+---
+
 ## 2026-03-24 / cleanup
 
 - 已删除整团排名这条支线

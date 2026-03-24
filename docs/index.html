@@ -6,7 +6,7 @@
     <title>MidNightRaid WCL Toolkit</title>
     <meta
       name="description"
-      content="MidNightRaid 的 Warcraft Logs 工具前端，聚焦职业排名样本与双轨时间轴。"
+      content="MidNightRaid 的 Warcraft Logs 工具前端，聚焦 Boss 维度的多日志技能对比。"
     >
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
@@ -14,9 +14,9 @@
     <header class="site-header">
       <div class="shell">
         <p class="eyebrow">MidNightRaid</p>
-        <h1>WCL 时间轴工具箱</h1>
+        <h1>WCL Boss 汇总工具箱</h1>
         <p class="lede">
-          先用本地脚本抓取职业排名和时间轴 JSON，再在这个静态前端里对照 Boss 机制轴与职业技能轴。
+          先抓多个职业样本，再按 Boss 汇总成同一波机制下的技能对照页，方便直接看不同玩家如何交技能。
         </p>
       </div>
     </header>
@@ -40,20 +40,32 @@
             placeholder="输入 Boss 英文名、中文别名或 slug"
           >
         </section>
+        <section>
+          <label class="search-label" for="class-select">职业</label>
+          <select id="class-select" class="search-input"></select>
+        </section>
+        <section>
+          <label class="search-label" for="spec-input">专精</label>
+          <input id="spec-input" class="search-input" type="text" placeholder="例如 Fire / Holy / Protection">
+        </section>
+        <section>
+          <label class="search-label" for="metric-select">指标</label>
+          <select id="metric-select" class="search-input"></select>
+        </section>
       </aside>
 
       <section class="content-panel">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Boss Catalog</p>
-            <h2 id="list-title">Boss 数据入口</h2>
+            <p class="eyebrow">Boss Study</p>
+            <h2 id="list-title">Boss 汇总入口</h2>
           </div>
           <p id="list-summary" class="muted"></p>
         </div>
 
         <div id="boss-list" class="boss-grid"></div>
         <div id="empty-state" class="card empty-state hidden">
-          当前还没有匹配的 Boss。先确认搜索词，或在命令行里执行职业排名抓取。
+          当前还没有匹配的 Boss。先确认搜索词，或者重新选择职业和专精。
         </div>
       </section>
     </main>

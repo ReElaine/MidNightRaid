@@ -16,12 +16,13 @@ git push
 ```
 
 ## WCL 相关检查
-如果这次改动涉及 `scripts/wcl/`、`docs/data/wcl/` 或前端时间轴展示，至少跑：
+如果这次改动涉及 `scripts/wcl/`、`docs/data/wcl/` 或前端 Boss 汇总展示，至少跑：
 
 ```powershell
 npm test
 node scripts/validate-json.js
 npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Mage --spec Fire --metric dps
+npm run wcl:boss -- "Imperator Averzian" 2 4 --class Mage --spec Fire --metric dps
 ```
 
 如果你改了时间轴生成逻辑，再补一条：
@@ -29,7 +30,6 @@ npm run wcl:rankings -- "Imperator Averzian" 10 4 --class Mage --spec Fire --met
 ```powershell
 npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
-
 ## 重点配置
 如果你在做职业抄作业链路，重点确认这两个配置文件：
 - `scripts/wcl/fetch-policy.json`
@@ -72,8 +72,8 @@ git push
 ## 文档同步
 如果你修改了下面任意内容，请顺手更新文档：
 - `scripts/wcl/` 里的抓取逻辑
-- `docs/data/wcl/` 的 JSON 结构
-- `docs/assets/js/` 的前端筛选或渲染逻辑
+- `docs/data/wcl/` 的 timeline / study JSON 结构
+- `docs/assets/js/` 的前端筛选或 Boss 汇总渲染逻辑
 
 优先同步：
 - `README.md`
