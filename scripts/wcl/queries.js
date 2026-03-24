@@ -121,6 +121,16 @@ const REPORT_FIGHTS_QUERY = `
   }
 `;
 
+const REPORT_PLAYER_DETAILS_QUERY = `
+  query ReportPlayerDetails($code: String!, $fightIds: [Int!], $translate: Boolean, $includeCombatantInfo: Boolean) {
+    reportData {
+      report(code: $code) {
+        playerDetails(fightIDs: $fightIds, translate: $translate, includeCombatantInfo: $includeCombatantInfo)
+      }
+    }
+  }
+`;
+
 const REPORT_EVENTS_QUERY = `
   query ReportEvents($code: String!, $fightIds: [Int!], $dataType: EventDataType!, $startTime: Float, $endTime: Float, $hostilityType: HostilityType, $limit: Int, $translate: Boolean) {
     reportData {
@@ -148,5 +158,6 @@ module.exports = {
   FIGHT_RANKINGS_QUERY,
   REPORT_EVENTS_QUERY,
   REPORT_FIGHTS_QUERY,
+  REPORT_PLAYER_DETAILS_QUERY,
   SEARCH_ZONES_QUERY
 };

@@ -7,150 +7,1201 @@
   "difficulty": 4,
   "startTime": 0,
   "endTime": 163742,
+  "presetId": "spire_h1_afuzan_default",
+  "presetName": "元首阿福扎恩双轨预设",
+  "preset": {
+    "presetId": "spire_h1_afuzan_default",
+    "presetName": "元首阿福扎恩双轨预设",
+    "bossAbilities": [
+      {
+        "gameId": 1249251,
+        "label": "黑暗颠覆"
+      },
+      {
+        "gameId": 1262776,
+        "label": "暗影进军"
+      },
+      {
+        "gameId": 1249265,
+        "label": "幽影坍缩 I"
+      },
+      {
+        "gameId": 1249266,
+        "label": "幽影坍缩 II"
+      },
+      {
+        "gameId": 1260206,
+        "label": "幽影坍缩 III"
+      },
+      {
+        "gameId": 1262036,
+        "label": "虚空割裂"
+      },
+      {
+        "gameId": 1260712,
+        "label": "湮灭之怒"
+      },
+      {
+        "gameId": 1258880,
+        "label": "虚空坠落"
+      },
+      {
+        "gameId": 1255702,
+        "label": "浓暗壁垒"
+      }
+    ],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {}
+    },
+    "classes": {
+      "Mage": {
+        "label": "法师",
+        "abilities": [
+          {
+            "gameId": 80353,
+            "label": "时间扭曲"
+          },
+          {
+            "gameId": 190319,
+            "label": "燃烧"
+          },
+          {
+            "gameId": 365350,
+            "label": "奥术涌动"
+          }
+        ]
+      },
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 10060,
+            "label": "能量灌注"
+          },
+          {
+            "gameId": 120517,
+            "label": "光晕"
+          },
+          {
+            "gameId": 586,
+            "label": "渐隐术"
+          }
+        ]
+      },
+      "Paladin": {
+        "label": "圣骑士",
+        "abilities": [
+          {
+            "gameId": 391054,
+            "label": "代祷"
+          },
+          {
+            "gameId": 85222,
+            "label": "黎明之光"
+          },
+          {
+            "gameId": 200025,
+            "label": "美德道标"
+          }
+        ]
+      },
+      "Shaman": {
+        "label": "萨满祭司",
+        "abilities": [
+          {
+            "gameId": 73920,
+            "label": "治疗之雨"
+          },
+          {
+            "gameId": 5394,
+            "label": "治疗之泉图腾"
+          },
+          {
+            "gameId": 1267068,
+            "label": "风暴涌流图腾"
+          }
+        ]
+      },
+      "Druid": {
+        "label": "德鲁伊",
+        "abilities": [
+          {
+            "gameId": 48438,
+            "label": "野性成长"
+          },
+          {
+            "gameId": 18562,
+            "label": "迅捷治愈"
+          },
+          {
+            "gameId": 191034,
+            "label": "星辰坠落"
+          }
+        ]
+      },
+      "DeathKnight": {
+        "label": "死亡骑士",
+        "abilities": [
+          {
+            "gameId": 42650,
+            "label": "亡者大军"
+          },
+          {
+            "gameId": 48707,
+            "label": "反魔法护罩"
+          },
+          {
+            "gameId": 1233448,
+            "label": "黑暗突变"
+          }
+        ]
+      },
+      "Warrior": {
+        "label": "战士",
+        "abilities": [
+          {
+            "gameId": 871,
+            "label": "盾墙"
+          },
+          {
+            "gameId": 2565,
+            "label": "盾牌格挡"
+          },
+          {
+            "gameId": 6343,
+            "label": "雷霆一击"
+          }
+        ]
+      },
+      "Evoker": {
+        "label": "唤魔师",
+        "abilities": [
+          {
+            "gameId": 370553,
+            "label": "扭转天平"
+          },
+          {
+            "gameId": 442204,
+            "label": "亘古吐息"
+          },
+          {
+            "gameId": 395152,
+            "label": "黑檀之力"
+          }
+        ]
+      },
+      "Monk": {
+        "label": "武僧",
+        "abilities": [
+          {
+            "gameId": 132578,
+            "label": "玄牛下凡"
+          },
+          {
+            "gameId": 1241059,
+            "label": "天神灌注"
+          },
+          {
+            "gameId": 119582,
+            "label": "活血酒"
+          }
+        ]
+      },
+      "Warlock": {
+        "label": "术士",
+        "abilities": [
+          {
+            "gameId": 265187,
+            "label": "召唤恶魔暴君"
+          },
+          {
+            "gameId": 111771,
+            "label": "恶魔传送门"
+          },
+          {
+            "gameId": 1276452,
+            "label": "魔典：小鬼领主"
+          }
+        ]
+      },
+      "Hunter": {
+        "label": "猎人",
+        "abilities": [
+          {
+            "gameId": 19574,
+            "label": "狂野怒火"
+          },
+          {
+            "gameId": 217200,
+            "label": "倒刺射击"
+          },
+          {
+            "gameId": 34026,
+            "label": "杀戮命令"
+          }
+        ]
+      },
+      "Rogue": {
+        "label": "潜行者",
+        "abilities": [
+          {
+            "gameId": 13750,
+            "label": "冲动"
+          },
+          {
+            "gameId": 271877,
+            "label": "刀锋冲刺"
+          },
+          {
+            "gameId": 315341,
+            "label": "正中眉心"
+          }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          {
+            "gameId": 198013,
+            "label": "眼棱"
+          },
+          {
+            "gameId": 258920,
+            "label": "献祭光环"
+          },
+          {
+            "gameId": 210152,
+            "label": "死亡横扫"
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1262776",
+        "label": "暗影进军"
+      },
+      {
+        "key": "1249265",
+        "label": "幽影坍缩 I"
+      },
+      {
+        "key": "1249266",
+        "label": "幽影坍缩 II"
+      },
+      {
+        "key": "1260206",
+        "label": "幽影坍缩 III"
+      },
+      {
+        "key": "1262036",
+        "label": "虚空割裂"
+      },
+      {
+        "key": "1260712",
+        "label": "湮灭之怒"
+      },
+      {
+        "key": "1258880",
+        "label": "虚空坠落"
+      }
+    ],
+    "classes": [
+      {
+        "key": "Evoker",
+        "label": "唤魔师"
+      },
+      {
+        "key": "Warlock",
+        "label": "术士"
+      },
+      {
+        "key": "Mage",
+        "label": "法师"
+      },
+      {
+        "key": "DemonHunter",
+        "label": "恶魔猎手"
+      },
+      {
+        "key": "DeathKnight",
+        "label": "死亡骑士"
+      },
+      {
+        "key": "Rogue",
+        "label": "潜行者"
+      },
+      {
+        "key": "Priest",
+        "label": "牧师"
+      },
+      {
+        "key": "Druid",
+        "label": "德鲁伊"
+      }
+    ],
+    "specs": {
+      "Evoker": [
+        {
+          "key": "Preservation",
+          "label": "Preservation"
+        }
+      ],
+      "Warlock": [
+        {
+          "key": "Demonology",
+          "label": "Demonology"
+        }
+      ],
+      "Mage": [
+        {
+          "key": "Frost",
+          "label": "Frost"
+        }
+      ],
+      "DemonHunter": [
+        {
+          "key": "Havoc",
+          "label": "Havoc"
+        },
+        {
+          "key": "Vengeance",
+          "label": "Vengeance"
+        }
+      ],
+      "DeathKnight": [
+        {
+          "key": "Unholy",
+          "label": "Unholy"
+        }
+      ],
+      "Rogue": [
+        {
+          "key": "Outlaw",
+          "label": "Outlaw"
+        }
+      ],
+      "Priest": [
+        {
+          "key": "Shadow",
+          "label": "Shadow"
+        }
+      ],
+      "Druid": [
+        {
+          "key": "Balance",
+          "label": "Balance"
+        }
+      ]
+    },
+    "heroTalents": {
+      "Evoker": {
+        "Preservation": []
+      },
+      "Warlock": {
+        "Demonology": []
+      },
+      "Mage": {
+        "Frost": []
+      },
+      "DemonHunter": {
+        "Havoc": [],
+        "Vengeance": []
+      },
+      "DeathKnight": {
+        "Unholy": []
+      },
+      "Rogue": {
+        "Outlaw": []
+      },
+      "Priest": {
+        "Shadow": []
+      },
+      "Druid": {
+        "Balance": []
+      }
+    },
+    "classAbilities": {
+      "Evoker": [
+        {
+          "key": "370553",
+          "label": "扭转天平"
+        }
+      ],
+      "Warlock": [
+        {
+          "key": "1276452",
+          "label": "魔典：小鬼领主"
+        },
+        {
+          "key": "265187",
+          "label": "召唤恶魔暴君"
+        }
+      ],
+      "Mage": [
+        {
+          "key": "80353",
+          "label": "时间扭曲"
+        }
+      ],
+      "DemonHunter": [
+        {
+          "key": "198013",
+          "label": "眼棱"
+        },
+        {
+          "key": "258920",
+          "label": "献祭光环"
+        },
+        {
+          "key": "210152",
+          "label": "死亡横扫"
+        }
+      ],
+      "DeathKnight": [
+        {
+          "key": "1233448",
+          "label": "黑暗突变"
+        },
+        {
+          "key": "42650",
+          "label": "亡者大军"
+        }
+      ],
+      "Rogue": [
+        {
+          "key": "13750",
+          "label": "冲动"
+        },
+        {
+          "key": "271877",
+          "label": "刀锋冲刺"
+        },
+        {
+          "key": "315341",
+          "label": "正中眉心"
+        }
+      ],
+      "Priest": [
+        {
+          "key": "10060",
+          "label": "能量灌注"
+        }
+      ],
+      "Druid": [
+        {
+          "key": "191034",
+          "label": "星辰坠落"
+        }
+      ]
+    }
+  },
   "timeline": [
     {
+      "lane": "boss",
       "t": "0:14",
       "timestamp": 14965,
       "abilityGameId": 1262776,
       "abilityName": "Shadow's Advance",
+      "abilityLabel": "暗影进军",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "0:19",
       "timestamp": 19920,
       "abilityGameId": 1249265,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 I",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "0:25",
       "timestamp": 25460,
       "abilityGameId": 1249266,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 II",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "0:32",
       "timestamp": 32958,
       "abilityGameId": 1260206,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 III",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "0:35",
       "timestamp": 35492,
       "abilityGameId": 1262036,
       "abilityName": "Void Rupture",
+      "abilityLabel": "虚空割裂",
       "type": "cast",
       "sourceId": 91,
       "sourceName": "Abyssal Voidshaper"
     },
     {
-      "t": "0:40",
-      "timestamp": 40489,
-      "abilityGameId": 1261249,
-      "abilityName": "Void Rupture",
-      "type": "cast",
-      "sourceId": 101,
-      "sourceName": "Dark Tear"
-    },
-    {
+      "lane": "boss",
       "t": "0:50",
       "timestamp": 50943,
       "abilityGameId": 1260712,
       "abilityName": "Oblivion's Wrath",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "1:08",
       "timestamp": 68969,
       "abilityGameId": 1260712,
       "abilityName": "Oblivion's Wrath",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
-      "t": "1:26",
-      "timestamp": 86964,
-      "abilityGameId": 1251361,
-      "abilityName": "Shadow's Advance",
-      "type": "cast",
-      "sourceId": 38,
-      "sourceName": "Imperator Averzian"
-    },
-    {
+      "lane": "boss",
       "t": "1:31",
       "timestamp": 91946,
       "abilityGameId": 1249265,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 I",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "1:37",
       "timestamp": 97491,
       "abilityGameId": 1249266,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 II",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "1:44",
       "timestamp": 104990,
       "abilityGameId": 1260206,
       "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 III",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
     },
     {
+      "lane": "boss",
       "t": "1:47",
       "timestamp": 107482,
       "abilityGameId": 1262036,
       "abilityName": "Void Rupture",
+      "abilityLabel": "虚空割裂",
       "type": "cast",
       "sourceId": 91,
       "sourceName": "Abyssal Voidshaper"
     },
     {
-      "t": "1:52",
-      "timestamp": 112493,
-      "abilityGameId": 1261249,
-      "abilityName": "Void Rupture",
-      "type": "cast",
-      "sourceId": 101,
-      "sourceName": "Dark Tear"
-    },
-    {
-      "t": "1:52",
-      "timestamp": 112731,
-      "abilityGameId": 1261249,
-      "abilityName": "Void Rupture",
-      "type": "cast",
-      "sourceId": 101,
-      "sourceName": "Dark Tear"
-    },
-    {
+      "lane": "boss",
       "t": "2:10",
       "timestamp": 130938,
       "abilityGameId": 1258880,
       "abilityName": "Void Fall",
+      "abilityLabel": "虚空坠落",
       "type": "cast",
       "sourceId": 38,
       "sourceName": "Imperator Averzian"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:14",
+      "timestamp": 14965,
+      "abilityGameId": 1262776,
+      "abilityName": "Shadow's Advance",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19920,
+      "abilityGameId": 1249265,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25460,
+      "abilityGameId": 1249266,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "0:32",
+      "timestamp": 32958,
+      "abilityGameId": 1260206,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35492,
+      "abilityGameId": 1262036,
+      "abilityName": "Void Rupture",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 91,
+      "sourceName": "Abyssal Voidshaper"
+    },
+    {
+      "lane": "boss",
+      "t": "0:50",
+      "timestamp": 50943,
+      "abilityGameId": 1260712,
+      "abilityName": "Oblivion's Wrath",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "1:08",
+      "timestamp": 68969,
+      "abilityGameId": 1260712,
+      "abilityName": "Oblivion's Wrath",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91946,
+      "abilityGameId": 1249265,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97491,
+      "abilityGameId": 1249266,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "1:44",
+      "timestamp": 104990,
+      "abilityGameId": 1260206,
+      "abilityName": "Umbral Collapse",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107482,
+      "abilityGameId": 1262036,
+      "abilityName": "Void Rupture",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 91,
+      "sourceName": "Abyssal Voidshaper"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130938,
+      "abilityGameId": 1258880,
+      "abilityName": "Void Fall",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 38,
+      "sourceName": "Imperator Averzian"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 116,
+      "abilityGameId": 370553,
+      "abilityName": "Tip the Scales",
+      "abilityLabel": "扭转天平",
+      "type": "cast",
+      "sourceId": 19,
+      "sourceName": "Pitsazavr",
+      "className": "Evoker",
+      "classLabel": "唤魔师",
+      "specName": "Preservation",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 116,
+      "abilityGameId": 1276452,
+      "abilityName": "Grimoire: Imp Lord",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 16,
+      "sourceName": "Chushpanchik",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 270,
+      "abilityGameId": 1276452,
+      "abilityName": "Grimoire: Imp Lord",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 3,
+      "sourceName": "Nícé",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 466,
+      "abilityGameId": 80353,
+      "abilityName": "Time Warp",
+      "abilityLabel": "时间扭曲",
+      "type": "cast",
+      "sourceId": 14,
+      "sourceName": "Innerdarkpoe",
+      "className": "Mage",
+      "classLabel": "法师",
+      "specName": "Frost",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:01",
+      "timestamp": 1236,
+      "abilityGameId": 198013,
+      "abilityName": "Eye Beam",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:01",
+      "timestamp": 1918,
+      "abilityGameId": 1276452,
+      "abilityName": "Grimoire: Imp Lord",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 9,
+      "sourceName": "Ereanora",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2051,
+      "abilityGameId": 258920,
+      "abilityName": "Immolation Aura",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 17,
+      "sourceName": "Cayssaene",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Vengeance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2623,
+      "abilityGameId": 1233448,
+      "abilityName": "Dark Transformation",
+      "abilityLabel": "黑暗突变",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "Reflectdeath",
+      "className": "DeathKnight",
+      "classLabel": "死亡骑士",
+      "specName": "Unholy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2965,
+      "abilityGameId": 42650,
+      "abilityName": "Army of the Dead",
+      "abilityLabel": "亡者大军",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "Reflectdeath",
+      "className": "DeathKnight",
+      "classLabel": "死亡骑士",
+      "specName": "Unholy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3380,
+      "abilityGameId": 265187,
+      "abilityName": "Summon Demonic Tyrant",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 16,
+      "sourceName": "Chushpanchik",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3414,
+      "abilityGameId": 265187,
+      "abilityName": "Summon Demonic Tyrant",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 3,
+      "sourceName": "Nícé",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4095,
+      "abilityGameId": 13750,
+      "abilityName": "Adrenaline Rush",
+      "abilityLabel": "冲动",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4424,
+      "abilityGameId": 10060,
+      "abilityName": "Power Infusion",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 21,
+      "sourceName": "Conchumbuch",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4496,
+      "abilityGameId": 10060,
+      "abilityName": "Power Infusion",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 21,
+      "sourceName": "Conchumbuch",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4497,
+      "abilityGameId": 10060,
+      "abilityName": "Power Infusion",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 15,
+      "sourceName": "Pathøfsp",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4497,
+      "abilityGameId": 10060,
+      "abilityName": "Power Infusion",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 15,
+      "sourceName": "Pathøfsp",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4600,
+      "abilityGameId": 210152,
+      "abilityName": "Death Sweep",
+      "abilityLabel": "死亡横扫",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6237,
+      "abilityGameId": 210152,
+      "abilityName": "Death Sweep",
+      "abilityLabel": "死亡横扫",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6694,
+      "abilityGameId": 271877,
+      "abilityName": "Blade Rush",
+      "abilityLabel": "刀锋冲刺",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6753,
+      "abilityGameId": 191034,
+      "abilityName": "Starfall",
+      "abilityLabel": "星辰坠落",
+      "type": "cast",
+      "sourceId": 7,
+      "sourceName": "Pakuka",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Balance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:07",
+      "timestamp": 7175,
+      "abilityGameId": 265187,
+      "abilityName": "Summon Demonic Tyrant",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 9,
+      "sourceName": "Ereanora",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:07",
+      "timestamp": 7473,
+      "abilityGameId": 315341,
+      "abilityName": "Between the Eyes",
+      "abilityLabel": "正中眉心",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:08",
+      "timestamp": 8760,
+      "abilityGameId": 210152,
+      "abilityName": "Death Sweep",
+      "abilityLabel": "死亡横扫",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:10",
+      "timestamp": 10950,
+      "abilityGameId": 315341,
+      "abilityName": "Between the Eyes",
+      "abilityLabel": "正中眉心",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:11",
+      "timestamp": 11320,
+      "abilityGameId": 258920,
+      "abilityName": "Immolation Aura",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 17,
+      "sourceName": "Cayssaene",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Vengeance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:12",
+      "timestamp": 12774,
+      "abilityGameId": 315341,
+      "abilityName": "Between the Eyes",
+      "abilityLabel": "正中眉心",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:14",
+      "timestamp": 14808,
+      "abilityGameId": 210152,
+      "abilityName": "Death Sweep",
+      "abilityLabel": "死亡横扫",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:15",
+      "timestamp": 15707,
+      "abilityGameId": 210152,
+      "abilityName": "Death Sweep",
+      "abilityLabel": "死亡横扫",
+      "type": "cast",
+      "sourceId": 25,
+      "sourceName": "Pvrplewhite",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:16",
+      "timestamp": 16223,
+      "abilityGameId": 271877,
+      "abilityName": "Blade Rush",
+      "abilityLabel": "刀锋冲刺",
+      "type": "cast",
+      "sourceId": 28,
+      "sourceName": "Dynamics",
+      "className": "Rogue",
+      "classLabel": "潜行者",
+      "specName": "Outlaw",
+      "heroTalent": null
     }
   ]
 }

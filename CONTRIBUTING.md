@@ -1,27 +1,22 @@
 # Contributing Guide
 
-本文档用于说明当前 `MidNightRaid` 仓库的日常维护方式。
-
 ## 工作目录
-
 先进入仓库目录：
 
 ```powershell
-cd MidNightRaid
+cd C:\Working\MidNightRaid
 ```
 
 ## 日常流程
-
 ```powershell
 git status
 git add .
-git commit -m "写一句本次修改内容"
+git commit -m "写一句这次修改内容"
 git push
 ```
 
 ## WCL 相关检查
-
-如果这次改动涉及 WCL 抓取脚本、JSON 结构或前端展示，建议至少跑下面几条：
+如果这次改动涉及 `scripts/wcl/`、`docs/data/wcl/` 或前端时间轴展示，至少跑：
 
 ```powershell
 npm test
@@ -30,27 +25,36 @@ npm run wcl:rankings -- "Imperator Averzian" 1 4
 npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --metric dps
 ```
 
-如果你改了 timeline 生成逻辑，再补一条：
+如果你改了时间轴生成逻辑，再补一条：
 
 ```powershell
-npm run wcl:fetch -- 9nFBwKkAQHpcrWqh 1
+npm run wcl:fetch -- bq6CdBQDhMjcLtJv 43
 ```
 
-如果你改了默认抓取地区、抓取数量、翻译策略或职业排名模式，请同时检查：
+如果你改了职业筛选、专精筛选或英雄天赋识别，再补一条：
 
 ```powershell
-Get-Content scripts/wcl/fetch-policy.json
+npm run wcl:rankings -- "Imperator Averzian" 10 4 --mode character --class Mage --spec Fire --heroTalent Sunfury --metric dps
 ```
 
-如果你在做职业抄作业链路，重点确认：
+## 重点配置
+如果你在做职业抄作业链路，重点确认这两个配置文件：
+
+- [`C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json`](C:\Working\MidNightRaid\scripts\wcl\fetch-policy.json)
+- [`C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json`](C:\Working\MidNightRaid\scripts\wcl\timeline-presets.json)
+
+尤其要看：
 
 - `rankings.defaultMode`
 - `rankings.character.className`
 - `rankings.character.specName`
+- `rankings.character.heroTalent`
 - `rankings.character.metric`
+- `heroTalent.overridesByPlayer`
+- `heroTalent.overridesByClassSpec`
+- `heroTalent.detectByClassSpec`
 
 ## 常用命令
-
 ```powershell
 git status
 git diff
@@ -58,17 +62,17 @@ git log --oneline -5
 ```
 
 ## 只提交部分文件
-
 ```powershell
 git add README.md
 git add docs/assets/js/app.js
+git add docs/assets/js/renderers.js
 git add scripts/wcl/build-timeline.js
-git commit -m "Refine WCL timeline rendering"
+git add scripts/wcl/fetch-rankings.js
+git commit -m "Refine class/spec/hero-talent filters"
 git push
 ```
 
 ## 推送失败
-
 ```powershell
 git status
 git remote -v
@@ -77,15 +81,14 @@ git push
 ```
 
 ## 文档同步
-
 如果你修改了下面任意内容，请顺手更新文档：
 
-- `scripts/wcl/` 下的抓取逻辑
+- `scripts/wcl/` 里的抓取逻辑
 - `docs/data/wcl/` 的 JSON 结构
-- `docs/assets/js/` 的前端渲染逻辑
+- `docs/assets/js/` 的前端筛选或渲染逻辑
 
 优先同步：
 
-- `README.md`
-- `TESTING.md`
-- `docs/DEVELOPMENT_LOG.md`
+- [`C:\Working\MidNightRaid\README.md`](C:\Working\MidNightRaid\README.md)
+- [`C:\Working\MidNightRaid\TESTING.md`](C:\Working\MidNightRaid\TESTING.md)
+- [`C:\Working\MidNightRaid\docs\DEVELOPMENT_LOG.md`](C:\Working\MidNightRaid\docs\DEVELOPMENT_LOG.md)

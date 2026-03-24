@@ -1,8 +1,10 @@
 const path = require("path");
 const { DEFAULT_RANKINGS_DIFFICULTY, DEFAULT_RANKINGS_PAGE_SIZE, WCL_RANKINGS_ROOT } = require("./config");
+const { fetchReportPlayerDetails } = require("./fetch-report");
 const { graphqlRequest } = require("./graphql");
+const { detectHeroTalent } = require("./hero-talents");
 const { CHARACTER_RANKINGS_QUERY, ENCOUNTER_BY_ID_QUERY, FIGHT_RANKINGS_QUERY, SEARCH_ZONES_QUERY } = require("./queries");
-const { getBossMappingEntry, loadFetchPolicy, normalizeText, parseInteger, writeJson } = require("./utils");
+const { getBossMappingEntry, getTimelinePreset, loadFetchPolicy, normalizeText, parseInteger, writeJson } = require("./utils");
 
 function normalizeFightRankingEntry(entry, index) {
   return {
@@ -42,7 +44,8 @@ function normalizeCharacterRankingEntry(entry, index) {
     size: entry.size ?? null,
     faction: entry.faction ?? null,
     server: entry.server || null,
-    guild: entry.guild || null
+    guild: entry.guild || null,
+    heroTalent: null
   };
 }
 
@@ -116,7 +119,8 @@ function getRankingsOutputStem(selector, options = {}) {
   const classPart = sanitizeFilePart(options.className || "all-classes") || "all-classes";
   const specPart = sanitizeFilePart(options.specName || "all-specs") || "all-specs";
   const metricPart = sanitizeFilePart(options.metric || "dps") || "dps";
-  return `${base}-d${options.difficulty}-${classPart}-${specPart}-${metricPart}`;
+  const heroTalentPart = options.heroTalent ? `-${sanitizeFilePart(options.heroTalent) || "hero-talent"}` : "";
+  return `${base}-d${options.difficulty}-${classPart}-${specPart}-${metricPart}${heroTalentPart}`;
 }
 
 function getRankingsOutputPath(selector, options = {}) {
@@ -137,9 +141,63 @@ function parseRankingsOptions(rawOptions = {}) {
     serverRegion: rawOptions.serverRegion ?? rankingPolicy.preferredRegion ?? null,
     className: rawOptions.className ?? characterPolicy.className ?? null,
     specName: rawOptions.specName ?? characterPolicy.specName ?? null,
+    heroTalent: rawOptions.heroTalent ?? characterPolicy.heroTalent ?? null,
     metric: rawOptions.metric ?? characterPolicy.metric ?? "dps",
     write: rawOptions.write
   };
+}
+
+function findRankingPlayer(playerMap, entry) {
+  const players = [...playerMap.values()];
+  const normalizedName = normalizeText(entry.playerName);
+  const normalizedClass = normalizeText(entry.className);
+  const normalizedSpec = normalizeText(entry.specName);
+
+  return (
+    players.find(
+      (player) =>
+        normalizeText(player.name) === normalizedName &&
+        normalizeText(player.className) === normalizedClass &&
+        normalizeText(player.specName) === normalizedSpec
+    ) ||
+    players.find((player) => normalizeText(player.name) === normalizedName) ||
+    null
+  );
+}
+
+async function attachHeroTalents(rankings, encounter) {
+  if (!rankings.length) {
+    return rankings;
+  }
+
+  const preset = getTimelinePreset(encounter.slug || encounter.bossName);
+  const playerDetailsCache = new Map();
+
+  await Promise.all(
+    rankings.map(async (entry) => {
+      if (!entry.reportCode || !entry.fightId) {
+        return;
+      }
+
+      const cacheKey = `${entry.reportCode}:${entry.fightId}`;
+      if (!playerDetailsCache.has(cacheKey)) {
+        playerDetailsCache.set(
+          cacheKey,
+          fetchReportPlayerDetails(entry.reportCode, {
+            fightId: entry.fightId,
+            translate: false,
+            includeCombatantInfo: true
+          })
+        );
+      }
+
+      const playerDetails = await playerDetailsCache.get(cacheKey);
+      const player = findRankingPlayer(playerDetails.playerMap, entry);
+      entry.heroTalent = detectHeroTalent(player, preset);
+    })
+  );
+
+  return rankings;
 }
 
 async function requestRankings(encounterId, options, fallbackToGlobal) {
@@ -191,7 +249,15 @@ async function fetchRankings(selector, rawOptions = {}) {
   const { data, payload } = await requestRankings(encounter.encounterId, options, policy.rankings?.fallbackToGlobal);
   const encounterData = data.worldData?.encounter;
   const normalizeEntry = options.mode === "character" ? normalizeCharacterRankingEntry : normalizeFightRankingEntry;
-  const rankings = (payload.rankings || []).map((entry, index) => normalizeEntry(entry, index)).slice(0, options.size);
+  let rankings = (payload.rankings || []).map((entry, index) => normalizeEntry(entry, index)).slice(0, options.size);
+
+  if (options.mode === "character") {
+    rankings = await attachHeroTalents(rankings, encounter);
+    if (options.heroTalent) {
+      const expectedHeroTalent = normalizeText(options.heroTalent);
+      rankings = rankings.filter((entry) => normalizeText(entry.heroTalent) === expectedHeroTalent);
+    }
+  }
 
   const result = {
     mode: options.mode,
@@ -212,6 +278,7 @@ async function fetchRankings(selector, rawOptions = {}) {
   if (options.mode === "character") {
     result.className = options.className;
     result.specName = options.specName || null;
+    result.heroTalent = options.heroTalent || null;
     result.metric = options.metric;
   }
 
@@ -222,6 +289,7 @@ async function fetchRankings(selector, rawOptions = {}) {
         difficulty: result.difficulty,
         className: result.className,
         specName: result.specName,
+        heroTalent: result.heroTalent,
         metric: result.metric
       }),
       result
@@ -261,11 +329,11 @@ async function main() {
     const { positional, options } = parseCliArgs(process.argv.slice(2));
     const [selector, sizeArg, difficultyArg] = positional;
     if (selector === "--help" || selector === "-h" || options.help) {
-      console.log("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--metric dps] [--region CN]");
+      console.log("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
       return;
     }
     if (!selector) {
-      throw new Error("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--metric dps] [--region CN]");
+      throw new Error("Usage: node scripts/wcl/fetch-rankings.js <bossName|encounterId> [topN] [difficulty] [--mode fight|character] [--class Mage] [--spec Fire] [--heroTalent Sunfury] [--metric dps] [--region CN]");
     }
 
     const result = await fetchRankings(selector, {
@@ -274,6 +342,7 @@ async function main() {
       mode: options.mode,
       className: options.class,
       specName: options.spec,
+      heroTalent: options.heroTalent,
       metric: options.metric,
       serverRegion: options.region
     });
@@ -287,6 +356,7 @@ async function main() {
         difficulty: result.difficulty,
         className: result.className,
         specName: result.specName,
+        heroTalent: result.heroTalent,
         metric: result.metric
       })}`
     );

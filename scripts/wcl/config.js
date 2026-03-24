@@ -6,6 +6,7 @@ const WCL_OUTPUT_ROOT = path.join(DOCS_DATA_ROOT, "wcl");
 const WCL_RANKINGS_ROOT = path.join(WCL_OUTPUT_ROOT, "rankings");
 const WCL_TIMELINES_ROOT = path.join(WCL_OUTPUT_ROOT, "timelines");
 const TIMELINE_FILTERS_PATH = path.join(__dirname, "timeline-filters.json");
+const TIMELINE_PRESETS_PATH = path.join(__dirname, "timeline-presets.json");
 const BOSS_MAPPING_PATH = path.join(__dirname, "boss-mapping.json");
 const FETCH_POLICY_PATH = path.join(__dirname, "fetch-policy.json");
 const ENV_PATH = path.join(REPO_ROOT, ".env");
@@ -22,6 +23,7 @@ module.exports = {
   WCL_RANKINGS_ROOT,
   WCL_TIMELINES_ROOT,
   TIMELINE_FILTERS_PATH,
+  TIMELINE_PRESETS_PATH,
   BOSS_MAPPING_PATH,
   FETCH_POLICY_PATH,
   ENV_PATH,

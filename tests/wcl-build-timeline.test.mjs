@@ -5,8 +5,9 @@ import { createRequire } from "node:module";
 const require = createRequire(import.meta.url);
 const {
   buildTimelinePayload,
+  buildClassTimeline,
   eventMatchesFilters,
-  normalizeTimelineEvent
+  normalizeBossTimelineEvent
 } = require("../scripts/wcl/build-timeline.js");
 
 test("eventMatchesFilters excludes friendly casts and keeps whitelisted boss skills", () => {
@@ -46,8 +47,8 @@ test("eventMatchesFilters excludes friendly casts and keeps whitelisted boss ski
   );
 });
 
-test("normalizeTimelineEvent converts fight-relative timestamps", () => {
-  const normalized = normalizeTimelineEvent(
+test("normalizeBossTimelineEvent converts fight-relative timestamps", () => {
+  const normalized = normalizeBossTimelineEvent(
     {
       timestamp: 15000,
       type: "cast",
@@ -65,35 +66,114 @@ test("normalizeTimelineEvent converts fight-relative timestamps", () => {
   assert.equal(normalized.sourceName, "Imperator Averzian");
 });
 
-test("buildTimelinePayload outputs sorted JSON-ready timeline", () => {
+test("buildClassTimeline extracts preset friendly player skills", () => {
+  const report = {
+    abilityMap: new Map([[80353, "时间扭曲"]]),
+    actorMap: new Map([[3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]])
+  };
+  const fight = {
+    startTime: 1000,
+    friendlyPlayers: [{ id: 3 }],
+    friendlyPets: [],
+    enemyNPCs: []
+  };
+  const preset = {
+    heroTalent: {
+      overridesByPlayer: {
+        "测试法师": "日怒"
+      },
+      overridesByClassSpec: {},
+      detectByClassSpec: {}
+    },
+    classes: {
+      Mage: {
+        label: "法师",
+        abilities: [{ gameId: 80353, label: "时间扭曲" }]
+      }
+    }
+  };
+  const events = [{ timestamp: 15000, type: "cast", sourceID: 3, abilityGameID: 80353 }];
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
+
+  const timeline = buildClassTimeline(report, fight, events, preset, playerDetailsMap);
+  assert.equal(timeline.length, 1);
+  assert.equal(timeline[0].className, "Mage");
+  assert.equal(timeline[0].specName, "Fire");
+  assert.equal(timeline[0].heroTalent, "日怒");
+  assert.equal(timeline[0].abilityLabel, "时间扭曲");
+});
+
+test("buildClassTimeline respects spec and hero talent restrictions from preset", () => {
+  const report = {
+    abilityMap: new Map([[190319, "燃烧"]]),
+    actorMap: new Map([[3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]])
+  };
+  const fight = {
+    startTime: 0,
+    friendlyPlayers: [{ id: 3 }],
+    friendlyPets: [],
+    enemyNPCs: []
+  };
+  const preset = {
+    heroTalent: {
+      overridesByPlayer: {
+        "测试法师": "日怒"
+      },
+      overridesByClassSpec: {},
+      detectByClassSpec: {}
+    },
+    classes: {
+      Mage: {
+        label: "法师",
+        abilities: [{ gameId: 190319, label: "燃烧", specs: ["Fire"], heroTalents: ["日怒"] }]
+      }
+    }
+  };
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
+  const events = [{ timestamp: 5000, type: "cast", sourceID: 3, abilityGameID: 190319 }];
+
+  const timeline = buildClassTimeline(report, fight, events, preset, playerDetailsMap);
+  assert.equal(timeline.length, 1);
+  assert.equal(timeline[0].heroTalent, "日怒");
+});
+
+test("buildTimelinePayload outputs sorted dual-lane timeline data", () => {
   const report = {
     reportCode: "RPT123",
     abilityMap: new Map([
-      [123, "Shadow's Advance"],
-      [456, "Umbral Collapse"]
+      [1262776, "暗影进军"],
+      [1249265, "幽影坍缩"],
+      [80353, "时间扭曲"]
     ]),
-    actorMap: new Map([[38, { name: "Imperator Averzian" }]])
+    actorMap: new Map([
+      [38, { name: "Imperator Averzian" }],
+      [3, { id: 3, name: "测试法师", type: "Player", subType: "Mage" }]
+    ])
   };
   const fight = {
     id: 12,
-    bossName: "Imperator Averzian",
+    bossName: "元首阿福扎恩",
     encounterId: 3176,
     difficulty: 4,
     startTime: 1000,
     endTime: 21000,
     enemyNPCs: [{ id: 38 }],
-    friendlyPlayers: [1],
+    friendlyPlayers: [{ id: 1 }, { id: 3 }],
     friendlyPets: []
   };
-  const events = [
-    { timestamp: 15000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 123 },
-    { timestamp: 5000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 456 }
+  const enemyEvents = [
+    { timestamp: 15000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 1262776 },
+    { timestamp: 5000, type: "cast", sourceID: 38, targetID: 1, abilityGameID: 1249265 }
   ];
+  const friendlyEvents = [{ timestamp: 7000, type: "cast", sourceID: 3, abilityGameID: 80353 }];
 
-  const payload = buildTimelinePayload(report, fight, events);
+  const playerDetailsMap = new Map([[3, { id: 3, name: "测试法师", className: "Mage", specName: "Fire" }]]);
+  const payload = buildTimelinePayload(report, fight, enemyEvents, friendlyEvents, playerDetailsMap);
   assert.equal(payload.reportCode, "RPT123");
   assert.equal(payload.fightId, 12);
-  assert.equal(payload.timeline.length, 2);
-  assert.equal(payload.timeline[0].abilityName, "Umbral Collapse");
-  assert.equal(payload.timeline[1].abilityName, "Shadow's Advance");
+  assert.equal(payload.bossTimeline.length, 2);
+  assert.equal(payload.classTimeline.length, 1);
+  assert.equal(payload.filters.specs.Mage[0].key, "Fire");
+  assert.equal(payload.timeline[0].abilityName, "幽影坍缩");
+  assert.equal(payload.classTimeline[0].abilityName, "时间扭曲");
 });

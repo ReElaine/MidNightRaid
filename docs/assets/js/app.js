@@ -122,7 +122,78 @@ async function initBossPage() {
 
     const rankingEntry = rankings?.rankings?.find((item) => item.reportCode === reportCode && Number(item.fightId) === Number(fightId)) || null;
     titleElement.textContent = `${boss.title} / ${reportCode}`;
-    detailElement.innerHTML = renderTimelineDetail({ boss, rankings: rankingEntry, timeline });
+
+    const filterState = {
+      bossAbility: "all",
+      className: "all",
+      specName: "all",
+      heroTalent: "all",
+      classAbility: "all"
+    };
+
+    function render() {
+      const filteredBossEntries = (timeline.bossTimeline || []).filter((entry) => {
+        if (filterState.bossAbility !== "all" && String(entry.abilityGameId) !== filterState.bossAbility) {
+          return false;
+        }
+        return true;
+      });
+
+      const filteredClassEntries = (timeline.classTimeline || []).filter((entry) => {
+        if (filterState.className !== "all" && entry.className !== filterState.className) {
+          return false;
+        }
+        if (filterState.specName !== "all" && entry.specName !== filterState.specName) {
+          return false;
+        }
+        if (filterState.heroTalent !== "all" && entry.heroTalent !== filterState.heroTalent) {
+          return false;
+        }
+        if (filterState.classAbility !== "all" && String(entry.abilityGameId) !== filterState.classAbility) {
+          return false;
+        }
+        return true;
+      });
+
+      detailElement.innerHTML = renderTimelineDetail({
+        boss,
+        rankings: rankingEntry,
+        timeline,
+        filters: filterState,
+        filteredBossEntries,
+        filteredClassEntries
+      });
+    }
+
+    detailElement.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-filter-group]");
+      if (!button) {
+        return;
+      }
+
+      const group = button.dataset.filterGroup;
+      const value = button.dataset.filterValue || "all";
+      filterState[group] = value;
+
+      if (group === "className") {
+        filterState.specName = "all";
+        filterState.heroTalent = "all";
+        filterState.classAbility = "all";
+      }
+
+      if (group === "specName") {
+        filterState.heroTalent = "all";
+        filterState.classAbility = "all";
+      }
+
+      if (group === "heroTalent") {
+        filterState.classAbility = "all";
+      }
+
+      render();
+    });
+
+    render();
   } catch (error) {
     titleElement.textContent = "加载失败";
     detailElement.innerHTML = renderErrorState(error.message);

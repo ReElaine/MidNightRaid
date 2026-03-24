@@ -1,11 +1,12 @@
 const fs = require("fs");
 const path = require("path");
-const { BOSS_MAPPING_PATH, ENV_PATH, FETCH_POLICY_PATH, TIMELINE_FILTERS_PATH } = require("./config");
+const { BOSS_MAPPING_PATH, ENV_PATH, FETCH_POLICY_PATH, TIMELINE_FILTERS_PATH, TIMELINE_PRESETS_PATH } = require("./config");
 
 let envLoaded = false;
 let cachedBossMapping = null;
 let cachedTimelineFilters = null;
 let cachedFetchPolicy = null;
+let cachedTimelinePresets = null;
 
 function loadEnvFile(filePath = ENV_PATH) {
   if (envLoaded || !fs.existsSync(filePath)) {
@@ -120,6 +121,51 @@ function loadFetchPolicy() {
   return cachedFetchPolicy;
 }
 
+function loadTimelinePresets() {
+  if (!cachedTimelinePresets) {
+    cachedTimelinePresets = readJson(TIMELINE_PRESETS_PATH);
+  }
+  return cachedTimelinePresets;
+}
+
+function mergeTimelinePreset(basePreset = {}, overridePreset = {}) {
+  return {
+    presetId: overridePreset.presetId || basePreset.presetId || "default",
+    presetName: overridePreset.presetName || basePreset.presetName || "默认预设",
+    bossAbilities: overridePreset.bossAbilities || basePreset.bossAbilities || [],
+    heroTalent: {
+      overridesByPlayer: {
+        ...(basePreset.heroTalent?.overridesByPlayer || {}),
+        ...(overridePreset.heroTalent?.overridesByPlayer || {})
+      },
+      overridesByClassSpec: {
+        ...(basePreset.heroTalent?.overridesByClassSpec || {}),
+        ...(overridePreset.heroTalent?.overridesByClassSpec || {})
+      },
+      detectByClassSpec: {
+        ...(basePreset.heroTalent?.detectByClassSpec || {}),
+        ...(overridePreset.heroTalent?.detectByClassSpec || {})
+      }
+    },
+    classes: {
+      ...(basePreset.classes || {}),
+      ...(overridePreset.classes || {})
+    }
+  };
+}
+
+function getTimelinePreset(selector) {
+  const presets = loadTimelinePresets();
+  const key = normalizeText(selector);
+  const overrides = presets.bosses || {};
+  const overrideEntry =
+    Object.entries(overrides).find(([name]) => normalizeText(name) === key)?.[1] ||
+    Object.values(overrides).find((item) => normalizeText(item?.matchName) === key) ||
+    {};
+
+  return mergeTimelinePreset(presets.default || {}, overrideEntry);
+}
+
 function getBossMappingEntry(selector) {
   const mapping = loadBossMapping();
   const normalizedSelector = normalizeText(selector);
@@ -183,6 +229,8 @@ module.exports = {
   loadBossMapping,
   loadEnvFile,
   loadFetchPolicy,
+  loadTimelinePresets,
+  getTimelinePreset,
   loadTimelineFilters,
   normalizeText,
   parseInteger,

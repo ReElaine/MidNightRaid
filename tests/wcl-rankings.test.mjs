@@ -33,6 +33,7 @@ test("parseRankingsOptions supports character mode overrides", () => {
   assert.equal(options.mode, "character");
   assert.equal(options.className, "Mage");
   assert.equal(options.specName, "Fire");
+  assert.equal(options.heroTalent, null);
   assert.equal(options.metric, "dps");
   assert.equal(options.size, 10);
   assert.equal(options.difficulty, 5);
@@ -76,10 +77,11 @@ test("getRankingsOutputStem distinguishes character rankings files", () => {
     difficulty: 4,
     className: "Mage",
     specName: "Fire",
+    heroTalent: "Sunfury",
     metric: "dps"
   });
 
-  assert.equal(stem, "spire_h1_afuzan-d4-mage-fire-dps");
+  assert.equal(stem, "spire_h1_afuzan-d4-mage-fire-dps-sunfury");
 });
 
 test("parseCliArgs supports long option flags", () => {
@@ -93,6 +95,8 @@ test("parseCliArgs supports long option flags", () => {
     "Mage",
     "--spec",
     "Fire",
+    "--heroTalent",
+    "Sunfury",
     "--metric",
     "dps",
     "--region",
@@ -103,6 +107,7 @@ test("parseCliArgs supports long option flags", () => {
   assert.equal(options.mode, "character");
   assert.equal(options.class, "Mage");
   assert.equal(options.spec, "Fire");
+  assert.equal(options.heroTalent, "Sunfury");
   assert.equal(options.metric, "dps");
   assert.equal(options.region, "CN");
 });

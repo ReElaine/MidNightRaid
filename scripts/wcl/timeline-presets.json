@@ -1,0 +1,136 @@
+{
+  "default": {
+    "presetId": "default",
+    "presetName": "默认双轨时间轴预设",
+    "bossAbilities": [],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Mage": {
+        "label": "法师",
+        "abilities": [
+          { "gameId": 80353, "label": "时间扭曲" },
+          { "gameId": 190319, "label": "燃烧" },
+          { "gameId": 365350, "label": "奥术涌动" }
+        ]
+      },
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          { "gameId": 10060, "label": "能量灌注" },
+          { "gameId": 120517, "label": "光晕" },
+          { "gameId": 586, "label": "渐隐术" }
+        ]
+      },
+      "Paladin": {
+        "label": "圣骑士",
+        "abilities": [
+          { "gameId": 391054, "label": "代祷" },
+          { "gameId": 85222, "label": "黎明之光" },
+          { "gameId": 200025, "label": "美德道标" }
+        ]
+      },
+      "Shaman": {
+        "label": "萨满祭司",
+        "abilities": [
+          { "gameId": 73920, "label": "治疗之雨" },
+          { "gameId": 5394, "label": "治疗之泉图腾" },
+          { "gameId": 1267068, "label": "风暴涌流图腾" }
+        ]
+      },
+      "Druid": {
+        "label": "德鲁伊",
+        "abilities": [
+          { "gameId": 48438, "label": "野性成长" },
+          { "gameId": 18562, "label": "迅捷治愈" },
+          { "gameId": 191034, "label": "星辰坠落" }
+        ]
+      },
+      "DeathKnight": {
+        "label": "死亡骑士",
+        "abilities": [
+          { "gameId": 42650, "label": "亡者大军" },
+          { "gameId": 48707, "label": "反魔法护罩" },
+          { "gameId": 1233448, "label": "黑暗突变" }
+        ]
+      },
+      "Warrior": {
+        "label": "战士",
+        "abilities": [
+          { "gameId": 871, "label": "盾墙" },
+          { "gameId": 2565, "label": "盾牌格挡" },
+          { "gameId": 6343, "label": "雷霆一击" }
+        ]
+      },
+      "Evoker": {
+        "label": "唤魔师",
+        "abilities": [
+          { "gameId": 370553, "label": "扭转天平" },
+          { "gameId": 442204, "label": "亘古吐息" },
+          { "gameId": 395152, "label": "黑檀之力" }
+        ]
+      },
+      "Monk": {
+        "label": "武僧",
+        "abilities": [
+          { "gameId": 132578, "label": "玄牛下凡" },
+          { "gameId": 1241059, "label": "天神灌注" },
+          { "gameId": 119582, "label": "活血酒" }
+        ]
+      },
+      "Warlock": {
+        "label": "术士",
+        "abilities": [
+          { "gameId": 265187, "label": "召唤恶魔暴君" },
+          { "gameId": 111771, "label": "恶魔传送门" },
+          { "gameId": 1276452, "label": "魔典：小鬼领主" }
+        ]
+      },
+      "Hunter": {
+        "label": "猎人",
+        "abilities": [
+          { "gameId": 19574, "label": "狂野怒火" },
+          { "gameId": 217200, "label": "倒刺射击" },
+          { "gameId": 34026, "label": "杀戮命令" }
+        ]
+      },
+      "Rogue": {
+        "label": "潜行者",
+        "abilities": [
+          { "gameId": 13750, "label": "冲动" },
+          { "gameId": 271877, "label": "刀锋冲刺" },
+          { "gameId": 315341, "label": "正中眉心" }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          { "gameId": 198013, "label": "眼棱" },
+          { "gameId": 258920, "label": "献祭光环" },
+          { "gameId": 210152, "label": "死亡横扫" }
+        ]
+      }
+    }
+  },
+  "bosses": {
+    "spire_h1_afuzan": {
+      "presetId": "spire_h1_afuzan_default",
+      "presetName": "元首阿福扎恩双轨预设",
+      "matchName": "元首阿福扎恩",
+      "bossAbilities": [
+        { "gameId": 1249251, "label": "黑暗颠覆" },
+        { "gameId": 1262776, "label": "暗影进军" },
+        { "gameId": 1249265, "label": "幽影坍缩 I" },
+        { "gameId": 1249266, "label": "幽影坍缩 II" },
+        { "gameId": 1260206, "label": "幽影坍缩 III" },
+        { "gameId": 1262036, "label": "虚空割裂" },
+        { "gameId": 1260712, "label": "湮灭之怒" },
+        { "gameId": 1258880, "label": "虚空坠落" },
+        { "gameId": 1255702, "label": "浓暗壁垒" }
+      ]
+    }
+  }
+}

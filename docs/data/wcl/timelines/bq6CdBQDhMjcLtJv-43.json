@@ -7,618 +7,1446 @@
   "difficulty": 4,
   "startTime": 0,
   "endTime": 227572,
+  "presetId": "spire_h1_afuzan_default",
+  "presetName": "元首阿福扎恩双轨预设",
+  "preset": {
+    "presetId": "spire_h1_afuzan_default",
+    "presetName": "元首阿福扎恩双轨预设",
+    "bossAbilities": [
+      {
+        "gameId": 1249251,
+        "label": "黑暗颠覆"
+      },
+      {
+        "gameId": 1262776,
+        "label": "暗影进军"
+      },
+      {
+        "gameId": 1249265,
+        "label": "幽影坍缩 I"
+      },
+      {
+        "gameId": 1249266,
+        "label": "幽影坍缩 II"
+      },
+      {
+        "gameId": 1260206,
+        "label": "幽影坍缩 III"
+      },
+      {
+        "gameId": 1262036,
+        "label": "虚空割裂"
+      },
+      {
+        "gameId": 1260712,
+        "label": "湮灭之怒"
+      },
+      {
+        "gameId": 1258880,
+        "label": "虚空坠落"
+      },
+      {
+        "gameId": 1255702,
+        "label": "浓暗壁垒"
+      }
+    ],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Mage": {
+        "label": "法师",
+        "abilities": [
+          {
+            "gameId": 80353,
+            "label": "时间扭曲"
+          },
+          {
+            "gameId": 190319,
+            "label": "燃烧"
+          },
+          {
+            "gameId": 365350,
+            "label": "奥术涌动"
+          }
+        ]
+      },
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 10060,
+            "label": "能量灌注"
+          },
+          {
+            "gameId": 120517,
+            "label": "光晕"
+          },
+          {
+            "gameId": 586,
+            "label": "渐隐术"
+          }
+        ]
+      },
+      "Paladin": {
+        "label": "圣骑士",
+        "abilities": [
+          {
+            "gameId": 391054,
+            "label": "代祷"
+          },
+          {
+            "gameId": 85222,
+            "label": "黎明之光"
+          },
+          {
+            "gameId": 200025,
+            "label": "美德道标"
+          }
+        ]
+      },
+      "Shaman": {
+        "label": "萨满祭司",
+        "abilities": [
+          {
+            "gameId": 73920,
+            "label": "治疗之雨"
+          },
+          {
+            "gameId": 5394,
+            "label": "治疗之泉图腾"
+          },
+          {
+            "gameId": 1267068,
+            "label": "风暴涌流图腾"
+          }
+        ]
+      },
+      "Druid": {
+        "label": "德鲁伊",
+        "abilities": [
+          {
+            "gameId": 48438,
+            "label": "野性成长"
+          },
+          {
+            "gameId": 18562,
+            "label": "迅捷治愈"
+          },
+          {
+            "gameId": 191034,
+            "label": "星辰坠落"
+          }
+        ]
+      },
+      "DeathKnight": {
+        "label": "死亡骑士",
+        "abilities": [
+          {
+            "gameId": 42650,
+            "label": "亡者大军"
+          },
+          {
+            "gameId": 48707,
+            "label": "反魔法护罩"
+          },
+          {
+            "gameId": 1233448,
+            "label": "黑暗突变"
+          }
+        ]
+      },
+      "Warrior": {
+        "label": "战士",
+        "abilities": [
+          {
+            "gameId": 871,
+            "label": "盾墙"
+          },
+          {
+            "gameId": 2565,
+            "label": "盾牌格挡"
+          },
+          {
+            "gameId": 6343,
+            "label": "雷霆一击"
+          }
+        ]
+      },
+      "Evoker": {
+        "label": "唤魔师",
+        "abilities": [
+          {
+            "gameId": 370553,
+            "label": "扭转天平"
+          },
+          {
+            "gameId": 442204,
+            "label": "亘古吐息"
+          },
+          {
+            "gameId": 395152,
+            "label": "黑檀之力"
+          }
+        ]
+      },
+      "Monk": {
+        "label": "武僧",
+        "abilities": [
+          {
+            "gameId": 132578,
+            "label": "玄牛下凡"
+          },
+          {
+            "gameId": 1241059,
+            "label": "天神灌注"
+          },
+          {
+            "gameId": 119582,
+            "label": "活血酒"
+          }
+        ]
+      },
+      "Warlock": {
+        "label": "术士",
+        "abilities": [
+          {
+            "gameId": 265187,
+            "label": "召唤恶魔暴君"
+          },
+          {
+            "gameId": 111771,
+            "label": "恶魔传送门"
+          },
+          {
+            "gameId": 1276452,
+            "label": "魔典：小鬼领主"
+          }
+        ]
+      },
+      "Hunter": {
+        "label": "猎人",
+        "abilities": [
+          {
+            "gameId": 19574,
+            "label": "狂野怒火"
+          },
+          {
+            "gameId": 217200,
+            "label": "倒刺射击"
+          },
+          {
+            "gameId": 34026,
+            "label": "杀戮命令"
+          }
+        ]
+      },
+      "Rogue": {
+        "label": "潜行者",
+        "abilities": [
+          {
+            "gameId": 13750,
+            "label": "冲动"
+          },
+          {
+            "gameId": 271877,
+            "label": "刀锋冲刺"
+          },
+          {
+            "gameId": 315341,
+            "label": "正中眉心"
+          }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          {
+            "gameId": 198013,
+            "label": "眼棱"
+          },
+          {
+            "gameId": 258920,
+            "label": "献祭光环"
+          },
+          {
+            "gameId": 210152,
+            "label": "死亡横扫"
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1249251",
+        "label": "黑暗颠覆"
+      },
+      {
+        "key": "1262776",
+        "label": "暗影进军"
+      },
+      {
+        "key": "1249265",
+        "label": "幽影坍缩 I"
+      },
+      {
+        "key": "1249266",
+        "label": "幽影坍缩 II"
+      },
+      {
+        "key": "1260206",
+        "label": "幽影坍缩 III"
+      },
+      {
+        "key": "1262036",
+        "label": "虚空割裂"
+      },
+      {
+        "key": "1260712",
+        "label": "湮灭之怒"
+      },
+      {
+        "key": "1258880",
+        "label": "虚空坠落"
+      },
+      {
+        "key": "1255702",
+        "label": "浓暗壁垒"
+      }
+    ],
+    "classes": [
+      {
+        "key": "Mage",
+        "label": "法师"
+      },
+      {
+        "key": "Warlock",
+        "label": "术士"
+      },
+      {
+        "key": "Monk",
+        "label": "武僧"
+      },
+      {
+        "key": "Priest",
+        "label": "牧师"
+      },
+      {
+        "key": "DeathKnight",
+        "label": "死亡骑士"
+      },
+      {
+        "key": "Evoker",
+        "label": "唤魔师"
+      },
+      {
+        "key": "Druid",
+        "label": "德鲁伊"
+      }
+    ],
+    "specs": {
+      "Mage": [
+        {
+          "key": "Frost",
+          "label": "Frost"
+        }
+      ],
+      "Warlock": [
+        {
+          "key": "Demonology",
+          "label": "Demonology"
+        }
+      ],
+      "Monk": [
+        {
+          "key": "Brewmaster",
+          "label": "Brewmaster"
+        }
+      ],
+      "Priest": [
+        {
+          "key": "Shadow",
+          "label": "Shadow"
+        },
+        {
+          "key": "Holy",
+          "label": "Holy"
+        }
+      ],
+      "DeathKnight": [
+        {
+          "key": "Unholy",
+          "label": "Unholy"
+        }
+      ],
+      "Evoker": [
+        {
+          "key": "Devastation",
+          "label": "Devastation"
+        },
+        {
+          "key": "Preservation",
+          "label": "Preservation"
+        }
+      ],
+      "Druid": [
+        {
+          "key": "Balance",
+          "label": "Balance"
+        },
+        {
+          "key": "Restoration",
+          "label": "Restoration"
+        }
+      ]
+    },
+    "heroTalents": {
+      "Mage": {
+        "Frost": []
+      },
+      "Warlock": {
+        "Demonology": []
+      },
+      "Monk": {
+        "Brewmaster": []
+      },
+      "Priest": {
+        "Shadow": [],
+        "Holy": []
+      },
+      "DeathKnight": {
+        "Unholy": []
+      },
+      "Evoker": {
+        "Devastation": [],
+        "Preservation": []
+      },
+      "Druid": {
+        "Balance": [],
+        "Restoration": []
+      }
+    },
+    "classAbilities": {
+      "Mage": [
+        {
+          "key": "80353",
+          "label": "时间扭曲"
+        }
+      ],
+      "Warlock": [
+        {
+          "key": "1276452",
+          "label": "魔典：小鬼领主"
+        },
+        {
+          "key": "265187",
+          "label": "召唤恶魔暴君"
+        }
+      ],
+      "Monk": [
+        {
+          "key": "132578",
+          "label": "玄牛下凡"
+        }
+      ],
+      "Priest": [
+        {
+          "key": "10060",
+          "label": "能量灌注"
+        },
+        {
+          "key": "120517",
+          "label": "光晕"
+        }
+      ],
+      "DeathKnight": [
+        {
+          "key": "42650",
+          "label": "亡者大军"
+        },
+        {
+          "key": "1233448",
+          "label": "黑暗突变"
+        }
+      ],
+      "Evoker": [
+        {
+          "key": "370553",
+          "label": "扭转天平"
+        }
+      ],
+      "Druid": [
+        {
+          "key": "191034",
+          "label": "星辰坠落"
+        },
+        {
+          "key": "48438",
+          "label": "野性成长"
+        },
+        {
+          "key": "18562",
+          "label": "迅捷治愈"
+        }
+      ]
+    }
+  },
   "timeline": [
     {
+      "lane": "boss",
       "t": "0:06",
       "timestamp": 6522,
       "abilityGameId": 1249251,
       "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "0:15",
       "timestamp": 15042,
       "abilityGameId": 1262776,
       "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
-      "t": "0:15",
-      "timestamp": 15044,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "0:15",
-      "timestamp": 15044,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "0:15",
-      "timestamp": 15044,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
+      "lane": "boss",
       "t": "0:19",
       "timestamp": 19993,
       "abilityGameId": 1249265,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "0:25",
       "timestamp": 25513,
       "abilityGameId": 1249266,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "0:33",
       "timestamp": 33016,
       "abilityGameId": 1260206,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "0:35",
       "timestamp": 35560,
       "abilityGameId": 1262036,
       "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
       "type": "cast",
       "sourceId": 343,
       "sourceName": "深渊虚空塑形者"
     },
     {
-      "t": "0:40",
-      "timestamp": 40570,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
+      "lane": "boss",
       "t": "0:42",
       "timestamp": 42509,
       "abilityGameId": 1249251,
       "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "0:51",
       "timestamp": 51011,
       "abilityGameId": 1260712,
       "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "1:09",
       "timestamp": 69003,
       "abilityGameId": 1260712,
       "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "1:18",
       "timestamp": 78518,
       "abilityGameId": 1249251,
       "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
-      "t": "1:27",
-      "timestamp": 87012,
-      "abilityGameId": 1251361,
-      "abilityName": "暗影进军",
-      "type": "cast",
-      "sourceId": 337,
-      "sourceName": "元首阿福扎恩"
-    },
-    {
-      "t": "1:27",
-      "timestamp": 87013,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "1:27",
-      "timestamp": 87014,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "1:27",
-      "timestamp": 87014,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
+      "lane": "boss",
       "t": "1:31",
       "timestamp": 91999,
       "abilityGameId": 1249265,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "1:37",
       "timestamp": 97515,
       "abilityGameId": 1249266,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "1:45",
       "timestamp": 105033,
       "abilityGameId": 1260206,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "1:47",
       "timestamp": 107510,
       "abilityGameId": 1262036,
       "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
       "type": "cast",
       "sourceId": 343,
       "sourceName": "深渊虚空塑形者"
     },
     {
-      "t": "1:52",
-      "timestamp": 112512,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
-      "t": "1:52",
-      "timestamp": 112757,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
+      "lane": "boss",
       "t": "2:10",
       "timestamp": 130994,
       "abilityGameId": 1258880,
       "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 349,
-      "sourceName": "胧影终末行者"
-    },
-    {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:14",
-      "timestamp": 134729,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:16",
-      "timestamp": 136728,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:16",
-      "timestamp": 136728,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:16",
-      "timestamp": 136728,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:18",
-      "timestamp": 138749,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:18",
-      "timestamp": 138749,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:18",
-      "timestamp": 138749,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 513,
-      "sourceName": "胧影终末行者"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:30",
-      "timestamp": 150956,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:32",
-      "timestamp": 152968,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:32",
-      "timestamp": 152969,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:32",
-      "timestamp": 152969,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:34",
-      "timestamp": 154983,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:34",
-      "timestamp": 154983,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
-      "t": "2:34",
-      "timestamp": 154983,
-      "abilityGameId": 1249321,
-      "abilityName": "行进造型",
-      "type": "cast",
-      "sourceId": 348,
-      "sourceName": "影卫坚兵"
-    },
-    {
+      "lane": "boss",
       "t": "2:37",
       "timestamp": 157530,
       "abilityGameId": 1249251,
       "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
-      "t": "2:46",
-      "timestamp": 166031,
-      "abilityGameId": 1251361,
-      "abilityName": "暗影进军",
-      "type": "cast",
-      "sourceId": 337,
-      "sourceName": "元首阿福扎恩"
-    },
-    {
-      "t": "2:46",
-      "timestamp": 166032,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "2:46",
-      "timestamp": 166032,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
-      "t": "2:46",
-      "timestamp": 166033,
-      "abilityGameId": 1249714,
-      "abilityName": "暗影屏障",
-      "type": "cast",
-      "sourceId": 343,
-      "sourceName": "深渊虚空塑形者"
-    },
-    {
+      "lane": "boss",
       "t": "2:51",
       "timestamp": 171034,
       "abilityGameId": 1249265,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "2:56",
       "timestamp": 176547,
       "abilityGameId": 1249266,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "3:04",
       "timestamp": 184055,
       "abilityGameId": 1260206,
       "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "3:06",
       "timestamp": 186573,
       "abilityGameId": 1262036,
       "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
       "type": "cast",
       "sourceId": 343,
       "sourceName": "深渊虚空塑形者"
     },
     {
-      "t": "3:11",
-      "timestamp": 191557,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
-      "t": "3:11",
-      "timestamp": 191819,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
-      "t": "3:12",
-      "timestamp": 192082,
-      "abilityGameId": 1261249,
-      "abilityName": "虚空割裂",
-      "type": "cast",
-      "sourceId": 345,
-      "sourceName": "黑暗通道"
-    },
-    {
+      "lane": "boss",
       "t": "3:13",
       "timestamp": 193535,
       "abilityGameId": 1249251,
       "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
+      "lane": "boss",
       "t": "3:22",
       "timestamp": 202022,
       "abilityGameId": 1260712,
       "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
     },
     {
-      "t": "3:23",
-      "timestamp": 203466,
-      "abilityGameId": 1274846,
-      "abilityName": "黑暗弹幕",
-      "type": "cast",
-      "sourceId": 514,
-      "sourceName": "虚缚歼灭者"
-    },
-    {
-      "t": "3:23",
-      "timestamp": 203886,
-      "abilityGameId": 1274846,
-      "abilityName": "黑暗弹幕",
-      "type": "cast",
-      "sourceId": 514,
-      "sourceName": "虚缚歼灭者"
-    },
-    {
-      "t": "3:27",
-      "timestamp": 207122,
-      "abilityGameId": 1274846,
-      "abilityName": "黑暗弹幕",
-      "type": "cast",
-      "sourceId": 514,
-      "sourceName": "虚缚歼灭者"
-    },
-    {
+      "lane": "boss",
       "t": "3:27",
       "timestamp": 207616,
       "abilityGameId": 1255702,
       "abilityName": "浓暗壁垒",
+      "abilityLabel": "浓暗壁垒",
       "type": "cast",
       "sourceId": 514,
       "sourceName": "虚缚歼灭者"
     },
     {
+      "lane": "boss",
       "t": "3:40",
       "timestamp": 220034,
       "abilityGameId": 1260712,
       "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
       "type": "cast",
       "sourceId": 337,
       "sourceName": "元首阿福扎恩"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:06",
+      "timestamp": 6522,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:15",
+      "timestamp": 15042,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19993,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25513,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:33",
+      "timestamp": 33016,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35560,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "0:42",
+      "timestamp": 42509,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51011,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69003,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:18",
+      "timestamp": 78518,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91999,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97515,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:45",
+      "timestamp": 105033,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107510,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130994,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:37",
+      "timestamp": 157530,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171034,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:56",
+      "timestamp": 176547,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:04",
+      "timestamp": 184055,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186573,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 343,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193535,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:22",
+      "timestamp": 202022,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:27",
+      "timestamp": 207616,
+      "abilityGameId": 1255702,
+      "abilityName": "浓暗壁垒",
+      "abilityLabel": "浓暗壁垒",
+      "type": "cast",
+      "sourceId": 514,
+      "sourceName": "虚缚歼灭者"
+    },
+    {
+      "lane": "boss",
+      "t": "3:40",
+      "timestamp": 220034,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 337,
+      "sourceName": "元首阿福扎恩"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 681,
+      "abilityGameId": 80353,
+      "abilityName": "时间扭曲",
+      "abilityLabel": "时间扭曲",
+      "type": "cast",
+      "sourceId": 98,
+      "sourceName": "甜心小法",
+      "className": "Mage",
+      "classLabel": "法师",
+      "specName": "Frost",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 701,
+      "abilityGameId": 1276452,
+      "abilityName": "魔典：小鬼领主",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 18,
+      "sourceName": "清宵半",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:01",
+      "timestamp": 1345,
+      "abilityGameId": 132578,
+      "abilityName": "玄牛下凡",
+      "abilityLabel": "玄牛下凡",
+      "type": "cast",
+      "sourceId": 2,
+      "sourceName": "Jybrew",
+      "className": "Monk",
+      "classLabel": "武僧",
+      "specName": "Brewmaster",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:01",
+      "timestamp": 1412,
+      "abilityGameId": 1276452,
+      "abilityName": "魔典：小鬼领主",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 6,
+      "sourceName": "慕萨莉安",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:01",
+      "timestamp": 1676,
+      "abilityGameId": 1276452,
+      "abilityName": "魔典：小鬼领主",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 19,
+      "sourceName": "无之术",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2514,
+      "abilityGameId": 1276452,
+      "abilityName": "魔典：小鬼领主",
+      "abilityLabel": "魔典：小鬼领主",
+      "type": "cast",
+      "sourceId": 65,
+      "sourceName": "Cuihz",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3288,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 90,
+      "sourceName": "圆敏丶",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3499,
+      "abilityGameId": 265187,
+      "abilityName": "召唤恶魔暴君",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 19,
+      "sourceName": "无之术",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3683,
+      "abilityGameId": 42650,
+      "abilityName": "亡者大军",
+      "abilityLabel": "亡者大军",
+      "type": "cast",
+      "sourceId": 16,
+      "sourceName": "别奶灬",
+      "className": "DeathKnight",
+      "classLabel": "死亡骑士",
+      "specName": "Unholy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4176,
+      "abilityGameId": 370553,
+      "abilityName": "扭转天平",
+      "abilityLabel": "扭转天平",
+      "type": "cast",
+      "sourceId": 82,
+      "sourceName": "Change",
+      "className": "Evoker",
+      "classLabel": "唤魔师",
+      "specName": "Devastation",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4457,
+      "abilityGameId": 1233448,
+      "abilityName": "黑暗突变",
+      "abilityLabel": "黑暗突变",
+      "type": "cast",
+      "sourceId": 16,
+      "sourceName": "别奶灬",
+      "className": "DeathKnight",
+      "classLabel": "死亡骑士",
+      "specName": "Unholy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4511,
+      "abilityGameId": 370553,
+      "abilityName": "扭转天平",
+      "abilityLabel": "扭转天平",
+      "type": "cast",
+      "sourceId": 15,
+      "sourceName": "银翼凶星丶",
+      "className": "Evoker",
+      "classLabel": "唤魔师",
+      "specName": "Preservation",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:05",
+      "timestamp": 5276,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 97,
+      "sourceName": "黑色的猫",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:05",
+      "timestamp": 5302,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 97,
+      "sourceName": "黑色的猫",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Shadow",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:05",
+      "timestamp": 5410,
+      "abilityGameId": 265187,
+      "abilityName": "召唤恶魔暴君",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 6,
+      "sourceName": "慕萨莉安",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6337,
+      "abilityGameId": 265187,
+      "abilityName": "召唤恶魔暴君",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 65,
+      "sourceName": "Cuihz",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6548,
+      "abilityGameId": 265187,
+      "abilityName": "召唤恶魔暴君",
+      "abilityLabel": "召唤恶魔暴君",
+      "type": "cast",
+      "sourceId": 18,
+      "sourceName": "清宵半",
+      "className": "Warlock",
+      "classLabel": "术士",
+      "specName": "Demonology",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6638,
+      "abilityGameId": 191034,
+      "abilityName": "星辰坠落",
+      "abilityLabel": "星辰坠落",
+      "type": "cast",
+      "sourceId": 12,
+      "sourceName": "伊琳娜",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Balance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:07",
+      "timestamp": 7393,
+      "abilityGameId": 48438,
+      "abilityName": "野性成长",
+      "abilityLabel": "野性成长",
+      "type": "cast",
+      "sourceId": 1,
+      "sourceName": "Ethane",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Restoration",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9222,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "Jeraxoracle",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9241,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "Jeraxoracle",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9423,
+      "abilityGameId": 18562,
+      "abilityName": "迅捷治愈",
+      "abilityLabel": "迅捷治愈",
+      "type": "cast",
+      "sourceId": 1,
+      "sourceName": "Ethane",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Restoration",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9628,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 8,
+      "sourceName": "幾億光年",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:09",
+      "timestamp": 9630,
+      "abilityGameId": 10060,
+      "abilityName": "能量灌注",
+      "abilityLabel": "能量灌注",
+      "type": "cast",
+      "sourceId": 8,
+      "sourceName": "幾億光年",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:10",
+      "timestamp": 10379,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "Jeraxoracle",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:12",
+      "timestamp": 12722,
+      "abilityGameId": 191034,
+      "abilityName": "星辰坠落",
+      "abilityLabel": "星辰坠落",
+      "type": "cast",
+      "sourceId": 12,
+      "sourceName": "伊琳娜",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Balance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:13",
+      "timestamp": 13482,
+      "abilityGameId": 191034,
+      "abilityName": "星辰坠落",
+      "abilityLabel": "星辰坠落",
+      "type": "cast",
+      "sourceId": 12,
+      "sourceName": "伊琳娜",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Balance",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:16",
+      "timestamp": 16054,
+      "abilityGameId": 191034,
+      "abilityName": "星辰坠落",
+      "abilityLabel": "星辰坠落",
+      "type": "cast",
+      "sourceId": 94,
+      "sourceName": "羽生萌萌香",
+      "className": "Druid",
+      "classLabel": "德鲁伊",
+      "specName": "Balance",
+      "heroTalent": null
     }
   ]
 }

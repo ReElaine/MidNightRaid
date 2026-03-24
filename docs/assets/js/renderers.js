@@ -7,32 +7,116 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function encodeBossLink(boss, entry) {
+  return `./boss.html?boss=${encodeURIComponent(boss.slug)}&difficulty=${encodeURIComponent(boss.difficulty || 4)}&report=${encodeURIComponent(entry.reportCode)}&fight=${encodeURIComponent(entry.fightId)}`;
+}
+
+function renderChip(label, attributes = "", isActive = false) {
+  return `<button class="chip ${isActive ? "is-active" : ""}" ${attributes} type="button">${escapeHtml(label)}</button>`;
+}
+
+function dedupeOptions(items) {
+  return [...new Map((items || []).map((item) => [item.key, item])).values()];
+}
+
+function groupTimelineRows(bossEntries, classEntries) {
+  const map = new Map();
+
+  for (const entry of bossEntries) {
+    const row = map.get(entry.timestamp) || { timestamp: entry.timestamp, t: entry.t, bossEntries: [], classEntries: [] };
+    row.bossEntries.push(entry);
+    map.set(entry.timestamp, row);
+  }
+
+  for (const entry of classEntries) {
+    const row = map.get(entry.timestamp) || { timestamp: entry.timestamp, t: entry.t, bossEntries: [], classEntries: [] };
+    row.classEntries.push(entry);
+    map.set(entry.timestamp, row);
+  }
+
+  return [...map.values()].sort((left, right) => left.timestamp - right.timestamp);
+}
+
+function renderBossEntry(entry) {
+  return `
+    <article class="timeline-entry timeline-entry--boss">
+      <div class="timeline-entry__title">${escapeHtml(entry.abilityLabel || entry.abilityName)}</div>
+      <div class="timeline-entry__meta">${escapeHtml(entry.sourceName || "Boss")}</div>
+    </article>
+  `;
+}
+
+function renderClassEntry(entry) {
+  return `
+    <article class="timeline-entry timeline-entry--class">
+      <div class="timeline-entry__title">${escapeHtml(entry.classLabel || entry.className || "职业")} / ${escapeHtml(entry.abilityLabel || entry.abilityName)}</div>
+      <div class="timeline-entry__meta">
+        ${escapeHtml(entry.sourceName || "Unknown Player")}
+        ${entry.specName ? ` / ${escapeHtml(entry.specName)}` : ""}
+        ${entry.heroTalent ? ` / ${escapeHtml(entry.heroTalent)}` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderTimelineRows(bossEntries, classEntries) {
+  const rows = groupTimelineRows(bossEntries, classEntries);
+
+  if (!rows.length) {
+    return `<section class="card empty-state">当前筛选条件下没有可展示的时间轴条目。</section>`;
+  }
+
+  return `
+    <section class="timeline-board">
+      <div class="timeline-board__head">
+        <div class="timeline-board__lane timeline-board__lane--boss">Boss 关键技能</div>
+        <div class="timeline-board__time">时间</div>
+        <div class="timeline-board__lane timeline-board__lane--class">职业关键技能</div>
+      </div>
+      <div class="timeline-board__body">
+        ${rows
+          .map(
+            (row) => `
+              <div class="timeline-row">
+                <div class="timeline-lane timeline-lane--boss">${row.bossEntries.map(renderBossEntry).join("")}</div>
+                <div class="timeline-time">${escapeHtml(row.t)}</div>
+                <div class="timeline-lane timeline-lane--class">${row.classEntries.map(renderClassEntry).join("")}</div>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
+function getClassEntriesForFilterOptions(classEntries, filters) {
+  return (classEntries || []).filter((entry) => {
+    if (filters.className !== "all" && entry.className !== filters.className) {
+      return false;
+    }
+    if (filters.specName !== "all" && entry.specName !== filters.specName) {
+      return false;
+    }
+    if (filters.heroTalent !== "all" && entry.heroTalent !== filters.heroTalent) {
+      return false;
+    }
+    return true;
+  });
+}
+
 export function renderBossNav(bosses, activeBossSlug) {
   return bosses
-    .map(
-      (boss) => `
-        <button class="chip ${activeBossSlug === boss.slug ? "is-active" : ""}" data-boss-slug="${escapeHtml(boss.slug)}" type="button">
-          ${escapeHtml(boss.shortName || boss.title)}
-        </button>
-      `
-    )
+    .map((boss) => renderChip(boss.shortName || boss.title, `data-boss-slug="${escapeHtml(boss.slug)}"`, activeBossSlug === boss.slug))
     .join("");
 }
 
 export function renderDifficultyNav(activeDifficulty) {
-  const options = [
+  return [
     { id: 4, label: "英雄" },
     { id: 5, label: "史诗" }
-  ];
-
-  return options
-    .map(
-      (option) => `
-        <button class="chip ${activeDifficulty === option.id ? "is-active" : ""}" data-difficulty="${option.id}" type="button">
-          ${escapeHtml(option.label)}
-        </button>
-      `
-    )
+  ]
+    .map((option) => renderChip(option.label, `data-difficulty="${option.id}"`, activeDifficulty === option.id))
     .join("");
 }
 
@@ -44,21 +128,17 @@ export function renderRankingsCards(entries, boss) {
           <div class="badge-row">
             <span class="badge">${escapeHtml(boss.title)}</span>
             <span class="badge badge--ghost">排名 ${entry.rank}</span>
+            ${entry.className ? `<span class="badge badge--ghost">${escapeHtml(entry.className)}${entry.specName ? ` / ${escapeHtml(entry.specName)}` : ""}${entry.heroTalent ? ` / ${escapeHtml(entry.heroTalent)}` : ""}</span>` : ""}
           </div>
-          <h3>${escapeHtml(entry.guild?.name || "Unknown Guild")}</h3>
+          <h3>${escapeHtml(entry.playerName || entry.guild?.name || "Unknown Entry")}</h3>
           <p>${escapeHtml(entry.server?.region || "")} ${escapeHtml(entry.server?.name || "")}</p>
           <ul class="compact-list">
             <li>时长：${Math.round((entry.duration || 0) / 1000)} 秒</li>
-            <li>治疗：${entry.healers ?? "?"} / 坦克：${entry.tanks ?? "?"}</li>
-            <li>死亡：${entry.deaths ?? "?"} / 团队人数：${entry.size ?? "?"}</li>
+            <li>${entry.metricValue ? `表现值：${Number(entry.metricValue).toFixed(2)}` : `治疗：${entry.healers ?? "?"} / 坦克：${entry.tanks ?? "?"}`}</li>
+            <li>团队人数：${entry.size ?? "?"}${entry.deaths !== undefined && entry.deaths !== null ? ` / 死亡：${entry.deaths}` : ""}</li>
           </ul>
           <div class="boss-card__actions">
-            <a
-              class="link-button"
-              href="./boss.html?boss=${encodeURIComponent(boss.slug)}&difficulty=${encodeURIComponent(boss.difficulty || 4)}&report=${encodeURIComponent(entry.reportCode)}&fight=${encodeURIComponent(entry.fightId)}"
-            >
-              查看时间轴
-            </a>
+            <a class="link-button" href="${encodeBossLink(boss, entry)}">查看时间轴</a>
             <a class="link-button link-button--subtle" href="https://www.warcraftlogs.com/reports/${encodeURIComponent(entry.reportCode)}#fight=${encodeURIComponent(entry.fightId)}" target="_blank" rel="noreferrer">打开 WCL</a>
           </div>
         </article>
@@ -67,16 +147,17 @@ export function renderRankingsCards(entries, boss) {
     .join("");
 }
 
-export function renderTimelineDetail({ boss, rankings, timeline }) {
+export function renderTimelineDetail({ boss, rankings, timeline, filters, filteredBossEntries, filteredClassEntries }) {
   const rankingMeta = rankings
     ? `
       <section class="card hero-card">
         <div class="badge-row">
           <span class="badge">${escapeHtml(boss.title)}</span>
           <span class="badge badge--ghost">排名 ${rankings.rank}</span>
+          ${rankings.className ? `<span class="badge badge--ghost">${escapeHtml(rankings.className)}${rankings.specName ? ` / ${escapeHtml(rankings.specName)}` : ""}${rankings.heroTalent ? ` / ${escapeHtml(rankings.heroTalent)}` : ""}</span>` : ""}
         </div>
         <h2>${escapeHtml(timeline.bossName)}</h2>
-        <p>公会：${escapeHtml(rankings.guild?.name || "Unknown Guild")} / 服务器：${escapeHtml(rankings.server?.region || "")} ${escapeHtml(rankings.server?.name || "")}</p>
+        <p>${rankings.playerName ? `角色：${escapeHtml(rankings.playerName)} / ` : ""}${escapeHtml(rankings.guild?.name || "Unknown Guild")} / ${escapeHtml(rankings.server?.region || "")} ${escapeHtml(rankings.server?.name || "")}</p>
         <p class="muted">Report: ${escapeHtml(timeline.reportCode)} / Fight: ${escapeHtml(timeline.fightId)}</p>
       </section>
     `
@@ -91,38 +172,132 @@ export function renderTimelineDetail({ boss, rankings, timeline }) {
       </section>
     `;
 
-  const rows = (timeline.timeline || [])
-    .map(
-      (entry) => `
-        <tr>
-          <td>${escapeHtml(entry.t)}</td>
-          <td>${escapeHtml(entry.abilityName)}</td>
-          <td>${escapeHtml(entry.type)}</td>
-          <td>${escapeHtml(entry.sourceName || "")}</td>
-        </tr>
-      `
+  const bossFilterChips = [
+    renderChip("全部 Boss 技能", 'data-filter-group="bossAbility" data-filter-value="all"', filters.bossAbility === "all"),
+    ...(timeline.filters?.bossAbilities || []).map((item) =>
+      renderChip(item.label, `data-filter-group="bossAbility" data-filter-value="${escapeHtml(item.key)}"`, filters.bossAbility === item.key)
     )
-    .join("");
+  ].join("");
+
+  const classFilterChips = [
+    renderChip("全部职业", 'data-filter-group="className" data-filter-value="all"', filters.className === "all"),
+    ...(timeline.filters?.classes || []).map((item) =>
+      renderChip(item.label, `data-filter-group="className" data-filter-value="${escapeHtml(item.key)}"`, filters.className === item.key)
+    )
+  ].join("");
+
+  const classEntriesForOptions = getClassEntriesForFilterOptions(timeline.classTimeline || [], {
+    className: filters.className,
+    specName: filters.specName,
+    heroTalent: filters.heroTalent
+  });
+  const specSourceEntries =
+    filters.className === "all"
+      ? timeline.classTimeline || []
+      : (timeline.classTimeline || []).filter((entry) => entry.className === filters.className);
+  const heroTalentSourceEntries =
+    filters.className === "all" || filters.specName === "all"
+      ? []
+      : (timeline.classTimeline || []).filter((entry) => entry.className === filters.className && entry.specName === filters.specName);
+  const specOptions = dedupeOptions(
+    specSourceEntries
+      .filter((entry) => entry.specName)
+      .map((entry) => ({ key: entry.specName, label: entry.specName }))
+  );
+  const heroTalentOptions = dedupeOptions(
+    heroTalentSourceEntries
+      .filter((entry) => entry.heroTalent)
+      .map((entry) => ({ key: entry.heroTalent, label: entry.heroTalent }))
+  );
+  const classAbilityOptions = dedupeOptions(
+    classEntriesForOptions.map((entry) => ({
+      key: String(entry.abilityGameId),
+      label: entry.abilityLabel
+    }))
+  );
+
+  const specChips = [
+    renderChip("全部专精", 'data-filter-group="specName" data-filter-value="all"', filters.specName === "all"),
+    ...specOptions.map((item) =>
+      renderChip(item.label, `data-filter-group="specName" data-filter-value="${escapeHtml(item.key)}"`, filters.specName === item.key)
+    )
+  ].join("");
+
+  const heroTalentChips = [
+    renderChip("全部英雄天赋", 'data-filter-group="heroTalent" data-filter-value="all"', filters.heroTalent === "all"),
+    ...heroTalentOptions.map((item) =>
+      renderChip(item.label, `data-filter-group="heroTalent" data-filter-value="${escapeHtml(item.key)}"`, filters.heroTalent === item.key)
+    )
+  ].join("");
+
+  const classAbilityChips = [
+    renderChip("全部职业技能", 'data-filter-group="classAbility" data-filter-value="all"', filters.classAbility === "all"),
+    ...classAbilityOptions.map((item) =>
+      renderChip(item.label, `data-filter-group="classAbility" data-filter-value="${escapeHtml(item.key)}"`, filters.classAbility === item.key)
+    )
+  ].join("");
+
+  const activeClassFilters = [
+    filters.className !== "all" ? filters.className : null,
+    filters.specName !== "all" ? filters.specName : null,
+    filters.heroTalent !== "all" ? filters.heroTalent : null
+  ].filter(Boolean);
 
   return `
     <div class="detail-stack">
       ${rankingMeta}
-      <section class="detail-section">
-        <h2>时间轴</h2>
-        <div class="timeline-table-wrap">
-          <table class="timeline-table">
-            <thead>
-              <tr>
-                <th>时间</th>
-                <th>技能</th>
-                <th>事件类型</th>
-                <th>来源</th>
-              </tr>
-            </thead>
-            <tbody>${rows}</tbody>
-          </table>
+      <section class="detail-section preset-panel">
+        <div class="section-heading">
+          <div>
+            <h2>展示预设</h2>
+            <p class="muted">${escapeHtml(timeline.presetName || "默认预设")}</p>
+          </div>
+          <div class="badge-row">
+            <span class="badge badge--ghost">Boss 技能 ${filteredBossEntries.length}</span>
+            <span class="badge badge--ghost">职业技能 ${filteredClassEntries.length}</span>
+          </div>
+        </div>
+        <div class="preset-grid">
+          <div class="info-block">
+            <h3>Boss 侧预设</h3>
+            <p class="muted">左侧保留 Boss 关键技能，适合抄机制主轴。</p>
+          </div>
+          <div class="info-block">
+            <h3>职业侧预设</h3>
+            <p class="muted">右侧按职业、专精、英雄天赋和技能逐层收窄，更适合找自己的作业轴。</p>
+          </div>
         </div>
       </section>
+      <section class="detail-section filter-panel">
+        <div class="section-heading">
+          <div>
+            <h2>筛选</h2>
+            <p class="muted">先选职业，再收窄到专精和英雄天赋，最后看具体技能。</p>
+          </div>
+          ${activeClassFilters.length ? `<div class="badge-row">${activeClassFilters.map((item) => `<span class="badge badge--ghost">${escapeHtml(item)}</span>`).join("")}</div>` : ""}
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">Boss 技能</div>
+          <div class="raid-nav">${bossFilterChips}</div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">职业</div>
+          <div class="raid-nav">${classFilterChips}</div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">专精</div>
+          <div class="raid-nav">${specChips}</div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">英雄天赋</div>
+          <div class="raid-nav">${heroTalentChips}</div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-group__label">职业技能</div>
+          <div class="raid-nav">${classAbilityChips}</div>
+        </div>
+      </section>
+      ${renderTimelineRows(filteredBossEntries, filteredClassEntries)}
     </div>
   `;
 }

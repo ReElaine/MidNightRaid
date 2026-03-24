@@ -8,6 +8,7 @@
     "character": {
       "className": null,
       "specName": null,
+      "heroTalent": null,
       "metric": "dps"
     }
   },
