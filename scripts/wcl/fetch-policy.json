@@ -18,7 +18,9 @@
   "events": {
     "translate": false,
     "hostilityType": "Enemies",
-    "limit": 1000
+    "limit": 1000,
+    "friendlyWindowMs": 60000,
+    "friendlySliceLimit": 5000
   },
   "study": {
     "windowBeforeMs": 12000,

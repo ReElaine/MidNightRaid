@@ -7,7 +7,7 @@
   "specName": "Holy",
   "metric": "hps",
   "sampleCount": 10,
-  "generatedAt": "2026-03-24T08:15:16.852Z",
+  "generatedAt": "2026-03-24T08:55:16.604Z",
   "samples": [
     {
       "sampleId": "4C2f7rDHJwpBmRvK-4",
@@ -301,6 +301,10 @@
       {
         "key": "200183",
         "label": "神圣化身"
+      },
+      {
+        "key": "64843",
+        "label": "神圣赞美诗"
       }
     ]
   },
@@ -4094,6 +4098,23 @@
       "sourceName": "米什德文"
     },
     {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 22822,
+      "t": "0:22",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "Qimoo"
+    },
+    {
       "sampleId": "9VQHJgFMnRbqw3cZ-17",
       "playerName": "阿伦儿",
       "rank": 6,
@@ -4111,6 +4132,40 @@
       "sourceName": "阿伦儿"
     },
     {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 23269,
+      "t": "0:23",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 23630,
+      "t": "0:23",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "夏尔"
+    },
+    {
       "sampleId": "Mjv14nXg8LPZpGaR-24",
       "playerName": "栀子花香",
       "rank": 7,
@@ -4126,6 +4181,1502 @@
       "abilityName": "光晕",
       "abilityLabel": "光晕",
       "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 27492,
+      "t": "0:27",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 28131,
+      "t": "0:28",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 28319,
+      "t": "0:28",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 28986,
+      "t": "0:28",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 34167,
+      "t": "0:34",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 34872,
+      "t": "0:34",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 37414,
+      "t": "0:37",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 42102,
+      "t": "0:42",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 45615,
+      "t": "0:45",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 45973,
+      "t": "0:45",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 49065,
+      "t": "0:49",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 53986,
+      "t": "0:53",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 70449,
+      "t": "1:10",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 70488,
+      "t": "1:10",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 71364,
+      "t": "1:11",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 72531,
+      "t": "1:12",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 73802,
+      "t": "1:13",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 79882,
+      "t": "1:19",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 80754,
+      "t": "1:20",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 81633,
+      "t": "1:21",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 82242,
+      "t": "1:22",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 87495,
+      "t": "1:27",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 90319,
+      "t": "1:30",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 97509,
+      "t": "1:37",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 100322,
+      "t": "1:40",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 113772,
+      "t": "1:53",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 131987,
+      "t": "2:11",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 132970,
+      "t": "2:12",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 135878,
+      "t": "2:15",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 135988,
+      "t": "2:15",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 137437,
+      "t": "2:17",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 140489,
+      "t": "2:20",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 144197,
+      "t": "2:24",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 144328,
+      "t": "2:24",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 144372,
+      "t": "2:24",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 147914,
+      "t": "2:27",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 151732,
+      "t": "2:31",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 155913,
+      "t": "2:35",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 159498,
+      "t": "2:39",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 164982,
+      "t": "2:44",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 174024,
+      "t": "2:54",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 174040,
+      "t": "2:54",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 174678,
+      "t": "2:54",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 176246,
+      "t": "2:56",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 176325,
+      "t": "2:56",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 176916,
+      "t": "2:56",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 182955,
+      "t": "3:02",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 184252,
+      "t": "3:04",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 190712,
+      "t": "3:10",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 194281,
+      "t": "3:14",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 195627,
+      "t": "3:15",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 197582,
+      "t": "3:17",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 198160,
+      "t": "3:18",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 198441,
+      "t": "3:18",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 200223,
+      "t": "3:20",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 205912,
+      "t": "3:25",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 211065,
+      "t": "3:31",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 213019,
+      "t": "3:33",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 216951,
+      "t": "3:36",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 232211,
+      "t": "3:52",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 232333,
+      "t": "3:52",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 233845,
+      "t": "3:53",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 244660,
+      "t": "4:04",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 248477,
+      "t": "4:08",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 250081,
+      "t": "4:10",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "RHwCWMmVxgZKpFrQ-2",
+      "playerName": "Rollessecond",
+      "rank": 10,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "RHwCWMmVxgZKpFrQ",
+      "fightId": 2,
+      "timestamp": 255982,
+      "t": "4:15",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Rollessecond"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 256729,
+      "t": "4:16",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "9VQHJgFMnRbqw3cZ-17",
+      "playerName": "阿伦儿",
+      "rank": 6,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "9VQHJgFMnRbqw3cZ",
+      "fightId": 17,
+      "timestamp": 258697,
+      "t": "4:18",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "阿伦儿"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 260721,
+      "t": "4:20",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 264012,
+      "t": "4:24",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 267224,
+      "t": "4:27",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 271868,
+      "t": "4:31",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 274518,
+      "t": "4:34",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 278864,
+      "t": "4:38",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 280308,
+      "t": "4:40",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 282461,
+      "t": "4:42",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 286238,
+      "t": "4:46",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "Qimoo"
+    },
+    {
+      "sampleId": "n37hYBr1aVDFNbtP-10",
+      "playerName": "米什德文",
+      "rank": 2,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "n37hYBr1aVDFNbtP",
+      "fightId": 10,
+      "timestamp": 295650,
+      "t": "4:55",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "米什德文"
+    },
+    {
+      "sampleId": "vYpMx1TBtd2FrPcX-4",
+      "playerName": "流光飞舞丶",
+      "rank": 8,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "vYpMx1TBtd2FrPcX",
+      "fightId": 4,
+      "timestamp": 299506,
+      "t": "4:59",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "流光飞舞丶"
+    },
+    {
+      "sampleId": "4C2f7rDHJwpBmRvK-4",
+      "playerName": "放弃治疗",
+      "rank": 1,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "4C2f7rDHJwpBmRvK",
+      "fightId": 4,
+      "timestamp": 302593,
+      "t": "5:02",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "放弃治疗"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 303857,
+      "t": "5:03",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "VAHMNnzK4Z7WFLPc-31",
+      "playerName": "夏尔",
+      "rank": 5,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "VAHMNnzK4Z7WFLPc",
+      "fightId": 31,
+      "timestamp": 305495,
+      "t": "5:05",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "夏尔"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 305803,
+      "t": "5:05",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 312080,
+      "t": "5:12",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "Gz9WmVrfb841aFC3-9",
+      "playerName": "朵拉爱蹦迪",
+      "rank": 9,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Gz9WmVrfb841aFC3",
+      "fightId": 9,
+      "timestamp": 313303,
+      "t": "5:13",
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "sourceName": "朵拉爱蹦迪"
+    },
+    {
+      "sampleId": "2yL3qhRMAvm4pJkc-8",
+      "playerName": "尼古丶丁",
+      "rank": 4,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "2yL3qhRMAvm4pJkc",
+      "fightId": 8,
+      "timestamp": 319790,
+      "t": "5:19",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "尼古丶丁"
+    },
+    {
+      "sampleId": "Mjv14nXg8LPZpGaR-24",
+      "playerName": "栀子花香",
+      "rank": 7,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "Mjv14nXg8LPZpGaR",
+      "fightId": 24,
+      "timestamp": 323872,
+      "t": "5:23",
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "sourceName": "栀子花香"
+    },
+    {
+      "sampleId": "GHkQx4cPd13ha76v-6",
+      "playerName": "Qimoo",
+      "rank": 3,
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null,
+      "reportCode": "GHkQx4cPd13ha76v",
+      "fightId": 6,
+      "timestamp": 325366,
+      "t": "5:25",
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "sourceName": "Qimoo"
     }
   ],
   "timelineRows": [
@@ -4688,9 +6239,26 @@
     {
       "key": "0:22",
       "t": "0:22",
-      "timestamp": 22990,
+      "timestamp": 22822,
       "bossEntries": [],
       "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 22822,
+          "t": "0:22",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "Qimoo"
+        },
         {
           "sampleId": "9VQHJgFMnRbqw3cZ-17",
           "playerName": "阿伦儿",
@@ -4713,9 +6281,43 @@
     {
       "key": "0:23",
       "t": "0:23",
-      "timestamp": 23929,
+      "timestamp": 23269,
       "bossEntries": [],
       "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 23269,
+          "t": "0:23",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "米什德文"
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 23630,
+          "t": "0:23",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "夏尔"
+        },
         {
           "sampleId": "Mjv14nXg8LPZpGaR-24",
           "playerName": "栀子花香",
@@ -4855,6 +6457,90 @@
       "classEntries": []
     },
     {
+      "key": "0:27",
+      "t": "0:27",
+      "timestamp": 27492,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 27492,
+          "t": "0:27",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "0:28",
+      "t": "0:28",
+      "timestamp": 28131,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 28131,
+          "t": "0:28",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "朵拉爱蹦迪"
+        },
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 28319,
+          "t": "0:28",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "夏尔"
+        },
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 28986,
+          "t": "0:28",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "Qimoo"
+        }
+      ]
+    },
+    {
       "key": "0:33",
       "t": "0:33",
       "timestamp": 33018,
@@ -4972,6 +6658,48 @@
         }
       ],
       "classEntries": []
+    },
+    {
+      "key": "0:34",
+      "t": "0:34",
+      "timestamp": 34167,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 34167,
+          "t": "0:34",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "流光飞舞丶"
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 34872,
+          "t": "0:34",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "尼古丶丁"
+        }
+      ]
     },
     {
       "key": "0:35",
@@ -5093,9 +6821,34 @@
       "classEntries": []
     },
     {
+      "key": "0:37",
+      "t": "0:37",
+      "timestamp": 37414,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 37414,
+          "t": "0:37",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "Rollessecond"
+        }
+      ]
+    },
+    {
       "key": "0:42",
       "t": "0:42",
-      "timestamp": 42463,
+      "timestamp": 42102,
       "bossEntries": [
         {
           "key": "1249251:0:42",
@@ -5209,7 +6962,92 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 42102,
+          "t": "0:42",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
+      "key": "0:45",
+      "t": "0:45",
+      "timestamp": 45615,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 45615,
+          "t": "0:45",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "尼古丶丁"
+        },
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 45973,
+          "t": "0:45",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "米什德文"
+        }
+      ]
+    },
+    {
+      "key": "0:49",
+      "t": "0:49",
+      "timestamp": 49065,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 49065,
+          "t": "0:49",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "放弃治疗"
+        }
+      ]
     },
     {
       "key": "0:50",
@@ -5350,6 +7188,31 @@
       "classEntries": []
     },
     {
+      "key": "0:53",
+      "t": "0:53",
+      "timestamp": 53986,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 53986,
+          "t": "0:53",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
       "key": "1:08",
       "t": "1:08",
       "timestamp": 68959,
@@ -5488,6 +7351,123 @@
       "classEntries": []
     },
     {
+      "key": "1:10",
+      "t": "1:10",
+      "timestamp": 70449,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 70449,
+          "t": "1:10",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Rollessecond"
+        },
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 70488,
+          "t": "1:10",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "1:11",
+      "t": "1:11",
+      "timestamp": 71364,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 71364,
+          "t": "1:11",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Qimoo"
+        }
+      ]
+    },
+    {
+      "key": "1:12",
+      "t": "1:12",
+      "timestamp": 72531,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 72531,
+          "t": "1:12",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "阿伦儿"
+        }
+      ]
+    },
+    {
+      "key": "1:13",
+      "t": "1:13",
+      "timestamp": 73802,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 73802,
+          "t": "1:13",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
       "key": "1:18",
       "t": "1:18",
       "timestamp": 78455,
@@ -5605,6 +7585,156 @@
         }
       ],
       "classEntries": []
+    },
+    {
+      "key": "1:19",
+      "t": "1:19",
+      "timestamp": 79882,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 79882,
+          "t": "1:19",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "米什德文"
+        }
+      ]
+    },
+    {
+      "key": "1:20",
+      "t": "1:20",
+      "timestamp": 80754,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 80754,
+          "t": "1:20",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
+      "key": "1:21",
+      "t": "1:21",
+      "timestamp": 81633,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 81633,
+          "t": "1:21",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
+      "key": "1:22",
+      "t": "1:22",
+      "timestamp": 82242,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 82242,
+          "t": "1:22",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "夏尔"
+        }
+      ]
+    },
+    {
+      "key": "1:27",
+      "t": "1:27",
+      "timestamp": 87495,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 87495,
+          "t": "1:27",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "夏尔"
+        }
+      ]
+    },
+    {
+      "key": "1:30",
+      "t": "1:30",
+      "timestamp": 90319,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 90319,
+          "t": "1:30",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "栀子花香"
+        }
+      ]
     },
     {
       "key": "1:31",
@@ -5861,7 +7991,50 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 97509,
+          "t": "1:37",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "阿伦儿"
+        }
+      ]
+    },
+    {
+      "key": "1:40",
+      "t": "1:40",
+      "timestamp": 100322,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 100322,
+          "t": "1:40",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "Rollessecond"
+        }
+      ]
     },
     {
       "key": "1:44",
@@ -6121,6 +8294,31 @@
       "classEntries": []
     },
     {
+      "key": "1:53",
+      "t": "1:53",
+      "timestamp": 113772,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 113772,
+          "t": "1:53",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
       "key": "2:10",
       "t": "2:10",
       "timestamp": 130943,
@@ -6256,7 +8454,276 @@
           "sampleCount": 8
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 131987,
+          "t": "2:11",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "2:12",
+      "t": "2:12",
+      "timestamp": 132970,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 132970,
+          "t": "2:12",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Rollessecond"
+        }
+      ]
+    },
+    {
+      "key": "2:15",
+      "t": "2:15",
+      "timestamp": 135878,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 135878,
+          "t": "2:15",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "阿伦儿"
+        },
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 135988,
+          "t": "2:15",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "2:17",
+      "t": "2:17",
+      "timestamp": 137437,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 137437,
+          "t": "2:17",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Qimoo"
+        }
+      ]
+    },
+    {
+      "key": "2:20",
+      "t": "2:20",
+      "timestamp": 140489,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 140489,
+          "t": "2:20",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
+      "key": "2:24",
+      "t": "2:24",
+      "timestamp": 144197,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 144197,
+          "t": "2:24",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "米什德文"
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 144328,
+          "t": "2:24",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "流光飞舞丶"
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 144372,
+          "t": "2:24",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
+      "key": "2:27",
+      "t": "2:27",
+      "timestamp": 147914,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 147914,
+          "t": "2:27",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "2:31",
+      "t": "2:31",
+      "timestamp": 151732,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 151732,
+          "t": "2:31",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "夏尔"
+        }
+      ]
+    },
+    {
+      "key": "2:35",
+      "t": "2:35",
+      "timestamp": 155913,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 155913,
+          "t": "2:35",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "栀子花香"
+        }
+      ]
     },
     {
       "key": "2:37",
@@ -6376,6 +8843,56 @@
         }
       ],
       "classEntries": []
+    },
+    {
+      "key": "2:39",
+      "t": "2:39",
+      "timestamp": 159498,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 159498,
+          "t": "2:39",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "2:44",
+      "t": "2:44",
+      "timestamp": 164982,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 164982,
+          "t": "2:44",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "Qimoo"
+        }
+      ]
     },
     {
       "key": "2:50",
@@ -6516,9 +9033,68 @@
       "classEntries": []
     },
     {
+      "key": "2:54",
+      "t": "2:54",
+      "timestamp": 174024,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 174024,
+          "t": "2:54",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "Qimoo"
+        },
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 174040,
+          "t": "2:54",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "米什德文"
+        },
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 174678,
+          "t": "2:54",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "阿伦儿"
+        }
+      ]
+    },
+    {
       "key": "2:56",
       "t": "2:56",
-      "timestamp": 176494,
+      "timestamp": 176246,
       "bossEntries": [
         {
           "key": "1249266:2:56",
@@ -6632,7 +9208,84 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 176246,
+          "t": "2:56",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "夏尔"
+        },
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 176325,
+          "t": "2:56",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "流光飞舞丶"
+        },
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 176916,
+          "t": "2:56",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "3:02",
+      "t": "3:02",
+      "timestamp": 182955,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 182955,
+          "t": "3:02",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "尼古丶丁"
+        }
+      ]
     },
     {
       "key": "3:04",
@@ -6751,7 +9404,25 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 184252,
+          "t": "3:04",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
     },
     {
       "key": "3:06",
@@ -6873,6 +9544,31 @@
       "classEntries": []
     },
     {
+      "key": "3:10",
+      "t": "3:10",
+      "timestamp": 190712,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 190712,
+          "t": "3:10",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
       "key": "3:13",
       "t": "3:13",
       "timestamp": 193506,
@@ -6992,9 +9688,126 @@
       "classEntries": []
     },
     {
+      "key": "3:14",
+      "t": "3:14",
+      "timestamp": 194281,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 194281,
+          "t": "3:14",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Rollessecond"
+        }
+      ]
+    },
+    {
+      "key": "3:15",
+      "t": "3:15",
+      "timestamp": 195627,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 195627,
+          "t": "3:15",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "3:17",
+      "t": "3:17",
+      "timestamp": 197582,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 197582,
+          "t": "3:17",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "阿伦儿"
+        }
+      ]
+    },
+    {
+      "key": "3:18",
+      "t": "3:18",
+      "timestamp": 198160,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 198160,
+          "t": "3:18",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "放弃治疗"
+        },
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 198441,
+          "t": "3:18",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "米什德文"
+        }
+      ]
+    },
+    {
       "key": "3:20",
       "t": "3:20",
-      "timestamp": 200303,
+      "timestamp": 200223,
       "bossEntries": [
         {
           "key": "1255702:3:20",
@@ -7018,7 +9831,25 @@
           "sampleCount": 1
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 200223,
+          "t": "3:20",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Qimoo"
+        }
+      ]
     },
     {
       "key": "3:21",
@@ -7159,6 +9990,31 @@
       "classEntries": []
     },
     {
+      "key": "3:25",
+      "t": "3:25",
+      "timestamp": 205912,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 205912,
+          "t": "3:25",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
       "key": "3:27",
       "t": "3:27",
       "timestamp": 207264,
@@ -7196,6 +10052,81 @@
         }
       ],
       "classEntries": []
+    },
+    {
+      "key": "3:31",
+      "t": "3:31",
+      "timestamp": 211065,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 211065,
+          "t": "3:31",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
+      "key": "3:33",
+      "t": "3:33",
+      "timestamp": 213019,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 213019,
+          "t": "3:33",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "夏尔"
+        }
+      ]
+    },
+    {
+      "key": "3:36",
+      "t": "3:36",
+      "timestamp": 216951,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 216951,
+          "t": "3:36",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "米什德文"
+        }
+      ]
     },
     {
       "key": "3:39",
@@ -7455,6 +10386,73 @@
       "classEntries": []
     },
     {
+      "key": "3:52",
+      "t": "3:52",
+      "timestamp": 232211,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 232211,
+          "t": "3:52",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "夏尔"
+        },
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 232333,
+          "t": "3:52",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "Rollessecond"
+        }
+      ]
+    },
+    {
+      "key": "3:53",
+      "t": "3:53",
+      "timestamp": 233845,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 233845,
+          "t": "3:53",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
       "key": "4:02",
       "t": "4:02",
       "timestamp": 242986,
@@ -7593,9 +10591,34 @@
       "classEntries": []
     },
     {
+      "key": "4:04",
+      "t": "4:04",
+      "timestamp": 244660,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 244660,
+          "t": "4:04",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
       "key": "4:08",
       "t": "4:08",
-      "timestamp": 248501,
+      "timestamp": 248477,
       "bossEntries": [
         {
           "key": "1249266:4:08",
@@ -7709,7 +10732,75 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 248477,
+          "t": "4:08",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "Rollessecond"
+        }
+      ]
+    },
+    {
+      "key": "4:10",
+      "t": "4:10",
+      "timestamp": 250081,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 250081,
+          "t": "4:10",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
+      "key": "4:15",
+      "t": "4:15",
+      "timestamp": 255982,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "RHwCWMmVxgZKpFrQ-2",
+          "playerName": "Rollessecond",
+          "rank": 10,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "RHwCWMmVxgZKpFrQ",
+          "fightId": 2,
+          "timestamp": 255982,
+          "t": "4:15",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Rollessecond"
+        }
+      ]
     },
     {
       "key": "4:16",
@@ -7828,7 +10919,25 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 256729,
+          "t": "4:16",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "尼古丶丁"
+        }
+      ]
     },
     {
       "key": "4:18",
@@ -7947,7 +11056,100 @@
           "sampleCount": 10
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "9VQHJgFMnRbqw3cZ-17",
+          "playerName": "阿伦儿",
+          "rank": 6,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "9VQHJgFMnRbqw3cZ",
+          "fightId": 17,
+          "timestamp": 258697,
+          "t": "4:18",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "阿伦儿"
+        }
+      ]
+    },
+    {
+      "key": "4:20",
+      "t": "4:20",
+      "timestamp": 260721,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 260721,
+          "t": "4:20",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "4:24",
+      "t": "4:24",
+      "timestamp": 264012,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 264012,
+          "t": "4:24",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Qimoo"
+        }
+      ]
+    },
+    {
+      "key": "4:27",
+      "t": "4:27",
+      "timestamp": 267224,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 267224,
+          "t": "4:27",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
     },
     {
       "key": "4:31",
@@ -7996,7 +11198,25 @@
           "sampleCount": 3
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 271868,
+          "t": "4:31",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "放弃治疗"
+        }
+      ]
     },
     {
       "key": "4:32",
@@ -8038,6 +11258,56 @@
       "classEntries": []
     },
     {
+      "key": "4:34",
+      "t": "4:34",
+      "timestamp": 274518,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 274518,
+          "t": "4:34",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
+      "key": "4:38",
+      "t": "4:38",
+      "timestamp": 278864,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 278864,
+          "t": "4:38",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "夏尔"
+        }
+      ]
+    },
+    {
       "key": "4:39",
       "t": "4:39",
       "timestamp": 279591,
@@ -8067,6 +11337,81 @@
       "classEntries": []
     },
     {
+      "key": "4:40",
+      "t": "4:40",
+      "timestamp": 280308,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 280308,
+          "t": "4:40",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "米什德文"
+        }
+      ]
+    },
+    {
+      "key": "4:42",
+      "t": "4:42",
+      "timestamp": 282461,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 282461,
+          "t": "4:42",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "4:46",
+      "t": "4:46",
+      "timestamp": 286238,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 286238,
+          "t": "4:46",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "Qimoo"
+        }
+      ]
+    },
+    {
       "key": "4:48",
       "t": "4:48",
       "timestamp": 288225,
@@ -8094,6 +11439,148 @@
         }
       ],
       "classEntries": []
+    },
+    {
+      "key": "4:55",
+      "t": "4:55",
+      "timestamp": 295650,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "n37hYBr1aVDFNbtP-10",
+          "playerName": "米什德文",
+          "rank": 2,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "n37hYBr1aVDFNbtP",
+          "fightId": 10,
+          "timestamp": 295650,
+          "t": "4:55",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "米什德文"
+        }
+      ]
+    },
+    {
+      "key": "4:59",
+      "t": "4:59",
+      "timestamp": 299506,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "vYpMx1TBtd2FrPcX-4",
+          "playerName": "流光飞舞丶",
+          "rank": 8,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "vYpMx1TBtd2FrPcX",
+          "fightId": 4,
+          "timestamp": 299506,
+          "t": "4:59",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "流光飞舞丶"
+        }
+      ]
+    },
+    {
+      "key": "5:02",
+      "t": "5:02",
+      "timestamp": 302593,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "4C2f7rDHJwpBmRvK-4",
+          "playerName": "放弃治疗",
+          "rank": 1,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "4C2f7rDHJwpBmRvK",
+          "fightId": 4,
+          "timestamp": 302593,
+          "t": "5:02",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "放弃治疗"
+        }
+      ]
+    },
+    {
+      "key": "5:03",
+      "t": "5:03",
+      "timestamp": 303857,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 303857,
+          "t": "5:03",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "尼古丶丁"
+        }
+      ]
+    },
+    {
+      "key": "5:05",
+      "t": "5:05",
+      "timestamp": 305495,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "VAHMNnzK4Z7WFLPc-31",
+          "playerName": "夏尔",
+          "rank": 5,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "VAHMNnzK4Z7WFLPc",
+          "fightId": 31,
+          "timestamp": 305495,
+          "t": "5:05",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "夏尔"
+        },
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 305803,
+          "t": "5:05",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
     },
     {
       "key": "5:06",
@@ -8195,9 +11682,59 @@
       "classEntries": []
     },
     {
+      "key": "5:12",
+      "t": "5:12",
+      "timestamp": 312080,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 312080,
+          "t": "5:12",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
+      "key": "5:13",
+      "t": "5:13",
+      "timestamp": 313303,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Gz9WmVrfb841aFC3-9",
+          "playerName": "朵拉爱蹦迪",
+          "rank": 9,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Gz9WmVrfb841aFC3",
+          "fightId": 9,
+          "timestamp": 313303,
+          "t": "5:13",
+          "abilityGameId": 200183,
+          "abilityName": "神圣化身",
+          "abilityLabel": "神圣化身",
+          "sourceName": "朵拉爱蹦迪"
+        }
+      ]
+    },
+    {
       "key": "5:19",
       "t": "5:19",
-      "timestamp": 319972,
+      "timestamp": 319790,
       "bossEntries": [
         {
           "key": "1249265:5:19",
@@ -8221,7 +11758,25 @@
           "sampleCount": 1
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "2yL3qhRMAvm4pJkc-8",
+          "playerName": "尼古丶丁",
+          "rank": 4,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "2yL3qhRMAvm4pJkc",
+          "fightId": 8,
+          "timestamp": 319790,
+          "t": "5:19",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "尼古丶丁"
+        }
+      ]
     },
     {
       "key": "5:20",
@@ -8293,9 +11848,34 @@
       "classEntries": []
     },
     {
+      "key": "5:23",
+      "t": "5:23",
+      "timestamp": 323872,
+      "bossEntries": [],
+      "classEntries": [
+        {
+          "sampleId": "Mjv14nXg8LPZpGaR-24",
+          "playerName": "栀子花香",
+          "rank": 7,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "Mjv14nXg8LPZpGaR",
+          "fightId": 24,
+          "timestamp": 323872,
+          "t": "5:23",
+          "abilityGameId": 64843,
+          "abilityName": "神圣赞美诗",
+          "abilityLabel": "神圣赞美诗",
+          "sourceName": "栀子花香"
+        }
+      ]
+    },
+    {
       "key": "5:25",
       "t": "5:25",
-      "timestamp": 325519,
+      "timestamp": 325366,
       "bossEntries": [
         {
           "key": "1249266:5:25",
@@ -8359,7 +11939,25 @@
           "sampleCount": 5
         }
       ],
-      "classEntries": []
+      "classEntries": [
+        {
+          "sampleId": "GHkQx4cPd13ha76v-6",
+          "playerName": "Qimoo",
+          "rank": 3,
+          "className": "Priest",
+          "classLabel": "牧师",
+          "specName": "Holy",
+          "heroTalent": null,
+          "reportCode": "GHkQx4cPd13ha76v",
+          "fightId": 6,
+          "timestamp": 325366,
+          "t": "5:25",
+          "abilityGameId": 120517,
+          "abilityName": "光晕",
+          "abilityLabel": "光晕",
+          "sourceName": "Qimoo"
+        }
+      ]
     },
     {
       "key": "5:33",

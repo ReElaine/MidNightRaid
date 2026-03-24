@@ -119,10 +119,41 @@
         "label": "虚空坠落"
       }
     ],
-    "classes": [],
-    "specs": {},
-    "heroTalents": {},
-    "classAbilities": {}
+    "classes": [
+      {
+        "key": "Priest",
+        "label": "牧师"
+      }
+    ],
+    "specs": {
+      "Priest": [
+        {
+          "key": "Holy",
+          "label": "Holy"
+        }
+      ]
+    },
+    "heroTalents": {
+      "Priest": {
+        "Holy": []
+      }
+    },
+    "classAbilities": {
+      "Priest": [
+        {
+          "key": "120517",
+          "label": "光晕"
+        },
+        {
+          "key": "200183",
+          "label": "神圣化身"
+        },
+        {
+          "key": "64843",
+          "label": "神圣赞美诗"
+        }
+      ]
+    }
   },
   "timeline": [
     {
@@ -766,5 +797,156 @@
       "sourceName": "元首阿福扎恩"
     }
   ],
-  "classTimeline": []
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:23",
+      "timestamp": 23630,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:28",
+      "timestamp": 28319,
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:22",
+      "timestamp": 82242,
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:27",
+      "timestamp": 87495,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:31",
+      "timestamp": 151732,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:56",
+      "timestamp": 176246,
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:33",
+      "timestamp": 213019,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:52",
+      "timestamp": 232211,
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "4:38",
+      "timestamp": 278864,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "5:05",
+      "timestamp": 305495,
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "type": "cast",
+      "sourceId": 862,
+      "sourceName": "夏尔",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    }
+  ]
 }

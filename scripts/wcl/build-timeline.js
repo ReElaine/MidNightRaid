@@ -3,7 +3,7 @@ const { WCL_TIMELINES_ROOT } = require("./config");
 const { fetchFightEvents } = require("./fetch-events");
 const { fetchReportFights, fetchReportPlayerDetails, findFight } = require("./fetch-report");
 const { detectHeroTalent } = require("./hero-talents");
-const { formatTimestamp, getBossMappingEntry, getTimelineFilterSet, getTimelinePreset, toNumberSet, writeJson } = require("./utils");
+const { formatTimestamp, getBossMappingEntry, getTimelineFilterSet, getTimelinePreset, loadFetchPolicy, toNumberSet, writeJson } = require("./utils");
 
 function buildActorSets(fight) {
   return {
@@ -150,6 +150,84 @@ function buildClassPresetIndex(preset) {
   };
 }
 
+function getRelevantFriendlySourceIds(report, preset, playerDetailsMap) {
+  const presetIndex = buildClassPresetIndex(preset);
+  const ids = new Set();
+
+  for (const actor of report.actorMap.values()) {
+    if (actor?.type !== "Player") {
+      continue;
+    }
+
+    const classConfig = presetIndex.byClass.get(actor.subType);
+    if (!classConfig) {
+      continue;
+    }
+
+    const playerDetails = playerDetailsMap.get(Number(actor.id));
+    if (!playerDetails) {
+      continue;
+    }
+
+    const hasMatchingAbility = [...classConfig.abilities.values()].some((abilityPreset) =>
+      eventMatchesClassPreset(playerDetails, abilityPreset, detectHeroTalent(playerDetails, preset))
+    );
+
+    if (hasMatchingAbility) {
+      ids.add(Number(actor.id));
+    }
+  }
+
+  return ids;
+}
+
+async function fetchRelevantFriendlyCastEvents(reportCode, fight, relevantFriendlySourceIds, options = {}) {
+  const policy = loadFetchPolicy();
+  const windowMs = options.windowMs || policy.events?.friendlyWindowMs || 60000;
+  const sliceLimit = options.sliceLimit || policy.events?.friendlySliceLimit || 5000;
+  const eventMap = new Map();
+  let pageCount = 0;
+
+  for (let startTime = Number(fight.startTime); startTime <= Number(fight.endTime); startTime += windowMs) {
+    const endTime = Math.min(Number(fight.endTime), startTime + windowMs - 1);
+    const result = await fetchFightEvents(reportCode, fight.id, {
+      dataTypes: ["Casts"],
+      hostilityType: "Friendlies",
+      translate: false,
+      startTime,
+      endTime,
+      limit: sliceLimit
+    });
+
+    pageCount += result.pageCount;
+
+    for (const event of result.events) {
+      if (!relevantFriendlySourceIds.has(Number(event.sourceID))) {
+        continue;
+      }
+
+      const dedupeKey = [
+        event.timestamp,
+        event.sourceID,
+        event.sourceInstance || "",
+        event.targetID || "",
+        event.abilityGameID,
+        event.type,
+        event.fake ? "1" : "0"
+      ].join(":");
+
+      eventMap.set(dedupeKey, event);
+    }
+  }
+
+  return {
+    reportCode,
+    fightId: fight.id,
+    pageCount,
+    events: [...eventMap.values()].sort((left, right) => Number(left.timestamp) - Number(right.timestamp))
+  };
+}
+
 function buildClassTimeline(report, fight, events, preset, playerDetailsMap) {
   const actorSets = buildActorSets(fight);
   const presetIndex = buildClassPresetIndex(preset);
@@ -289,20 +367,20 @@ async function buildTimeline(reportInput, selector, options = {}) {
   }
 
   const filterSet = getTimelineFilterSet(fight.bossName);
-  const [enemyEventResult, friendlyEventResult, playerDetails] = await Promise.all([
+  const mapping = getBossMappingEntry(fight.bossName);
+  const preset = getTimelinePreset(mapping.slug || fight.bossName);
+  const playerDetails = await fetchReportPlayerDetails(report.reportCode, {
+    fightId: fight.id,
+    translate: false,
+    includeCombatantInfo: true
+  });
+  const relevantFriendlySourceIds = getRelevantFriendlySourceIds(report, preset, playerDetails.playerMap);
+  const [enemyEventResult, friendlyEventResult] = await Promise.all([
     fetchFightEvents(report.reportCode, fight.id, {
       dataTypes: filterSet.graphQlDataTypes || ["Casts"],
       hostilityType: "Enemies"
     }),
-    fetchFightEvents(report.reportCode, fight.id, {
-      dataTypes: ["Casts"],
-      hostilityType: "Friendlies"
-    }),
-    fetchReportPlayerDetails(report.reportCode, {
-      fightId: fight.id,
-      translate: false,
-      includeCombatantInfo: true
-    })
+    fetchRelevantFriendlyCastEvents(report.reportCode, fight, relevantFriendlySourceIds, options)
   ]);
 
   const payload = buildTimelinePayload(report, fight, enemyEventResult.events, friendlyEventResult.events, playerDetails.playerMap);
@@ -324,6 +402,8 @@ module.exports = {
   buildTimeline,
   buildTimelinePayload,
   eventMatchesFilters,
+  fetchRelevantFriendlyCastEvents,
+  getRelevantFriendlySourceIds,
   getOutputPath,
   normalizeBossTimelineEvent,
   normalizeClassTimelineEvent

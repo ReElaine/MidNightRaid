@@ -7,6 +7,7 @@ const {
   buildTimelinePayload,
   buildClassTimeline,
   eventMatchesFilters,
+  getRelevantFriendlySourceIds,
   normalizeBossTimelineEvent
 } = require("../scripts/wcl/build-timeline.js");
 
@@ -98,6 +99,35 @@ test("buildClassTimeline extracts preset friendly player skills", () => {
   assert.equal(timeline[0].className, "Priest");
   assert.equal(timeline[0].specName, "Holy");
   assert.equal(timeline[0].abilityLabel, "光晕");
+});
+
+test("getRelevantFriendlySourceIds keeps only preset-matching class players", () => {
+  const report = {
+    actorMap: new Map([
+      [3, { id: 3, name: "测试神牧", type: "Player", subType: "Priest" }],
+      [4, { id: 4, name: "测试法师", type: "Player", subType: "Mage" }]
+    ])
+  };
+  const preset = {
+    heroTalent: {
+      overridesByPlayer: {},
+      overridesByClassSpec: {},
+      detectByClassSpec: {}
+    },
+    classes: {
+      Priest: {
+        label: "牧师",
+        abilities: [{ gameId: 120517, label: "光晕", specs: ["Holy"] }]
+      }
+    }
+  };
+  const playerDetailsMap = new Map([
+    [3, { id: 3, name: "测试神牧", className: "Priest", specName: "Holy" }],
+    [4, { id: 4, name: "测试法师", className: "Mage", specName: "Fire" }]
+  ]);
+
+  const ids = getRelevantFriendlySourceIds(report, preset, playerDetailsMap);
+  assert.deepEqual([...ids], [3]);
 });
 
 test("buildClassTimeline respects spec restrictions from preset", () => {

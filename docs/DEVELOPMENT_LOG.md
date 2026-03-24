@@ -1,5 +1,13 @@
 # Development Log
 
+## 2026-03-24 / segmented friendly cast fetching
+
+- Fixed late-fight Holy Priest cooldowns being truncated from timeline data.
+- Root cause: pulling all friendly casts for a long fight in one request could still cut off later events.
+- `scripts/wcl/build-timeline.js` now fetches friendly cast events in multiple time windows and merges them back into one class timeline.
+- After each window is fetched, only target class / spec player casts are kept.
+- This change restored later casts such as repeated `神圣化身` and `神圣赞美诗` in long samples.
+
 ## 2026-03-24 / dual-track timeline refresh
 
 - Boss study view no longer tries to match boss mechanics with priest cooldowns inside a response window.

@@ -41,3 +41,11 @@ npm run wcl:boss -- "Imperator Averzian" 2 4 --class Priest --spec Holy --metric
 ```powershell
 npm run wcl:fetch -- 4C2f7rDHJwpBmRvK 4
 ```
+
+## 友方技能抓取说明
+
+- 当前友方职业技能不是整场一次性抓取，而是按时间窗口分段抓取。
+- 每段只保留目标职业 / 专精玩家的施法事件，再拼回完整时间轴。
+- 如果后面又出现“战斗后半段大技能缺失”，优先检查：
+  - `scripts/wcl/build-timeline.js`
+  - `scripts/wcl/fetch-policy.json`

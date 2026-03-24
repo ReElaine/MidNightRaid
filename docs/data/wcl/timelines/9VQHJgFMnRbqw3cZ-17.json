@@ -151,6 +151,10 @@
         {
           "key": "200183",
           "label": "神圣化身"
+        },
+        {
+          "key": "64843",
+          "label": "神圣赞美诗"
         }
       ]
     }
@@ -820,6 +824,96 @@
       "abilityGameId": 200183,
       "abilityName": "神圣化身",
       "abilityLabel": "神圣化身",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:12",
+      "timestamp": 72531,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:37",
+      "timestamp": 97509,
+      "abilityGameId": 64843,
+      "abilityName": "神圣赞美诗",
+      "abilityLabel": "神圣赞美诗",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:15",
+      "timestamp": 135878,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:54",
+      "timestamp": 174678,
+      "abilityGameId": 200183,
+      "abilityName": "神圣化身",
+      "abilityLabel": "神圣化身",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:17",
+      "timestamp": 197582,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
+      "type": "cast",
+      "sourceId": 63,
+      "sourceName": "阿伦儿",
+      "className": "Priest",
+      "classLabel": "牧师",
+      "specName": "Holy",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "4:18",
+      "timestamp": 258697,
+      "abilityGameId": 120517,
+      "abilityName": "光晕",
+      "abilityLabel": "光晕",
       "type": "cast",
       "sourceId": 63,
       "sourceName": "阿伦儿",
