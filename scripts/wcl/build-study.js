@@ -46,51 +46,42 @@ function buildSampleSummary(rankings, timelinePayloads) {
 }
 
 function buildBossTrack(timelinePayloads, sampleMap) {
-  const grouped = new Map();
+  const entries = [];
 
   for (const timeline of timelinePayloads) {
     const sampleId = `${timeline.reportCode}-${timeline.fightId}`;
     const sample = sampleMap.get(sampleId);
 
     for (const entry of timeline.bossTimeline || []) {
-      const key = `${entry.abilityGameId}:${entry.t}`;
-      const current = grouped.get(key) || {
-        key,
-        abilityGameId: entry.abilityGameId,
-        abilityName: entry.abilityName,
-        abilityLabel: entry.abilityLabel || entry.abilityName,
-        timestamp: entry.timestamp,
-        t: entry.t,
-        entries: []
-      };
-
-      current.entries.push({
+      entries.push({
+        key: `${sampleId}:${entry.abilityGameId}:${entry.timestamp}`,
         sampleId,
         playerName: sample?.playerName || null,
         rank: sample?.rank ?? null,
         reportCode: timeline.reportCode,
         fightId: timeline.fightId,
+        abilityGameId: entry.abilityGameId,
+        abilityName: entry.abilityName,
+        abilityLabel: entry.abilityLabel || entry.abilityName,
         timestamp: entry.timestamp,
         t: entry.t,
-        sourceName: entry.sourceName || null
+        sourceName: entry.sourceName || null,
+        sourceLabel: sample?.playerName
+          ? `${sample.playerName}${sample.rank ? ` #${sample.rank}` : ""}`
+          : sampleId
       });
-      current.timestamp = Math.min(current.timestamp, entry.timestamp);
-      grouped.set(key, current);
     }
   }
 
-  return [...grouped.values()]
-    .map((group) => ({
-      ...group,
-      sampleCount: new Set(group.entries.map((entry) => entry.sampleId)).size,
-      entries: group.entries.sort((left, right) => {
-        if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
-          return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
-        }
-        return left.timestamp - right.timestamp;
-      })
-    }))
-    .sort((left, right) => left.timestamp - right.timestamp || left.abilityLabel.localeCompare(right.abilityLabel));
+  return entries.sort((left, right) => {
+    if (left.timestamp !== right.timestamp) {
+      return left.timestamp - right.timestamp;
+    }
+    if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
+      return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
+    }
+    return left.abilityLabel.localeCompare(right.abilityLabel);
+  });
 }
 
 function buildClassTrack(timelinePayloads, sampleMap) {
@@ -166,7 +157,15 @@ function buildTimelineRows(bossTrack, classTrack) {
   return [...rowMap.values()]
     .map((row) => ({
       ...row,
-      bossEntries: row.bossEntries.sort((left, right) => left.timestamp - right.timestamp || left.abilityLabel.localeCompare(right.abilityLabel)),
+      bossEntries: row.bossEntries.sort((left, right) => {
+        if (left.timestamp !== right.timestamp) {
+          return left.timestamp - right.timestamp;
+        }
+        if ((left.rank ?? Number.MAX_SAFE_INTEGER) !== (right.rank ?? Number.MAX_SAFE_INTEGER)) {
+          return (left.rank ?? Number.MAX_SAFE_INTEGER) - (right.rank ?? Number.MAX_SAFE_INTEGER);
+        }
+        return left.abilityLabel.localeCompare(right.abilityLabel);
+      }),
       classEntries: row.classEntries.sort((left, right) => {
         if (left.timestamp !== right.timestamp) {
           return left.timestamp - right.timestamp;

@@ -160,6 +160,29 @@
     },
     {
       "rank": 7,
+      "playerName": "药箱",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 116035.77758274,
+      "duration": 353210,
+      "startTime": 1774359573306,
+      "reportCode": "TVFwYgMz2dx3NRhb",
+      "fightId": 1,
+      "reportStartTime": 1774359175035,
+      "hardModeLevel": 0,
+      "bracketData": 250,
+      "size": 29,
+      "faction": 1,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
       "playerName": "Silverstar",
       "className": "Priest",
       "specName": "Holy",
@@ -186,7 +209,7 @@
       "heroTalent": null
     },
     {
-      "rank": 8,
+      "rank": 9,
       "playerName": "哎呀奶不到",
       "className": "Priest",
       "specName": "Holy",
@@ -213,7 +236,7 @@
       "heroTalent": null
     },
     {
-      "rank": 9,
+      "rank": 10,
       "playerName": "Leviackerman",
       "className": "Priest",
       "specName": "Holy",
@@ -233,33 +256,6 @@
         "region": "CN"
       },
       "guild": null,
-      "heroTalent": null
-    },
-    {
-      "rank": 10,
-      "playerName": "汇流",
-      "className": "Priest",
-      "specName": "Holy",
-      "metricValue": 113428.17539041,
-      "duration": 353862,
-      "startTime": 1773932649739,
-      "reportCode": "kmKYFM2Z8tWn3Nd4",
-      "fightId": 50,
-      "reportStartTime": 1773921214654,
-      "hardModeLevel": 0,
-      "bracketData": 250,
-      "size": 23,
-      "faction": 1,
-      "server": {
-        "id": 584,
-        "name": "凤凰之神",
-        "region": "CN"
-      },
-      "guild": {
-        "id": 412234,
-        "name": "LetMoneyDotheTalking",
-        "faction": 1
-      },
       "heroTalent": null
     }
   ],

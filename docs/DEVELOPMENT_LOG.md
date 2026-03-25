@@ -1,5 +1,12 @@
 # Development Log
 
+## 2026-03-25 / boss track source-aware filtering
+
+- Boss timeline entries are no longer merged into one aggregated event per timestamp.
+- `scripts/wcl/build-study.js` now writes boss-side entries per sample, keeping source information such as rank and player.
+- On the frontend, filtering class abilities now also narrows the boss track to the same visible sample set.
+- This makes the left lane and right lane comparable without forcing automatic mechanic matching.
+
 ## 2026-03-24 / H3 data and frontend registration
 
 - Pulled fresh H3 Holy Priest top 10 HPS samples for `陨落之王萨哈达尔`.

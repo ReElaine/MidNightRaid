@@ -24,9 +24,10 @@ function renderStudyLink(boss, options) {
 function renderBossTrackEntry(entry) {
   return `
     <article class="timeline-entry timeline-entry--boss">
-      <div class="timeline-entry__title">
-        ${escapeHtml(entry.abilityLabel)}
-        <span class="timeline-entry__count">${escapeHtml(entry.sampleCount)} 份</span>
+      <div class="timeline-entry__inline">
+        <span class="timeline-entry__title">${escapeHtml(entry.abilityLabel)}</span>
+        ${entry.rank ? `<span class="timeline-entry__rank">#${escapeHtml(entry.rank)}</span>` : ""}
+        <span class="timeline-entry__meta">${escapeHtml(entry.sourceLabel || entry.playerName || entry.sampleId || "")}</span>
       </div>
     </article>
   `;

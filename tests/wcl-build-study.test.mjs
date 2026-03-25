@@ -46,6 +46,8 @@ test("buildStudyPayload builds aggregated dual-track rows", () => {
   );
   assert.equal(payload.timelineRows[0].classEntries[0].playerName, "Alice");
   assert.equal(payload.timelineRows[1].bossEntries[0].abilityLabel, "Shadow's Advance");
+  assert.equal(payload.timelineRows[1].bossEntries[0].playerName, "Alice");
+  assert.equal(payload.timelineRows[1].bossEntries[0].sourceLabel, "Alice #1");
   assert.equal(payload.timelineRows[3].classEntries[0].abilityLabel, "Combustion");
   assert.equal(payload.filters.classAbilities.length, 2);
 });

@@ -64,6 +64,33 @@
     },
     {
       "rank": 3,
+      "playerName": "路小飞灬",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 124136.92500061,
+      "duration": 370283,
+      "startTime": 1774358203890,
+      "reportCode": "k8LANZWmdhxBKVqH",
+      "fightId": 27,
+      "reportStartTime": 1774353408664,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 23,
+      "faction": 1,
+      "server": {
+        "id": 676,
+        "name": "影之哀伤",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 781743,
+        "name": "魔都红人馆",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 4,
       "playerName": "Konakona",
       "className": "Priest",
       "specName": "Holy",
@@ -90,7 +117,7 @@
       "heroTalent": null
     },
     {
-      "rank": 4,
+      "rank": 5,
       "playerName": "粉嘟嘟",
       "className": "Priest",
       "specName": "Holy",
@@ -117,7 +144,7 @@
       "heroTalent": null
     },
     {
-      "rank": 5,
+      "rank": 6,
       "playerName": "洛杉叽狐人",
       "className": "Priest",
       "specName": "Holy",
@@ -140,7 +167,30 @@
       "heroTalent": null
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "playerName": "血色丶冰咖啡",
+      "className": "Priest",
+      "specName": "Holy",
+      "metricValue": 119562.93306408,
+      "duration": 403087,
+      "startTime": 1774268844312,
+      "reportCode": "M61c4fHqJKR8nBYQ",
+      "fightId": 1,
+      "reportStartTime": 1774265486151,
+      "hardModeLevel": 0,
+      "bracketData": 255,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 851,
+        "name": "通灵学院",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
       "playerName": "安奇翋",
       "className": "Priest",
       "specName": "Holy",
@@ -163,7 +213,7 @@
       "heroTalent": null
     },
     {
-      "rank": 7,
+      "rank": 9,
       "playerName": "小雪童子",
       "className": "Priest",
       "specName": "Holy",
@@ -186,7 +236,7 @@
       "heroTalent": null
     },
     {
-      "rank": 8,
+      "rank": 10,
       "playerName": "大白灬",
       "className": "Priest",
       "specName": "Holy",
@@ -203,52 +253,6 @@
       "server": {
         "id": 594,
         "name": "加里索斯",
-        "region": "CN"
-      },
-      "guild": null,
-      "heroTalent": null
-    },
-    {
-      "rank": 9,
-      "playerName": "和栗熏子",
-      "className": "Priest",
-      "specName": "Holy",
-      "metricValue": 115516.34328733,
-      "duration": 338457,
-      "startTime": 1774072962468,
-      "reportCode": "LtdFkjgqrypXKWTa",
-      "fightId": 65,
-      "reportStartTime": 1774056565366,
-      "hardModeLevel": 0,
-      "bracketData": 246,
-      "size": 25,
-      "faction": 0,
-      "server": {
-        "id": 778,
-        "name": "神圣之歌",
-        "region": "CN"
-      },
-      "guild": null,
-      "heroTalent": null
-    },
-    {
-      "rank": 10,
-      "playerName": "巧克力叉烧饭",
-      "className": "Priest",
-      "specName": "Holy",
-      "metricValue": 115431.71784379,
-      "duration": 384156,
-      "startTime": 1774058787921,
-      "reportCode": "nrA1JP4WdTkC2HRN",
-      "fightId": 24,
-      "reportStartTime": 1774053850738,
-      "hardModeLevel": 0,
-      "bracketData": 252,
-      "size": 25,
-      "faction": 1,
-      "server": {
-        "id": 697,
-        "name": "无尽之海",
         "region": "CN"
       },
       "guild": null,
