@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -167,14 +185,6 @@
         {
           "key": "200166",
           "label": "恶魔变形"
-        },
-        {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
-          "key": "258920",
-          "label": "献祭光环"
         }
       ]
     }
@@ -3582,36 +3592,6 @@
     },
     {
       "lane": "class",
-      "t": "0:13",
-      "timestamp": 13163,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:37",
-      "timestamp": 37338,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:41",
       "timestamp": 41004,
       "abilityGameId": 198013,
@@ -3642,36 +3622,6 @@
     },
     {
       "lane": "class",
-      "t": "1:16",
-      "timestamp": 76418,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:18",
-      "timestamp": 78490,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:30",
       "timestamp": 90417,
       "abilityGameId": 198013,
@@ -3687,41 +3637,11 @@
     },
     {
       "lane": "class",
-      "t": "1:34",
-      "timestamp": 94378,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:51",
       "timestamp": 111496,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:55",
-      "timestamp": 115555,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 25,
       "sourceName": "Moga",
@@ -3762,56 +3682,11 @@
     },
     {
       "lane": "class",
-      "t": "2:28",
-      "timestamp": 148195,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:01",
-      "timestamp": 181904,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:09",
       "timestamp": 189811,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:30",
-      "timestamp": 210983,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 25,
       "sourceName": "Moga",
@@ -3837,41 +3712,11 @@
     },
     {
       "lane": "class",
-      "t": "3:37",
-      "timestamp": 217490,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:52",
       "timestamp": 232759,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 25,
-      "sourceName": "Moga",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:56",
-      "timestamp": 236508,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 25,
       "sourceName": "Moga",

@@ -97,8 +97,8 @@ function eventMatchesClassPreset(playerDetails, abilityPreset, heroTalent) {
   return true;
 }
 
-function normalizeClassTimelineEvent(event, fight, abilityMap, actorMap, playerDetails, abilityPreset, heroTalent) {
-  const actor = getSourceActor(event, actorMap);
+function normalizeClassTimelineEvent(event, fight, abilityMap, actorMap, playerDetails, abilityPreset, heroTalent, actorOverride = null) {
+  const actor = actorOverride || getSourceActor(event, actorMap);
   const timestamp = Math.max(0, Number(event.timestamp) - Number(fight.startTime));
   return {
     lane: "class",
@@ -150,6 +150,55 @@ function buildClassPresetIndex(preset) {
   };
 }
 
+function scopePresetToSelection(preset, options = {}) {
+  const selectedClassName = options.className || null;
+  const selectedSpecName = options.specName || null;
+
+  if (!selectedClassName) {
+    return preset;
+  }
+
+  const classConfig = preset.classes?.[selectedClassName];
+  if (!classConfig) {
+    return {
+      ...preset,
+      classes: {}
+    };
+  }
+
+  const filteredAbilities = (classConfig.abilities || []).filter((ability) => {
+    if (!selectedSpecName || !ability.specs?.length) {
+      return true;
+    }
+
+    return ability.specs.includes(selectedSpecName);
+  });
+
+  return {
+    ...preset,
+    classes: {
+      [selectedClassName]: {
+        ...classConfig,
+        abilities: filteredAbilities
+      }
+    }
+  };
+}
+
+function getFriendlyEventTypesForPreset(preset) {
+  const dataTypes = new Set(["Casts"]);
+
+  for (const classConfig of Object.values(preset.classes || {})) {
+    for (const ability of classConfig.abilities || []) {
+      for (const dataType of ability.dataTypes || []) {
+        dataTypes.add(dataType);
+      }
+    }
+  }
+
+  return [...dataTypes];
+}
+
 function getRelevantFriendlySourceIds(report, preset, playerDetailsMap) {
   const presetIndex = buildClassPresetIndex(preset);
   const ids = new Set();
@@ -185,13 +234,14 @@ async function fetchRelevantFriendlyCastEvents(reportCode, fight, relevantFriend
   const policy = loadFetchPolicy();
   const windowMs = options.windowMs || policy.events?.friendlyWindowMs || 60000;
   const sliceLimit = options.sliceLimit || policy.events?.friendlySliceLimit || 5000;
+  const dataTypes = options.dataTypes?.length ? options.dataTypes : ["Casts"];
   const eventMap = new Map();
   let pageCount = 0;
 
   for (let startTime = Number(fight.startTime); startTime <= Number(fight.endTime); startTime += windowMs) {
     const endTime = Math.min(Number(fight.endTime), startTime + windowMs - 1);
     const result = await fetchFightEvents(reportCode, fight.id, {
-      dataTypes: ["Casts"],
+      dataTypes,
       hostilityType: "Friendlies",
       translate: false,
       startTime,
@@ -202,7 +252,9 @@ async function fetchRelevantFriendlyCastEvents(reportCode, fight, relevantFriend
     pageCount += result.pageCount;
 
     for (const event of result.events) {
-      if (!relevantFriendlySourceIds.has(Number(event.sourceID))) {
+      const sourceId = Number(event.sourceID);
+      const targetId = Number(event.targetID);
+      if (!relevantFriendlySourceIds.has(sourceId) && !relevantFriendlySourceIds.has(targetId)) {
         continue;
       }
 
@@ -235,16 +287,14 @@ function buildClassTimeline(report, fight, events, preset, playerDetailsMap) {
   return events
     .filter((event) => {
       const eventType = String(event.type || "").toLowerCase();
-      if (eventType !== "cast") {
-        return false;
-      }
-
       const sourceId = Number(event.sourceID);
-      if (!actorSets.friendlyIds.has(sourceId)) {
+      const targetId = Number(event.targetID);
+      const candidateId = actorSets.friendlyIds.has(sourceId) ? sourceId : targetId;
+      if (!candidateId || !actorSets.friendlyIds.has(candidateId)) {
         return false;
       }
 
-      const actor = getSourceActor(event, report.actorMap);
+      const actor = report.actorMap.get(candidateId);
       if (!actor || actor.type !== "Player") {
         return false;
       }
@@ -255,15 +305,27 @@ function buildClassTimeline(report, fight, events, preset, playerDetailsMap) {
       }
 
       const abilityPreset = classConfig.abilities.get(Number(event.abilityGameID));
-      const playerDetails = playerDetailsMap.get(sourceId);
+      if (!abilityPreset) {
+        return false;
+      }
+
+      const allowedEventTypes = new Set((abilityPreset.eventTypes || ["cast"]).map((item) => String(item).toLowerCase()));
+      if (!allowedEventTypes.has(eventType)) {
+        return false;
+      }
+
+      const playerDetails = playerDetailsMap.get(candidateId);
       const heroTalent = detectHeroTalent(playerDetails, preset);
       return eventMatchesClassPreset(playerDetails, abilityPreset, heroTalent);
     })
     .map((event) => {
-      const actor = getSourceActor(event, report.actorMap);
+      const sourceId = Number(event.sourceID);
+      const targetId = Number(event.targetID);
+      const actorId = actorSets.friendlyIds.has(sourceId) ? sourceId : targetId;
+      const actor = report.actorMap.get(actorId);
       const classConfig = presetIndex.byClass.get(actor.subType);
       const abilityPreset = classConfig.abilities.get(Number(event.abilityGameID));
-      const playerDetails = playerDetailsMap.get(Number(event.sourceID));
+      const playerDetails = playerDetailsMap.get(actorId);
       const heroTalent = detectHeroTalent(playerDetails, preset);
       return normalizeClassTimelineEvent(
         event,
@@ -275,7 +337,8 @@ function buildClassTimeline(report, fight, events, preset, playerDetailsMap) {
           ...abilityPreset,
           classLabel: classConfig.classLabel
         },
-        heroTalent
+        heroTalent,
+        actor
       );
     })
     .sort((left, right) => left.timestamp - right.timestamp);
@@ -368,7 +431,7 @@ async function buildTimeline(reportInput, selector, options = {}) {
 
   const filterSet = getTimelineFilterSet(fight.bossName);
   const mapping = getBossMappingEntry(fight.bossName);
-  const preset = getTimelinePreset(mapping.slug || fight.bossName);
+  const preset = scopePresetToSelection(getTimelinePreset(mapping.slug || fight.bossName), options);
   const playerDetails = await fetchReportPlayerDetails(report.reportCode, {
     fightId: fight.id,
     translate: false,
@@ -380,7 +443,10 @@ async function buildTimeline(reportInput, selector, options = {}) {
       dataTypes: filterSet.graphQlDataTypes || ["Casts"],
       hostilityType: "Enemies"
     }),
-    fetchRelevantFriendlyCastEvents(report.reportCode, fight, relevantFriendlySourceIds, options)
+    fetchRelevantFriendlyCastEvents(report.reportCode, fight, relevantFriendlySourceIds, {
+      ...options,
+      dataTypes: getFriendlyEventTypesForPreset(preset)
+    })
   ]);
 
   const payload = buildTimelinePayload(report, fight, enemyEventResult.events, friendlyEventResult.events, playerDetails.playerMap);

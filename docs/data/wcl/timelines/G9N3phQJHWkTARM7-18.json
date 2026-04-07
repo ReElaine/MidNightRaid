@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -161,16 +179,8 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "258920",
-          "label": "献祭光环"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
-        },
-        {
-          "key": "370965",
-          "label": "恶魔追击"
         },
         {
           "key": "200166",
@@ -2342,41 +2352,11 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:02",
-      "timestamp": 2278,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:06",
       "timestamp": 6960,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:08",
-      "timestamp": 8977,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 13,
       "sourceName": "小卡提希娅",
@@ -2417,56 +2397,11 @@
     },
     {
       "lane": "class",
-      "t": "0:57",
-      "timestamp": 57688,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:10",
-      "timestamp": 70469,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:11",
       "timestamp": 71449,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:20",
-      "timestamp": 80603,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 13,
       "sourceName": "小卡提希娅",
@@ -2492,21 +2427,6 @@
     },
     {
       "lane": "class",
-      "t": "1:39",
-      "timestamp": 99276,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:57",
       "timestamp": 117832,
       "abilityGameId": 198013,
@@ -2522,41 +2442,11 @@
     },
     {
       "lane": "class",
-      "t": "2:13",
-      "timestamp": 133436,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "2:18",
       "timestamp": 138252,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:20",
-      "timestamp": 140679,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 13,
       "sourceName": "小卡提希娅",
@@ -2597,21 +2487,6 @@
     },
     {
       "lane": "class",
-      "t": "3:06",
-      "timestamp": 186081,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:13",
       "timestamp": 193253,
       "abilityGameId": 198013,
@@ -2627,56 +2502,11 @@
     },
     {
       "lane": "class",
-      "t": "3:25",
-      "timestamp": 205607,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:34",
-      "timestamp": 214652,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:36",
       "timestamp": 216320,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 13,
-      "sourceName": "小卡提希娅",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:48",
-      "timestamp": 228450,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 13,
       "sourceName": "小卡提希娅",

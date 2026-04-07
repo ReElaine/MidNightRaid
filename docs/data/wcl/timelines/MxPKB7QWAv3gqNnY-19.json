@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -161,20 +179,12 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
         },
         {
           "key": "200166",
           "label": "恶魔变形"
-        },
-        {
-          "key": "258920",
-          "label": "献祭光环"
         }
       ]
     }
@@ -3596,21 +3606,6 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:02",
-      "timestamp": 2905,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:03",
       "timestamp": 3847,
       "abilityGameId": 198013,
@@ -3641,41 +3636,11 @@
     },
     {
       "lane": "class",
-      "t": "0:38",
-      "timestamp": 38197,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:41",
       "timestamp": 41328,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:06",
-      "timestamp": 66017,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 79,
       "sourceName": "断桥雪",
@@ -3701,21 +3666,6 @@
     },
     {
       "lane": "class",
-      "t": "1:16",
-      "timestamp": 76553,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:29",
       "timestamp": 89571,
       "abilityGameId": 198013,
@@ -3731,71 +3681,11 @@
     },
     {
       "lane": "class",
-      "t": "1:36",
-      "timestamp": 96702,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:49",
       "timestamp": 109959,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:04",
-      "timestamp": 124630,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:14",
-      "timestamp": 134854,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:15",
-      "timestamp": 135280,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 79,
       "sourceName": "断桥雪",
@@ -3851,56 +3741,11 @@
     },
     {
       "lane": "class",
-      "t": "3:01",
-      "timestamp": 181832,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:11",
       "timestamp": 191204,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:22",
-      "timestamp": 202749,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:27",
-      "timestamp": 207668,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 79,
       "sourceName": "断桥雪",
@@ -3926,21 +3771,6 @@
     },
     {
       "lane": "class",
-      "t": "3:44",
-      "timestamp": 224966,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:51",
       "timestamp": 231925,
       "abilityGameId": 198013,
@@ -3956,56 +3786,11 @@
     },
     {
       "lane": "class",
-      "t": "4:03",
-      "timestamp": 243939,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "4:11",
       "timestamp": 251928,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "4:20",
-      "timestamp": 260056,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 79,
-      "sourceName": "断桥雪",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "4:24",
-      "timestamp": 264744,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 79,
       "sourceName": "断桥雪",

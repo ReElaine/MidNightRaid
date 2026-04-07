@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -185,10 +203,6 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
         },
@@ -197,8 +211,8 @@
           "label": "恶魔变形"
         },
         {
-          "key": "258920",
-          "label": "献祭光环"
+          "key": "1277482",
+          "label": "坍缩之星（虚空欲望）"
         }
       ]
     }
@@ -2674,21 +2688,6 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:01",
-      "timestamp": 1825,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:02",
       "timestamp": 2844,
       "abilityGameId": 198013,
@@ -2719,6 +2718,21 @@
     },
     {
       "lane": "class",
+      "t": "0:33",
+      "timestamp": 33792,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 6,
+      "sourceName": "沈吉安",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "0:38",
       "timestamp": 38765,
       "abilityGameId": 198013,
@@ -2734,42 +2748,12 @@
     },
     {
       "lane": "class",
-      "t": "0:49",
-      "timestamp": 49230,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:06",
-      "timestamp": 66744,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:13",
-      "timestamp": 73497,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "0:47",
+      "timestamp": 47795,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 6,
       "sourceName": "沈吉安",
       "className": "DemonHunter",
@@ -2794,12 +2778,12 @@
     },
     {
       "lane": "class",
-      "t": "1:22",
-      "timestamp": 82909,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:16",
+      "timestamp": 76076,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 6,
       "sourceName": "沈吉安",
       "className": "DemonHunter",
@@ -2814,21 +2798,6 @@
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:50",
-      "timestamp": 110629,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 6,
       "sourceName": "沈吉安",
@@ -2854,12 +2823,12 @@
     },
     {
       "lane": "class",
-      "t": "2:05",
-      "timestamp": 125768,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:59",
+      "timestamp": 119132,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 6,
       "sourceName": "沈吉安",
       "className": "DemonHunter",
@@ -2914,27 +2883,12 @@
     },
     {
       "lane": "class",
-      "t": "3:03",
-      "timestamp": 183600,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:17",
-      "timestamp": 197209,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "timestamp": 197820,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 6,
       "sourceName": "沈吉安",
       "className": "DemonHunter",
@@ -2959,41 +2913,11 @@
     },
     {
       "lane": "class",
-      "t": "3:29",
-      "timestamp": 209073,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:38",
       "timestamp": 218667,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 6,
-      "sourceName": "沈吉安",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:50",
-      "timestamp": 230461,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 6,
       "sourceName": "沈吉安",
@@ -3034,12 +2958,12 @@
     },
     {
       "lane": "class",
-      "t": "4:26",
-      "timestamp": 266066,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "4:25",
+      "timestamp": 265360,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 6,
       "sourceName": "沈吉安",
       "className": "DemonHunter",

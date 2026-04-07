@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -143,10 +161,6 @@
       {
         "key": "DemonHunter",
         "label": "恶魔猎手"
-      },
-      {
-        "key": "Priest",
-        "label": "牧师"
       }
     ],
     "specs": {
@@ -155,53 +169,22 @@
           "key": "Havoc",
           "label": "Havoc"
         }
-      ],
-      "Priest": [
-        {
-          "key": "Holy",
-          "label": "Holy"
-        }
       ]
     },
     "heroTalents": {
       "DemonHunter": {
         "Havoc": []
-      },
-      "Priest": {
-        "Holy": []
       }
     },
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "258920",
-          "label": "献祭光环"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
         },
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "200166",
           "label": "恶魔变形"
-        }
-      ],
-      "Priest": [
-        {
-          "key": "120517",
-          "label": "光晕"
-        },
-        {
-          "key": "200183",
-          "label": "神圣化身"
-        },
-        {
-          "key": "64843",
-          "label": "神圣赞美诗"
         }
       ]
     }
@@ -3249,71 +3232,11 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:00",
-      "timestamp": 785,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:01",
-      "timestamp": 1546,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:02",
-      "timestamp": 2694,
-      "abilityGameId": 200183,
-      "abilityName": "神圣化身",
-      "abilityLabel": "神圣化身",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:03",
       "timestamp": 3615,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:07",
-      "timestamp": 7601,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 5,
       "sourceName": "Ryougimana",
@@ -3339,21 +3262,6 @@
     },
     {
       "lane": "class",
-      "t": "0:34",
-      "timestamp": 34680,
-      "abilityGameId": 64843,
-      "abilityName": "神圣赞美诗",
-      "abilityLabel": "神圣赞美诗",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:40",
       "timestamp": 40633,
       "abilityGameId": 198013,
@@ -3369,71 +3277,11 @@
     },
     {
       "lane": "class",
-      "t": "0:52",
-      "timestamp": 52408,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:02",
-      "timestamp": 62876,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:05",
       "timestamp": 65941,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:10",
-      "timestamp": 70574,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:12",
-      "timestamp": 72838,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 5,
       "sourceName": "Ryougimana",
@@ -3459,36 +3307,6 @@
     },
     {
       "lane": "class",
-      "t": "1:33",
-      "timestamp": 93096,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:48",
-      "timestamp": 108171,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:49",
       "timestamp": 109462,
       "abilityGameId": 198013,
@@ -3504,56 +3322,11 @@
     },
     {
       "lane": "class",
-      "t": "2:04",
-      "timestamp": 124209,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:04",
-      "timestamp": 124209,
-      "abilityGameId": 200183,
-      "abilityName": "神圣化身",
-      "abilityLabel": "神圣化身",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "2:10",
       "timestamp": 130604,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:15",
-      "timestamp": 135964,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 5,
       "sourceName": "Ryougimana",
@@ -3579,21 +3352,6 @@
     },
     {
       "lane": "class",
-      "t": "2:52",
-      "timestamp": 172889,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:05",
       "timestamp": 185220,
       "abilityGameId": 198013,
@@ -3609,71 +3367,11 @@
     },
     {
       "lane": "class",
-      "t": "3:07",
-      "timestamp": 187125,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:07",
-      "timestamp": 187291,
-      "abilityGameId": 64843,
-      "abilityName": "神圣赞美诗",
-      "abilityLabel": "神圣赞美诗",
-      "type": "cast",
-      "sourceId": 28,
-      "sourceName": "光之凯哥",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:19",
-      "timestamp": 199744,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:26",
       "timestamp": 206624,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 5,
-      "sourceName": "Ryougimana",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:32",
-      "timestamp": 212733,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
       "type": "cast",
       "sourceId": 5,
       "sourceName": "Ryougimana",

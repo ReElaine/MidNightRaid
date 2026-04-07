@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -181,20 +199,12 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
         },
         {
           "key": "200166",
           "label": "恶魔变形"
-        },
-        {
-          "key": "258920",
-          "label": "献祭光环"
         }
       ]
     }
@@ -2296,21 +2306,6 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:03",
-      "timestamp": 3976,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 10,
-      "sourceName": "卑微的工具人",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:05",
       "timestamp": 5383,
       "abilityGameId": 198013,
@@ -2356,21 +2351,6 @@
     },
     {
       "lane": "class",
-      "t": "1:24",
-      "timestamp": 84751,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 10,
-      "sourceName": "卑微的工具人",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:42",
       "timestamp": 102790,
       "abilityGameId": 198013,
@@ -2386,56 +2366,11 @@
     },
     {
       "lane": "class",
-      "t": "1:47",
-      "timestamp": 107348,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 10,
-      "sourceName": "卑微的工具人",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:58",
-      "timestamp": 118327,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 10,
-      "sourceName": "卑微的工具人",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "2:03",
       "timestamp": 123350,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 10,
-      "sourceName": "卑微的工具人",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:14",
-      "timestamp": 134063,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 10,
       "sourceName": "卑微的工具人",

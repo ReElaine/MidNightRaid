@@ -162,6 +162,39 @@ test("buildClassTimeline respects spec restrictions from preset", () => {
   assert.equal(timeline[0].abilityLabel, "神圣赞美诗");
 });
 
+test("buildClassTimeline keeps configured buff events for the selected class", () => {
+  const report = {
+    abilityMap: new Map([[393831, "邪能毁灭"]]),
+    actorMap: new Map([[23, { id: 23, name: "测试浩劫", type: "Player", subType: "DemonHunter" }]])
+  };
+  const fight = {
+    startTime: 0,
+    friendlyPlayers: [{ id: 23 }],
+    friendlyPets: [],
+    enemyNPCs: []
+  };
+  const preset = {
+    heroTalent: {
+      overridesByPlayer: {},
+      overridesByClassSpec: {},
+      detectByClassSpec: {}
+    },
+    classes: {
+      DemonHunter: {
+        label: "恶魔猎手",
+        abilities: [{ gameId: 393831, label: "根除（邪能毁灭）", specs: ["Havoc"], dataTypes: ["Buffs"], eventTypes: ["applybuff"] }]
+      }
+    }
+  };
+  const playerDetailsMap = new Map([[23, { id: 23, name: "测试浩劫", className: "DemonHunter", specName: "Havoc" }]]);
+  const events = [{ timestamp: 5000, type: "applybuff", targetID: 23, abilityGameID: 393831 }];
+
+  const timeline = buildClassTimeline(report, fight, events, preset, playerDetailsMap);
+  assert.equal(timeline.length, 1);
+  assert.equal(timeline[0].className, "DemonHunter");
+  assert.equal(timeline[0].abilityLabel, "根除（邪能毁灭）");
+});
+
 test("buildTimelinePayload outputs sorted dual-lane timeline data", () => {
   const report = {
     reportCode: "RPT123",

@@ -57,7 +57,10 @@ async function main() {
         continue;
       }
 
-      const timeline = await buildTimeline(entry.reportCode, entry.fightId);
+      const timeline = await buildTimeline(entry.reportCode, entry.fightId, {
+        className: rankings.className,
+        specName: rankings.specName
+      });
       timelines.push(timeline);
       outputs.push({
         rank: entry.rank,

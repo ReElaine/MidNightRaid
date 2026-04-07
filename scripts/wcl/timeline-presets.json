@@ -20,10 +20,10 @@
       "DemonHunter": {
         "label": "恶魔猎手",
         "abilities": [
-          { "gameId": 198013, "label": "眼棱", "specs": ["Havoc"] },
-          { "gameId": 200166, "label": "恶魔变形", "specs": ["Havoc"] },
-          { "gameId": 258920, "label": "献祭光环", "specs": ["Havoc"] },
-          { "gameId": 370965, "label": "恶魔追击", "specs": ["Havoc"] }
+          { "gameId": 198013, "label": "眼棱", "specs": ["Havoc"], "eventTypes": ["cast"] },
+          { "gameId": 200166, "label": "恶魔变形", "specs": ["Havoc"], "eventTypes": ["cast"] },
+          { "gameId": 393831, "label": "根除（邪能毁灭）", "specs": ["Havoc"], "dataTypes": ["Buffs"], "eventTypes": ["applybuff"] },
+          { "gameId": 1277482, "label": "坍缩之星（虚空欲望）", "specs": ["Havoc"], "dataTypes": ["Buffs"], "eventTypes": ["applybuff"] }
         ]
       }
     }

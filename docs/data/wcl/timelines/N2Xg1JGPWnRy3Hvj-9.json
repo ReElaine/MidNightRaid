@@ -53,6 +53,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -60,20 +63,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -161,20 +179,20 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
+          "key": "393831",
+          "label": "根除（邪能毁灭）"
         },
         {
           "key": "198013",
           "label": "眼棱"
         },
         {
-          "key": "200166",
-          "label": "恶魔变形"
+          "key": "1277482",
+          "label": "坍缩之星（虚空欲望）"
         },
         {
-          "key": "258920",
-          "label": "献祭光环"
+          "key": "200166",
+          "label": "恶魔变形"
         }
       ]
     }
@@ -4168,12 +4186,12 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:01",
-      "timestamp": 1721,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "0:03",
+      "timestamp": 3731,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4189,6 +4207,21 @@
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4366,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4214,11 +4247,11 @@
     {
       "lane": "class",
       "t": "0:10",
-      "timestamp": 10085,
-      "abilityGameId": 198013,
-      "abilityName": "眼棱",
-      "abilityLabel": "眼棱",
-      "type": "cast",
+      "timestamp": 10084,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4228,11 +4261,11 @@
     },
     {
       "lane": "class",
-      "t": "0:14",
-      "timestamp": 14828,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
+      "t": "0:10",
+      "timestamp": 10085,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
       "type": "cast",
       "sourceId": 20,
       "sourceName": "冷月丨",
@@ -4258,12 +4291,27 @@
     },
     {
       "lane": "class",
-      "t": "1:04",
-      "timestamp": 64953,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "0:37",
+      "timestamp": 37608,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:59",
+      "timestamp": 59702,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4288,12 +4336,27 @@
     },
     {
       "lane": "class",
-      "t": "1:23",
-      "timestamp": 83666,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:05",
+      "timestamp": 65374,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:28",
+      "timestamp": 88592,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4318,41 +4381,41 @@
     },
     {
       "lane": "class",
+      "t": "1:40",
+      "timestamp": 100744,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:49",
+      "timestamp": 109318,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "1:49",
       "timestamp": 109319,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 20,
-      "sourceName": "冷月丨",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:02",
-      "timestamp": 122853,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 20,
-      "sourceName": "冷月丨",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:08",
-      "timestamp": 128581,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 20,
       "sourceName": "冷月丨",
@@ -4369,6 +4432,21 @@
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:10",
+      "timestamp": 130210,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4408,12 +4486,27 @@
     },
     {
       "lane": "class",
-      "t": "2:34",
-      "timestamp": 154479,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "2:20",
+      "timestamp": 140496,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:24",
+      "timestamp": 144851,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4438,12 +4531,42 @@
     },
     {
       "lane": "class",
-      "t": "2:54",
-      "timestamp": 174236,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "2:40",
+      "timestamp": 160502,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:51",
+      "timestamp": 171076,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:00",
+      "timestamp": 180504,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4458,21 +4581,6 @@
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
-      "type": "cast",
-      "sourceId": 20,
-      "sourceName": "冷月丨",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:09",
-      "timestamp": 189350,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
       "type": "cast",
       "sourceId": 20,
       "sourceName": "冷月丨",
@@ -4498,6 +4606,36 @@
     },
     {
       "lane": "class",
+      "t": "3:22",
+      "timestamp": 202176,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:45",
+      "timestamp": 225950,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "3:45",
       "timestamp": 225951,
       "abilityGameId": 198013,
@@ -4514,11 +4652,11 @@
     {
       "lane": "class",
       "t": "4:06",
-      "timestamp": 246221,
-      "abilityGameId": 198013,
-      "abilityName": "眼棱",
-      "abilityLabel": "眼棱",
-      "type": "cast",
+      "timestamp": 246220,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",
@@ -4528,11 +4666,11 @@
     },
     {
       "lane": "class",
-      "t": "4:14",
-      "timestamp": 254102,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
+      "t": "4:06",
+      "timestamp": 246221,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
       "type": "cast",
       "sourceId": 20,
       "sourceName": "冷月丨",
@@ -4573,12 +4711,57 @@
     },
     {
       "lane": "class",
+      "t": "4:20",
+      "timestamp": 260811,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "4:41",
       "timestamp": 281193,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "4:41",
+      "timestamp": 281193,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 20,
+      "sourceName": "冷月丨",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "4:58",
+      "timestamp": 298350,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 20,
       "sourceName": "冷月丨",
       "className": "DemonHunter",

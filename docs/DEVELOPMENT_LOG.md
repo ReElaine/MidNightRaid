@@ -3,11 +3,13 @@
 ## 2026-04-07 / havoc demon hunter support
 
 - Added `DemonHunter / Havoc / dps` to frontend profile configuration.
-- Added a first-pass Havoc preset with the following tracked abilities:
+- Scoped generated studies so a selected class/spec only keeps its own class timeline entries instead of inheriting every class from the shared preset.
+- Added buff-event support for class timelines, so passive buffs can be preserved alongside active casts.
+- Current Havoc preset keeps:
   - `眼棱`
   - `恶魔变形`
-  - `献祭光环`
-  - `恶魔追击`
+  - `根除（当前按 WCL 返回的“邪能毁灭”事件接入）`
+  - `坍缩之星（当前按 WCL 返回的“虚空欲望”事件接入）`
 - Kept the configuration structure generic so more DPS specs can be added by extending `timeline-presets.json` and `ui-config.json`.
 
 ## 2026-03-25 / boss track source-aware filtering

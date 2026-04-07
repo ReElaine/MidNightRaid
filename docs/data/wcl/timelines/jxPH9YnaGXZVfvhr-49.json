@@ -90,6 +90,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -97,20 +100,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -178,20 +196,20 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
+        },
+        {
+          "key": "393831",
+          "label": "根除（邪能毁灭）"
         },
         {
           "key": "200166",
           "label": "恶魔变形"
         },
         {
-          "key": "258920",
-          "label": "献祭光环"
+          "key": "1277482",
+          "label": "坍缩之星（虚空欲望）"
         }
       ]
     }
@@ -753,11 +771,11 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:01",
-      "timestamp": 1530,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
+      "t": "0:02",
+      "timestamp": 2926,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
       "type": "cast",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
@@ -770,10 +788,10 @@
       "lane": "class",
       "t": "0:02",
       "timestamp": 2926,
-      "abilityGameId": 198013,
-      "abilityName": "眼棱",
-      "abilityLabel": "眼棱",
-      "type": "cast",
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -813,12 +831,27 @@
     },
     {
       "lane": "class",
-      "t": "0:38",
-      "timestamp": 38157,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:08",
+      "timestamp": 8405,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:26",
+      "timestamp": 26085,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -843,12 +876,42 @@
     },
     {
       "lane": "class",
-      "t": "1:05",
-      "timestamp": 65431,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "0:46",
+      "timestamp": 46672,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:54",
+      "timestamp": 54855,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:12",
+      "timestamp": 72567,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -873,12 +936,27 @@
     },
     {
       "lane": "class",
-      "t": "1:29",
-      "timestamp": 89948,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:17",
+      "timestamp": 77147,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:36",
+      "timestamp": 96786,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -903,12 +981,12 @@
     },
     {
       "lane": "class",
-      "t": "1:56",
-      "timestamp": 116135,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:57",
+      "timestamp": 117914,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -934,11 +1012,11 @@
     {
       "lane": "class",
       "t": "2:06",
-      "timestamp": 126563,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "timestamp": 126580,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -978,12 +1056,72 @@
     },
     {
       "lane": "class",
+      "t": "2:09",
+      "timestamp": 129641,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "2:29",
       "timestamp": 149987,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:29",
+      "timestamp": 149987,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:45",
+      "timestamp": 165201,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:50",
+      "timestamp": 170830,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -1008,27 +1146,12 @@
     },
     {
       "lane": "class",
-      "t": "3:04",
-      "timestamp": 184371,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 474,
-      "sourceName": "疯狂的蛇",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:12",
-      "timestamp": 192667,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "3:16",
+      "timestamp": 196227,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",
@@ -1053,12 +1176,57 @@
     },
     {
       "lane": "class",
+      "t": "3:16",
+      "timestamp": 196799,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:37",
+      "timestamp": 217212,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
       "t": "3:37",
       "timestamp": 217225,
       "abilityGameId": 198013,
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 474,
+      "sourceName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:47",
+      "timestamp": 227864,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 474,
       "sourceName": "疯狂的蛇",
       "className": "DemonHunter",

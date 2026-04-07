@@ -90,6 +90,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -97,20 +100,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -174,8 +192,8 @@
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
+          "key": "1277482",
+          "label": "坍缩之星（虚空欲望）"
         },
         {
           "key": "198013",
@@ -184,10 +202,6 @@
         {
           "key": "200166",
           "label": "恶魔变形"
-        },
-        {
-          "key": "258920",
-          "label": "献祭光环"
         }
       ]
     }
@@ -728,11 +742,11 @@
     {
       "lane": "class",
       "t": "0:00",
-      "timestamp": 550,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "timestamp": 978,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
       "className": "DemonHunter",
@@ -802,12 +816,12 @@
     },
     {
       "lane": "class",
-      "t": "0:20",
-      "timestamp": 20774,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "0:07",
+      "timestamp": 7488,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1458,
       "sourceName": "Mydh",
       "className": "DemonHunter",
@@ -817,12 +831,12 @@
     },
     {
       "lane": "class",
-      "t": "0:39",
-      "timestamp": 39412,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:26",
+      "timestamp": 26682,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
       "className": "DemonHunter",
@@ -832,12 +846,12 @@
     },
     {
       "lane": "class",
-      "t": "0:43",
-      "timestamp": 43731,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:41",
+      "timestamp": 41296,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1458,
       "sourceName": "Mydh",
       "className": "DemonHunter",
@@ -877,12 +891,12 @@
     },
     {
       "lane": "class",
-      "t": "0:51",
-      "timestamp": 51840,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:56",
+      "timestamp": 56620,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
       "className": "DemonHunter",
@@ -892,27 +906,12 @@
     },
     {
       "lane": "class",
-      "t": "1:04",
-      "timestamp": 64254,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 1451,
-      "sourceName": "花月神",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:07",
-      "timestamp": 67050,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:05",
+      "timestamp": 65847,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1458,
       "sourceName": "Mydh",
       "className": "DemonHunter",
@@ -952,36 +951,6 @@
     },
     {
       "lane": "class",
-      "t": "1:22",
-      "timestamp": 82572,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1451,
-      "sourceName": "花月神",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:29",
-      "timestamp": 89471,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 1458,
-      "sourceName": "Mydh",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "1:35",
       "timestamp": 95167,
       "abilityGameId": 198013,
@@ -997,12 +966,12 @@
     },
     {
       "lane": "class",
-      "t": "1:47",
-      "timestamp": 107517,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:40",
+      "timestamp": 100609,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1458,
       "sourceName": "Mydh",
       "className": "DemonHunter",
@@ -1042,14 +1011,29 @@
     },
     {
       "lane": "class",
-      "t": "2:06",
-      "timestamp": 126986,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "2:02",
+      "timestamp": 122669,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:06",
+      "timestamp": 126211,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 1458,
+      "sourceName": "Mydh",
       "className": "DemonHunter",
       "classLabel": "恶魔猎手",
       "specName": "Havoc",
@@ -1065,21 +1049,6 @@
       "type": "cast",
       "sourceId": 1451,
       "sourceName": "花月神",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:14",
-      "timestamp": 134619,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1458,
-      "sourceName": "Mydh",
       "className": "DemonHunter",
       "classLabel": "恶魔猎手",
       "specName": "Havoc",
@@ -1132,14 +1101,14 @@
     },
     {
       "lane": "class",
-      "t": "2:51",
-      "timestamp": 171627,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1451,
-      "sourceName": "花月神",
+      "t": "2:55",
+      "timestamp": 175076,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 1458,
+      "sourceName": "Mydh",
       "className": "DemonHunter",
       "classLabel": "恶魔猎手",
       "specName": "Havoc",
@@ -1162,42 +1131,12 @@
     },
     {
       "lane": "class",
-      "t": "3:07",
-      "timestamp": 187702,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 1458,
-      "sourceName": "Mydh",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:13",
-      "timestamp": 193135,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1458,
-      "sourceName": "Mydh",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:14",
-      "timestamp": 194597,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "3:02",
+      "timestamp": 182872,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
       "className": "DemonHunter",
@@ -1237,36 +1176,6 @@
     },
     {
       "lane": "class",
-      "t": "3:29",
-      "timestamp": 209134,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1451,
-      "sourceName": "花月神",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "3:33",
-      "timestamp": 213226,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 1458,
-      "sourceName": "Mydh",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "3:36",
       "timestamp": 216826,
       "abilityGameId": 198013,
@@ -1297,12 +1206,12 @@
     },
     {
       "lane": "class",
-      "t": "3:50",
-      "timestamp": 230534,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "3:42",
+      "timestamp": 222735,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1451,
       "sourceName": "花月神",
       "className": "DemonHunter",
@@ -1312,12 +1221,12 @@
     },
     {
       "lane": "class",
-      "t": "3:52",
-      "timestamp": 232496,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "3:44",
+      "timestamp": 224234,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 1458,
       "sourceName": "Mydh",
       "className": "DemonHunter",

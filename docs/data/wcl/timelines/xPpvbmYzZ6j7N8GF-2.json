@@ -90,6 +90,9 @@
             "label": "眼棱",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
@@ -97,20 +100,35 @@
             "label": "恶魔变形",
             "specs": [
               "Havoc"
+            ],
+            "eventTypes": [
+              "cast"
             ]
           },
           {
-            "gameId": 258920,
-            "label": "献祭光环",
+            "gameId": 393831,
+            "label": "根除（邪能毁灭）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           },
           {
-            "gameId": 370965,
-            "label": "恶魔追击",
+            "gameId": 1277482,
+            "label": "坍缩之星（虚空欲望）",
             "specs": [
               "Havoc"
+            ],
+            "dataTypes": [
+              "Buffs"
+            ],
+            "eventTypes": [
+              "applybuff"
             ]
           }
         ]
@@ -156,10 +174,6 @@
       {
         "key": "DemonHunter",
         "label": "恶魔猎手"
-      },
-      {
-        "key": "Priest",
-        "label": "牧师"
       }
     ],
     "specs": {
@@ -168,53 +182,30 @@
           "key": "Havoc",
           "label": "Havoc"
         }
-      ],
-      "Priest": [
-        {
-          "key": "Holy",
-          "label": "Holy"
-        }
       ]
     },
     "heroTalents": {
       "DemonHunter": {
         "Havoc": []
-      },
-      "Priest": {
-        "Holy": []
       }
     },
     "classAbilities": {
       "DemonHunter": [
         {
-          "key": "370965",
-          "label": "恶魔追击"
-        },
-        {
           "key": "198013",
           "label": "眼棱"
+        },
+        {
+          "key": "393831",
+          "label": "根除（邪能毁灭）"
         },
         {
           "key": "200166",
           "label": "恶魔变形"
         },
         {
-          "key": "258920",
-          "label": "献祭光环"
-        }
-      ],
-      "Priest": [
-        {
-          "key": "120517",
-          "label": "光晕"
-        },
-        {
-          "key": "64843",
-          "label": "神圣赞美诗"
-        },
-        {
-          "key": "200183",
-          "label": "神圣化身"
+          "key": "1277482",
+          "label": "坍缩之星（虚空欲望）"
         }
       ]
     }
@@ -578,21 +569,6 @@
   "classTimeline": [
     {
       "lane": "class",
-      "t": "0:02",
-      "timestamp": 2949,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
-      "sourceId": 23,
-      "sourceName": "决然之魂",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
       "t": "0:03",
       "timestamp": 3460,
       "abilityGameId": 198013,
@@ -608,17 +584,17 @@
     },
     {
       "lane": "class",
-      "t": "0:06",
-      "timestamp": 6891,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
+      "t": "0:03",
+      "timestamp": 3460,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 23,
+      "sourceName": "决然之魂",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
       "heroTalent": null
     },
     {
@@ -629,6 +605,21 @@
       "abilityName": "恶魔变形",
       "abilityLabel": "恶魔变形",
       "type": "cast",
+      "sourceId": 23,
+      "sourceName": "决然之魂",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:10",
+      "timestamp": 10044,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -653,42 +644,12 @@
     },
     {
       "lane": "class",
-      "t": "0:17",
-      "timestamp": 17283,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
-      "sourceId": 23,
-      "sourceName": "决然之魂",
-      "className": "DemonHunter",
-      "classLabel": "恶魔猎手",
-      "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:27",
-      "timestamp": 27454,
-      "abilityGameId": 64843,
-      "abilityName": "神圣赞美诗",
-      "abilityLabel": "神圣赞美诗",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "0:34",
-      "timestamp": 34254,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:11",
+      "timestamp": 11484,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -713,12 +674,12 @@
     },
     {
       "lane": "class",
-      "t": "1:01",
-      "timestamp": 61034,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "0:37",
+      "timestamp": 37572,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -728,12 +689,12 @@
     },
     {
       "lane": "class",
-      "t": "1:03",
-      "timestamp": 63835,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "1:04",
+      "timestamp": 64293,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -758,17 +719,17 @@
     },
     {
       "lane": "class",
-      "t": "1:19",
-      "timestamp": 79357,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
+      "t": "1:15",
+      "timestamp": 75692,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
+      "sourceId": 23,
+      "sourceName": "决然之魂",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
       "heroTalent": null
     },
     {
@@ -788,32 +749,17 @@
     },
     {
       "lane": "class",
-      "t": "1:29",
-      "timestamp": 89410,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:26",
+      "timestamp": 86799,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
       "classLabel": "恶魔猎手",
       "specName": "Havoc",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "1:43",
-      "timestamp": 103139,
-      "abilityGameId": 200183,
-      "abilityName": "神圣化身",
-      "abilityLabel": "神圣化身",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
       "heroTalent": null
     },
     {
@@ -833,12 +779,12 @@
     },
     {
       "lane": "class",
-      "t": "1:53",
-      "timestamp": 113381,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "1:46",
+      "timestamp": 106819,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -848,12 +794,12 @@
     },
     {
       "lane": "class",
-      "t": "2:07",
-      "timestamp": 127157,
-      "abilityGameId": 370965,
-      "abilityName": "恶魔追击",
-      "abilityLabel": "恶魔追击",
-      "type": "cast",
+      "t": "2:10",
+      "timestamp": 130947,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -869,6 +815,21 @@
       "abilityName": "眼棱",
       "abilityLabel": "眼棱",
       "type": "cast",
+      "sourceId": 23,
+      "sourceName": "决然之魂",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:13",
+      "timestamp": 133673,
+      "abilityGameId": 1277482,
+      "abilityName": "虚空欲望",
+      "abilityLabel": "坍缩之星（虚空欲望）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -908,27 +869,12 @@
     },
     {
       "lane": "class",
-      "t": "2:22",
-      "timestamp": 142334,
-      "abilityGameId": 120517,
-      "abilityName": "光晕",
-      "abilityLabel": "光晕",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
-      "heroTalent": null
-    },
-    {
-      "lane": "class",
-      "t": "2:28",
-      "timestamp": 148083,
-      "abilityGameId": 258920,
-      "abilityName": "献祭光环",
-      "abilityLabel": "献祭光环",
-      "type": "cast",
+      "t": "2:21",
+      "timestamp": 141664,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
       "sourceId": 23,
       "sourceName": "决然之魂",
       "className": "DemonHunter",
@@ -938,17 +884,17 @@
     },
     {
       "lane": "class",
-      "t": "2:39",
-      "timestamp": 159492,
-      "abilityGameId": 64843,
-      "abilityName": "神圣赞美诗",
-      "abilityLabel": "神圣赞美诗",
-      "type": "cast",
-      "sourceId": 12,
-      "sourceName": "丿猫丶小朶",
-      "className": "Priest",
-      "classLabel": "牧师",
-      "specName": "Holy",
+      "t": "2:41",
+      "timestamp": 161690,
+      "abilityGameId": 393831,
+      "abilityName": "邪能毁灭",
+      "abilityLabel": "根除（邪能毁灭）",
+      "type": "applybuff",
+      "sourceId": 23,
+      "sourceName": "决然之魂",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
       "heroTalent": null
     },
     {
