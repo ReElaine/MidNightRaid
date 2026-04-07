@@ -14,11 +14,23 @@ MidNightRaid 现在是一个专注于 Warcraft Logs 的前端分析工具：
 - 把多份日志汇总成同一个 Boss 的双轨时间轴页面
 - 左侧完整展示 Boss 技能，右侧完整展示目标职业技能
 
-当前前端只启用 `Priest / Holy / hps`，并且只展示 3 个神牧技能：
+当前前端已启用以下职业视角：
+
+- `Priest / Holy / hps`
+- `DemonHunter / Havoc / dps`
+
+当前神牧展示技能：
 
 - `光晕`
 - `神圣化身`
 - `神圣赞美诗`
+
+当前噬灭恶魔猎手展示技能：
+
+- `眼棱`
+- `恶魔变形`
+- `献祭光环`
+- `恶魔追击`
 
 同时，前端和数据层已经预留了扩展结构，后续加回其他职业时不需要重做架构。
 
@@ -118,7 +130,7 @@ npm run wcl:study -- "Imperator Averzian" 2 4 --class Priest --spec Holy --metri
 - `scripts/wcl/timeline-presets.json`
   当前只启用神牧技能白名单，但保留 `classes` 结构，方便后续加回其他职业
 - `docs/data/wcl/ui-config.json`
-  前端可选职业 / 专精 / 指标配置，当前只开放 `Priest / Holy / hps`
+  前端可选职业 / 专精 / 指标配置，当前开放 `Priest / Holy / hps` 与 `DemonHunter / Havoc / dps`
 
 ## 输出位置
 

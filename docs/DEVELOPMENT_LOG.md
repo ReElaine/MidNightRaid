@@ -1,5 +1,15 @@
 # Development Log
 
+## 2026-04-07 / havoc demon hunter support
+
+- Added `DemonHunter / Havoc / dps` to frontend profile configuration.
+- Added a first-pass Havoc preset with the following tracked abilities:
+  - `眼棱`
+  - `恶魔变形`
+  - `献祭光环`
+  - `恶魔追击`
+- Kept the configuration structure generic so more DPS specs can be added by extending `timeline-presets.json` and `ui-config.json`.
+
 ## 2026-03-25 / boss track source-aware filtering
 
 - Boss timeline entries are no longer merged into one aggregated event per timestamp.

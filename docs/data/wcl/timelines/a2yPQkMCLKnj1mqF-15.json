@@ -1,0 +1,2800 @@
+{
+  "reportCode": "a2yPQkMCLKnj1mqF",
+  "fightId": 15,
+  "bossName": "弗拉希乌斯",
+  "bossSlug": "spire_h2_fulasius",
+  "encounterId": 3177,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 226520,
+  "presetId": "default",
+  "presetName": "默认神牧双轨预设",
+  "preset": {
+    "presetId": "default",
+    "presetName": "默认神牧双轨预设",
+    "bossAbilities": [],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 120517,
+            "label": "光晕",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 200183,
+            "label": "神圣化身",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 64843,
+            "label": "神圣赞美诗",
+            "specs": [
+              "Holy"
+            ]
+          }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          {
+            "gameId": 198013,
+            "label": "眼棱",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 200166,
+            "label": "恶魔变形",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 258920,
+            "label": "献祭光环",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 370965,
+            "label": "恶魔追击",
+            "specs": [
+              "Havoc"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1260052",
+        "label": "始源咆哮"
+      },
+      {
+        "key": "1241836",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1241692",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1241686",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1244097",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1272329",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1241768",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1241769",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1254199",
+        "label": "散逸寄生虫"
+      },
+      {
+        "key": "1254113",
+        "label": "锁定"
+      },
+      {
+        "key": "1254112",
+        "label": "锁定"
+      },
+      {
+        "key": "1272527",
+        "label": "爬行喷吐"
+      },
+      {
+        "key": "1273159",
+        "label": "爬行喷吐"
+      },
+      {
+        "key": "1273153",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1265018",
+        "label": "锁定"
+      },
+      {
+        "key": "1259186",
+        "label": "气泡爆裂"
+      },
+      {
+        "key": "1257629",
+        "label": "虚空吐息"
+      },
+      {
+        "key": "1244293",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1273152",
+        "label": "影爪重击"
+      },
+      {
+        "key": "1256855",
+        "label": "虚空吐息"
+      }
+    ],
+    "classes": [
+      {
+        "key": "DemonHunter",
+        "label": "恶魔猎手"
+      }
+    ],
+    "specs": {
+      "DemonHunter": [
+        {
+          "key": "Havoc",
+          "label": "Havoc"
+        }
+      ]
+    },
+    "heroTalents": {
+      "DemonHunter": {
+        "Havoc": []
+      }
+    },
+    "classAbilities": {
+      "DemonHunter": [
+        {
+          "key": "370965",
+          "label": "恶魔追击"
+        },
+        {
+          "key": "258920",
+          "label": "献祭光环"
+        },
+        {
+          "key": "198013",
+          "label": "眼棱"
+        },
+        {
+          "key": "200166",
+          "label": "恶魔变形"
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "lane": "boss",
+      "t": "0:12",
+      "timestamp": 12199,
+      "abilityGameId": 1260052,
+      "abilityName": "始源咆哮",
+      "abilityLabel": "始源咆哮",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:16",
+      "timestamp": 16913,
+      "abilityGameId": 1241836,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21933,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21933,
+      "abilityGameId": 1241686,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31662,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31663,
+      "abilityGameId": 1244097,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:41",
+      "timestamp": 41375,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:41",
+      "timestamp": 41375,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51100,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51100,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:59",
+      "timestamp": 59542,
+      "abilityGameId": 1254199,
+      "abilityName": "散逸寄生虫",
+      "abilityLabel": "散逸寄生虫",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273153,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:10",
+      "timestamp": 70438,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:10",
+      "timestamp": 70438,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71640,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1265018,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72878,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72878,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:13",
+      "timestamp": 73014,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:13",
+      "timestamp": 73014,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75307,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75307,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:19",
+      "timestamp": 79859,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:22",
+      "timestamp": 82747,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:22",
+      "timestamp": 82747,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:25",
+      "timestamp": 85250,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86892,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91658,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91659,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:32",
+      "timestamp": 92865,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:33",
+      "timestamp": 93874,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:42",
+      "timestamp": 102162,
+      "abilityGameId": 1257629,
+      "abilityName": "虚空吐息",
+      "abilityLabel": "虚空吐息",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:12",
+      "timestamp": 132599,
+      "abilityGameId": 1260052,
+      "abilityName": "始源咆哮",
+      "abilityLabel": "始源咆哮",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:17",
+      "timestamp": 137314,
+      "abilityGameId": 1244293,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:22",
+      "timestamp": 142323,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:22",
+      "timestamp": 142323,
+      "abilityGameId": 1244097,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152041,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152041,
+      "abilityGameId": 1241686,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161756,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161756,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171488,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171488,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:02",
+      "timestamp": 182377,
+      "abilityGameId": 1254199,
+      "abilityName": "散逸寄生虫",
+      "abilityLabel": "散逸寄生虫",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190805,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190805,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190806,
+      "abilityGameId": 1273152,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192008,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192008,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192009,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192009,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193228,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193228,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193229,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193229,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1265018,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195823,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195823,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196900,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196900,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205092,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205532,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205532,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:30",
+      "timestamp": 210757,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:30",
+      "timestamp": 210828,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:31",
+      "timestamp": 211865,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:33",
+      "timestamp": 213055,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:33",
+      "timestamp": 213525,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:35",
+      "timestamp": 215365,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:42",
+      "timestamp": 222555,
+      "abilityGameId": 1256855,
+      "abilityName": "虚空吐息",
+      "abilityLabel": "虚空吐息",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:12",
+      "timestamp": 12199,
+      "abilityGameId": 1260052,
+      "abilityName": "始源咆哮",
+      "abilityLabel": "始源咆哮",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:16",
+      "timestamp": 16913,
+      "abilityGameId": 1241836,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21933,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21933,
+      "abilityGameId": 1241686,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31662,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31663,
+      "abilityGameId": 1244097,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:41",
+      "timestamp": 41375,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:41",
+      "timestamp": 41375,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51100,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51100,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "0:59",
+      "timestamp": 59542,
+      "abilityGameId": 1254199,
+      "abilityName": "散逸寄生虫",
+      "abilityLabel": "散逸寄生虫",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:06",
+      "timestamp": 66796,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:07",
+      "timestamp": 67997,
+      "abilityGameId": 1273153,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69210,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:10",
+      "timestamp": 70438,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:10",
+      "timestamp": 70438,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71639,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:11",
+      "timestamp": 71640,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1265018,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72860,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72878,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72878,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:13",
+      "timestamp": 73014,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:13",
+      "timestamp": 73014,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75307,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75307,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:19",
+      "timestamp": 79859,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:22",
+      "timestamp": 82747,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:22",
+      "timestamp": 82747,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "1:25",
+      "timestamp": 85250,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86892,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91658,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91659,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:32",
+      "timestamp": 92865,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:33",
+      "timestamp": 93874,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "1:42",
+      "timestamp": 102162,
+      "abilityGameId": 1257629,
+      "abilityName": "虚空吐息",
+      "abilityLabel": "虚空吐息",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:12",
+      "timestamp": 132599,
+      "abilityGameId": 1260052,
+      "abilityName": "始源咆哮",
+      "abilityLabel": "始源咆哮",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:17",
+      "timestamp": 137314,
+      "abilityGameId": 1244293,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:22",
+      "timestamp": 142323,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:22",
+      "timestamp": 142323,
+      "abilityGameId": 1244097,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152041,
+      "abilityGameId": 1241692,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152041,
+      "abilityGameId": 1241686,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161756,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161756,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171488,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171488,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:02",
+      "timestamp": 182377,
+      "abilityGameId": 1254199,
+      "abilityName": "散逸寄生虫",
+      "abilityLabel": "散逸寄生虫",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:09",
+      "timestamp": 189593,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190805,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190805,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:10",
+      "timestamp": 190806,
+      "abilityGameId": 1273152,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192008,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192008,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192009,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:12",
+      "timestamp": 192009,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193228,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193228,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193229,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:13",
+      "timestamp": 193229,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1254112,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:14",
+      "timestamp": 194459,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1254113,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1265018,
+      "abilityName": "锁定",
+      "abilityLabel": "锁定",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195671,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195823,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195823,
+      "abilityGameId": 1241768,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196900,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196900,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1272527,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:18",
+      "timestamp": 198101,
+      "abilityGameId": 1273159,
+      "abilityName": "爬行喷吐",
+      "abilityLabel": "爬行喷吐",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205092,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205532,
+      "abilityGameId": 1272329,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205532,
+      "abilityGameId": 1241769,
+      "abilityName": "影爪重击",
+      "abilityLabel": "影爪重击",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    },
+    {
+      "lane": "boss",
+      "t": "3:30",
+      "timestamp": 210757,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:30",
+      "timestamp": 210828,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:31",
+      "timestamp": 211865,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1334,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:33",
+      "timestamp": 213055,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:33",
+      "timestamp": 213525,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:35",
+      "timestamp": 215365,
+      "abilityGameId": 1259186,
+      "abilityName": "气泡爆裂",
+      "abilityLabel": "气泡爆裂",
+      "type": "cast",
+      "sourceId": 1332,
+      "sourceName": "爆爬虫"
+    },
+    {
+      "lane": "boss",
+      "t": "3:42",
+      "timestamp": 222555,
+      "abilityGameId": 1256855,
+      "abilityName": "虚空吐息",
+      "abilityLabel": "虚空吐息",
+      "type": "cast",
+      "sourceId": 1318,
+      "sourceName": "弗拉希乌斯"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 948,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2690,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6353,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:13",
+      "timestamp": 13925,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:43",
+      "timestamp": 43889,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:49",
+      "timestamp": 49865,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:05",
+      "timestamp": 65843,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:15",
+      "timestamp": 75691,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:30",
+      "timestamp": 90462,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:42",
+      "timestamp": 102045,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:45",
+      "timestamp": 105888,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:02",
+      "timestamp": 122315,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:03",
+      "timestamp": 123976,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:15",
+      "timestamp": 135779,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:56",
+      "timestamp": 176320,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:00",
+      "timestamp": 180416,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:14",
+      "timestamp": 194825,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:21",
+      "timestamp": 201614,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:33",
+      "timestamp": 213445,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:41",
+      "timestamp": 221617,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 1125,
+      "sourceName": "修斯登柴柴",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    }
+  ]
+}

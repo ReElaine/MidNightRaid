@@ -1,0 +1,2689 @@
+{
+  "reportCode": "G9N3phQJHWkTARM7",
+  "fightId": 18,
+  "bossName": "陨落之王萨哈达尔",
+  "bossSlug": "spire_h3_sahadar",
+  "encounterId": 3179,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 228786,
+  "presetId": "default",
+  "presetName": "默认神牧双轨预设",
+  "preset": {
+    "presetId": "default",
+    "presetName": "默认神牧双轨预设",
+    "bossAbilities": [],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 120517,
+            "label": "光晕",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 200183,
+            "label": "神圣化身",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 64843,
+            "label": "神圣赞美诗",
+            "specs": [
+              "Holy"
+            ]
+          }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          {
+            "gameId": 198013,
+            "label": "眼棱",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 200166,
+            "label": "恶魔变形",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 258920,
+            "label": "献祭光环",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 370965,
+            "label": "恶魔追击",
+            "specs": [
+              "Havoc"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1243453",
+        "label": "虚空融合"
+      },
+      {
+        "key": "1250686",
+        "label": "扭曲遮蔽"
+      },
+      {
+        "key": "1254081",
+        "label": "破碎投影"
+      },
+      {
+        "key": "1254092",
+        "label": "与虚空调和"
+      },
+      {
+        "key": "1250828",
+        "label": "虚空暴露"
+      },
+      {
+        "key": "1285211",
+        "label": "晦暗侵蚀"
+      },
+      {
+        "key": "1254088",
+        "label": "裂影残像"
+      },
+      {
+        "key": "1260823",
+        "label": "专制命令"
+      },
+      {
+        "key": "1245592",
+        "label": "痛苦精粹"
+      },
+      {
+        "key": "1253032",
+        "label": "粉碎暮光"
+      },
+      {
+        "key": "1251213",
+        "label": "暮光尖峰"
+      },
+      {
+        "key": "1246175",
+        "label": "熵能瓦解"
+      },
+      {
+        "key": "1260030",
+        "label": "本影迸流"
+      },
+      {
+        "key": "1271577",
+        "label": "影蚀打击"
+      }
+    ],
+    "classes": [
+      {
+        "key": "DemonHunter",
+        "label": "恶魔猎手"
+      }
+    ],
+    "specs": {
+      "DemonHunter": [
+        {
+          "key": "Havoc",
+          "label": "Havoc"
+        }
+      ]
+    },
+    "heroTalents": {
+      "DemonHunter": {
+        "Havoc": []
+      }
+    },
+    "classAbilities": {
+      "DemonHunter": [
+        {
+          "key": "258920",
+          "label": "献祭光环"
+        },
+        {
+          "key": "198013",
+          "label": "眼棱"
+        },
+        {
+          "key": "370965",
+          "label": "恶魔追击"
+        },
+        {
+          "key": "200166",
+          "label": "恶魔变形"
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "lane": "boss",
+      "t": "0:13",
+      "timestamp": 13237,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:15",
+      "timestamp": 15389,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19041,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:20",
+      "timestamp": 20972,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21395,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:27",
+      "timestamp": 27144,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:27",
+      "timestamp": 27262,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:28",
+      "timestamp": 28591,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31272,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:40",
+      "timestamp": 40164,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:40",
+      "timestamp": 40164,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:47",
+      "timestamp": 47129,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:48",
+      "timestamp": 48754,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:48",
+      "timestamp": 48925,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:49",
+      "timestamp": 49792,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:59",
+      "timestamp": 59419,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:01",
+      "timestamp": 61561,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65214,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65506,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72926,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:14",
+      "timestamp": 74725,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75758,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:20",
+      "timestamp": 80894,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86297,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86315,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91315,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:33",
+      "timestamp": 93314,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:34",
+      "timestamp": 94274,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:41",
+      "timestamp": 101992,
+      "abilityGameId": 1246175,
+      "abilityName": "熵能瓦解",
+      "abilityLabel": "熵能瓦解",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:49",
+      "timestamp": 109465,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:56",
+      "timestamp": 116082,
+      "abilityGameId": 1260030,
+      "abilityName": "本影迸流",
+      "abilityLabel": "本影迸流",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:01",
+      "timestamp": 121991,
+      "abilityGameId": 1271577,
+      "abilityName": "影蚀打击",
+      "abilityLabel": "影蚀打击",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:04",
+      "timestamp": 124348,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:04",
+      "timestamp": 124957,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125054,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125398,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125398,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125520,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125931,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:06",
+      "timestamp": 126092,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:06",
+      "timestamp": 126462,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:07",
+      "timestamp": 127210,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:07",
+      "timestamp": 127312,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:08",
+      "timestamp": 128334,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:08",
+      "timestamp": 128729,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:09",
+      "timestamp": 129601,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130580,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:12",
+      "timestamp": 132493,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:14",
+      "timestamp": 134875,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:17",
+      "timestamp": 137003,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140663,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140678,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140678,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:21",
+      "timestamp": 141437,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:24",
+      "timestamp": 144466,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:28",
+      "timestamp": 148701,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:29",
+      "timestamp": 149586,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:30",
+      "timestamp": 150159,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:30",
+      "timestamp": 150274,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152473,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161766,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161766,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:49",
+      "timestamp": 169931,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:01",
+      "timestamp": 181028,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:03",
+      "timestamp": 183154,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186799,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:08",
+      "timestamp": 188603,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195237,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196297,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196505,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205987,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:27",
+      "timestamp": 207928,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:27",
+      "timestamp": 207970,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:36",
+      "timestamp": 216089,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:38",
+      "timestamp": 218125,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:43",
+      "timestamp": 223518,
+      "abilityGameId": 1246175,
+      "abilityName": "熵能瓦解",
+      "abilityLabel": "熵能瓦解",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:13",
+      "timestamp": 13237,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:15",
+      "timestamp": 15389,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19041,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:19",
+      "timestamp": 19060,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:20",
+      "timestamp": 20972,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:21",
+      "timestamp": 21395,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:27",
+      "timestamp": 27144,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:27",
+      "timestamp": 27262,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "0:28",
+      "timestamp": 28591,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:31",
+      "timestamp": 31272,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "0:40",
+      "timestamp": 40164,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:40",
+      "timestamp": 40164,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:47",
+      "timestamp": 47129,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:48",
+      "timestamp": 48754,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:48",
+      "timestamp": 48925,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:49",
+      "timestamp": 49792,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "0:59",
+      "timestamp": 59419,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:01",
+      "timestamp": 61561,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65214,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65228,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "1:05",
+      "timestamp": 65506,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:12",
+      "timestamp": 72926,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:14",
+      "timestamp": 74725,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:15",
+      "timestamp": 75758,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:20",
+      "timestamp": 80894,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86297,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:26",
+      "timestamp": 86315,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:31",
+      "timestamp": 91315,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:33",
+      "timestamp": 93314,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:34",
+      "timestamp": 94274,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:41",
+      "timestamp": 101992,
+      "abilityGameId": 1246175,
+      "abilityName": "熵能瓦解",
+      "abilityLabel": "熵能瓦解",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:49",
+      "timestamp": 109465,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "1:56",
+      "timestamp": 116082,
+      "abilityGameId": 1260030,
+      "abilityName": "本影迸流",
+      "abilityLabel": "本影迸流",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:01",
+      "timestamp": 121991,
+      "abilityGameId": 1271577,
+      "abilityName": "影蚀打击",
+      "abilityLabel": "影蚀打击",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:04",
+      "timestamp": 124348,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:04",
+      "timestamp": 124957,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125054,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125398,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125398,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125520,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:05",
+      "timestamp": 125931,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:06",
+      "timestamp": 126092,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:06",
+      "timestamp": 126462,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:07",
+      "timestamp": 127210,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:07",
+      "timestamp": 127312,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:08",
+      "timestamp": 128334,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:08",
+      "timestamp": 128729,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:09",
+      "timestamp": 129601,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130580,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:12",
+      "timestamp": 132493,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:14",
+      "timestamp": 134875,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:17",
+      "timestamp": 137003,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140663,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140678,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140678,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:21",
+      "timestamp": 141437,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:24",
+      "timestamp": 144466,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:28",
+      "timestamp": 148701,
+      "abilityGameId": 1254088,
+      "abilityName": "裂影残像",
+      "abilityLabel": "裂影残像",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "2:29",
+      "timestamp": 149586,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:30",
+      "timestamp": 150159,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:30",
+      "timestamp": 150274,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:32",
+      "timestamp": 152473,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161766,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:41",
+      "timestamp": 161766,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "2:49",
+      "timestamp": 169931,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:01",
+      "timestamp": 181028,
+      "abilityGameId": 1243453,
+      "abilityName": "虚空融合",
+      "abilityLabel": "虚空融合",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:03",
+      "timestamp": 183154,
+      "abilityGameId": 1250686,
+      "abilityName": "扭曲遮蔽",
+      "abilityLabel": "扭曲遮蔽",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186799,
+      "abilityGameId": 1254081,
+      "abilityName": "破碎投影",
+      "abilityLabel": "破碎投影",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186801,
+      "abilityGameId": 1254092,
+      "abilityName": "与虚空调和",
+      "abilityLabel": "与虚空调和",
+      "type": "cast",
+      "sourceId": 199,
+      "sourceName": "分裂镜像"
+    },
+    {
+      "lane": "boss",
+      "t": "3:08",
+      "timestamp": 188603,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:15",
+      "timestamp": 195237,
+      "abilityGameId": 1250828,
+      "abilityName": "虚空暴露",
+      "abilityLabel": "虚空暴露",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196297,
+      "abilityGameId": 1260823,
+      "abilityName": "专制命令",
+      "abilityLabel": "专制命令",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:16",
+      "timestamp": 196505,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:25",
+      "timestamp": 205987,
+      "abilityGameId": 1285211,
+      "abilityName": "晦暗侵蚀",
+      "abilityLabel": "晦暗侵蚀",
+      "type": "cast",
+      "sourceId": 198,
+      "sourceName": "凝结的虚空"
+    },
+    {
+      "lane": "boss",
+      "t": "3:27",
+      "timestamp": 207928,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:27",
+      "timestamp": 207970,
+      "abilityGameId": 1245592,
+      "abilityName": "痛苦精粹",
+      "abilityLabel": "痛苦精粹",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:36",
+      "timestamp": 216089,
+      "abilityGameId": 1253032,
+      "abilityName": "粉碎暮光",
+      "abilityLabel": "粉碎暮光",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:38",
+      "timestamp": 218125,
+      "abilityGameId": 1251213,
+      "abilityName": "暮光尖峰",
+      "abilityLabel": "暮光尖峰",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    },
+    {
+      "lane": "boss",
+      "t": "3:43",
+      "timestamp": 223518,
+      "abilityGameId": 1246175,
+      "abilityName": "熵能瓦解",
+      "abilityLabel": "熵能瓦解",
+      "type": "cast",
+      "sourceId": 121,
+      "sourceName": "陨落之王萨哈达尔"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:02",
+      "timestamp": 2278,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:06",
+      "timestamp": 6960,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:08",
+      "timestamp": 8977,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:13",
+      "timestamp": 13922,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:46",
+      "timestamp": 46020,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:57",
+      "timestamp": 57688,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:10",
+      "timestamp": 70469,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:11",
+      "timestamp": 71449,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:20",
+      "timestamp": 80603,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:34",
+      "timestamp": 94054,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:39",
+      "timestamp": 99276,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:57",
+      "timestamp": 117832,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:13",
+      "timestamp": 133436,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:18",
+      "timestamp": 138252,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:20",
+      "timestamp": 140679,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:25",
+      "timestamp": 145920,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:53",
+      "timestamp": 173234,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:06",
+      "timestamp": 186081,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:13",
+      "timestamp": 193253,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:25",
+      "timestamp": 205607,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:34",
+      "timestamp": 214652,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:36",
+      "timestamp": 216320,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "3:48",
+      "timestamp": 228450,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 13,
+      "sourceName": "小卡提希娅",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    }
+  ]
+}

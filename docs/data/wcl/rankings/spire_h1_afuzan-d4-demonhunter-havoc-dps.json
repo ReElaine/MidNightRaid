@@ -1,0 +1,262 @@
+{
+  "mode": "character",
+  "encounterId": 3176,
+  "bossName": "Imperator Averzian",
+  "bossSlug": "spire_h1_afuzan",
+  "zoneId": 46,
+  "zoneName": "VS / DR / MQD",
+  "difficulty": 4,
+  "page": 1,
+  "pageSize": 10,
+  "region": "CN",
+  "hasMorePages": true,
+  "total": 100,
+  "rankings": [
+    {
+      "rank": 1,
+      "playerName": "决然之魂",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 113913.85839951,
+      "duration": 166087,
+      "startTime": 1775131348275,
+      "reportCode": "xPpvbmYzZ6j7N8GF",
+      "fightId": 2,
+      "reportStartTime": 1775131190423,
+      "hardModeLevel": 0,
+      "bracketData": 271,
+      "size": 23,
+      "faction": 1,
+      "server": {
+        "id": 582,
+        "name": "冰霜之刃",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 2,
+      "playerName": "断桥雪",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 113664.83959544,
+      "duration": 189739,
+      "startTime": 1775193492562,
+      "reportCode": "MxPKB7QWAv3gqNnY",
+      "fightId": 8,
+      "reportStartTime": 1775192205039,
+      "hardModeLevel": 0,
+      "bracketData": 268,
+      "size": 21,
+      "faction": 0,
+      "server": {
+        "id": 726,
+        "name": "法拉希姆",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 3,
+      "playerName": "水无玥流歌",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 112223.39690601,
+      "duration": 209891,
+      "startTime": 1775456736186,
+      "reportCode": "d6KNy83bLxD49BTh",
+      "fightId": 1,
+      "reportStartTime": 1775456353730,
+      "hardModeLevel": 0,
+      "bracketData": 271,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 611,
+        "name": "国王之谷",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 4,
+      "playerName": "花月神",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 112049.5904691,
+      "duration": 235025,
+      "startTime": 1775453184203,
+      "reportCode": "bzaWVF18YgDdfhX4",
+      "fightId": 27,
+      "reportStartTime": 1775284659294,
+      "hardModeLevel": 0,
+      "bracketData": 272,
+      "size": 23,
+      "faction": 1,
+      "server": {
+        "id": 584,
+        "name": "凤凰之神",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 5,
+      "playerName": "Redred",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 110715.6278035,
+      "duration": 278670,
+      "startTime": 1775388202294,
+      "reportCode": "q6bt3Rhm4Cn98yKH",
+      "fightId": 10,
+      "reportStartTime": 1775386171194,
+      "hardModeLevel": 0,
+      "bracketData": 271,
+      "size": 30,
+      "faction": 0,
+      "server": {
+        "id": 569,
+        "name": "伊森利恩",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 6,
+      "playerName": "冷月丨",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 110164.06504271,
+      "duration": 236583,
+      "startTime": 1775129537374,
+      "reportCode": "naMxT1k29frK8FXg",
+      "fightId": 5,
+      "reportStartTime": 1775128117601,
+      "hardModeLevel": 0,
+      "bracketData": 270,
+      "size": 26,
+      "faction": 0,
+      "server": {
+        "id": 790,
+        "name": "罗宁",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    },
+    {
+      "rank": 7,
+      "playerName": "疯狂的蛇",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 109650.80425554,
+      "duration": 236492,
+      "startTime": 1775548038207,
+      "reportCode": "jxPH9YnaGXZVfvhr",
+      "fightId": 49,
+      "reportStartTime": 1775538002174,
+      "hardModeLevel": 0,
+      "bracketData": 264,
+      "size": 25,
+      "faction": 0,
+      "server": {
+        "id": 832,
+        "name": "贫瘠之地",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 784003,
+        "name": "寻",
+        "faction": 0
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 8,
+      "playerName": "空气喵",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 108786.21974755,
+      "duration": 180316,
+      "startTime": 1775219045627,
+      "reportCode": "AhBnkXtFdDxVMLQ6",
+      "fightId": 2,
+      "reportStartTime": 1775217487475,
+      "hardModeLevel": 0,
+      "bracketData": 268,
+      "size": 29,
+      "faction": 1,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 780757,
+        "name": "ASCENSION",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 9,
+      "playerName": "有馬佳奈",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 107768.39962284,
+      "duration": 233320,
+      "startTime": 1775228012570,
+      "reportCode": "GYyp8QftNzA62JWd",
+      "fightId": 7,
+      "reportStartTime": 1775215502481,
+      "hardModeLevel": 0,
+      "bracketData": 270,
+      "size": 23,
+      "faction": 0,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": {
+        "id": 784702,
+        "name": "SDGA",
+        "faction": 1
+      },
+      "heroTalent": null
+    },
+    {
+      "rank": 10,
+      "playerName": "冰雪丷",
+      "className": "DemonHunter",
+      "specName": "Havoc",
+      "metricValue": 107071.1449385,
+      "duration": 242013,
+      "startTime": 1775240392012,
+      "reportCode": "yGn1kH8Qm3B9K2AJ",
+      "fightId": 41,
+      "reportStartTime": 1775213574968,
+      "hardModeLevel": 0,
+      "bracketData": 273,
+      "size": 25,
+      "faction": 1,
+      "server": {
+        "id": 720,
+        "name": "死亡之翼",
+        "region": "CN"
+      },
+      "guild": null,
+      "heroTalent": null
+    }
+  ],
+  "className": "DemonHunter",
+  "specName": "Havoc",
+  "heroTalent": null,
+  "metric": "dps"
+}

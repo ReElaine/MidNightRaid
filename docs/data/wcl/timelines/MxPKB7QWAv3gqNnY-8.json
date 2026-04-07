@@ -1,0 +1,937 @@
+{
+  "reportCode": "MxPKB7QWAv3gqNnY",
+  "fightId": 8,
+  "bossName": "元首阿福扎恩",
+  "bossSlug": "spire_h1_afuzan",
+  "encounterId": 3176,
+  "difficulty": 4,
+  "startTime": 0,
+  "endTime": 189739,
+  "presetId": "spire_h1_afuzan_holy_priest",
+  "presetName": "元首阿福扎恩 / 神牧对照预设",
+  "preset": {
+    "presetId": "spire_h1_afuzan_holy_priest",
+    "presetName": "元首阿福扎恩 / 神牧对照预设",
+    "bossAbilities": [
+      {
+        "gameId": 1249251,
+        "label": "黑暗颠覆"
+      },
+      {
+        "gameId": 1262776,
+        "label": "暗影进军"
+      },
+      {
+        "gameId": 1249265,
+        "label": "幽影坍缩 I"
+      },
+      {
+        "gameId": 1249266,
+        "label": "幽影坍缩 II"
+      },
+      {
+        "gameId": 1260206,
+        "label": "幽影坍缩 III"
+      },
+      {
+        "gameId": 1262036,
+        "label": "虚空割裂"
+      },
+      {
+        "gameId": 1260712,
+        "label": "湮灭之怒"
+      },
+      {
+        "gameId": 1258880,
+        "label": "虚空坠落"
+      },
+      {
+        "gameId": 1255702,
+        "label": "浓暗壁垒"
+      }
+    ],
+    "heroTalent": {
+      "overridesByPlayer": {},
+      "overridesByClassSpec": {},
+      "detectByClassSpec": {}
+    },
+    "classes": {
+      "Priest": {
+        "label": "牧师",
+        "abilities": [
+          {
+            "gameId": 120517,
+            "label": "光晕",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 200183,
+            "label": "神圣化身",
+            "specs": [
+              "Holy"
+            ]
+          },
+          {
+            "gameId": 64843,
+            "label": "神圣赞美诗",
+            "specs": [
+              "Holy"
+            ]
+          }
+        ]
+      },
+      "DemonHunter": {
+        "label": "恶魔猎手",
+        "abilities": [
+          {
+            "gameId": 198013,
+            "label": "眼棱",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 200166,
+            "label": "恶魔变形",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 258920,
+            "label": "献祭光环",
+            "specs": [
+              "Havoc"
+            ]
+          },
+          {
+            "gameId": 370965,
+            "label": "恶魔追击",
+            "specs": [
+              "Havoc"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "filters": {
+    "bossAbilities": [
+      {
+        "key": "1249251",
+        "label": "黑暗颠覆"
+      },
+      {
+        "key": "1262776",
+        "label": "暗影进军"
+      },
+      {
+        "key": "1249265",
+        "label": "幽影坍缩 I"
+      },
+      {
+        "key": "1249266",
+        "label": "幽影坍缩 II"
+      },
+      {
+        "key": "1260206",
+        "label": "幽影坍缩 III"
+      },
+      {
+        "key": "1262036",
+        "label": "虚空割裂"
+      },
+      {
+        "key": "1260712",
+        "label": "湮灭之怒"
+      },
+      {
+        "key": "1258880",
+        "label": "虚空坠落"
+      },
+      {
+        "key": "1255702",
+        "label": "浓暗壁垒"
+      }
+    ],
+    "classes": [
+      {
+        "key": "DemonHunter",
+        "label": "恶魔猎手"
+      }
+    ],
+    "specs": {
+      "DemonHunter": [
+        {
+          "key": "Havoc",
+          "label": "Havoc"
+        }
+      ]
+    },
+    "heroTalents": {
+      "DemonHunter": {
+        "Havoc": []
+      }
+    },
+    "classAbilities": {
+      "DemonHunter": [
+        {
+          "key": "258920",
+          "label": "献祭光环"
+        },
+        {
+          "key": "370965",
+          "label": "恶魔追击"
+        },
+        {
+          "key": "198013",
+          "label": "眼棱"
+        },
+        {
+          "key": "200166",
+          "label": "恶魔变形"
+        }
+      ]
+    }
+  },
+  "timeline": [
+    {
+      "lane": "boss",
+      "t": "0:06",
+      "timestamp": 6542,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:15",
+      "timestamp": 15040,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:20",
+      "timestamp": 20019,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25552,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:33",
+      "timestamp": 33052,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35559,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "0:42",
+      "timestamp": 42548,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51037,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69018,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:18",
+      "timestamp": 78520,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:32",
+      "timestamp": 92026,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97546,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:45",
+      "timestamp": 105045,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107555,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130999,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:11",
+      "timestamp": 131688,
+      "abilityGameId": 1255702,
+      "abilityName": "浓暗壁垒",
+      "abilityLabel": "浓暗壁垒",
+      "type": "cast",
+      "sourceId": 294,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "lane": "boss",
+      "t": "2:37",
+      "timestamp": 157539,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171021,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:56",
+      "timestamp": 176529,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:04",
+      "timestamp": 184055,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186580,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    }
+  ],
+  "bossTimeline": [
+    {
+      "lane": "boss",
+      "t": "0:06",
+      "timestamp": 6542,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:15",
+      "timestamp": 15040,
+      "abilityGameId": 1262776,
+      "abilityName": "暗影进军",
+      "abilityLabel": "暗影进军",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:20",
+      "timestamp": 20019,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:25",
+      "timestamp": 25552,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:33",
+      "timestamp": 33052,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:35",
+      "timestamp": 35559,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "0:42",
+      "timestamp": 42548,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "0:51",
+      "timestamp": 51037,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:09",
+      "timestamp": 69018,
+      "abilityGameId": 1260712,
+      "abilityName": "湮灭之怒",
+      "abilityLabel": "湮灭之怒",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:18",
+      "timestamp": 78520,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:32",
+      "timestamp": 92026,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:37",
+      "timestamp": 97546,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:45",
+      "timestamp": 105045,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "1:47",
+      "timestamp": 107555,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    },
+    {
+      "lane": "boss",
+      "t": "2:10",
+      "timestamp": 130999,
+      "abilityGameId": 1258880,
+      "abilityName": "虚空坠落",
+      "abilityLabel": "虚空坠落",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:11",
+      "timestamp": 131688,
+      "abilityGameId": 1255702,
+      "abilityName": "浓暗壁垒",
+      "abilityLabel": "浓暗壁垒",
+      "type": "cast",
+      "sourceId": 294,
+      "sourceName": "影卫坚兵"
+    },
+    {
+      "lane": "boss",
+      "t": "2:37",
+      "timestamp": 157539,
+      "abilityGameId": 1249251,
+      "abilityName": "黑暗颠覆",
+      "abilityLabel": "黑暗颠覆",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:51",
+      "timestamp": 171021,
+      "abilityGameId": 1249265,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 I",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "2:56",
+      "timestamp": 176529,
+      "abilityGameId": 1249266,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 II",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:04",
+      "timestamp": 184055,
+      "abilityGameId": 1260206,
+      "abilityName": "幽影坍缩",
+      "abilityLabel": "幽影坍缩 III",
+      "type": "cast",
+      "sourceId": 284,
+      "sourceName": "元首阿福扎恩"
+    },
+    {
+      "lane": "boss",
+      "t": "3:06",
+      "timestamp": 186580,
+      "abilityGameId": 1262036,
+      "abilityName": "虚空割裂",
+      "abilityLabel": "虚空割裂",
+      "type": "cast",
+      "sourceId": 287,
+      "sourceName": "深渊虚空塑形者"
+    }
+  ],
+  "classTimeline": [
+    {
+      "lane": "class",
+      "t": "0:00",
+      "timestamp": 160,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:03",
+      "timestamp": 3209,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:04",
+      "timestamp": 4056,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:08",
+      "timestamp": 8989,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:41",
+      "timestamp": 41369,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "0:47",
+      "timestamp": 47603,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:00",
+      "timestamp": 60074,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:04",
+      "timestamp": 64090,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:13",
+      "timestamp": 73033,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:27",
+      "timestamp": 87569,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:38",
+      "timestamp": 98378,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "1:55",
+      "timestamp": 115594,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:01",
+      "timestamp": 121032,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:15",
+      "timestamp": 135275,
+      "abilityGameId": 370965,
+      "abilityName": "恶魔追击",
+      "abilityLabel": "恶魔追击",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:17",
+      "timestamp": 137204,
+      "abilityGameId": 258920,
+      "abilityName": "献祭光环",
+      "abilityLabel": "献祭光环",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:21",
+      "timestamp": 141129,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:27",
+      "timestamp": 147248,
+      "abilityGameId": 200166,
+      "abilityName": "恶魔变形",
+      "abilityLabel": "恶魔变形",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    },
+    {
+      "lane": "class",
+      "t": "2:54",
+      "timestamp": 174826,
+      "abilityGameId": 198013,
+      "abilityName": "眼棱",
+      "abilityLabel": "眼棱",
+      "type": "cast",
+      "sourceId": 79,
+      "sourceName": "断桥雪",
+      "className": "DemonHunter",
+      "classLabel": "恶魔猎手",
+      "specName": "Havoc",
+      "heroTalent": null
+    }
+  ]
+}

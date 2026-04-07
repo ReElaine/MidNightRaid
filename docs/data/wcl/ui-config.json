@@ -12,6 +12,19 @@
           "metrics": ["hps"]
         }
       ]
+    },
+    {
+      "className": "DemonHunter",
+      "label": "恶魔猎手",
+      "enabled": true,
+      "specs": [
+        {
+          "specName": "Havoc",
+          "label": "噬灭",
+          "enabled": true,
+          "metrics": ["dps"]
+        }
+      ]
     }
   ]
 }
